@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "8th CPC Calculator — Modern salary & pension estimator" },
+      { title: "8th CPC Calculator — 8th Pay Commission salary calculator" },
       {
         name: "description",
         content:
@@ -90,6 +90,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "8th CPC Calculator" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
+      { name: "twitter:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
+      { name: "description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
+      { property: "og:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
+      { name: "twitter:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
