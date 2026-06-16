@@ -1,29 +1,44 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/landing/Hero";
+import { QuickCalc } from "@/components/landing/QuickCalc";
+import { CalculatorGrid } from "@/components/landing/CalculatorGrid";
+import { Features } from "@/components/landing/Features";
+import { FAQ } from "@/components/landing/FAQ";
+import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "8th CPC Calculator — Estimate Your Revised Salary Instantly" },
+      {
+        name: "description",
+        content:
+          "Project your 8th Pay Commission salary, pension and arrears across fitment factors 1.92x to 3.83x. Modern, mobile-first calculator for Central Government employees.",
+      },
+      { property: "og:title", content: "8th CPC Calculator — Estimate Your Revised Salary" },
+      {
+        property: "og:description",
+        content:
+          "Advanced salary, pension and arrear calculators for Central Government employees.",
+      },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <QuickCalc />
+      <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
+        <DisclaimerBanner />
+      </div>
+      <CalculatorGrid />
+      <Features />
+      <FAQ />
+    </>
   );
 }
