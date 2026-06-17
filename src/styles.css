@@ -164,6 +164,4 @@
 }
 .prose-article a { color: var(--color-primary); text-decoration: underline; }
 .prose-article strong { font-weight: 600; }
-.not-prose, .not-prose * { all: revert; }
-.not-prose { font-family: var(--font-sans); }
 
