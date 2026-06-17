@@ -34,6 +34,13 @@ export function Header() {
           >
             Salary Calculator
           </Link>
+          <Link
+            to="/blog"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
+          >
+            Blog
+          </Link>
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
