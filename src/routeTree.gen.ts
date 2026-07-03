@@ -9,14 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StateRouteImport } from './routes/state'
 import { Route as SalaryRouteImport } from './routes/salary'
+import { Route as RoleRouteImport } from './routes/role'
+import { Route as PayLevelRouteImport } from './routes/pay-level'
+import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as StateIndexRouteImport } from './routes/state.index'
+import { Route as RoleIndexRouteImport } from './routes/role.index'
+import { Route as PayLevelIndexRouteImport } from './routes/pay-level.index'
+import { Route as StateStateRouteImport } from './routes/state.$state'
+import { Route as RoleRoleRouteImport } from './routes/role.$role'
+import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
+const StateRoute = StateRouteImport.update({
+  id: '/state',
+  path: '/state',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SalaryRoute = SalaryRouteImport.update({
   id: '/salary',
   path: '/salary',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoleRoute = RoleRouteImport.update({
+  id: '/role',
+  path: '/role',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PayLevelRoute = PayLevelRouteImport.update({
+  id: '/pay-level',
+  path: '/pay-level',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DaCalculatorRoute = DaCalculatorRouteImport.update({
+  id: '/da-calculator',
+  path: '/da-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -29,6 +59,36 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StateIndexRoute = StateIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => StateRoute,
+} as any)
+const RoleIndexRoute = RoleIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => RoleRoute,
+} as any)
+const PayLevelIndexRoute = PayLevelIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => PayLevelRoute,
+} as any)
+const StateStateRoute = StateStateRouteImport.update({
+  id: '/$state',
+  path: '/$state',
+  getParentRoute: () => StateRoute,
+} as any)
+const RoleRoleRoute = RoleRoleRouteImport.update({
+  id: '/$role',
+  path: '/$role',
+  getParentRoute: () => RoleRoute,
+} as any)
+const PayLevelLevelRoute = PayLevelLevelRouteImport.update({
+  id: '/$level',
+  path: '/$level',
+  getParentRoute: () => PayLevelRoute,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -38,43 +98,142 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
+  '/pay-level': typeof PayLevelRouteWithChildren
+  '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/state': typeof StateRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
+  '/pay-level/$level': typeof PayLevelLevelRoute
+  '/role/$role': typeof RoleRoleRoute
+  '/state/$state': typeof StateStateRoute
+  '/pay-level/': typeof PayLevelIndexRoute
+  '/role/': typeof RoleIndexRoute
+  '/state/': typeof StateIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
   '/salary': typeof SalaryRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/pay-level/$level': typeof PayLevelLevelRoute
+  '/role/$role': typeof RoleRoleRoute
+  '/state/$state': typeof StateStateRoute
+  '/pay-level': typeof PayLevelIndexRoute
+  '/role': typeof RoleIndexRoute
+  '/state': typeof StateIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
+  '/pay-level': typeof PayLevelRouteWithChildren
+  '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/state': typeof StateRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
+  '/pay-level/$level': typeof PayLevelLevelRoute
+  '/role/$role': typeof RoleRoleRoute
+  '/state/$state': typeof StateStateRoute
+  '/pay-level/': typeof PayLevelIndexRoute
+  '/role/': typeof RoleIndexRoute
+  '/state/': typeof StateIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/blog' | '/salary' | '/blog/$slug'
+  fullPaths:
+    | '/'
+    | '/blog'
+    | '/da-calculator'
+    | '/pay-level'
+    | '/role'
+    | '/salary'
+    | '/state'
+    | '/blog/$slug'
+    | '/pay-level/$level'
+    | '/role/$role'
+    | '/state/$state'
+    | '/pay-level/'
+    | '/role/'
+    | '/state/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/blog' | '/salary' | '/blog/$slug'
-  id: '__root__' | '/' | '/blog' | '/salary' | '/blog/$slug'
+  to:
+    | '/'
+    | '/blog'
+    | '/da-calculator'
+    | '/salary'
+    | '/blog/$slug'
+    | '/pay-level/$level'
+    | '/role/$role'
+    | '/state/$state'
+    | '/pay-level'
+    | '/role'
+    | '/state'
+  id:
+    | '__root__'
+    | '/'
+    | '/blog'
+    | '/da-calculator'
+    | '/pay-level'
+    | '/role'
+    | '/salary'
+    | '/state'
+    | '/blog/$slug'
+    | '/pay-level/$level'
+    | '/role/$role'
+    | '/state/$state'
+    | '/pay-level/'
+    | '/role/'
+    | '/state/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRouteWithChildren
+  DaCalculatorRoute: typeof DaCalculatorRoute
+  PayLevelRoute: typeof PayLevelRouteWithChildren
+  RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
+  StateRoute: typeof StateRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/state': {
+      id: '/state'
+      path: '/state'
+      fullPath: '/state'
+      preLoaderRoute: typeof StateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/salary': {
       id: '/salary'
       path: '/salary'
       fullPath: '/salary'
       preLoaderRoute: typeof SalaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/role': {
+      id: '/role'
+      path: '/role'
+      fullPath: '/role'
+      preLoaderRoute: typeof RoleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pay-level': {
+      id: '/pay-level'
+      path: '/pay-level'
+      fullPath: '/pay-level'
+      preLoaderRoute: typeof PayLevelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/da-calculator': {
+      id: '/da-calculator'
+      path: '/da-calculator'
+      fullPath: '/da-calculator'
+      preLoaderRoute: typeof DaCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -90,6 +249,48 @@ declare module '@tanstack/react-router' {
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/state/': {
+      id: '/state/'
+      path: '/'
+      fullPath: '/state/'
+      preLoaderRoute: typeof StateIndexRouteImport
+      parentRoute: typeof StateRoute
+    }
+    '/role/': {
+      id: '/role/'
+      path: '/'
+      fullPath: '/role/'
+      preLoaderRoute: typeof RoleIndexRouteImport
+      parentRoute: typeof RoleRoute
+    }
+    '/pay-level/': {
+      id: '/pay-level/'
+      path: '/'
+      fullPath: '/pay-level/'
+      preLoaderRoute: typeof PayLevelIndexRouteImport
+      parentRoute: typeof PayLevelRoute
+    }
+    '/state/$state': {
+      id: '/state/$state'
+      path: '/$state'
+      fullPath: '/state/$state'
+      preLoaderRoute: typeof StateStateRouteImport
+      parentRoute: typeof StateRoute
+    }
+    '/role/$role': {
+      id: '/role/$role'
+      path: '/$role'
+      fullPath: '/role/$role'
+      preLoaderRoute: typeof RoleRoleRouteImport
+      parentRoute: typeof RoleRoute
+    }
+    '/pay-level/$level': {
+      id: '/pay-level/$level'
+      path: '/$level'
+      fullPath: '/pay-level/$level'
+      preLoaderRoute: typeof PayLevelLevelRouteImport
+      parentRoute: typeof PayLevelRoute
     }
     '/blog/$slug': {
       id: '/blog/$slug'
@@ -111,21 +312,53 @@ const BlogRouteChildren: BlogRouteChildren = {
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
+interface PayLevelRouteChildren {
+  PayLevelLevelRoute: typeof PayLevelLevelRoute
+  PayLevelIndexRoute: typeof PayLevelIndexRoute
+}
+
+const PayLevelRouteChildren: PayLevelRouteChildren = {
+  PayLevelLevelRoute: PayLevelLevelRoute,
+  PayLevelIndexRoute: PayLevelIndexRoute,
+}
+
+const PayLevelRouteWithChildren = PayLevelRoute._addFileChildren(
+  PayLevelRouteChildren,
+)
+
+interface RoleRouteChildren {
+  RoleRoleRoute: typeof RoleRoleRoute
+  RoleIndexRoute: typeof RoleIndexRoute
+}
+
+const RoleRouteChildren: RoleRouteChildren = {
+  RoleRoleRoute: RoleRoleRoute,
+  RoleIndexRoute: RoleIndexRoute,
+}
+
+const RoleRouteWithChildren = RoleRoute._addFileChildren(RoleRouteChildren)
+
+interface StateRouteChildren {
+  StateStateRoute: typeof StateStateRoute
+  StateIndexRoute: typeof StateIndexRoute
+}
+
+const StateRouteChildren: StateRouteChildren = {
+  StateStateRoute: StateStateRoute,
+  StateIndexRoute: StateIndexRoute,
+}
+
+const StateRouteWithChildren = StateRoute._addFileChildren(StateRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRouteWithChildren,
+  DaCalculatorRoute: DaCalculatorRoute,
+  PayLevelRoute: PayLevelRouteWithChildren,
+  RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
+  StateRoute: StateRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

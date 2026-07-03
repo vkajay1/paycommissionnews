@@ -32,7 +32,35 @@ export function Header() {
             className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
           >
-            Salary Calculator
+            Salary
+          </Link>
+          <Link
+            to="/da-calculator"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
+          >
+            DA Calculator
+          </Link>
+          <Link
+            to="/pay-level"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
+          >
+            Pay Matrix
+          </Link>
+          <Link
+            to="/role"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
+          >
+            Roles
+          </Link>
+          <Link
+            to="/state"
+            className="rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-medium text-foreground bg-secondary" }}
+          >
+            States
           </Link>
           <Link
             to="/blog"
@@ -41,6 +69,7 @@ export function Header() {
           >
             Blog
           </Link>
+
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
