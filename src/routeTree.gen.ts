@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SalaryRouteImport } from './routes/salary'
+import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
@@ -17,6 +18,11 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 const SalaryRoute = SalaryRouteImport.update({
   id: '/salary',
   path: '/salary',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DaCalculatorRoute = DaCalculatorRouteImport.update({
+  id: '/da-calculator',
+  path: '/da-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -38,12 +44,14 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
   '/salary': typeof SalaryRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
   '/salary': typeof SalaryRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
@@ -51,20 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
+  '/da-calculator': typeof DaCalculatorRoute
   '/salary': typeof SalaryRoute
   '/blog/$slug': typeof BlogSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/blog' | '/salary' | '/blog/$slug'
+  fullPaths: '/' | '/blog' | '/da-calculator' | '/salary' | '/blog/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/blog' | '/salary' | '/blog/$slug'
-  id: '__root__' | '/' | '/blog' | '/salary' | '/blog/$slug'
+  to: '/' | '/blog' | '/da-calculator' | '/salary' | '/blog/$slug'
+  id: '__root__' | '/' | '/blog' | '/da-calculator' | '/salary' | '/blog/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRouteWithChildren
+  DaCalculatorRoute: typeof DaCalculatorRoute
   SalaryRoute: typeof SalaryRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       path: '/salary'
       fullPath: '/salary'
       preLoaderRoute: typeof SalaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/da-calculator': {
+      id: '/da-calculator'
+      path: '/da-calculator'
+      fullPath: '/da-calculator'
+      preLoaderRoute: typeof DaCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -114,18 +131,9 @@ const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRouteWithChildren,
+  DaCalculatorRoute: DaCalculatorRoute,
   SalaryRoute: SalaryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

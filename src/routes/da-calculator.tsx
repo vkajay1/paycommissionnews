@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
-import { formatINR } from "@/lib/format";
+import { inr } from "@/lib/format";
 
 const SITE = "https://paycommissionnews.lovable.app";
 
@@ -167,10 +167,10 @@ function DaCalculatorPage() {
         <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
           <h2 className="text-lg font-semibold">Your DA breakdown</h2>
           <div className="mt-6 space-y-4">
-            <Row label="Basic pay" value={formatINR(basic)} />
-            <Row label={`DA (${daPct}%)`} value={formatINR(daAmount)} highlight />
+            <Row label="Basic pay" value={inr(basic)} />
+            <Row label={`DA (${daPct}%)`} value={inr(daAmount)} highlight />
             <div className="my-2 h-px bg-border" />
-            <Row label="Basic + DA" value={formatINR(total)} bold />
+            <Row label="Basic + DA" value={inr(total)} bold />
           </div>
 
           <div className="mt-6 rounded-xl bg-primary/5 p-4 text-sm">
@@ -179,9 +179,9 @@ function DaCalculatorPage() {
             </div>
             <p className="text-muted-foreground">
               On 8th Pay Commission implementation (expected 1 Jan 2026), DA of{" "}
-              <strong>{daPct}%</strong> ({formatINR(daAmount)}) will merge into a revised basic
+              <strong>{daPct}%</strong> ({inr(daAmount)}) will merge into a revised basic
               of approximately{" "}
-              <strong>{formatINR(Math.round(basic * 2.86))}</strong> (at 2.86x fitment) and DA
+              <strong>{inr(Math.round(basic * 2.86))}</strong> (at 2.86x fitment) and DA
               resets to 0%.
             </p>
           </div>
@@ -218,7 +218,7 @@ function DaCalculatorPage() {
                   <td className="p-3">{row.date}</td>
                   <td className="p-3 font-semibold">{row.pct}%</td>
                   <td className="p-3 text-muted-foreground">
-                    {formatINR(Math.round((35400 * row.pct) / 100))}
+                    {inr(Math.round((35400 * row.pct) / 100))}
                   </td>
                 </tr>
               ))}
