@@ -12,10 +12,16 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as StateRouteImport } from './routes/state'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
+import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
+import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
+import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as McpRouteImport } from './routes/mcp'
+import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
+import { Route as ArrearRouteImport } from './routes/arrear'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
 import { Route as RoleIndexRouteImport } from './routes/role.index'
@@ -43,14 +49,39 @@ const RoleRoute = RoleRouteImport.update({
   path: '/role',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PensionArrearRoute = PensionArrearRouteImport.update({
+  id: '/pension-arrear',
+  path: '/pension-arrear',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PensionRoute = PensionRouteImport.update({
+  id: '/pension',
+  path: '/pension',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PayLevelRoute = PayLevelRouteImport.update({
   id: '/pay-level',
   path: '/pay-level',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PayFixationRoute = PayFixationRouteImport.update({
+  id: '/pay-fixation',
+  path: '/pay-fixation',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const McpRoute = McpRouteImport.update({
   id: '/mcp',
   path: '/mcp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LtcPlannerRoute = LtcPlannerRouteImport.update({
+  id: '/ltc-planner',
+  path: '/ltc-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
+  id: '/fitment-simulator',
+  path: '/fitment-simulator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DaCalculatorRoute = DaCalculatorRouteImport.update({
@@ -61,6 +92,11 @@ const DaCalculatorRoute = DaCalculatorRouteImport.update({
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArrearRoute = ArrearRouteImport.update({
+  id: '/arrear',
+  path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -124,10 +160,16 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
+  '/pension': typeof PensionRoute
+  '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
@@ -144,9 +186,15 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/pay-fixation': typeof PayFixationRoute
+  '/pension': typeof PensionRoute
+  '/pension-arrear': typeof PensionArrearRoute
   '/salary': typeof SalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -162,10 +210,16 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
+  '/pension': typeof PensionRoute
+  '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
@@ -184,10 +238,16 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/fitment-simulator'
+    | '/ltc-planner'
     | '/mcp'
+    | '/pay-fixation'
     | '/pay-level'
+    | '/pension'
+    | '/pension-arrear'
     | '/role'
     | '/salary'
     | '/state'
@@ -204,9 +264,15 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/fitment-simulator'
+    | '/ltc-planner'
     | '/mcp'
+    | '/pay-fixation'
+    | '/pension'
+    | '/pension-arrear'
     | '/salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -221,10 +287,16 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/fitment-simulator'
+    | '/ltc-planner'
     | '/mcp'
+    | '/pay-fixation'
     | '/pay-level'
+    | '/pension'
+    | '/pension-arrear'
     | '/role'
     | '/salary'
     | '/state'
@@ -242,10 +314,16 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
+  FitmentSimulatorRoute: typeof FitmentSimulatorRoute
+  LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
+  PayFixationRoute: typeof PayFixationRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
+  PensionRoute: typeof PensionRoute
+  PensionArrearRoute: typeof PensionArrearRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
   StateRoute: typeof StateRouteWithChildren
@@ -277,6 +355,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RoleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pension-arrear': {
+      id: '/pension-arrear'
+      path: '/pension-arrear'
+      fullPath: '/pension-arrear'
+      preLoaderRoute: typeof PensionArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pension': {
+      id: '/pension'
+      path: '/pension'
+      fullPath: '/pension'
+      preLoaderRoute: typeof PensionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pay-level': {
       id: '/pay-level'
       path: '/pay-level'
@@ -284,11 +376,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayLevelRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pay-fixation': {
+      id: '/pay-fixation'
+      path: '/pay-fixation'
+      fullPath: '/pay-fixation'
+      preLoaderRoute: typeof PayFixationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mcp': {
       id: '/mcp'
       path: '/mcp'
       fullPath: '/mcp'
       preLoaderRoute: typeof McpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ltc-planner': {
+      id: '/ltc-planner'
+      path: '/ltc-planner'
+      fullPath: '/ltc-planner'
+      preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-simulator': {
+      id: '/fitment-simulator'
+      path: '/fitment-simulator'
+      fullPath: '/fitment-simulator'
+      preLoaderRoute: typeof FitmentSimulatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/da-calculator': {
@@ -303,6 +416,13 @@ declare module '@tanstack/react-router' {
       path: '/blog'
       fullPath: '/blog'
       preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/arrear': {
+      id: '/arrear'
+      path: '/arrear'
+      fullPath: '/arrear'
+      preLoaderRoute: typeof ArrearRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -435,10 +555,16 @@ const StateRouteWithChildren = StateRoute._addFileChildren(StateRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
+  FitmentSimulatorRoute: FitmentSimulatorRoute,
+  LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
+  PayFixationRoute: PayFixationRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
+  PensionRoute: PensionRoute,
+  PensionArrearRoute: PensionArrearRoute,
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
   StateRoute: StateRouteWithChildren,
