@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "8th-cpc-calculator-mcp",
+      "version": "0.1.0",
+      "title": "8th CPC Calculator MCP"
+    },
+    "tools": [
+      {
+        "name": "calculate_salary",
+        "title": "Calculate 8th CPC salary",
+        "description": "Estimate current vs projected salary under the 8th Pay Commission using basic pay, level, city category (X/Y/Z), current DA %, and fitment factor.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 18,
+              "description": "Pay matrix level (1-18)."
+            },
+            "basicPay": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "description": "Current basic pay in INR."
+            },
+            "city": {
+              "type": "string",
+              "enum": [
+                "X",
+                "Y",
+                "Z"
+              ],
+              "description": "HRA city category."
+            },
+            "daPct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 200,
+              "description": "Current DA percentage."
+            },
+            "fitmentFactor": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 5,
+              "description": "Projected fitment factor (e.g. 2.28, 2.57, 2.86)."
+            }
+          },
+          "required": [
+            "level",
+            "basicPay",
+            "city",
+            "daPct",
+            "fitmentFactor"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "fitment_scenarios",
+        "title": "Compare fitment factor scenarios",
+        "description": "Return projected 8th CPC salary across common fitment factor scenarios (1.92x to 3.83x) for the given inputs.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 18
+            },
+            "basicPay": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "city": {
+              "type": "string",
+              "enum": [
+                "X",
+                "Y",
+                "Z"
+              ]
+            },
+            "daPct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 200
+            }
+          },
+          "required": [
+            "level",
+            "basicPay",
+            "city",
+            "daPct"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_articles",
+        "title": "List blog articles",
+        "description": "List all published blog articles on the 8th Pay Commission site with slug, title, and excerpt.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

@@ -13,6 +13,7 @@ import { Route as StateRouteImport } from './routes/state'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
+import { Route as McpRouteImport } from './routes/mcp'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,9 @@ import { Route as StateStateRouteImport } from './routes/state.$state'
 import { Route as RoleRoleRouteImport } from './routes/role.$role'
 import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
+import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
 const StateRoute = StateRouteImport.update({
   id: '/state',
@@ -42,6 +46,11 @@ const RoleRoute = RoleRouteImport.update({
 const PayLevelRoute = PayLevelRouteImport.update({
   id: '/pay-level',
   path: '/pay-level',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DaCalculatorRoute = DaCalculatorRouteImport.update({
@@ -94,15 +103,36 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93InvokeToolToolRoute =
+  Char91DotmcpChar93InvokeToolToolRouteImport.update({
+    id: '/.mcp/invoke-tool/$tool',
+    path: '/.mcp/invoke-tool/$tool',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/mcp': typeof McpRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
@@ -110,12 +140,16 @@ export interface FileRoutesByFullPath {
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/mcp': typeof McpRoute
   '/salary': typeof SalaryRoute
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
@@ -123,16 +157,20 @@ export interface FileRoutesByTo {
   '/pay-level': typeof PayLevelIndexRoute
   '/role': typeof RoleIndexRoute
   '/state': typeof StateIndexRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/mcp': typeof McpRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
@@ -140,6 +178,7 @@ export interface FileRoutesById {
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -147,10 +186,13 @@ export interface FileRouteTypes {
     | '/'
     | '/blog'
     | '/da-calculator'
+    | '/mcp'
     | '/pay-level'
     | '/role'
     | '/salary'
     | '/state'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
     | '/pay-level/$level'
     | '/role/$role'
@@ -158,12 +200,16 @@ export interface FileRouteTypes {
     | '/pay-level/'
     | '/role/'
     | '/state/'
+    | '/.mcp/invoke-tool/$tool'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/blog'
     | '/da-calculator'
+    | '/mcp'
     | '/salary'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
     | '/pay-level/$level'
     | '/role/$role'
@@ -171,15 +217,19 @@ export interface FileRouteTypes {
     | '/pay-level'
     | '/role'
     | '/state'
+    | '/.mcp/invoke-tool/$tool'
   id:
     | '__root__'
     | '/'
     | '/blog'
     | '/da-calculator'
+    | '/mcp'
     | '/pay-level'
     | '/role'
     | '/salary'
     | '/state'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
     | '/pay-level/$level'
     | '/role/$role'
@@ -187,16 +237,21 @@ export interface FileRouteTypes {
     | '/pay-level/'
     | '/role/'
     | '/state/'
+    | '/.mcp/invoke-tool/$tool'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
+  McpRoute: typeof McpRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
   StateRoute: typeof StateRouteWithChildren
+  Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
+  Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -227,6 +282,13 @@ declare module '@tanstack/react-router' {
       path: '/pay-level'
       fullPath: '/pay-level'
       preLoaderRoute: typeof PayLevelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/da-calculator': {
@@ -299,6 +361,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/invoke-tool/$tool': {
+      id: '/.mcp/invoke-tool/$tool'
+      path: '/.mcp/invoke-tool/$tool'
+      fullPath: '/.mcp/invoke-tool/$tool'
+      preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -354,11 +437,26 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
+  McpRoute: McpRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
   StateRoute: StateRouteWithChildren,
+  Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
+  Char91DotwellKnownChar93OauthProtectedResourceRoute:
+    Char91DotwellKnownChar93OauthProtectedResourceRoute,
+  Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
