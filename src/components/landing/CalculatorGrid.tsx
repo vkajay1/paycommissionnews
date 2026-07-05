@@ -17,49 +17,48 @@ const tools = [
     title: "Salary Calculator",
     desc: "Project revised basic, DA, HRA & TA across fitment scenarios.",
     href: "/salary",
-    live: true,
   },
   {
     icon: PiggyBank,
     title: "Pension Calculator",
     desc: "Estimate basic pension, DR and commuted value at retirement.",
-    href: "/salary",
+    href: "/pension",
   },
   {
     icon: Receipt,
     title: "Arrear Calculator",
     desc: "Compute month-wise arrears between implementation dates.",
-    href: "/salary",
+    href: "/arrear",
   },
   {
     icon: History,
     title: "Pension Arrear",
     desc: "Back-dated pension arrears with DR adjustments.",
-    href: "/salary",
+    href: "/pension-arrear",
   },
   {
     icon: Grid3x3,
     title: "Pay Matrix Explorer",
     desc: "Browse and compare 7th vs 8th CPC pay cells.",
-    href: "/salary",
+    href: "/pay-level",
   },
   {
     icon: Sliders,
     title: "Fitment Simulator",
     desc: "Slide between 1.50x – 4.00x and see live salary impact.",
-    href: "/salary",
+    href: "/fitment-simulator",
   },
   {
     icon: ClipboardList,
     title: "Pay Fixation",
     desc: "Fix pay on promotion, MACP or pay-commission rollover.",
-    href: "/salary",
+    href: "/pay-fixation",
   },
   {
     icon: Plane,
     title: "LTC Planner",
     desc: "Plan Leave Travel Concession entitlements and reimbursement.",
-    href: "/salary",
+    href: "/ltc-planner",
   },
 ];
 
@@ -93,15 +92,9 @@ export function CalculatorGrid() {
                 <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary/10 text-primary">
                   <Icon className="h-5 w-5" />
                 </div>
-                {t.live ? (
-                  <span className="rounded-full bg-success/15 px-2 py-0.5 text-[10px] font-semibold text-success">
-                    LIVE
-                  </span>
-                ) : (
-                  <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-                    SOON
-                  </span>
-                )}
+                <span className="rounded-full bg-success/15 px-2 py-0.5 text-[10px] font-semibold text-success">
+                  LIVE
+                </span>
               </div>
               <div className="text-base font-semibold">{t.title}</div>
               <p className="mt-1 flex-1 text-sm text-muted-foreground">{t.desc}</p>
