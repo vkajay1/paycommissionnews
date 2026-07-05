@@ -1,5 +1,4 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { z } from "zod";
 import { articles } from "@/lib/articles";
 
 export default defineTool({
@@ -21,5 +20,3 @@ export default defineTool({
     };
   },
 });
-
-export const _z = z;
