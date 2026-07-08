@@ -160,7 +160,9 @@ function RootComponent() {
         </main>
         <Footer />
         <MobileNav />
+        <GlobalAdScripts />
       </div>
+
     </QueryClientProvider>
   );
 }
