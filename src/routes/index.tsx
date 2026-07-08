@@ -6,6 +6,8 @@ import { Features } from "@/components/landing/Features";
 import { SalaryGuide } from "@/components/landing/SalaryGuide";
 import { FAQ, homeFaqs } from "@/components/landing/FAQ";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
+import { BannerAd728x90, ContainerAd } from "@/components/ads/AdSlots";
+
 
 const SITE = "https://paycommissionnews.lovable.app";
 
@@ -105,10 +107,17 @@ function Index() {
       <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
         <DisclaimerBanner />
       </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <BannerAd728x90 />
+      </div>
       <CalculatorGrid />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <ContainerAd />
+      </div>
       <SalaryGuide />
       <Features />
       <FAQ />
     </>
   );
 }
+
