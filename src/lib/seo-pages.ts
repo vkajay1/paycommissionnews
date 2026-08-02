@@ -158,103 +158,11 @@ export function getRolePage(slug: string): RolePage | undefined {
 }
 
 // ---------------- STATE PAGES ----------------
+// All 28 states + 8 union territories live in ./states
 
-export type StatePage = {
-  slug: string;
-  name: string;
-  keyword: string;
-  employees: string;
-  daPct: number;
-  adoptionLag: string;
-  notes: string;
-  cadres: { name: string; level: number; basic: number }[];
-};
+export type { StatePage } from "./states";
+export { STATE_PAGES, getStatePage } from "./states";
 
-export const STATE_PAGES: StatePage[] = [
-  {
-    slug: "odisha",
-    name: "Odisha",
-    keyword: "odisha 8th pay commission salary",
-    employees: "~4.5 lakh regular employees + 4 lakh pensioners",
-    daPct: 53,
-    adoptionLag: "Odisha typically adopts central CPC recommendations within 6–12 months of central rollout.",
-    notes:
-      "The Odisha Revised Pay Rules mirror the central pay matrix. Once the 8th CPC is notified, Odisha ORP is expected to follow with matching level-wise revision.",
-    cadres: [
-      { name: "Junior Clerk", level: 2, basic: 19900 },
-      { name: "Junior Assistant", level: 5, basic: 29200 },
-      { name: "OAS (Group A Entry)", level: 10, basic: 56100 },
-      { name: "OES / OMS", level: 10, basic: 56100 },
-    ],
-  },
-  {
-    slug: "tamil-nadu",
-    name: "Tamil Nadu",
-    keyword: "tamil nadu 8th pay commission salary",
-    employees: "~16 lakh employees & pensioners",
-    daPct: 50,
-    adoptionLag: "Tamil Nadu follows central CPC with an official state pay committee — usually 12–18 months lag.",
-    notes:
-      "Tamil Nadu constitutes its own State Pay Commission which reviews central 8th CPC recommendations before notifying the revised TNRP rules.",
-    cadres: [
-      { name: "Village Administrative Officer", level: 3, basic: 21700 },
-      { name: "Assistant, TN Secretariat", level: 6, basic: 35400 },
-      { name: "TNPSC Group I Officer", level: 10, basic: 56100 },
-      { name: "Deputy Collector", level: 11, basic: 67700 },
-    ],
-  },
-  {
-    slug: "uttar-pradesh",
-    name: "Uttar Pradesh",
-    keyword: "up 8th pay commission salary",
-    employees: "~16 lakh employees & 12 lakh pensioners",
-    daPct: 53,
-    adoptionLag: "Uttar Pradesh generally adopts central CPC recommendations within 6–9 months.",
-    notes:
-      "The UP Revised Pay Rules replicate the central pay matrix. State DA is aligned with the central rate and is expected to be rebased to 0% on 8th CPC implementation.",
-    cadres: [
-      { name: "Junior Assistant (UPSSSC)", level: 2, basic: 19900 },
-      { name: "Lekhpal", level: 3, basic: 21700 },
-      { name: "PCS (Entry)", level: 10, basic: 56100 },
-      { name: "PCS-J Judge", level: 11, basic: 67700 },
-    ],
-  },
-  {
-    slug: "maharashtra",
-    name: "Maharashtra",
-    keyword: "maharashtra 8th pay commission salary",
-    employees: "~19 lakh employees & pensioners",
-    daPct: 53,
-    adoptionLag: "Maharashtra's Bakshi Committee has historically mirrored central pay revisions with 12–18 months lag.",
-    notes:
-      "Maharashtra's MCSR pay rules follow the central pay matrix. The state has consistently adopted central DA rates without deviation.",
-    cadres: [
-      { name: "Clerk-Typist (MPSC)", level: 4, basic: 25500 },
-      { name: "Talathi", level: 4, basic: 25500 },
-      { name: "MPSC State Services (Deputy Collector)", level: 11, basic: 67700 },
-      { name: "Police Sub-Inspector", level: 6, basic: 35400 },
-    ],
-  },
-  {
-    slug: "west-bengal",
-    name: "West Bengal",
-    keyword: "west bengal 8th pay commission salary",
-    employees: "~10 lakh employees & pensioners",
-    daPct: 18,
-    adoptionLag: "West Bengal has historically followed its own ROPA — expect delayed 8th CPC alignment.",
-    notes:
-      "West Bengal follows its own Revision of Pay & Allowances (ROPA) rules with state-specific DA rate. 8th CPC alignment is expected but usually with modifications.",
-    cadres: [
-      { name: "LDA (WBCS Support)", level: 6, basic: 22700 },
-      { name: "WBCS Executive (Entry)", level: 16, basic: 56100 },
-      { name: "Sub-Inspector (WBP)", level: 10, basic: 32100 },
-    ],
-  },
-];
-
-export function getStatePage(slug: string): StatePage | undefined {
-  return STATE_PAGES.find((s) => s.slug === slug);
-}
 
 // ---------------- PAY LEVEL PAGES ----------------
 // Use PAY_LEVELS as the source of truth; derive projections at render time.
