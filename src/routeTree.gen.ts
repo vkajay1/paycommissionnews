@@ -20,6 +20,7 @@ import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as LeaveEncashmentCalculatorRouteImport } from './routes/leave-encashment-calculator'
 import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
 import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
@@ -95,6 +96,12 @@ const LtcPlannerRoute = LtcPlannerRouteImport.update({
   path: '/ltc-planner',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeaveEncashmentCalculatorRoute =
+  LeaveEncashmentCalculatorRouteImport.update({
+    id: '/leave-encashment-calculator',
+    path: '/leave-encashment-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const IncomeTaxCalculatorRoute = IncomeTaxCalculatorRouteImport.update({
   id: '/income-tax-calculator',
   path: '/income-tax-calculator',
@@ -204,6 +211,7 @@ export interface FileRoutesByFullPath {
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
@@ -236,6 +244,7 @@ export interface FileRoutesByTo {
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
@@ -266,6 +275,7 @@ export interface FileRoutesById {
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
@@ -300,6 +310,7 @@ export interface FileRouteTypes {
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/nps-calculator'
@@ -332,6 +343,7 @@ export interface FileRouteTypes {
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/nps-calculator'
@@ -361,6 +373,7 @@ export interface FileRouteTypes {
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/nps-calculator'
@@ -394,6 +407,7 @@ export interface RootRouteChildren {
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
   HraCalculatorRoute: typeof HraCalculatorRoute
   IncomeTaxCalculatorRoute: typeof IncomeTaxCalculatorRoute
+  LeaveEncashmentCalculatorRoute: typeof LeaveEncashmentCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
   NpsCalculatorRoute: typeof NpsCalculatorRoute
@@ -487,6 +501,13 @@ declare module '@tanstack/react-router' {
       path: '/ltc-planner'
       fullPath: '/ltc-planner'
       preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leave-encashment-calculator': {
+      id: '/leave-encashment-calculator'
+      path: '/leave-encashment-calculator'
+      fullPath: '/leave-encashment-calculator'
+      preLoaderRoute: typeof LeaveEncashmentCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/income-tax-calculator': {
@@ -683,6 +704,7 @@ const rootRouteChildren: RootRouteChildren = {
   GratuityCalculatorRoute: GratuityCalculatorRoute,
   HraCalculatorRoute: HraCalculatorRoute,
   IncomeTaxCalculatorRoute: IncomeTaxCalculatorRoute,
+  LeaveEncashmentCalculatorRoute: LeaveEncashmentCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
   NpsCalculatorRoute: NpsCalculatorRoute,
