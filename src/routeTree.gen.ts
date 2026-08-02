@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TakeHomeSalaryRouteImport } from './routes/take-home-salary'
 import { Route as StateRouteImport } from './routes/state'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
@@ -34,6 +35,11 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
+const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
+  id: '/take-home-salary',
+  path: '/take-home-salary',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StateRoute = StateRouteImport.update({
   id: '/state',
   path: '/state',
@@ -173,6 +179,7 @@ export interface FileRoutesByFullPath {
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -196,6 +203,7 @@ export interface FileRoutesByTo {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/salary': typeof SalaryRoute
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -223,6 +231,7 @@ export interface FileRoutesById {
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -251,6 +260,7 @@ export interface FileRouteTypes {
     | '/role'
     | '/salary'
     | '/state'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -274,6 +284,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/salary'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -300,6 +311,7 @@ export interface FileRouteTypes {
     | '/role'
     | '/salary'
     | '/state'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -327,6 +339,7 @@ export interface RootRouteChildren {
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
   StateRoute: typeof StateRouteWithChildren
+  TakeHomeSalaryRoute: typeof TakeHomeSalaryRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
@@ -334,6 +347,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/take-home-salary': {
+      id: '/take-home-salary'
+      path: '/take-home-salary'
+      fullPath: '/take-home-salary'
+      preLoaderRoute: typeof TakeHomeSalaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/state': {
       id: '/state'
       path: '/state'
@@ -568,6 +588,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
   StateRoute: StateRouteWithChildren,
+  TakeHomeSalaryRoute: TakeHomeSalaryRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
