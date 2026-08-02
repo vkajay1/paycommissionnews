@@ -19,6 +19,7 @@ import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
@@ -85,6 +86,11 @@ const McpRoute = McpRouteImport.update({
 const LtcPlannerRoute = LtcPlannerRouteImport.update({
   id: '/ltc-planner',
   path: '/ltc-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HraCalculatorRoute = HraCalculatorRouteImport.update({
+  id: '/hra-calculator',
+  path: '/hra-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
@@ -184,6 +190,7 @@ export interface FileRoutesByFullPath {
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -213,6 +220,7 @@ export interface FileRoutesByTo {
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -240,6 +248,7 @@ export interface FileRoutesById {
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -271,6 +280,7 @@ export interface FileRouteTypes {
     | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
+    | '/hra-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -300,6 +310,7 @@ export interface FileRouteTypes {
     | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
+    | '/hra-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -326,6 +337,7 @@ export interface FileRouteTypes {
     | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
+    | '/hra-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -356,6 +368,7 @@ export interface RootRouteChildren {
   EpfCalculatorRoute: typeof EpfCalculatorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
+  HraCalculatorRoute: typeof HraCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
   PayFixationRoute: typeof PayFixationRoute
@@ -441,6 +454,13 @@ declare module '@tanstack/react-router' {
       path: '/ltc-planner'
       fullPath: '/ltc-planner'
       preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hra-calculator': {
+      id: '/hra-calculator'
+      path: '/hra-calculator'
+      fullPath: '/hra-calculator'
+      preLoaderRoute: typeof HraCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gratuity-calculator': {
@@ -621,6 +641,7 @@ const rootRouteChildren: RootRouteChildren = {
   EpfCalculatorRoute: EpfCalculatorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
+  HraCalculatorRoute: HraCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
   PayFixationRoute: PayFixationRoute,
