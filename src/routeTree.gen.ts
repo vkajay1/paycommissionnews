@@ -21,6 +21,7 @@ import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
+import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
@@ -94,6 +95,11 @@ const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
 const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
   id: '/fitment-simulator',
   path: '/fitment-simulator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
+  id: '/epf-calculator',
+  path: '/epf-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DaCalculatorRoute = DaCalculatorRouteImport.update({
@@ -175,6 +181,7 @@ export interface FileRoutesByFullPath {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
@@ -203,6 +210,7 @@ export interface FileRoutesByTo {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
@@ -229,6 +237,7 @@ export interface FileRoutesById {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
@@ -259,6 +268,7 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/ltc-planner'
@@ -287,6 +297,7 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/ltc-planner'
@@ -312,6 +323,7 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/ltc-planner'
@@ -341,6 +353,7 @@ export interface RootRouteChildren {
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
+  EpfCalculatorRoute: typeof EpfCalculatorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
@@ -442,6 +455,13 @@ declare module '@tanstack/react-router' {
       path: '/fitment-simulator'
       fullPath: '/fitment-simulator'
       preLoaderRoute: typeof FitmentSimulatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/epf-calculator': {
+      id: '/epf-calculator'
+      path: '/epf-calculator'
+      fullPath: '/epf-calculator'
+      preLoaderRoute: typeof EpfCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/da-calculator': {
@@ -598,6 +618,7 @@ const rootRouteChildren: RootRouteChildren = {
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
+  EpfCalculatorRoute: EpfCalculatorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
