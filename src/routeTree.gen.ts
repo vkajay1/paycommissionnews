@@ -17,6 +17,7 @@ import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
+import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
 import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
@@ -77,6 +78,11 @@ const PayLevelRoute = PayLevelRouteImport.update({
 const PayFixationRoute = PayFixationRouteImport.update({
   id: '/pay-fixation',
   path: '/pay-fixation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
+  id: '/nps-calculator',
+  path: '/nps-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -200,6 +206,7 @@ export interface FileRoutesByFullPath {
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -231,6 +238,7 @@ export interface FileRoutesByTo {
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
@@ -260,6 +268,7 @@ export interface FileRoutesById {
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -293,6 +302,7 @@ export interface FileRouteTypes {
     | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -324,6 +334,7 @@ export interface FileRouteTypes {
     | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pension'
     | '/pension-arrear'
@@ -352,6 +363,7 @@ export interface FileRouteTypes {
     | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -384,6 +396,7 @@ export interface RootRouteChildren {
   IncomeTaxCalculatorRoute: typeof IncomeTaxCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
+  NpsCalculatorRoute: typeof NpsCalculatorRoute
   PayFixationRoute: typeof PayFixationRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
   PensionRoute: typeof PensionRoute
@@ -453,6 +466,13 @@ declare module '@tanstack/react-router' {
       path: '/pay-fixation'
       fullPath: '/pay-fixation'
       preLoaderRoute: typeof PayFixationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nps-calculator': {
+      id: '/nps-calculator'
+      path: '/nps-calculator'
+      fullPath: '/nps-calculator'
+      preLoaderRoute: typeof NpsCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -665,6 +685,7 @@ const rootRouteChildren: RootRouteChildren = {
   IncomeTaxCalculatorRoute: IncomeTaxCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
+  NpsCalculatorRoute: NpsCalculatorRoute,
   PayFixationRoute: PayFixationRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
   PensionRoute: PensionRoute,
