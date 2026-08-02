@@ -19,6 +19,7 @@ import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
@@ -83,6 +84,11 @@ const McpRoute = McpRouteImport.update({
 const LtcPlannerRoute = LtcPlannerRouteImport.update({
   id: '/ltc-planner',
   path: '/ltc-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
+  id: '/gratuity-calculator',
+  path: '/gratuity-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
@@ -170,6 +176,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -197,6 +204,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -251,6 +260,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -278,6 +288,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -302,6 +313,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -330,6 +342,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
+  GratuityCalculatorRoute: typeof GratuityCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
   PayFixationRoute: typeof PayFixationRoute
@@ -415,6 +428,13 @@ declare module '@tanstack/react-router' {
       path: '/ltc-planner'
       fullPath: '/ltc-planner'
       preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gratuity-calculator': {
+      id: '/gratuity-calculator'
+      path: '/gratuity-calculator'
+      fullPath: '/gratuity-calculator'
+      preLoaderRoute: typeof GratuityCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fitment-simulator': {
@@ -579,6 +599,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
+  GratuityCalculatorRoute: GratuityCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
   PayFixationRoute: PayFixationRoute,
