@@ -153,7 +153,7 @@ export const STATE_PAGES: StatePage[] = [
   st(
     "karnataka",
     "Karnataka",
-    "" as unknown as number || 33,
+    33,
     "~7.5 lakh employees & 5.7 lakh pensioners",
     "Karnataka runs its own State Pay Commission (7th State Pay Commission implemented a 27.5% fitment) rather than adopting the central CPC.",
     "Karnataka uses state master scales with its own DA formula. The next state pay commission is expected to reference 8th CPC levels while retaining the state master-scale structure.",
