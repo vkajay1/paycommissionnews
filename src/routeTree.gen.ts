@@ -19,6 +19,7 @@ import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
 import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
@@ -86,6 +87,11 @@ const McpRoute = McpRouteImport.update({
 const LtcPlannerRoute = LtcPlannerRouteImport.update({
   id: '/ltc-planner',
   path: '/ltc-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IncomeTaxCalculatorRoute = IncomeTaxCalculatorRouteImport.update({
+  id: '/income-tax-calculator',
+  path: '/income-tax-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HraCalculatorRoute = HraCalculatorRouteImport.update({
@@ -191,6 +197,7 @@ export interface FileRoutesByFullPath {
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -221,6 +228,7 @@ export interface FileRoutesByTo {
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -249,6 +257,7 @@ export interface FileRoutesById {
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -281,6 +290,7 @@ export interface FileRouteTypes {
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
+    | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -311,6 +321,7 @@ export interface FileRouteTypes {
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
+    | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -338,6 +349,7 @@ export interface FileRouteTypes {
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
+    | '/income-tax-calculator'
     | '/ltc-planner'
     | '/mcp'
     | '/pay-fixation'
@@ -369,6 +381,7 @@ export interface RootRouteChildren {
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
   HraCalculatorRoute: typeof HraCalculatorRoute
+  IncomeTaxCalculatorRoute: typeof IncomeTaxCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
   PayFixationRoute: typeof PayFixationRoute
@@ -454,6 +467,13 @@ declare module '@tanstack/react-router' {
       path: '/ltc-planner'
       fullPath: '/ltc-planner'
       preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/income-tax-calculator': {
+      id: '/income-tax-calculator'
+      path: '/income-tax-calculator'
+      fullPath: '/income-tax-calculator'
+      preLoaderRoute: typeof IncomeTaxCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hra-calculator': {
@@ -642,6 +662,7 @@ const rootRouteChildren: RootRouteChildren = {
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
   HraCalculatorRoute: HraCalculatorRoute,
+  IncomeTaxCalculatorRoute: IncomeTaxCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
   PayFixationRoute: PayFixationRoute,
