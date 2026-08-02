@@ -8,6 +8,11 @@ import {
   Sliders,
   ClipboardList,
   Plane,
+  HandCoins,
+  Home,
+  Landmark,
+  TrendingUp,
+  CalendarCheck,
   ArrowRight,
 } from "lucide-react";
 
