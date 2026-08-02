@@ -37,14 +37,52 @@
   <url><loc>https://paycommissionnews.lovable.app/role/defence-jawan</loc><priority>0.7</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/role/teacher-pgt</loc><priority>0.7</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/role/bank-po</loc><priority>0.7</priority></url>
-  <url><loc>https://paycommissionnews.lovable.app/state/odisha</loc><priority>0.7</priority></url>
-  <url><loc>https://paycommissionnews.lovable.app/state/tamil-nadu</loc><priority>0.7</priority></url>
-  <url><loc>https://paycommissionnews.lovable.app/state/uttar-pradesh</loc><priority>0.7</priority></url>
-  <url><loc>https://paycommissionnews.lovable.app/state/maharashtra</loc><priority>0.7</priority></url>
-  <url><loc>https://paycommissionnews.lovable.app/state/west-bengal</loc><priority>0.7</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/blog/8th-pay-commission-2026-latest-news-implementation-date</loc><priority>0.8</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/blog/8th-pay-commission-fitment-factor-explained</loc><priority>0.8</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/blog/8th-cpc-salary-calculator-how-to-use</loc><priority>0.8</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/blog/8th-pay-commission-pensioners-revised-pension-da-arrears</loc><priority>0.8</priority></url>
   <url><loc>https://paycommissionnews.lovable.app/blog/8th-pay-commission-salary-hike-level-wise-pay-matrix</loc><priority>0.8</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/take-home-salary</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/gratuity-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/epf-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/hra-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/income-tax-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/nps-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/leave-encashment-calculator</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/andhra-pradesh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/arunachal-pradesh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/assam</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/bihar</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/chhattisgarh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/goa</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/gujarat</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/haryana</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/himachal-pradesh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/jharkhand</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/karnataka</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/kerala</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/madhya-pradesh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/maharashtra</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/manipur</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/meghalaya</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/mizoram</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/nagaland</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/odisha</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/punjab</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/rajasthan</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/sikkim</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/tamil-nadu</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/telangana</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/tripura</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/uttar-pradesh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/uttarakhand</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/west-bengal</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/delhi</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/jammu-kashmir</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/ladakh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/chandigarh</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/puducherry</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/andaman-nicobar</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/lakshadweep</loc><priority>0.7</priority></url>
+  <url><loc>https://paycommissionnews.lovable.app/state/dadra-nagar-haveli-daman-diu</loc><priority>0.7</priority></url>
 </urlset>

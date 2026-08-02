@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TakeHomeSalaryRouteImport } from './routes/take-home-salary'
 import { Route as StateRouteImport } from './routes/state'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
@@ -16,9 +17,15 @@ import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
+import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as LeaveEncashmentCalculatorRouteImport } from './routes/leave-encashment-calculator'
+import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
+import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
+import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
+import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
@@ -34,6 +41,11 @@ import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } fr
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
+const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
+  id: '/take-home-salary',
+  path: '/take-home-salary',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StateRoute = StateRouteImport.update({
   id: '/state',
   path: '/state',
@@ -69,6 +81,11 @@ const PayFixationRoute = PayFixationRouteImport.update({
   path: '/pay-fixation',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
+  id: '/nps-calculator',
+  path: '/nps-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const McpRoute = McpRouteImport.update({
   id: '/mcp',
   path: '/mcp',
@@ -79,9 +96,35 @@ const LtcPlannerRoute = LtcPlannerRouteImport.update({
   path: '/ltc-planner',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeaveEncashmentCalculatorRoute =
+  LeaveEncashmentCalculatorRouteImport.update({
+    id: '/leave-encashment-calculator',
+    path: '/leave-encashment-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IncomeTaxCalculatorRoute = IncomeTaxCalculatorRouteImport.update({
+  id: '/income-tax-calculator',
+  path: '/income-tax-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HraCalculatorRoute = HraCalculatorRouteImport.update({
+  id: '/hra-calculator',
+  path: '/hra-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
+  id: '/gratuity-calculator',
+  path: '/gratuity-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
   id: '/fitment-simulator',
   path: '/fitment-simulator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
+  id: '/epf-calculator',
+  path: '/epf-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DaCalculatorRoute = DaCalculatorRouteImport.update({
@@ -163,9 +206,15 @@ export interface FileRoutesByFullPath {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -173,6 +222,7 @@ export interface FileRoutesByFullPath {
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -189,13 +239,20 @@ export interface FileRoutesByTo {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/salary': typeof SalaryRoute
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -213,9 +270,15 @@ export interface FileRoutesById {
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
+  '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
+  '/gratuity-calculator': typeof GratuityCalculatorRoute
+  '/hra-calculator': typeof HraCalculatorRoute
+  '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
+  '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
   '/mcp': typeof McpRoute
+  '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -223,6 +286,7 @@ export interface FileRoutesById {
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/state': typeof StateRouteWithChildren
+  '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -241,9 +305,15 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
+    | '/hra-calculator'
+    | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -251,6 +321,7 @@ export interface FileRouteTypes {
     | '/role'
     | '/salary'
     | '/state'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -267,13 +338,20 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
+    | '/hra-calculator'
+    | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pension'
     | '/pension-arrear'
     | '/salary'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -290,9 +368,15 @@ export interface FileRouteTypes {
     | '/arrear'
     | '/blog'
     | '/da-calculator'
+    | '/epf-calculator'
     | '/fitment-simulator'
+    | '/gratuity-calculator'
+    | '/hra-calculator'
+    | '/income-tax-calculator'
+    | '/leave-encashment-calculator'
     | '/ltc-planner'
     | '/mcp'
+    | '/nps-calculator'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -300,6 +384,7 @@ export interface FileRouteTypes {
     | '/role'
     | '/salary'
     | '/state'
+    | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
@@ -317,9 +402,15 @@ export interface RootRouteChildren {
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
+  EpfCalculatorRoute: typeof EpfCalculatorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
+  GratuityCalculatorRoute: typeof GratuityCalculatorRoute
+  HraCalculatorRoute: typeof HraCalculatorRoute
+  IncomeTaxCalculatorRoute: typeof IncomeTaxCalculatorRoute
+  LeaveEncashmentCalculatorRoute: typeof LeaveEncashmentCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
   McpRoute: typeof McpRoute
+  NpsCalculatorRoute: typeof NpsCalculatorRoute
   PayFixationRoute: typeof PayFixationRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
   PensionRoute: typeof PensionRoute
@@ -327,6 +418,7 @@ export interface RootRouteChildren {
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
   StateRoute: typeof StateRouteWithChildren
+  TakeHomeSalaryRoute: typeof TakeHomeSalaryRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
@@ -334,6 +426,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/take-home-salary': {
+      id: '/take-home-salary'
+      path: '/take-home-salary'
+      fullPath: '/take-home-salary'
+      preLoaderRoute: typeof TakeHomeSalaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/state': {
       id: '/state'
       path: '/state'
@@ -383,6 +482,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayFixationRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nps-calculator': {
+      id: '/nps-calculator'
+      path: '/nps-calculator'
+      fullPath: '/nps-calculator'
+      preLoaderRoute: typeof NpsCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mcp': {
       id: '/mcp'
       path: '/mcp'
@@ -397,11 +503,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LtcPlannerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/leave-encashment-calculator': {
+      id: '/leave-encashment-calculator'
+      path: '/leave-encashment-calculator'
+      fullPath: '/leave-encashment-calculator'
+      preLoaderRoute: typeof LeaveEncashmentCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/income-tax-calculator': {
+      id: '/income-tax-calculator'
+      path: '/income-tax-calculator'
+      fullPath: '/income-tax-calculator'
+      preLoaderRoute: typeof IncomeTaxCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hra-calculator': {
+      id: '/hra-calculator'
+      path: '/hra-calculator'
+      fullPath: '/hra-calculator'
+      preLoaderRoute: typeof HraCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gratuity-calculator': {
+      id: '/gratuity-calculator'
+      path: '/gratuity-calculator'
+      fullPath: '/gratuity-calculator'
+      preLoaderRoute: typeof GratuityCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fitment-simulator': {
       id: '/fitment-simulator'
       path: '/fitment-simulator'
       fullPath: '/fitment-simulator'
       preLoaderRoute: typeof FitmentSimulatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/epf-calculator': {
+      id: '/epf-calculator'
+      path: '/epf-calculator'
+      fullPath: '/epf-calculator'
+      preLoaderRoute: typeof EpfCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/da-calculator': {
@@ -558,9 +699,15 @@ const rootRouteChildren: RootRouteChildren = {
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
+  EpfCalculatorRoute: EpfCalculatorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
+  GratuityCalculatorRoute: GratuityCalculatorRoute,
+  HraCalculatorRoute: HraCalculatorRoute,
+  IncomeTaxCalculatorRoute: IncomeTaxCalculatorRoute,
+  LeaveEncashmentCalculatorRoute: LeaveEncashmentCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
   McpRoute: McpRoute,
+  NpsCalculatorRoute: NpsCalculatorRoute,
   PayFixationRoute: PayFixationRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
   PensionRoute: PensionRoute,
@@ -568,6 +715,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
   StateRoute: StateRouteWithChildren,
+  TakeHomeSalaryRoute: TakeHomeSalaryRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,

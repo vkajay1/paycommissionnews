@@ -8,6 +8,11 @@ import {
   Sliders,
   ClipboardList,
   Plane,
+  HandCoins,
+  Home,
+  Landmark,
+  TrendingUp,
+  CalendarCheck,
   ArrowRight,
 } from "lucide-react";
 
@@ -59,6 +64,48 @@ const tools = [
     title: "LTC Planner",
     desc: "Plan Leave Travel Concession entitlements and reimbursement.",
     href: "/ltc-planner",
+  },
+  {
+    icon: Wallet,
+    title: "Take Home Salary",
+    desc: "Private sector CTC to monthly in-hand salary after EPF & tax.",
+    href: "/take-home-salary",
+  },
+  {
+    icon: HandCoins,
+    title: "Gratuity Calculator",
+    desc: "Retirement gratuity for government and private employees.",
+    href: "/gratuity-calculator",
+  },
+  {
+    icon: PiggyBank,
+    title: "EPF Calculator",
+    desc: "Project your provident fund corpus at retirement.",
+    href: "/epf-calculator",
+  },
+  {
+    icon: Home,
+    title: "HRA Calculator",
+    desc: "House rent allowance and Section 10(13A) exemption.",
+    href: "/hra-calculator",
+  },
+  {
+    icon: Landmark,
+    title: "Income Tax Calculator",
+    desc: "Compare new vs old regime tax for FY 2025-26.",
+    href: "/income-tax-calculator",
+  },
+  {
+    icon: TrendingUp,
+    title: "NPS Calculator",
+    desc: "NPS corpus, lump sum and monthly annuity pension.",
+    href: "/nps-calculator",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Leave Encashment",
+    desc: "Cash value of earned leave up to 300 days.",
+    href: "/leave-encashment-calculator",
   },
 ];
 
