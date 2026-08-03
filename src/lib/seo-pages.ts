@@ -151,6 +151,50 @@ export const ROLE_PAGES: RolePage[] = [
     ],
     promotion: "Scale I → II → III → IV → V → VI → VII (GM).",
   },
+  {
+    slug: "aso-odisha",
+    name: "ASO (Assistant Section Officer, Odisha)",
+    keyword: "aso salary in odisha 8th pay commission",
+    level: 7,
+    basic: 44900,
+    city: "Y",
+    department: "Government of Odisha — Secretariat / OSSC",
+    description:
+      "Assistant Section Officers (ASO) in the Odisha Secretariat are placed in Level 7 of the ORSP pay matrix with an entry basic pay of ₹44,900 (equivalent to the 7th CPC Level 7 cell). Odisha traditionally adopts Central Pay Commission recommendations with a lag, so when the 8th Pay Commission is notified an ASO basic pay of ₹44,900 is projected to rise to roughly ₹1,02,400 at a 2.28x fitment factor and about ₹1,28,400 at 2.86x — before DA, HRA and other allowances.",
+    duties: [
+      "Process files, notes and drafts in Odisha Secretariat departments",
+      "Maintain records, service books and RTI/assembly question replies",
+      "Assist Section Officers in scheme monitoring and budget compilation",
+    ],
+    perks: [
+      "Dearness Allowance as per Odisha Finance Department orders",
+      "HRA on Bhubaneswar/Cuttack (Y-class) rates, transport allowance",
+      "NPS, GPF (pre-2005 entrants), medical and leave encashment benefits",
+    ],
+    promotion: "ASO → Section Officer → Under Secretary → Deputy Secretary.",
+  },
+  {
+    slug: "peo-odisha",
+    name: "PEO (Panchayat Executive Officer, Odisha)",
+    keyword: "peo salary in odisha 8th pay commission",
+    level: 4,
+    basic: 25500,
+    city: "Z",
+    department: "Panchayati Raj Department, Odisha",
+    description:
+      "Panchayat Executive Officers (PEO) in Odisha are recruited in Level 4 of the ORSP matrix with an entry basic pay of ₹25,500. Under the 8th Pay Commission pattern, a PEO's basic pay is projected at about ₹58,100 with a 2.28x fitment factor and around ₹72,900 at 2.86x, with DA and rural (Z-class) HRA added on top.",
+    duties: [
+      "Execute Gram Panchayat schemes, MGNREGA works and welfare payments",
+      "Maintain panchayat accounts, muster rolls and beneficiary registers",
+      "Coordinate with BDO office on rural housing and pension schemes",
+    ],
+    perks: [
+      "Dearness Allowance and Z-class HRA for rural postings",
+      "Travel/transport allowance for field duty",
+      "NPS, medical reimbursement and earned leave benefits",
+    ],
+    promotion: "PEO → Additional BDO → Block Development Officer.",
+  },
 ];
 
 export function getRolePage(slug: string): RolePage | undefined {

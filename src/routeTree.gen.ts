@@ -19,16 +19,19 @@ import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
 import { Route as McpRouteImport } from './routes/mcp'
+import { Route as MacpCalculatorRouteImport } from './routes/macp-calculator'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
 import { Route as LeaveEncashmentCalculatorRouteImport } from './routes/leave-encashment-calculator'
 import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
 import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
+import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
 import { Route as RoleIndexRouteImport } from './routes/role.index'
@@ -91,6 +94,11 @@ const McpRoute = McpRouteImport.update({
   path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MacpCalculatorRoute = MacpCalculatorRouteImport.update({
+  id: '/macp-calculator',
+  path: '/macp-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LtcPlannerRoute = LtcPlannerRouteImport.update({
   id: '/ltc-planner',
   path: '/ltc-planner',
@@ -122,6 +130,11 @@ const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
   path: '/fitment-simulator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FitmentFactorRoute = FitmentFactorRouteImport.update({
+  id: '/fitment-factor',
+  path: '/fitment-factor',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
   id: '/epf-calculator',
   path: '/epf-calculator',
@@ -142,6 +155,12 @@ const ArrearRoute = ArrearRouteImport.update({
   path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R6thPayCommissionCalculatorRoute =
+  R6thPayCommissionCalculatorRouteImport.update({
+    id: '/6th-pay-commission-calculator',
+    path: '/6th-pay-commission-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -203,16 +222,19 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
+  '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -236,16 +258,19 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
+  '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -267,16 +292,19 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
   '/hra-calculator': typeof HraCalculatorRoute
   '/income-tax-calculator': typeof IncomeTaxCalculatorRoute
   '/leave-encashment-calculator': typeof LeaveEncashmentCalculatorRoute
   '/ltc-planner': typeof LtcPlannerRoute
+  '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -302,16 +330,19 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/6th-pay-commission-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
     | '/leave-encashment-calculator'
     | '/ltc-planner'
+    | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
     | '/pay-fixation'
@@ -335,16 +366,19 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/6th-pay-commission-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
     | '/leave-encashment-calculator'
     | '/ltc-planner'
+    | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
     | '/pay-fixation'
@@ -365,16 +399,19 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/6th-pay-commission-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
     | '/hra-calculator'
     | '/income-tax-calculator'
     | '/leave-encashment-calculator'
     | '/ltc-planner'
+    | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
     | '/pay-fixation'
@@ -399,16 +436,19 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R6thPayCommissionCalculatorRoute: typeof R6thPayCommissionCalculatorRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
   EpfCalculatorRoute: typeof EpfCalculatorRoute
+  FitmentFactorRoute: typeof FitmentFactorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
   HraCalculatorRoute: typeof HraCalculatorRoute
   IncomeTaxCalculatorRoute: typeof IncomeTaxCalculatorRoute
   LeaveEncashmentCalculatorRoute: typeof LeaveEncashmentCalculatorRoute
   LtcPlannerRoute: typeof LtcPlannerRoute
+  MacpCalculatorRoute: typeof MacpCalculatorRoute
   McpRoute: typeof McpRoute
   NpsCalculatorRoute: typeof NpsCalculatorRoute
   PayFixationRoute: typeof PayFixationRoute
@@ -496,6 +536,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/macp-calculator': {
+      id: '/macp-calculator'
+      path: '/macp-calculator'
+      fullPath: '/macp-calculator'
+      preLoaderRoute: typeof MacpCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ltc-planner': {
       id: '/ltc-planner'
       path: '/ltc-planner'
@@ -538,6 +585,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FitmentSimulatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fitment-factor': {
+      id: '/fitment-factor'
+      path: '/fitment-factor'
+      fullPath: '/fitment-factor'
+      preLoaderRoute: typeof FitmentFactorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/epf-calculator': {
       id: '/epf-calculator'
       path: '/epf-calculator'
@@ -564,6 +618,13 @@ declare module '@tanstack/react-router' {
       path: '/arrear'
       fullPath: '/arrear'
       preLoaderRoute: typeof ArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/6th-pay-commission-calculator': {
+      id: '/6th-pay-commission-calculator'
+      path: '/6th-pay-commission-calculator'
+      fullPath: '/6th-pay-commission-calculator'
+      preLoaderRoute: typeof R6thPayCommissionCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -696,16 +757,19 @@ const StateRouteWithChildren = StateRoute._addFileChildren(StateRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R6thPayCommissionCalculatorRoute: R6thPayCommissionCalculatorRoute,
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
   EpfCalculatorRoute: EpfCalculatorRoute,
+  FitmentFactorRoute: FitmentFactorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
   HraCalculatorRoute: HraCalculatorRoute,
   IncomeTaxCalculatorRoute: IncomeTaxCalculatorRoute,
   LeaveEncashmentCalculatorRoute: LeaveEncashmentCalculatorRoute,
   LtcPlannerRoute: LtcPlannerRoute,
+  MacpCalculatorRoute: MacpCalculatorRoute,
   McpRoute: McpRoute,
   NpsCalculatorRoute: NpsCalculatorRoute,
   PayFixationRoute: PayFixationRoute,
