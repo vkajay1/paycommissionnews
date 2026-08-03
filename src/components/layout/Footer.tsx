@@ -14,19 +14,24 @@ export function Footer() {
           <FooterCol
             title="Calculators"
             links={[
-              { label: "Salary", to: "/salary" },
-              { label: "Pension (soon)", to: "/salary" },
-              { label: "Arrear (soon)", to: "/salary" },
+              { label: "Salary Calculator", to: "/salary" },
+              { label: "Pension Calculator", to: "/pension" },
+              { label: "Arrear Calculator", to: "/arrear" },
+              { label: "DA Calculator", to: "/da-calculator" },
+              { label: "MACP & Pay Fixation", to: "/macp-calculator" },
+              { label: "6th CPC Calculator", to: "/6th-pay-commission-calculator" },
             ]}
           />
           <FooterCol
             title="Resources"
             links={[
-              { label: "About", to: "/" },
-              { label: "FAQ", to: "/" },
-              { label: "Pay Matrix (soon)", to: "/" },
+              { label: "Fitment Factor Table", to: "/fitment-factor" },
+              { label: "Pay Matrix Levels", to: "/pay-level" },
+              { label: "State-wise Salary", to: "/state" },
+              { label: "Blog & News", to: "/blog" },
             ]}
           />
+
           <FooterCol
             title="Legal"
             links={[

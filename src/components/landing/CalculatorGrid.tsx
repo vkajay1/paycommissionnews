@@ -107,6 +107,24 @@ const tools = [
     desc: "Cash value of earned leave up to 300 days.",
     href: "/leave-encashment-calculator",
   },
+  {
+    icon: ClipboardList,
+    title: "MACP Calculator",
+    desc: "Pay fixation on promotion or MACP financial upgradation.",
+    href: "/macp-calculator",
+  },
+  {
+    icon: Grid3x3,
+    title: "Fitment Factor Table",
+    desc: "Fitment table for 1.92x, 2.28x, 2.57x, 2.86x and 3.83x.",
+    href: "/fitment-factor",
+  },
+  {
+    icon: History,
+    title: "6th CPC Calculator",
+    desc: "Pay band + grade pay converted to 7th and 8th CPC pay.",
+    href: "/6th-pay-commission-calculator",
+  },
 ];
 
 export function CalculatorGrid() {

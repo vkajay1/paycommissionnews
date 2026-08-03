@@ -183,8 +183,8 @@ export function SalaryGuide() {
           { icon: Users, label: "Central, state, PSU & defence" },
           { icon: Shield, label: "DA, HRA, TA + allowances" },
           { icon: Calculator, label: "Old vs new salary comparison" },
-          { icon: Languages, label: "Hindi support (coming soon)" },
-          { icon: FileDown, label: "PDF download (coming soon)" },
+          { icon: Languages, label: "MACP & pay fixation calculator" },
+          { icon: FileDown, label: "6th CPC & fitment factor tables" },
         ].map(({ icon: Icon, label }) => (
           <div
             key={label}
