@@ -31,6 +31,7 @@ import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
 import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
@@ -155,6 +156,12 @@ const ArrearRoute = ArrearRouteImport.update({
   path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R8thPayCommissionArrearsCalculatorRoute =
+  R8thPayCommissionArrearsCalculatorRouteImport.update({
+    id: '/8th-pay-commission-arrears-calculator',
+    path: '/8th-pay-commission-arrears-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const R6thPayCommissionCalculatorRoute =
   R6thPayCommissionCalculatorRouteImport.update({
     id: '/6th-pay-commission-calculator',
@@ -223,6 +230,7 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -259,6 +267,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -293,6 +302,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -331,6 +341,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -367,6 +378,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -400,6 +412,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -437,6 +450,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R6thPayCommissionCalculatorRoute: typeof R6thPayCommissionCalculatorRoute
+  R8thPayCommissionArrearsCalculatorRoute: typeof R8thPayCommissionArrearsCalculatorRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
@@ -620,6 +634,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArrearRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8th-pay-commission-arrears-calculator': {
+      id: '/8th-pay-commission-arrears-calculator'
+      path: '/8th-pay-commission-arrears-calculator'
+      fullPath: '/8th-pay-commission-arrears-calculator'
+      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/6th-pay-commission-calculator': {
       id: '/6th-pay-commission-calculator'
       path: '/6th-pay-commission-calculator'
@@ -758,6 +779,8 @@ const StateRouteWithChildren = StateRoute._addFileChildren(StateRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R6thPayCommissionCalculatorRoute: R6thPayCommissionCalculatorRoute,
+  R8thPayCommissionArrearsCalculatorRoute:
+    R8thPayCommissionArrearsCalculatorRoute,
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
