@@ -31,6 +31,7 @@ import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes/8th-pay-commission-pension-calculator'
 import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
 import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
 import { Route as IndexRouteImport } from './routes/index'
@@ -156,6 +157,12 @@ const ArrearRoute = ArrearRouteImport.update({
   path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R8thPayCommissionPensionCalculatorRoute =
+  R8thPayCommissionPensionCalculatorRouteImport.update({
+    id: '/8th-pay-commission-pension-calculator',
+    path: '/8th-pay-commission-pension-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const R8thPayCommissionArrearsCalculatorRoute =
   R8thPayCommissionArrearsCalculatorRouteImport.update({
     id: '/8th-pay-commission-arrears-calculator',
@@ -231,6 +238,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -268,6 +276,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -303,6 +312,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
@@ -342,6 +352,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -379,6 +390,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -413,6 +425,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
@@ -451,6 +464,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R6thPayCommissionCalculatorRoute: typeof R6thPayCommissionCalculatorRoute
   R8thPayCommissionArrearsCalculatorRoute: typeof R8thPayCommissionArrearsCalculatorRoute
+  R8thPayCommissionPensionCalculatorRoute: typeof R8thPayCommissionPensionCalculatorRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
@@ -634,6 +648,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArrearRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8th-pay-commission-pension-calculator': {
+      id: '/8th-pay-commission-pension-calculator'
+      path: '/8th-pay-commission-pension-calculator'
+      fullPath: '/8th-pay-commission-pension-calculator'
+      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/8th-pay-commission-arrears-calculator': {
       id: '/8th-pay-commission-arrears-calculator'
       path: '/8th-pay-commission-arrears-calculator'
@@ -781,6 +802,8 @@ const rootRouteChildren: RootRouteChildren = {
   R6thPayCommissionCalculatorRoute: R6thPayCommissionCalculatorRoute,
   R8thPayCommissionArrearsCalculatorRoute:
     R8thPayCommissionArrearsCalculatorRoute,
+  R8thPayCommissionPensionCalculatorRoute:
+    R8thPayCommissionPensionCalculatorRoute,
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
