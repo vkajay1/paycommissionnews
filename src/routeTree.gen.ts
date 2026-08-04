@@ -28,6 +28,7 @@ import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
 import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
+import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
@@ -143,6 +144,11 @@ const FitmentFactorRoute = FitmentFactorRouteImport.update({
   path: '/fitment-factor',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FitmentCalculatorRoute = FitmentCalculatorRouteImport.update({
+  id: '/fitment-calculator',
+  path: '/fitment-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
   id: '/epf-calculator',
   path: '/epf-calculator',
@@ -249,6 +255,7 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -288,6 +295,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -325,6 +333,7 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -366,6 +375,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -405,6 +415,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -441,6 +452,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -481,6 +493,7 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
   EpfCalculatorRoute: typeof EpfCalculatorRoute
+  FitmentCalculatorRoute: typeof FitmentCalculatorRoute
   FitmentFactorRoute: typeof FitmentFactorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
@@ -638,6 +651,13 @@ declare module '@tanstack/react-router' {
       path: '/fitment-factor'
       fullPath: '/fitment-factor'
       preLoaderRoute: typeof FitmentFactorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-calculator': {
+      id: '/fitment-calculator'
+      path: '/fitment-calculator'
+      fullPath: '/fitment-calculator'
+      preLoaderRoute: typeof FitmentCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/epf-calculator': {
@@ -828,6 +848,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
   EpfCalculatorRoute: EpfCalculatorRoute,
+  FitmentCalculatorRoute: FitmentCalculatorRoute,
   FitmentFactorRoute: FitmentFactorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
