@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TakeHomeSalaryRouteImport } from './routes/take-home-salary'
 import { Route as StateRouteImport } from './routes/state'
+import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
@@ -54,6 +55,11 @@ const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
 const StateRoute = StateRouteImport.update({
   id: '/state',
   path: '/state',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalaryFixationRoute = SalaryFixationRouteImport.update({
+  id: '/salary-fixation',
+  path: '/salary-fixation',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SalaryRoute = SalaryRouteImport.update({
@@ -259,6 +265,7 @@ export interface FileRoutesByFullPath {
   '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/state': typeof StateRouteWithChildren
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -295,6 +302,7 @@ export interface FileRoutesByTo {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -333,6 +341,7 @@ export interface FileRoutesById {
   '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/state': typeof StateRouteWithChildren
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -373,6 +382,7 @@ export interface FileRouteTypes {
     | '/pension-arrear'
     | '/role'
     | '/salary'
+    | '/salary-fixation'
     | '/state'
     | '/take-home-salary'
     | '/.mcp/list-tools'
@@ -409,6 +419,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/salary'
+    | '/salary-fixation'
     | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -446,6 +457,7 @@ export interface FileRouteTypes {
     | '/pension-arrear'
     | '/role'
     | '/salary'
+    | '/salary-fixation'
     | '/state'
     | '/take-home-salary'
     | '/.mcp/list-tools'
@@ -485,6 +497,7 @@ export interface RootRouteChildren {
   PensionArrearRoute: typeof PensionArrearRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
+  SalaryFixationRoute: typeof SalaryFixationRoute
   StateRoute: typeof StateRouteWithChildren
   TakeHomeSalaryRoute: typeof TakeHomeSalaryRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
@@ -506,6 +519,13 @@ declare module '@tanstack/react-router' {
       path: '/state'
       fullPath: '/state'
       preLoaderRoute: typeof StateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/salary-fixation': {
+      id: '/salary-fixation'
+      path: '/salary-fixation'
+      fullPath: '/salary-fixation'
+      preLoaderRoute: typeof SalaryFixationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/salary': {
@@ -824,6 +844,7 @@ const rootRouteChildren: RootRouteChildren = {
   PensionArrearRoute: PensionArrearRoute,
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
+  SalaryFixationRoute: SalaryFixationRoute,
   StateRoute: StateRouteWithChildren,
   TakeHomeSalaryRoute: TakeHomeSalaryRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
