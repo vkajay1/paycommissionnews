@@ -34,6 +34,7 @@ import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
 import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes/8th-pay-commission-pension-calculator'
+import { Route as R8thPayCommissionOdishaRouteImport } from './routes/8th-pay-commission-odisha'
 import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
 import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
 import { Route as IndexRouteImport } from './routes/index'
@@ -175,6 +176,11 @@ const R8thPayCommissionPensionCalculatorRoute =
     path: '/8th-pay-commission-pension-calculator',
     getParentRoute: () => rootRouteImport,
   } as any)
+const R8thPayCommissionOdishaRoute = R8thPayCommissionOdishaRouteImport.update({
+  id: '/8th-pay-commission-odisha',
+  path: '/8th-pay-commission-odisha',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const R8thPayCommissionArrearsCalculatorRoute =
   R8thPayCommissionArrearsCalculatorRouteImport.update({
     id: '/8th-pay-commission-arrears-calculator',
@@ -250,6 +256,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
@@ -290,6 +297,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
@@ -328,6 +336,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
@@ -370,6 +379,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
@@ -410,6 +420,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
@@ -447,6 +458,7 @@ export interface FileRouteTypes {
     | '/'
     | '/6th-pay-commission-calculator'
     | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
@@ -488,6 +500,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R6thPayCommissionCalculatorRoute: typeof R6thPayCommissionCalculatorRoute
   R8thPayCommissionArrearsCalculatorRoute: typeof R8thPayCommissionArrearsCalculatorRoute
+  R8thPayCommissionOdishaRoute: typeof R8thPayCommissionOdishaRoute
   R8thPayCommissionPensionCalculatorRoute: typeof R8thPayCommissionPensionCalculatorRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
@@ -695,6 +708,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof R8thPayCommissionPensionCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8th-pay-commission-odisha': {
+      id: '/8th-pay-commission-odisha'
+      path: '/8th-pay-commission-odisha'
+      fullPath: '/8th-pay-commission-odisha'
+      preLoaderRoute: typeof R8thPayCommissionOdishaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/8th-pay-commission-arrears-calculator': {
       id: '/8th-pay-commission-arrears-calculator'
       path: '/8th-pay-commission-arrears-calculator'
@@ -842,6 +862,7 @@ const rootRouteChildren: RootRouteChildren = {
   R6thPayCommissionCalculatorRoute: R6thPayCommissionCalculatorRoute,
   R8thPayCommissionArrearsCalculatorRoute:
     R8thPayCommissionArrearsCalculatorRoute,
+  R8thPayCommissionOdishaRoute: R8thPayCommissionOdishaRoute,
   R8thPayCommissionPensionCalculatorRoute:
     R8thPayCommissionPensionCalculatorRoute,
   ArrearRoute: ArrearRoute,
