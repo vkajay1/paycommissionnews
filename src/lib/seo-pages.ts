@@ -177,12 +177,12 @@ export const ROLE_PAGES: RolePage[] = [
     slug: "peo-odisha",
     name: "PEO (Panchayat Executive Officer, Odisha)",
     keyword: "peo salary in odisha 8th pay commission",
-    level: 4,
-    basic: 25500,
+    level: 3,
+    basic: 21700,
     city: "Z",
     department: "Panchayati Raj Department, Odisha",
     description:
-      "Panchayat Executive Officers (PEO) in Odisha are recruited in Level 4 of the ORSP matrix with an entry basic pay of ₹25,500. Under the 8th Pay Commission pattern, a PEO's basic pay is projected at about ₹58,100 with a 2.28x fitment factor and around ₹72,900 at 2.86x, with DA and rural (Z-class) HRA added on top.",
+      "Panchayat Executive Officers (PEO) in Odisha are recruited in Level 3 of the ORSP matrix with an entry basic pay of ₹21,700 (as per OSSSC recruitment notifications). Under the 8th Pay Commission pattern, a PEO's basic pay is projected at about ₹49,500 with a 2.28x fitment factor and around ₹62,100 at 2.86x, with DA and rural (Z-class) HRA added on top.",
     duties: [
       "Execute Gram Panchayat schemes, MGNREGA works and welfare payments",
       "Maintain panchayat accounts, muster rolls and beneficiary registers",

@@ -28,7 +28,7 @@ export function QuickCalc() {
         level,
         basicPay: basic,
         city,
-        daPct: 53,
+        daPct: 60,
         fitmentFactor: fit,
       }),
     [level, basic, city, fit],
