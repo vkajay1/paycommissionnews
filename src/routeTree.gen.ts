@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TakeHomeSalaryRouteImport } from './routes/take-home-salary'
 import { Route as StateRouteImport } from './routes/state'
+import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
@@ -27,10 +28,14 @@ import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
 import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
 import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
 import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
+import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes/8th-pay-commission-pension-calculator'
+import { Route as R8thPayCommissionOdishaRouteImport } from './routes/8th-pay-commission-odisha'
+import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
 import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
@@ -52,6 +57,11 @@ const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
 const StateRoute = StateRouteImport.update({
   id: '/state',
   path: '/state',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalaryFixationRoute = SalaryFixationRouteImport.update({
+  id: '/salary-fixation',
+  path: '/salary-fixation',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SalaryRoute = SalaryRouteImport.update({
@@ -135,6 +145,11 @@ const FitmentFactorRoute = FitmentFactorRouteImport.update({
   path: '/fitment-factor',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FitmentCalculatorRoute = FitmentCalculatorRouteImport.update({
+  id: '/fitment-calculator',
+  path: '/fitment-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
   id: '/epf-calculator',
   path: '/epf-calculator',
@@ -155,6 +170,23 @@ const ArrearRoute = ArrearRouteImport.update({
   path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R8thPayCommissionPensionCalculatorRoute =
+  R8thPayCommissionPensionCalculatorRouteImport.update({
+    id: '/8th-pay-commission-pension-calculator',
+    path: '/8th-pay-commission-pension-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionOdishaRoute = R8thPayCommissionOdishaRouteImport.update({
+  id: '/8th-pay-commission-odisha',
+  path: '/8th-pay-commission-odisha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R8thPayCommissionArrearsCalculatorRoute =
+  R8thPayCommissionArrearsCalculatorRouteImport.update({
+    id: '/8th-pay-commission-arrears-calculator',
+    path: '/8th-pay-commission-arrears-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const R6thPayCommissionCalculatorRoute =
   R6thPayCommissionCalculatorRouteImport.update({
     id: '/6th-pay-commission-calculator',
@@ -223,10 +255,14 @@ const Char91DotmcpChar93InvokeToolToolRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -243,6 +279,7 @@ export interface FileRoutesByFullPath {
   '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/state': typeof StateRouteWithChildren
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -259,10 +296,14 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -277,6 +318,7 @@ export interface FileRoutesByTo {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
@@ -293,10 +335,14 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/6th-pay-commission-calculator': typeof R6thPayCommissionCalculatorRoute
+  '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
+  '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
+  '/8th-pay-commission-pension-calculator': typeof R8thPayCommissionPensionCalculatorRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
   '/da-calculator': typeof DaCalculatorRoute
   '/epf-calculator': typeof EpfCalculatorRoute
+  '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
   '/fitment-simulator': typeof FitmentSimulatorRoute
   '/gratuity-calculator': typeof GratuityCalculatorRoute
@@ -313,6 +359,7 @@ export interface FileRoutesById {
   '/pension-arrear': typeof PensionArrearRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
+  '/salary-fixation': typeof SalaryFixationRoute
   '/state': typeof StateRouteWithChildren
   '/take-home-salary': typeof TakeHomeSalaryRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -331,10 +378,14 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -351,6 +402,7 @@ export interface FileRouteTypes {
     | '/pension-arrear'
     | '/role'
     | '/salary'
+    | '/salary-fixation'
     | '/state'
     | '/take-home-salary'
     | '/.mcp/list-tools'
@@ -367,10 +419,14 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -385,6 +441,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/salary'
+    | '/salary-fixation'
     | '/take-home-salary'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
@@ -400,10 +457,14 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/6th-pay-commission-calculator'
+    | '/8th-pay-commission-arrears-calculator'
+    | '/8th-pay-commission-odisha'
+    | '/8th-pay-commission-pension-calculator'
     | '/arrear'
     | '/blog'
     | '/da-calculator'
     | '/epf-calculator'
+    | '/fitment-calculator'
     | '/fitment-factor'
     | '/fitment-simulator'
     | '/gratuity-calculator'
@@ -420,6 +481,7 @@ export interface FileRouteTypes {
     | '/pension-arrear'
     | '/role'
     | '/salary'
+    | '/salary-fixation'
     | '/state'
     | '/take-home-salary'
     | '/.mcp/list-tools'
@@ -437,10 +499,14 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R6thPayCommissionCalculatorRoute: typeof R6thPayCommissionCalculatorRoute
+  R8thPayCommissionArrearsCalculatorRoute: typeof R8thPayCommissionArrearsCalculatorRoute
+  R8thPayCommissionOdishaRoute: typeof R8thPayCommissionOdishaRoute
+  R8thPayCommissionPensionCalculatorRoute: typeof R8thPayCommissionPensionCalculatorRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
   DaCalculatorRoute: typeof DaCalculatorRoute
   EpfCalculatorRoute: typeof EpfCalculatorRoute
+  FitmentCalculatorRoute: typeof FitmentCalculatorRoute
   FitmentFactorRoute: typeof FitmentFactorRoute
   FitmentSimulatorRoute: typeof FitmentSimulatorRoute
   GratuityCalculatorRoute: typeof GratuityCalculatorRoute
@@ -457,6 +523,7 @@ export interface RootRouteChildren {
   PensionArrearRoute: typeof PensionArrearRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
+  SalaryFixationRoute: typeof SalaryFixationRoute
   StateRoute: typeof StateRouteWithChildren
   TakeHomeSalaryRoute: typeof TakeHomeSalaryRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
@@ -478,6 +545,13 @@ declare module '@tanstack/react-router' {
       path: '/state'
       fullPath: '/state'
       preLoaderRoute: typeof StateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/salary-fixation': {
+      id: '/salary-fixation'
+      path: '/salary-fixation'
+      fullPath: '/salary-fixation'
+      preLoaderRoute: typeof SalaryFixationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/salary': {
@@ -592,6 +666,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FitmentFactorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fitment-calculator': {
+      id: '/fitment-calculator'
+      path: '/fitment-calculator'
+      fullPath: '/fitment-calculator'
+      preLoaderRoute: typeof FitmentCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/epf-calculator': {
       id: '/epf-calculator'
       path: '/epf-calculator'
@@ -618,6 +699,27 @@ declare module '@tanstack/react-router' {
       path: '/arrear'
       fullPath: '/arrear'
       preLoaderRoute: typeof ArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-pension-calculator': {
+      id: '/8th-pay-commission-pension-calculator'
+      path: '/8th-pay-commission-pension-calculator'
+      fullPath: '/8th-pay-commission-pension-calculator'
+      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-odisha': {
+      id: '/8th-pay-commission-odisha'
+      path: '/8th-pay-commission-odisha'
+      fullPath: '/8th-pay-commission-odisha'
+      preLoaderRoute: typeof R8thPayCommissionOdishaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-arrears-calculator': {
+      id: '/8th-pay-commission-arrears-calculator'
+      path: '/8th-pay-commission-arrears-calculator'
+      fullPath: '/8th-pay-commission-arrears-calculator'
+      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/6th-pay-commission-calculator': {
@@ -758,10 +860,16 @@ const StateRouteWithChildren = StateRoute._addFileChildren(StateRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R6thPayCommissionCalculatorRoute: R6thPayCommissionCalculatorRoute,
+  R8thPayCommissionArrearsCalculatorRoute:
+    R8thPayCommissionArrearsCalculatorRoute,
+  R8thPayCommissionOdishaRoute: R8thPayCommissionOdishaRoute,
+  R8thPayCommissionPensionCalculatorRoute:
+    R8thPayCommissionPensionCalculatorRoute,
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
   DaCalculatorRoute: DaCalculatorRoute,
   EpfCalculatorRoute: EpfCalculatorRoute,
+  FitmentCalculatorRoute: FitmentCalculatorRoute,
   FitmentFactorRoute: FitmentFactorRoute,
   FitmentSimulatorRoute: FitmentSimulatorRoute,
   GratuityCalculatorRoute: GratuityCalculatorRoute,
@@ -778,6 +886,7 @@ const rootRouteChildren: RootRouteChildren = {
   PensionArrearRoute: PensionArrearRoute,
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
+  SalaryFixationRoute: SalaryFixationRoute,
   StateRoute: StateRouteWithChildren,
   TakeHomeSalaryRoute: TakeHomeSalaryRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,

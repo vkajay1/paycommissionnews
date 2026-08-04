@@ -100,7 +100,7 @@ export function SalaryForm({
             <Slider
               value={[value.daPct]}
               min={0}
-              max={70}
+              max={90}
               step={1}
               onValueChange={(v) => set("daPct", v[0])}
             />

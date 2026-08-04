@@ -42,7 +42,7 @@ function SalaryPage() {
     basic: search.basic ?? 44900,
     city: (search.city as City) ?? "X",
     pension: "NPS",
-    daPct: 53,
+    daPct: 60,
     hraOverride: null,
     fit: search.fit ?? 2.28,
   });
