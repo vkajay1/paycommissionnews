@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 import { SalaryForm, type SalaryFormState } from "@/components/salary/SalaryForm";
 import { ResultsDashboard } from "@/components/salary/ResultsDashboard";
+import { NetInHand } from "@/components/salary/NetInHand";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { compareSalary, type City } from "@/lib/cpc";
 
@@ -82,12 +83,20 @@ function SalaryPage() {
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,420px)_1fr]">
         <SalaryForm value={state} onChange={setState} />
-        <ResultsDashboard
-          current={result.current}
-          projected={result.projected}
-          diff={result.diff}
-          pctChange={result.pct}
-        />
+        <div className="space-y-5">
+          <ResultsDashboard
+            current={result.current}
+            projected={result.projected}
+            diff={result.diff}
+            pctChange={result.pct}
+          />
+          <NetInHand
+            level={state.level}
+            pension={state.pension}
+            current={result.current}
+            projected={result.projected}
+          />
+        </div>
       </div>
     </div>
   );
