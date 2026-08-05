@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 import { SalaryForm, type SalaryFormState } from "@/components/salary/SalaryForm";
 import { ResultsDashboard } from "@/components/salary/ResultsDashboard";
+import { NetInHand } from "@/components/salary/NetInHand";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { compareSalary, type City } from "@/lib/cpc";
 
