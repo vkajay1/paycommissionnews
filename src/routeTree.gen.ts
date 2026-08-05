@@ -18,6 +18,7 @@ import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
+import { Route as PayCommissionHistoryRouteImport } from './routes/pay-commission-history'
 import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as MacpCalculatorRouteImport } from './routes/macp-calculator'
@@ -92,6 +93,11 @@ const PayLevelRoute = PayLevelRouteImport.update({
 const PayFixationRoute = PayFixationRouteImport.update({
   id: '/pay-fixation',
   path: '/pay-fixation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PayCommissionHistoryRoute = PayCommissionHistoryRouteImport.update({
+  id: '/pay-commission-history',
+  path: '/pay-commission-history',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
@@ -273,6 +279,7 @@ export interface FileRoutesByFullPath {
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
+  '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -314,6 +321,7 @@ export interface FileRoutesByTo {
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
+  '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
@@ -353,6 +361,7 @@ export interface FileRoutesById {
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
   '/nps-calculator': typeof NpsCalculatorRoute
+  '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
@@ -396,6 +405,7 @@ export interface FileRouteTypes {
     | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
+    | '/pay-commission-history'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -437,6 +447,7 @@ export interface FileRouteTypes {
     | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
+    | '/pay-commission-history'
     | '/pay-fixation'
     | '/pension'
     | '/pension-arrear'
@@ -475,6 +486,7 @@ export interface FileRouteTypes {
     | '/macp-calculator'
     | '/mcp'
     | '/nps-calculator'
+    | '/pay-commission-history'
     | '/pay-fixation'
     | '/pay-level'
     | '/pension'
@@ -517,6 +529,7 @@ export interface RootRouteChildren {
   MacpCalculatorRoute: typeof MacpCalculatorRoute
   McpRoute: typeof McpRoute
   NpsCalculatorRoute: typeof NpsCalculatorRoute
+  PayCommissionHistoryRoute: typeof PayCommissionHistoryRoute
   PayFixationRoute: typeof PayFixationRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
   PensionRoute: typeof PensionRoute
@@ -594,6 +607,13 @@ declare module '@tanstack/react-router' {
       path: '/pay-fixation'
       fullPath: '/pay-fixation'
       preLoaderRoute: typeof PayFixationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pay-commission-history': {
+      id: '/pay-commission-history'
+      path: '/pay-commission-history'
+      fullPath: '/pay-commission-history'
+      preLoaderRoute: typeof PayCommissionHistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nps-calculator': {
@@ -880,6 +900,7 @@ const rootRouteChildren: RootRouteChildren = {
   MacpCalculatorRoute: MacpCalculatorRoute,
   McpRoute: McpRoute,
   NpsCalculatorRoute: NpsCalculatorRoute,
+  PayCommissionHistoryRoute: PayCommissionHistoryRoute,
   PayFixationRoute: PayFixationRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
   PensionRoute: PensionRoute,
