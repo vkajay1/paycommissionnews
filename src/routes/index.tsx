@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/landing/Hero";
 import { QuickCalc } from "@/components/landing/QuickCalc";
 import { CalculatorGrid } from "@/components/landing/CalculatorGrid";
+import { CpcSnapshot } from "@/components/landing/CpcSnapshot";
 import { Features } from "@/components/landing/Features";
 import { SalaryGuide } from "@/components/landing/SalaryGuide";
 import { FAQ, homeFaqs } from "@/components/landing/FAQ";
