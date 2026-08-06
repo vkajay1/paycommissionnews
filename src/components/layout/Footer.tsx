@@ -33,13 +33,16 @@ export function Footer() {
           />
 
           <FooterCol
-            title="Legal"
+            title="हिंदी में"
             links={[
-              { label: "Disclaimer", to: "/" },
-              { label: "Privacy", to: "/" },
-              { label: "Contact", to: "/" },
+              { label: "सैलरी कैलकुलेटर", to: "/8th-pay-commission-salary-calculator-in-hindi" },
+              { label: "पेंशन कैलकुलेटर", to: "/8th-pay-commission-pension-calculator-in-hindi" },
+              { label: "एरियर कैलकुलेटर", to: "/8th-pay-commission-arrears-calculator-in-hindi" },
+              { label: "DA कैलकुलेटर", to: "/da-calculator-in-hindi" },
+              { label: "फिटमेंट फैक्टर", to: "/fitment-factor-in-hindi" },
             ]}
           />
+
         </div>
         <div className="mt-10 border-t border-border/60 pt-6 text-xs text-muted-foreground">
           Figures shown are estimates based on sample data. Not affiliated with any government body.
