@@ -69,6 +69,15 @@ export function Header() {
           >
             Blog
           </Link>
+          <Link
+            to="/8th-pay-commission-salary-calculator-in-hindi"
+            className="rounded-lg px-3 py-1.5 text-sm font-semibold text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-lg px-3 py-1.5 text-sm font-semibold text-foreground bg-secondary" }}
+          >
+            हिंदी
+          </Link>
+
+
 
         </nav>
         <div className="flex items-center gap-2">
