@@ -973,7 +973,49 @@ export const articles: Article[] = [
         type: "p",
         text: "The new tax regime offers a standard deduction of ₹75,000 and slabs that reduce effective tax for income up to ₹12 lakh. Higher gross salaries under the 8th CPC will push more employees into higher brackets, so the net take-home increase will be 3–5 percentage points lower than the gross hike.",
       },
+      { type: "h2", text: "Level-wise hike at the union-demanded 3.25" },
+      {
+        type: "table",
+        caption:
+          "If the National Council's 3.25 demand were accepted in full. Treat this as the upper bound, not a forecast.",
+        headers: ["Level", "Role example", "Old Basic", "New Basic at 3.25", "Gross (X city)"],
+        rows: [
+          ["1", "MTS", "18,000", "58,500", "76,145"],
+          ["4", "Assistant / Stenographer", "25,500", "82,875", "1,07,858"],
+          ["6", "Inspector", "35,400", "1,15,050", "1,49,724"],
+          ["7", "Section Officer", "44,900", "1,45,925", "1,89,861"],
+          ["10", "Asst. Director (Group A)", "56,100", "1,82,325", "2,37,231"],
+          ["13", "Director", "1,23,100", "4,00,075", "5,20,606"],
+        ],
+      },
+      { type: "h2", text: "Deductions grow with the hike" },
+      {
+        type: "p",
+        text: "A revised basic pay lifts every deduction that is indexed to it, which is why gross and net move at different speeds. NPS takes 10 per cent of basic plus DA from the employee, with the Government contributing 14 per cent on top. CGEGIS premiums and CGHS contributions are tied to pay level, so some employees will shift into a higher slab on revision. Licence fee for government accommodation is also revised periodically against the pay matrix.",
+      },
+      {
+        type: "table",
+        caption: "Section Officer (Level 7), fitment 2.57: gross to net.",
+        headers: ["Item", "7th CPC (₹)", "8th CPC (₹)"],
+        rows: [
+          ["Gross", "86,328", "1,52,057"],
+          ["NPS employee share (10%)", "-7,184", "-11,539"],
+          ["CGEGIS + CGHS (indicative)", "-1,150", "-1,650"],
+          ["Net before income tax", "~77,994", "~1,38,868"],
+        ],
+      },
+      { type: "h2", text: "State employees: the same hike, later" },
+      {
+        type: "p",
+        text: "States are not bound by a Central Pay Commission, but most adopt its structure with local modifications, usually twelve to twenty-four months behind the Centre and often with a different effective date. That lag is exactly why state employees see a separate arrear cycle, and why a state's DA rate frequently trails the central rate. Check your state's pay revision page rather than assuming the central timeline applies to you.",
+      },
+      { type: "h2", text: "When the money actually arrives" },
+      {
+        type: "p",
+        text: "Given the 18-month report window that started on 3 November 2025, revised pay is realistically a 2027 event even though the effective date is 1 January 2026. The gap converts into arrears rather than a lost increase, so the practical question is not whether you get the hike but when you get the lump sum — and how much of it income tax takes in that single year.",
+      },
       { type: "h2", text: "Run your own projection" },
+
       {
         type: "p",
         text: "Open the live 8th CPC salary calculator, select your level, set DA percentage and city, then move the fitment slider to see best-case, base-case and conservative projections side by side. Save the URL — your inputs are encoded so you can share with colleagues.",
