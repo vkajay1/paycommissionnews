@@ -34,7 +34,7 @@ export type Block =
     }
   | { type: "quote"; text: string; cite?: string };
 
-const TODAY = "2026-06-17";
+const TODAY = "2026-08-07";
 
 export const articles: Article[] = [
   {
@@ -238,35 +238,56 @@ export const articles: Article[] = [
     description:
       "Latest 8th Pay Commission news for 2026 — formation status, expected implementation date, fitment factor, and how the salary hike will affect 1 crore central government employees and pensioners.",
     keyword: "8th pay commission 2026",
-    readMinutes: 9,
+    readMinutes: 13,
     date: "2026-01-20",
     updated: TODAY,
     category: "News",
     hero: "from-indigo-500 via-violet-500 to-fuchsia-500",
     excerpt:
-      "The Union Cabinet's in-principle approval for the 8th Pay Commission has set the stage for India's biggest pay revision since 2016. Here is everything we know so far.",
+      "From the January 2025 announcement to a constituted commission with Justice Ranjana Prakash Desai in the chair — here is the full status of India's biggest pay revision since 2016.",
     body: [
       {
         type: "p",
-        text: "The 8th Central Pay Commission (8th CPC) is shaping up to be the most consequential pay revision in a decade for nearly 50 lakh central government employees and 65 lakh pensioners. After the Union Cabinet's in-principle approval in January 2025, the formal Terms of Reference, chairperson appointment, and the all-important implementation date have dominated headlines through 2025 and 2026.",
+        text: "The 8th Central Pay Commission (8th CPC) is the most consequential pay revision in a decade for roughly 49 lakh serving central government employees and 65 lakh pensioners. The story has moved a long way from the January 2025 announcement: the commission now exists on paper and in practice, with a notification dated 3 November 2025, a Chairperson in place, an office in Delhi and a public consultation window open into March 2026. What remains open is the number everyone actually wants — the fitment factor — and the date the revised pay is notified.",
       },
       {
         type: "callout",
         tone: "info",
         title: "Quick summary",
-        text: "Expected implementation: 1 January 2026 (with arrears if notified later). Expected fitment factor: 2.28x to 2.86x. Beneficiaries: ~1.15 crore employees, pensioners & family pensioners including defence personnel.",
+        text: "Announced 17 January 2025. Constituted by notification dated 3 November 2025 with an 18-month report window. Chairperson: Justice Ranjana Prakash Desai. Expected effective date: 1 January 2026, retrospectively, with arrears. Fitment factor still undecided — estimates 2.6–2.85, union demand up to 3.25.",
       },
       { type: "h2", text: "Latest 8th Pay Commission news at a glance" },
       {
         type: "ul",
         items: [
-          "Cabinet gave in-principle approval in January 2025 to constitute the 8th CPC.",
-          "Terms of Reference (ToR) are being finalised in consultation with the Department of Expenditure, DoPT and the Ministry of Defence.",
-          "Staff Side of the National Council (JCM) has demanded a fitment factor of 2.86 and full neutralisation of DA at 50% merger.",
-          "Implementation is expected from 1 January 2026, mirroring the 10-year cycle followed since the 4th CPC.",
-          "Arrears are likely if the recommendations are notified in late 2026 or 2027, similar to the 7th CPC pattern.",
+          "The Union Government announced the commission on 17 January 2025 and formally constituted it through a notification dated 3 November 2025.",
+          "Justice Ranjana Prakash Desai has been appointed Chairperson; the commission functions from Chanderlok Building, Janpath, New Delhi.",
+          "The commission has 18 months from 3 November 2025 to submit its report, which pushes realistic implementation towards 2027.",
+          "Public suggestions are being collected via the MyGov platform, with the window closing on 16 March 2026.",
+          "The Staff Side of the National Council (JCM) met on 25 February 2026 and finalised a demand for a 3.25 fitment factor, a 7% annual increment and higher leave encashment.",
+          "Dearness Allowance continues to be revised half-yearly in the interim; it stands at 60% for central government employees.",
+          "Because 1 January 2026 is expected to be the effective date, any delay in notification converts into arrears rather than a lost increase.",
         ],
       },
+      { type: "h2", text: "Timeline: what has happened and what comes next" },
+      {
+        type: "table",
+        caption:
+          "Dates on record are marked confirmed; anything beyond the report window is a projection based on the 6th and 7th CPC pattern.",
+        headers: ["Stage", "Date", "Status"],
+        rows: [
+          ["Announcement of the 8th CPC", "17 January 2025", "Confirmed"],
+          ["Constitution notification issued", "3 November 2025", "Confirmed"],
+          ["Chairperson appointed", "2025–26", "Confirmed"],
+          ["7th CPC tenure ends", "31 December 2025", "Confirmed"],
+          ["Expected effective date of revised pay", "1 January 2026", "Reference date"],
+          ["MyGov public suggestion deadline", "16 March 2026", "Confirmed"],
+          ["Report submission (18-month window)", "By around May 2027", "Projected"],
+          ["Government acceptance and Gazette notification", "2027", "Projected"],
+          ["Arrears credited from 1 January 2026", "After notification", "Projected"],
+        ],
+      },
+
       { type: "h2", text: "When will the 8th Pay Commission be implemented?" },
       {
         type: "p",
@@ -325,16 +346,59 @@ export const articles: Article[] = [
         type: "p",
         text: "Pensioners receive a revised basic pension calculated by multiplying their existing pension by the same fitment factor. Family pensioners get 30% of the revised basic pay, subject to floors. Dearness Relief (DR), like DA, resets to zero on the implementation date and starts accruing thereafter.",
       },
+      { type: "h2", text: "What the commission is actually studying" },
+      {
+        type: "p",
+        text: "A pay commission is not only a salary multiplier exercise. Its terms of reference typically cover the entire compensation architecture, which is why the report takes 18 months rather than a few weeks.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The structure of the pay matrix — whether levels should be merged, renumbered or repriced.",
+          "The rate of annual increment, currently 3 per cent, with unions pressing for 7 per cent.",
+          "Allowances: HRA slabs, Transport Allowance, Children Education Allowance, and the long list of department-specific allowances.",
+          "Pension and family pension formulae, commutation rules and additional pension for the very elderly.",
+          "Retirement benefits such as gratuity ceilings and leave encashment limits.",
+          "Career progression: MACP, assured promotions and cadre review demands raised by defence and postal bodies.",
+        ],
+      },
+      { type: "h2", text: "How the money reaches you: notification, then arrears" },
+      {
+        type: "p",
+        text: "The sequence is fixed. The commission submits its report, the Department of Expenditure examines it, the Cabinet approves, and a Gazette notification plus Department of Expenditure orders make it operative. Payroll software is then updated and revised pay is drawn from a specified month, with the difference for earlier months paid as arrears. In 2016 the pay portion under the 7th CPC was implemented within months of the report, while allowance revisions followed roughly a year later — a split worth expecting again.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Do not treat leaked pay matrices as news",
+        text: "Every cycle produces circulating PDFs claiming to be the final 8th CPC pay matrix. Until a Gazette notification exists, no pay matrix is real. Verify any order number against doe.gov.in before you believe it.",
+      },
+      { type: "h2", text: "What employees should do in the interim" },
+      {
+        type: "ol",
+        items: [
+          "Keep every salary slip and DA revision order from January 2026 onward — these are the documents your arrear computation will be checked against.",
+          "Confirm your pay matrix level and increment stage on your service record; a wrong cell makes every projection wrong.",
+          "Budget on current pay. Avoid new long-term EMIs justified by an expected revision.",
+          "Plan for the tax hit on a lump-sum arrear and keep Form 10E in mind for Section 89(1) relief.",
+          "Model both a conservative and an optimistic fitment factor so your plan survives either outcome.",
+        ],
+      },
       { type: "h2", text: "How to estimate your revised salary today" },
       {
         type: "p",
-        text: "Use our free 8th CPC salary calculator to model your revised basic pay, DA, HRA and gross salary against multiple fitment scenarios. Move the fitment slider from 2.0 to 3.0 to see best-case, base-case and conservative projections instantly.",
+        text: "Use our free 8th CPC salary calculator to model your revised basic pay, DA, HRA and gross salary against multiple fitment scenarios. Move the fitment slider from 2.0 to 3.0 to see best-case, base-case and conservative projections instantly, then check the arrears calculator to see what a delayed notification would be worth as a lump sum.",
       },
     ],
+
     faq: [
       {
         q: "Is the 8th Pay Commission approved?",
-        a: "The Union Cabinet granted in-principle approval in January 2025. Formal Terms of Reference and the chairperson appointment are pending, after which the commission will submit recommendations.",
+        a: "Yes — it was announced on 17 January 2025 and formally constituted through a notification dated 3 November 2025, with Justice Ranjana Prakash Desai as Chairperson. What is still pending is the report itself and the Government's notification of the revised pay structure.",
+      },
+      {
+        q: "How long does the 8th Pay Commission have to submit its report?",
+        a: "Eighteen months from the 3 November 2025 notification, which places submission around mid-2027 in the worst case. Government examination and notification follow after that, with revised pay applied retrospectively from 1 January 2026.",
       },
       {
         q: "When will the 8th Pay Commission be implemented?",
@@ -357,7 +421,7 @@ export const articles: Article[] = [
     description:
       "Understand how the 8th CPC fitment factor is calculated, why unions are demanding 2.86, and what 2.28 vs 2.57 vs 2.86 means for your revised basic pay across all pay matrix levels.",
     keyword: "8th pay commission fitment factor",
-    readMinutes: 8,
+    readMinutes: 14,
     date: "2026-02-04",
     updated: TODAY,
     category: "Explainer",
@@ -434,7 +498,71 @@ export const articles: Article[] = [
         type: "p",
         text: "Yes. The 6th and 7th CPCs both applied the same fitment factor to existing basic pensions. Pensioners can expect their basic pension to be multiplied by the final fitment factor, with Dearness Relief resetting to zero on the implementation date.",
       },
+      { type: "h2", text: "Where 2.6 to 2.85 comes from" },
+      {
+        type: "p",
+        text: "The expert range most commonly quoted in 2026 is 2.6 to 2.85, and it is not a guess pulled from the air. It follows the same two-step logic the 7th CPC used: merge the DA that has accumulated by the effective date, then add a real increase on top. With DA at 60 per cent, the merged base is already 1.60. A real increase of 60 to 78 per cent on that base lands you between 2.56 and 2.85 — which is why analysts cluster there, and why anything above 3.0 requires a real increase far larger than any commission has granted.",
+      },
+      {
+        type: "table",
+        caption:
+          "Reverse-engineering each scenario. Real increase is what the commission adds on top of the DA-merged base of 1.60.",
+        headers: ["Fitment", "DA merged base", "Implied real increase", "Who backs it"],
+        rows: [
+          ["2.28", "1.60", "About 42%", "Conservative analyst view"],
+          ["2.57", "1.60", "About 61%", "7th CPC value retained as base case"],
+          ["2.60 – 2.85", "1.60", "63% – 78%", "Most independent 2026 estimates"],
+          ["3.00 – 3.10", "1.60", "88% – 94%", "Graded union proposal, Levels 1–12"],
+          ["3.25", "1.60", "About 103%", "National Council (Staff Side) demand"],
+        ],
+      },
+      { type: "h2", text: "What the unions asked for in February 2026" },
+      {
+        type: "p",
+        text: "At the 25 February 2026 meeting of the National Council (Staff Side) of the Joint Consultative Machinery in New Delhi, the drafting committee headed by Shiva Gopal Mishra settled on 3.25 as the headline demand, together with a 7 per cent annual increment, leave encashment raised from 300 to 400 days, and a wider notional family unit of five members. A parallel proposal seeks a graded factor rather than one flat number — roughly 3.00 for Levels 1 to 5, 3.05 to 3.10 for Levels 6 to 12, 3.05 to 3.15 for Levels 13 to 15, and up to 3.25 at senior levels — which would break with the single-multiplier convention every commission since the 6th has followed.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "History says the demand is a ceiling, not a forecast",
+        text: "Ahead of the 7th CPC the Staff Side demanded 3.68 and the notified figure was 2.57 — about 70 per cent of the ask. Applying the same discount to a 3.25 demand points to something in the 2.3 to 2.6 band. Plan for that, and treat anything higher as upside.",
+      },
+      { type: "h2", text: "Why a higher fitment factor is not a proportional pay rise" },
+      {
+        type: "p",
+        text: "Two employees can read the same fitment factor and end up with very different in-hand outcomes, because the multiplier applies only to basic pay while your salary is basic plus DA plus allowances. On the effective date DA resets to zero, so a large part of the apparent jump is simply DA being folded into the new basic. Add the fact that NPS at 10 per cent, CGHS and CGEGIS all scale with the higher basic, and net in-hand grows noticeably less than gross.",
+      },
+      {
+        type: "table",
+        caption: "Level 6 Inspector, X city: how much of the headline actually reaches you.",
+        headers: ["Metric", "Now (basic 35,400, DA 60%)", "At 2.57", "At 2.86"],
+        rows: [
+          ["Basic pay", "35,400", "90,978", "1,01,244"],
+          ["DA", "21,240", "0 (reset)", "0 (reset)"],
+          ["HRA (X city)", "9,558", "24,564", "27,336"],
+          ["Gross (approx)", "71,706", "1,21,050", "1,34,088"],
+          ["Headline change in basic", "—", "+157%", "+186%"],
+          ["Change in gross", "—", "About +69%", "About +87%"],
+        ],
+      },
+      { type: "h2", text: "Fitment factor and pensioners" },
+      {
+        type: "p",
+        text: "The same multiplier is applied to existing basic pension, and Dearness Relief resets alongside it. That is why the minimum pension of ₹9,000 is discussed in a band of roughly ₹22,500 to ₹25,200 for the 2.5 to 2.8 range — pension revision has historically been kept strictly proportional to the salary revision so that the two structures do not drift apart.",
+      },
+      { type: "h2", text: "Common misconceptions about the fitment factor" },
+      {
+        type: "ul",
+        items: [
+          "It is not a percentage hike. A factor of 2.57 does not mean a 157 per cent salary increase, because your existing DA is inside that multiplier.",
+          "It is not confirmed. No fitment factor exists in law until the Gazette notification. Anyone showing you a 'final' figure in 2026 is guessing or selling something.",
+          "It does not apply to allowances. HRA and TA are recomputed from the new basic under their own rules; they are not multiplied by the factor.",
+          "It does not vary by department. Historically one factor applies across all levels and ministries, though unions are asking to change that this time.",
+          "A higher factor is not automatically better for you personally — if levels are merged or repriced during rationalisation, your placement in the new matrix matters as much as the multiplier.",
+        ],
+      },
       { type: "h2", text: "Calculate your own scenario" },
+
       {
         type: "p",
         text: "Open the 8th CPC salary calculator, select your pay matrix level, and drag the fitment slider from 2.0 to 3.0. The dashboard updates basic pay, HRA (X/Y/Z city), DA and gross monthly salary in real time.",
@@ -466,7 +594,7 @@ export const articles: Article[] = [
     description:
       "Step-by-step guide to using the 8th CPC salary calculator. Learn how the pay matrix, fitment factor, DA percentage and HRA city classification interact to produce your revised monthly salary.",
     keyword: "8th cpc salary calculator",
-    readMinutes: 7,
+    readMinutes: 12,
     date: "2026-02-18",
     updated: TODAY,
     category: "Calculator",
@@ -546,7 +674,55 @@ export const articles: Article[] = [
           ["Net (approx)", "~78,000", "~1,38,000"],
         ],
       },
+      { type: "h2", text: "Step-by-step: the arithmetic behind the result" },
+      {
+        type: "ol",
+        items: [
+          "Start with your current basic pay from the 7th CPC matrix cell you occupy — not your gross, not basic plus DA.",
+          "Multiply by the fitment factor you want to test to get the revised basic pay.",
+          "Round the result up to the nearest cell in the projected matrix; commissions never leave odd rupee figures in a matrix.",
+          "Set DA to 0 per cent on the effective date, because the DA you draw today is absorbed into the new basic.",
+          "Compute HRA as 27, 18 or 9 per cent of the revised basic depending on city class, applying the floor amount if the percentage falls below it.",
+          "Add Transport Allowance for your level and city, plus DA on TA at the prevailing rate.",
+          "Deduct NPS at 10 per cent of basic plus DA, along with CGHS and CGEGIS as applicable to your level.",
+          "Compare the resulting net against your current net — that difference, not the change in basic, is your real raise.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "success",
+        title: "Sanity check",
+        text: "If your projected net in-hand rise is more than about 35 per cent, your inputs are probably wrong — most likely DA has not been reset to zero, or gross has been compared against basic.",
+      },
+      { type: "h2", text: "Second example: MTS in a Y city" },
+      {
+        type: "table",
+        caption:
+          "Level 1, basic ₹18,000, Y city, DA 60%, fitment 2.57. Note how the HRA floor protects lower levels.",
+        headers: ["Component", "7th CPC (₹)", "8th CPC (₹)"],
+        rows: [
+          ["Basic pay", "18,000", "46,260"],
+          ["DA", "10,800 (60%)", "0 (reset)"],
+          ["HRA (Y city, 18%)", "3,600 (floor)", "8,327"],
+          ["Transport Allowance + DA on TA", "1,800", "1,800"],
+          ["Gross", "34,200", "56,387"],
+          ["NPS (10%)", "-2,880", "-4,626"],
+          ["Approx net", "~31,300", "~51,700"],
+        ],
+      },
+      { type: "h2", text: "What the calculator cannot know" },
+      {
+        type: "ul",
+        items: [
+          "Whether levels get merged or repriced during matrix rationalisation — a Level 2 employee could land in a restructured Level 1 or 3 band.",
+          "The DA rate on the actual effective date, which affects the merged base and therefore the factor itself.",
+          "Whether HRA slabs are trimmed, as was discussed before the 7th CPC before 24/16/8 was rejected in favour of 27/18/9.",
+          "Department-specific allowances such as MSP, risk and hardship allowances or ration money, which are notified separately.",
+          "Income tax, which depends on your regime choice, deductions and other income.",
+        ],
+      },
       { type: "h2", text: "Common mistakes to avoid" },
+
       {
         type: "ul",
         items: [
@@ -568,7 +744,7 @@ export const articles: Article[] = [
       },
       {
         q: "Does the calculator include arrears?",
-        a: "The base calculator shows the monthly revised salary. Use the arrears tool (coming soon) to compute month-wise arrears from the effective date.",
+        a: "The base calculator shows the monthly revised salary. Use the dedicated arrears calculator to compute month-wise arrears from 1 January 2026 up to the month revised pay is actually drawn.",
       },
     ],
   },
@@ -579,7 +755,7 @@ export const articles: Article[] = [
     description:
       "Complete guide for central government pensioners under the 8th Pay Commission — how the new basic pension is calculated, Dearness Relief reset, family pension changes and arrear payment timeline.",
     keyword: "8th pay commission pensioners",
-    readMinutes: 8,
+    readMinutes: 13,
     date: "2026-03-05",
     updated: TODAY,
     category: "Pensioners",
@@ -648,7 +824,35 @@ export const articles: Article[] = [
         type: "p",
         text: "If the 8th CPC is notified in late 2026 or 2027 with effect from 1 January 2026, pensioners will receive arrears for the intervening months. The 7th CPC paid arrears in a single instalment in 2016. Pensioner associations are pressing for the same approach this time.",
       },
+      { type: "h2", text: "Commutation of pension after revision" },
+      {
+        type: "p",
+        text: "Commutation lets you exchange up to 40 per cent of your basic pension for a lump sum, calculated as the commuted portion multiplied by twelve and then by the age-based commutation factor. The commuted portion is restored after fifteen years. Pensioners who commuted under the 7th CPC do not commute again on revision — their existing deduction is simply recomputed on the revised pension. Those who never commuted may generally opt within the window allowed after revision, so it is worth deciding in advance whether a lump sum or a fuller monthly pension suits your situation.",
+      },
+      { type: "h2", text: "Tax treatment of revised pension and arrears" },
+      {
+        type: "ul",
+        items: [
+          "Pension is taxed as salary income, and the standard deduction applies under both regimes.",
+          "A lump-sum arrear is taxed in the year of receipt, which can push you into a higher slab for that year alone.",
+          "Section 89(1) relief, claimed by filing Form 10E before your return, spreads the arrear across the years it relates to and often reduces the liability materially.",
+          "Commuted pension for government pensioners is exempt from tax.",
+          "Family pension is taxed under other income with a separate deduction, not the salary standard deduction.",
+        ],
+      },
+      { type: "h2", text: "What pensioners are asking the 8th CPC for" },
+      {
+        type: "p",
+        text: "Pensioner federations that joined the National Council (Staff Side) discussions in February 2026 have pressed for the same 3.25 fitment factor sought for serving employees, restoration of the Old Pension Scheme for those covered by NPS, a higher fixed medical allowance in non-CGHS areas, and a lower age threshold for additional pension so that the first slab begins before 80. None of this is settled; all of it is a negotiating position placed before the commission.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Scam alert for pensioners",
+        text: "Pensioners are the most targeted group in every revision cycle. No bank, treasury or department will ask for an OTP, ATM PIN or PPO password to release arrears. Any 'pension revision verification' link asking for bank details is fraud — report it on cybercrime.gov.in or helpline 1930.",
+      },
       { type: "h2", text: "Action checklist for pensioners" },
+
       {
         type: "ol",
         items: [
@@ -686,7 +890,7 @@ export const articles: Article[] = [
     description:
       "Level-wise 8th CPC salary hike projection — see new basic pay, DA, HRA and net in-hand salary for every pay matrix level from MTS to Joint Secretary at fitment factors 2.28, 2.57 and 2.86.",
     keyword: "8th pay commission salary hike",
-    readMinutes: 9,
+    readMinutes: 14,
     date: "2026-03-22",
     updated: TODAY,
     category: "Salary",
@@ -769,7 +973,49 @@ export const articles: Article[] = [
         type: "p",
         text: "The new tax regime offers a standard deduction of ₹75,000 and slabs that reduce effective tax for income up to ₹12 lakh. Higher gross salaries under the 8th CPC will push more employees into higher brackets, so the net take-home increase will be 3–5 percentage points lower than the gross hike.",
       },
+      { type: "h2", text: "Level-wise hike at the union-demanded 3.25" },
+      {
+        type: "table",
+        caption:
+          "If the National Council's 3.25 demand were accepted in full. Treat this as the upper bound, not a forecast.",
+        headers: ["Level", "Role example", "Old Basic", "New Basic at 3.25", "Gross (X city)"],
+        rows: [
+          ["1", "MTS", "18,000", "58,500", "76,145"],
+          ["4", "Assistant / Stenographer", "25,500", "82,875", "1,07,858"],
+          ["6", "Inspector", "35,400", "1,15,050", "1,49,724"],
+          ["7", "Section Officer", "44,900", "1,45,925", "1,89,861"],
+          ["10", "Asst. Director (Group A)", "56,100", "1,82,325", "2,37,231"],
+          ["13", "Director", "1,23,100", "4,00,075", "5,20,606"],
+        ],
+      },
+      { type: "h2", text: "Deductions grow with the hike" },
+      {
+        type: "p",
+        text: "A revised basic pay lifts every deduction that is indexed to it, which is why gross and net move at different speeds. NPS takes 10 per cent of basic plus DA from the employee, with the Government contributing 14 per cent on top. CGEGIS premiums and CGHS contributions are tied to pay level, so some employees will shift into a higher slab on revision. Licence fee for government accommodation is also revised periodically against the pay matrix.",
+      },
+      {
+        type: "table",
+        caption: "Section Officer (Level 7), fitment 2.57: gross to net.",
+        headers: ["Item", "7th CPC (₹)", "8th CPC (₹)"],
+        rows: [
+          ["Gross", "86,328", "1,52,057"],
+          ["NPS employee share (10%)", "-7,184", "-11,539"],
+          ["CGEGIS + CGHS (indicative)", "-1,150", "-1,650"],
+          ["Net before income tax", "~77,994", "~1,38,868"],
+        ],
+      },
+      { type: "h2", text: "State employees: the same hike, later" },
+      {
+        type: "p",
+        text: "States are not bound by a Central Pay Commission, but most adopt its structure with local modifications, usually twelve to twenty-four months behind the Centre and often with a different effective date. That lag is exactly why state employees see a separate arrear cycle, and why a state's DA rate frequently trails the central rate. Check your state's pay revision page rather than assuming the central timeline applies to you.",
+      },
+      { type: "h2", text: "When the money actually arrives" },
+      {
+        type: "p",
+        text: "Given the 18-month report window that started on 3 November 2025, revised pay is realistically a 2027 event even though the effective date is 1 January 2026. The gap converts into arrears rather than a lost increase, so the practical question is not whether you get the hike but when you get the lump sum — and how much of it income tax takes in that single year.",
+      },
       { type: "h2", text: "Run your own projection" },
+
       {
         type: "p",
         text: "Open the live 8th CPC salary calculator, select your level, set DA percentage and city, then move the fitment slider to see best-case, base-case and conservative projections side by side. Save the URL — your inputs are encoded so you can share with colleagues.",
