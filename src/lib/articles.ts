@@ -674,7 +674,55 @@ export const articles: Article[] = [
           ["Net (approx)", "~78,000", "~1,38,000"],
         ],
       },
+      { type: "h2", text: "Step-by-step: the arithmetic behind the result" },
+      {
+        type: "ol",
+        items: [
+          "Start with your current basic pay from the 7th CPC matrix cell you occupy — not your gross, not basic plus DA.",
+          "Multiply by the fitment factor you want to test to get the revised basic pay.",
+          "Round the result up to the nearest cell in the projected matrix; commissions never leave odd rupee figures in a matrix.",
+          "Set DA to 0 per cent on the effective date, because the DA you draw today is absorbed into the new basic.",
+          "Compute HRA as 27, 18 or 9 per cent of the revised basic depending on city class, applying the floor amount if the percentage falls below it.",
+          "Add Transport Allowance for your level and city, plus DA on TA at the prevailing rate.",
+          "Deduct NPS at 10 per cent of basic plus DA, along with CGHS and CGEGIS as applicable to your level.",
+          "Compare the resulting net against your current net — that difference, not the change in basic, is your real raise.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "success",
+        title: "Sanity check",
+        text: "If your projected net in-hand rise is more than about 35 per cent, your inputs are probably wrong — most likely DA has not been reset to zero, or gross has been compared against basic.",
+      },
+      { type: "h2", text: "Second example: MTS in a Y city" },
+      {
+        type: "table",
+        caption:
+          "Level 1, basic ₹18,000, Y city, DA 60%, fitment 2.57. Note how the HRA floor protects lower levels.",
+        headers: ["Component", "7th CPC (₹)", "8th CPC (₹)"],
+        rows: [
+          ["Basic pay", "18,000", "46,260"],
+          ["DA", "10,800 (60%)", "0 (reset)"],
+          ["HRA (Y city, 18%)", "3,600 (floor)", "8,327"],
+          ["Transport Allowance + DA on TA", "1,800", "1,800"],
+          ["Gross", "34,200", "56,387"],
+          ["NPS (10%)", "-2,880", "-4,626"],
+          ["Approx net", "~31,300", "~51,700"],
+        ],
+      },
+      { type: "h2", text: "What the calculator cannot know" },
+      {
+        type: "ul",
+        items: [
+          "Whether levels get merged or repriced during matrix rationalisation — a Level 2 employee could land in a restructured Level 1 or 3 band.",
+          "The DA rate on the actual effective date, which affects the merged base and therefore the factor itself.",
+          "Whether HRA slabs are trimmed, as was discussed before the 7th CPC before 24/16/8 was rejected in favour of 27/18/9.",
+          "Department-specific allowances such as MSP, risk and hardship allowances or ration money, which are notified separately.",
+          "Income tax, which depends on your regime choice, deductions and other income.",
+        ],
+      },
       { type: "h2", text: "Common mistakes to avoid" },
+
       {
         type: "ul",
         items: [
