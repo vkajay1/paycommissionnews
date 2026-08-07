@@ -244,29 +244,50 @@ export const articles: Article[] = [
     category: "News",
     hero: "from-indigo-500 via-violet-500 to-fuchsia-500",
     excerpt:
-      "The Union Cabinet's in-principle approval for the 8th Pay Commission has set the stage for India's biggest pay revision since 2016. Here is everything we know so far.",
+      "From the January 2025 announcement to a constituted commission with Justice Ranjana Prakash Desai in the chair — here is the full status of India's biggest pay revision since 2016.",
     body: [
       {
         type: "p",
-        text: "The 8th Central Pay Commission (8th CPC) is shaping up to be the most consequential pay revision in a decade for nearly 50 lakh central government employees and 65 lakh pensioners. After the Union Cabinet's in-principle approval in January 2025, the formal Terms of Reference, chairperson appointment, and the all-important implementation date have dominated headlines through 2025 and 2026.",
+        text: "The 8th Central Pay Commission (8th CPC) is the most consequential pay revision in a decade for roughly 49 lakh serving central government employees and 65 lakh pensioners. The story has moved a long way from the January 2025 announcement: the commission now exists on paper and in practice, with a notification dated 3 November 2025, a Chairperson in place, an office in Delhi and a public consultation window open into March 2026. What remains open is the number everyone actually wants — the fitment factor — and the date the revised pay is notified.",
       },
       {
         type: "callout",
         tone: "info",
         title: "Quick summary",
-        text: "Expected implementation: 1 January 2026 (with arrears if notified later). Expected fitment factor: 2.28x to 2.86x. Beneficiaries: ~1.15 crore employees, pensioners & family pensioners including defence personnel.",
+        text: "Announced 17 January 2025. Constituted by notification dated 3 November 2025 with an 18-month report window. Chairperson: Justice Ranjana Prakash Desai. Expected effective date: 1 January 2026, retrospectively, with arrears. Fitment factor still undecided — estimates 2.6–2.85, union demand up to 3.25.",
       },
       { type: "h2", text: "Latest 8th Pay Commission news at a glance" },
       {
         type: "ul",
         items: [
-          "Cabinet gave in-principle approval in January 2025 to constitute the 8th CPC.",
-          "Terms of Reference (ToR) are being finalised in consultation with the Department of Expenditure, DoPT and the Ministry of Defence.",
-          "Staff Side of the National Council (JCM) has demanded a fitment factor of 2.86 and full neutralisation of DA at 50% merger.",
-          "Implementation is expected from 1 January 2026, mirroring the 10-year cycle followed since the 4th CPC.",
-          "Arrears are likely if the recommendations are notified in late 2026 or 2027, similar to the 7th CPC pattern.",
+          "The Union Government announced the commission on 17 January 2025 and formally constituted it through a notification dated 3 November 2025.",
+          "Justice Ranjana Prakash Desai has been appointed Chairperson; the commission functions from Chanderlok Building, Janpath, New Delhi.",
+          "The commission has 18 months from 3 November 2025 to submit its report, which pushes realistic implementation towards 2027.",
+          "Public suggestions are being collected via the MyGov platform, with the window closing on 16 March 2026.",
+          "The Staff Side of the National Council (JCM) met on 25 February 2026 and finalised a demand for a 3.25 fitment factor, a 7% annual increment and higher leave encashment.",
+          "Dearness Allowance continues to be revised half-yearly in the interim; it stands at 60% for central government employees.",
+          "Because 1 January 2026 is expected to be the effective date, any delay in notification converts into arrears rather than a lost increase.",
         ],
       },
+      { type: "h2", text: "Timeline: what has happened and what comes next" },
+      {
+        type: "table",
+        caption:
+          "Dates on record are marked confirmed; anything beyond the report window is a projection based on the 6th and 7th CPC pattern.",
+        headers: ["Stage", "Date", "Status"],
+        rows: [
+          ["Announcement of the 8th CPC", "17 January 2025", "Confirmed"],
+          ["Constitution notification issued", "3 November 2025", "Confirmed"],
+          ["Chairperson appointed", "2025–26", "Confirmed"],
+          ["7th CPC tenure ends", "31 December 2025", "Confirmed"],
+          ["Expected effective date of revised pay", "1 January 2026", "Reference date"],
+          ["MyGov public suggestion deadline", "16 March 2026", "Confirmed"],
+          ["Report submission (18-month window)", "By around May 2027", "Projected"],
+          ["Government acceptance and Gazette notification", "2027", "Projected"],
+          ["Arrears credited from 1 January 2026", "After notification", "Projected"],
+        ],
+      },
+
       { type: "h2", text: "When will the 8th Pay Commission be implemented?" },
       {
         type: "p",
