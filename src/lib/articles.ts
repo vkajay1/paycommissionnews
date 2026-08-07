@@ -38,6 +38,200 @@ const TODAY = "2026-06-17";
 
 export const articles: Article[] = [
   {
+    slug: "8th-pay-commission-consultation-phase-timeline-arrears-guide",
+    title:
+      "8th Pay Commission Update 2026: Consultation Phase, Timeline, Fitment Debate & Arrears Explained",
+    description:
+      "The 8th Pay Commission has moved from announcement to active consultation with Justice Ranjana Prakash Desai as Chairperson. Understand the real timeline, the fitment factor debate, union demands from the February 2026 meeting, and exactly how arrears from 1 January 2026 will work.",
+    keyword: "8th pay commission",
+    readMinutes: 11,
+    date: "2026-03-02",
+    updated: "2026-08-07",
+    category: "News",
+    hero: "from-sky-500 via-cyan-500 to-emerald-500",
+    excerpt:
+      "A formal Chairperson is in place and a structured feedback window runs to mid-March 2026. Here is why 1 January 2026 is a reference date rather than a payday, and how the arrears mechanism actually works.",
+    body: [
+      {
+        type: "p",
+        text: "The 8th Pay Commission has shifted gear. What began as an announcement is now an active consultation exercise with a formal Chairperson appointed, an office running in Delhi and a structured feedback process open until mid-March 2026. The part most employees get wrong is the calendar: 1 January 2026 is a reference date, not the day a bigger salary lands in your account. Once you understand that distinction — and how the arrears mechanism closes the gap — the whole timeline stops feeling like a broken promise. This guide covers the general commission framework and the very latest developments, rather than occupation-specific salary projections.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "What this page covers",
+        text: "The commission's formal framework and timeline, approval and beneficiary numbers, the fitment factor debate (expert estimates vs union demands), the February 2026 union meeting, why January 2026 is not an instant hike, how arrears are computed, a cyber-scam warning, and how to plan your money through the transition.",
+      },
+      { type: "h2", text: "What is the 8th Pay Commission?" },
+      {
+        type: "p",
+        text: "The 8th Pay Commission is a panel constituted by the Government of India to review and revise the pay structure of central government employees. It weighs inflation, the pace of economic growth and prevailing living standards before recommending a revised pay matrix, allowance structure and pension formula. It succeeds the 7th Pay Commission, whose framework has governed central pay since 2016, and its recommendations are targeted to take effect from 1 January 2026.",
+      },
+      {
+        type: "p",
+        text: "The Eighth Central Pay Commission was formally constituted through a notification dated 3 November 2025 and has been given 18 months to complete its study of pay, allowances and pension benefits before submitting a final report. It currently operates out of Chanderlok Building on Janpath, New Delhi. Through this window the Commission gathers data, holds stakeholder consultations and examines written representations from employee and pensioner federations before finalising what it sends to the Union Government.",
+      },
+      { type: "h2", text: "Key highlights: approval, rollout and who benefits" },
+      {
+        type: "h3",
+        text: "Approval and rollout",
+      },
+      {
+        type: "ul",
+        items: [
+          "The Union Government announced the 8th Pay Commission on 17 January 2025.",
+          "1 January 2026 is set as the reference date from which revised pay is expected to apply.",
+          "Justice Ranjana Prakash Desai has been appointed Chairperson, which marks the Commission's formal constitution.",
+          "Public suggestions are being collected through the MyGov platform, with the window closing on 16 March 2026.",
+          "Because the 18-month clock started on 3 November 2025, realistic final implementation may slip into 2027.",
+        ],
+      },
+      {
+        type: "table",
+        headers: ["Item", "Position as of 2026"],
+        rows: [
+          ["Announcement", "17 January 2025"],
+          ["Formal constitution notification", "3 November 2025"],
+          ["Chairperson", "Justice Ranjana Prakash Desai"],
+          ["Office", "Chanderlok Building, Janpath, New Delhi"],
+          ["Report window", "18 months from 3 November 2025"],
+          ["MyGov suggestion deadline", "16 March 2026"],
+          ["Expected effective date", "1 January 2026 (retrospective)"],
+          ["Serving employees covered", "About 49 lakh"],
+          ["Pensioners covered", "About 65 lakh"],
+        ],
+        caption:
+          "Framework snapshot. Only the notification, chairperson and effective reference date are formally on record; timelines beyond the report window are projections.",
+      },
+      {
+        type: "p",
+        text: "On the money side, expert estimates cluster around a fitment factor of 2.6 to 2.85, which would translate into a headline pay rise of roughly 25 to 30 per cent. Applied to a current basic pay of ₹20,000, that range would produce a revised basic of about ₹46,600 to ₹57,200 before allowances are layered on. The minimum pension, currently ₹9,000, would move to roughly ₹22,500 to ₹25,200 on the same logic, since pension revision is kept proportional to the salary structure.",
+      },
+      {
+        type: "h2",
+        text: "Latest news: unions push for a higher fitment factor (February 2026)",
+      },
+      {
+        type: "p",
+        text: "Leading central government employee and pensioner organisations met in New Delhi on 25 February 2026 under the National Council (Staff Side) of the Joint Consultative Machinery. The drafting committee, headed by Shiva Gopal Mishra, finalised the demands to be placed before Chairperson Justice Ranjana Prakash Desai.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A fitment factor of 3.25 — well above the 2.6 to 2.85 range that most independent analysts consider likely.",
+          "An annual increment of 7 per cent in place of the present 3 per cent.",
+          "Leave encashment at retirement raised from 300 days to 400 days.",
+          "The notional family unit used in salary computation widened from 3 members to 5.",
+          "Leave Travel Concession made encashable in cash.",
+          "Fixed medical allowance in non-CGHS areas raised from ₹1,000 to ₹20,000 a month.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Alongside these, a separate strand of demands seeks a minimum basic salary of roughly ₹57,000, supported by a graded rather than flat fitment factor: about 3.00 for Levels 1 to 5, 3.05 to 3.10 for Levels 6 to 12, 3.05 to 3.15 for Levels 13 to 15, and up to 3.25 at senior levels. Defence and postal employee bodies have added their own asks — assured promotions and restoration of the Old Pension Scheme.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Demands are not decisions",
+        text: "Every figure in this section is a negotiating position submitted to the Commission. None of it is approved. Historically the notified fitment factor has landed below the Staff Side demand — the 7th CPC settled at 2.57 against a demand of 3.68.",
+      },
+      {
+        type: "h2",
+        text: "Why 1 January 2026 matters — but does not mean an immediate pay change",
+      },
+      {
+        type: "p",
+        text: "The date carries weight for a simple reason: the 7th Central Pay Commission's tenure runs out on 31 December 2025, and India has followed a roughly ten-year revision cycle for decades. So 1 January 2026 is the natural handover point.",
+      },
+      {
+        type: "p",
+        text: "What it is not is an automatic trigger. Pay and pension do not change because a calendar page turns. A revision takes effect only after the Commission is constituted, completes its work, submits recommendations, and the Government accepts and formally notifies them. Until that chain finishes, the existing 7th CPC pay matrix stays in force and the only interim movement in your salary comes from periodic Dearness Allowance revisions.",
+      },
+      { type: "h2", text: "Will employees and pensioners receive arrears?" },
+      {
+        type: "p",
+        text: "Yes — that is precisely why the reference date matters even if implementation is delayed. Once the Government approves and notifies the 8th CPC recommendations, they are expected to apply retrospectively from 1 January 2026. The difference between what you were actually paid and what you should have been paid across that gap is settled as arrears.",
+      },
+      {
+        type: "callout",
+        tone: "success",
+        title: "Worked example",
+        text: "If revised pay is notified in May 2027, arrears accrue for January 2026 through April 2027 — 16 months. The final amount depends on the notified fitment factor, the revised pay matrix and any changes to allowance rates, and can add up to a substantial lump sum.",
+      },
+      {
+        type: "p",
+        text: "Two practical caveats. Arrears are taxable in the year they are received, which can push you into a higher slab — relief under Section 89(1) with Form 10E spreads the liability back over the years the money relates to. And allowance arrears are often notified from a later date than pay arrears, so do not assume the whole package backdates uniformly.",
+      },
+      { type: "h2", text: "Impact on NPS and CGHS contributions" },
+      {
+        type: "p",
+        text: "A higher basic pay lifts everything indexed to it. Under the National Pension System, employees contribute 10 per cent of basic pay plus DA while the Government contributes 14 per cent — both rise automatically the moment revised pay takes effect, so your gross rise is always larger than your in-hand rise. CGHS contributions and CGEGIS premiums are also slab-linked to pay level, so some employees will move to a higher contribution slab. Factor this in before budgeting against a headline percentage.",
+      },
+      {
+        type: "h2",
+        text: "A cyber-scam warning every employee should read",
+      },
+      {
+        type: "p",
+        text: "Every pay commission cycle brings a wave of fraud, and this one is no different. The pattern is predictable: WhatsApp and Telegram messages claiming to carry a leaked pay matrix, links to an 'arrears verification' or 'pay fixation portal' asking for your PAN, employee code, bank details or an OTP, paid 'early arrears calculation' services, and fake circulars carrying a forged Department of Expenditure letterhead.",
+      },
+      {
+        type: "ul",
+        items: [
+          "No government department will ever ask for your OTP, ATM PIN or net-banking password to process arrears.",
+          "Genuine orders appear on doe.gov.in, dopt.gov.in and the Gazette of India — verify the memorandum number there before believing any forward.",
+          "Suggestions to the Commission go only through official channels such as MyGov; no intermediary needs a fee to file them for you.",
+          "Treat any 'confirmed fitment factor' claim as false until the Gazette notification exists.",
+          "Report financial cyber fraud on the National Cyber Crime Reporting Portal (cybercrime.gov.in) or helpline 1930.",
+        ],
+      },
+      { type: "h2", text: "How to plan your finances during the transition" },
+      {
+        type: "ol",
+        items: [
+          "Budget on your current pay, not a projected one. Treat any hike as unconfirmed until notified.",
+          "Avoid committing to a bigger EMI on the strength of an expected revision — implementation may extend into 2027.",
+          "Earmark arrears in advance: a rough split of debt clearance, an emergency buffer and a long-term investment beats an impulse spend.",
+          "Keep salary slips and DA revision orders for the entire gap period; they are what you will need to verify your arrear computation.",
+          "Plan Section 89(1) relief before the arrears month, and keep Form 10E ready rather than filing it in a hurry.",
+          "Model both ends of the range — 2.6 and 3.25 — so your plan holds whichever way the notification lands.",
+        ],
+      },
+      { type: "h2", text: "Where things stand" },
+      {
+        type: "p",
+        text: "The 8th Pay Commission is in an active consultation phase with a formal Chairperson in place and a feedback window open into March 2026. Realistically, actual implementation may extend into 2027, with retrospective arrears from 1 January 2026 once the recommendations are notified. Staying with official channels — and steering clear of shortcut offers — protects both your money and your data through the transition.",
+      },
+    ],
+    faq: [
+      {
+        q: "Has the 8th Pay Commission's final fitment factor been officially confirmed?",
+        a: "No. As of 2026 the fitment factor is still under discussion. Independent estimates suggest 2.6 to 2.85, while employee unions have demanded up to 3.25. The number is confirmed only after the Commission completes its 18-month study and the Government formally approves and notifies the recommendations.",
+      },
+      {
+        q: "Who is the Chairperson of the 8th Pay Commission?",
+        a: "Justice Ranjana Prakash Desai has been appointed Chairperson. Her appointment marks the Commission's formal constitution, following the notification issued on 3 November 2025. The Commission functions from Chanderlok Building, Janpath, New Delhi.",
+      },
+      {
+        q: "Will my salary increase from January 2026?",
+        a: "Not automatically. 1 January 2026 is the expected effective date, not a payment date. Until the Government notifies the recommendations, the 7th CPC pay structure continues and only Dearness Allowance revisions change your pay. The revision is then applied retrospectively with arrears.",
+      },
+      {
+        q: "How will 8th Pay Commission arrears be calculated?",
+        a: "Arrears equal the difference between the revised pay and the pay you actually drew, for every month from 1 January 2026 until the revised pay is implemented. If notification comes in May 2027, that is 16 months of difference. The amount depends on the notified fitment factor, the revised pay matrix and allowance changes.",
+      },
+      {
+        q: "How many employees and pensioners will the 8th CPC cover?",
+        a: "Around 49 lakh serving central government employees and about 65 lakh pensioners are expected to be covered by the revised pay and pension structure.",
+      },
+      {
+        q: "Can I still send suggestions to the 8th Pay Commission?",
+        a: "Public suggestions are being collected through the MyGov platform, with the stated deadline of 16 March 2026. Submit only through official channels — no intermediary or paid service is required, and any site asking for bank details or an OTP is fraudulent.",
+      },
+    ],
+  },
+  {
     slug: "8th-pay-commission-2026-latest-news-implementation-date",
     title:
       "8th Pay Commission 2026: Latest News, Implementation Date & Expected Salary Hike",
