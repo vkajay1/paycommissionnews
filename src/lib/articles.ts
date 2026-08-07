@@ -824,7 +824,35 @@ export const articles: Article[] = [
         type: "p",
         text: "If the 8th CPC is notified in late 2026 or 2027 with effect from 1 January 2026, pensioners will receive arrears for the intervening months. The 7th CPC paid arrears in a single instalment in 2016. Pensioner associations are pressing for the same approach this time.",
       },
+      { type: "h2", text: "Commutation of pension after revision" },
+      {
+        type: "p",
+        text: "Commutation lets you exchange up to 40 per cent of your basic pension for a lump sum, calculated as the commuted portion multiplied by twelve and then by the age-based commutation factor. The commuted portion is restored after fifteen years. Pensioners who commuted under the 7th CPC do not commute again on revision — their existing deduction is simply recomputed on the revised pension. Those who never commuted may generally opt within the window allowed after revision, so it is worth deciding in advance whether a lump sum or a fuller monthly pension suits your situation.",
+      },
+      { type: "h2", text: "Tax treatment of revised pension and arrears" },
+      {
+        type: "ul",
+        items: [
+          "Pension is taxed as salary income, and the standard deduction applies under both regimes.",
+          "A lump-sum arrear is taxed in the year of receipt, which can push you into a higher slab for that year alone.",
+          "Section 89(1) relief, claimed by filing Form 10E before your return, spreads the arrear across the years it relates to and often reduces the liability materially.",
+          "Commuted pension for government pensioners is exempt from tax.",
+          "Family pension is taxed under other income with a separate deduction, not the salary standard deduction.",
+        ],
+      },
+      { type: "h2", text: "What pensioners are asking the 8th CPC for" },
+      {
+        type: "p",
+        text: "Pensioner federations that joined the National Council (Staff Side) discussions in February 2026 have pressed for the same 3.25 fitment factor sought for serving employees, restoration of the Old Pension Scheme for those covered by NPS, a higher fixed medical allowance in non-CGHS areas, and a lower age threshold for additional pension so that the first slab begins before 80. None of this is settled; all of it is a negotiating position placed before the commission.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Scam alert for pensioners",
+        text: "Pensioners are the most targeted group in every revision cycle. No bank, treasury or department will ask for an OTP, ATM PIN or PPO password to release arrears. Any 'pension revision verification' link asking for bank details is fraud — report it on cybercrime.gov.in or helpline 1930.",
+      },
       { type: "h2", text: "Action checklist for pensioners" },
+
       {
         type: "ol",
         items: [
