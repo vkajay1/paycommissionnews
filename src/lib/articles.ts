@@ -498,7 +498,71 @@ export const articles: Article[] = [
         type: "p",
         text: "Yes. The 6th and 7th CPCs both applied the same fitment factor to existing basic pensions. Pensioners can expect their basic pension to be multiplied by the final fitment factor, with Dearness Relief resetting to zero on the implementation date.",
       },
+      { type: "h2", text: "Where 2.6 to 2.85 comes from" },
+      {
+        type: "p",
+        text: "The expert range most commonly quoted in 2026 is 2.6 to 2.85, and it is not a guess pulled from the air. It follows the same two-step logic the 7th CPC used: merge the DA that has accumulated by the effective date, then add a real increase on top. With DA at 60 per cent, the merged base is already 1.60. A real increase of 60 to 78 per cent on that base lands you between 2.56 and 2.85 — which is why analysts cluster there, and why anything above 3.0 requires a real increase far larger than any commission has granted.",
+      },
+      {
+        type: "table",
+        caption:
+          "Reverse-engineering each scenario. Real increase is what the commission adds on top of the DA-merged base of 1.60.",
+        headers: ["Fitment", "DA merged base", "Implied real increase", "Who backs it"],
+        rows: [
+          ["2.28", "1.60", "About 42%", "Conservative analyst view"],
+          ["2.57", "1.60", "About 61%", "7th CPC value retained as base case"],
+          ["2.60 – 2.85", "1.60", "63% – 78%", "Most independent 2026 estimates"],
+          ["3.00 – 3.10", "1.60", "88% – 94%", "Graded union proposal, Levels 1–12"],
+          ["3.25", "1.60", "About 103%", "National Council (Staff Side) demand"],
+        ],
+      },
+      { type: "h2", text: "What the unions asked for in February 2026" },
+      {
+        type: "p",
+        text: "At the 25 February 2026 meeting of the National Council (Staff Side) of the Joint Consultative Machinery in New Delhi, the drafting committee headed by Shiva Gopal Mishra settled on 3.25 as the headline demand, together with a 7 per cent annual increment, leave encashment raised from 300 to 400 days, and a wider notional family unit of five members. A parallel proposal seeks a graded factor rather than one flat number — roughly 3.00 for Levels 1 to 5, 3.05 to 3.10 for Levels 6 to 12, 3.05 to 3.15 for Levels 13 to 15, and up to 3.25 at senior levels — which would break with the single-multiplier convention every commission since the 6th has followed.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "History says the demand is a ceiling, not a forecast",
+        text: "Ahead of the 7th CPC the Staff Side demanded 3.68 and the notified figure was 2.57 — about 70 per cent of the ask. Applying the same discount to a 3.25 demand points to something in the 2.3 to 2.6 band. Plan for that, and treat anything higher as upside.",
+      },
+      { type: "h2", text: "Why a higher fitment factor is not a proportional pay rise" },
+      {
+        type: "p",
+        text: "Two employees can read the same fitment factor and end up with very different in-hand outcomes, because the multiplier applies only to basic pay while your salary is basic plus DA plus allowances. On the effective date DA resets to zero, so a large part of the apparent jump is simply DA being folded into the new basic. Add the fact that NPS at 10 per cent, CGHS and CGEGIS all scale with the higher basic, and net in-hand grows noticeably less than gross.",
+      },
+      {
+        type: "table",
+        caption: "Level 6 Inspector, X city: how much of the headline actually reaches you.",
+        headers: ["Metric", "Now (basic 35,400, DA 60%)", "At 2.57", "At 2.86"],
+        rows: [
+          ["Basic pay", "35,400", "90,978", "1,01,244"],
+          ["DA", "21,240", "0 (reset)", "0 (reset)"],
+          ["HRA (X city)", "9,558", "24,564", "27,336"],
+          ["Gross (approx)", "71,706", "1,21,050", "1,34,088"],
+          ["Headline change in basic", "—", "+157%", "+186%"],
+          ["Change in gross", "—", "About +69%", "About +87%"],
+        ],
+      },
+      { type: "h2", text: "Fitment factor and pensioners" },
+      {
+        type: "p",
+        text: "The same multiplier is applied to existing basic pension, and Dearness Relief resets alongside it. That is why the minimum pension of ₹9,000 is discussed in a band of roughly ₹22,500 to ₹25,200 for the 2.5 to 2.8 range — pension revision has historically been kept strictly proportional to the salary revision so that the two structures do not drift apart.",
+      },
+      { type: "h2", text: "Common misconceptions about the fitment factor" },
+      {
+        type: "ul",
+        items: [
+          "It is not a percentage hike. A factor of 2.57 does not mean a 157 per cent salary increase, because your existing DA is inside that multiplier.",
+          "It is not confirmed. No fitment factor exists in law until the Gazette notification. Anyone showing you a 'final' figure in 2026 is guessing or selling something.",
+          "It does not apply to allowances. HRA and TA are recomputed from the new basic under their own rules; they are not multiplied by the factor.",
+          "It does not vary by department. Historically one factor applies across all levels and ministries, though unions are asking to change that this time.",
+          "A higher factor is not automatically better for you personally — if levels are merged or repriced during rationalisation, your placement in the new matrix matters as much as the multiplier.",
+        ],
+      },
       { type: "h2", text: "Calculate your own scenario" },
+
       {
         type: "p",
         text: "Open the 8th CPC salary calculator, select your pay matrix level, and drag the fitment slider from 2.0 to 3.0. The dashboard updates basic pay, HRA (X/Y/Z city), DA and gross monthly salary in real time.",
