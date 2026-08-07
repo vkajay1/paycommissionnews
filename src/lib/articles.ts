@@ -744,7 +744,7 @@ export const articles: Article[] = [
       },
       {
         q: "Does the calculator include arrears?",
-        a: "The base calculator shows the monthly revised salary. Use the arrears tool (coming soon) to compute month-wise arrears from the effective date.",
+        a: "The base calculator shows the monthly revised salary. Use the dedicated arrears calculator to compute month-wise arrears from 1 January 2026 up to the month revised pay is actually drawn.",
       },
     ],
   },
