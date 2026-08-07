@@ -346,12 +346,51 @@ export const articles: Article[] = [
         type: "p",
         text: "Pensioners receive a revised basic pension calculated by multiplying their existing pension by the same fitment factor. Family pensioners get 30% of the revised basic pay, subject to floors. Dearness Relief (DR), like DA, resets to zero on the implementation date and starts accruing thereafter.",
       },
+      { type: "h2", text: "What the commission is actually studying" },
+      {
+        type: "p",
+        text: "A pay commission is not only a salary multiplier exercise. Its terms of reference typically cover the entire compensation architecture, which is why the report takes 18 months rather than a few weeks.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The structure of the pay matrix — whether levels should be merged, renumbered or repriced.",
+          "The rate of annual increment, currently 3 per cent, with unions pressing for 7 per cent.",
+          "Allowances: HRA slabs, Transport Allowance, Children Education Allowance, and the long list of department-specific allowances.",
+          "Pension and family pension formulae, commutation rules and additional pension for the very elderly.",
+          "Retirement benefits such as gratuity ceilings and leave encashment limits.",
+          "Career progression: MACP, assured promotions and cadre review demands raised by defence and postal bodies.",
+        ],
+      },
+      { type: "h2", text: "How the money reaches you: notification, then arrears" },
+      {
+        type: "p",
+        text: "The sequence is fixed. The commission submits its report, the Department of Expenditure examines it, the Cabinet approves, and a Gazette notification plus Department of Expenditure orders make it operative. Payroll software is then updated and revised pay is drawn from a specified month, with the difference for earlier months paid as arrears. In 2016 the pay portion under the 7th CPC was implemented within months of the report, while allowance revisions followed roughly a year later — a split worth expecting again.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Do not treat leaked pay matrices as news",
+        text: "Every cycle produces circulating PDFs claiming to be the final 8th CPC pay matrix. Until a Gazette notification exists, no pay matrix is real. Verify any order number against doe.gov.in before you believe it.",
+      },
+      { type: "h2", text: "What employees should do in the interim" },
+      {
+        type: "ol",
+        items: [
+          "Keep every salary slip and DA revision order from January 2026 onward — these are the documents your arrear computation will be checked against.",
+          "Confirm your pay matrix level and increment stage on your service record; a wrong cell makes every projection wrong.",
+          "Budget on current pay. Avoid new long-term EMIs justified by an expected revision.",
+          "Plan for the tax hit on a lump-sum arrear and keep Form 10E in mind for Section 89(1) relief.",
+          "Model both a conservative and an optimistic fitment factor so your plan survives either outcome.",
+        ],
+      },
       { type: "h2", text: "How to estimate your revised salary today" },
       {
         type: "p",
-        text: "Use our free 8th CPC salary calculator to model your revised basic pay, DA, HRA and gross salary against multiple fitment scenarios. Move the fitment slider from 2.0 to 3.0 to see best-case, base-case and conservative projections instantly.",
+        text: "Use our free 8th CPC salary calculator to model your revised basic pay, DA, HRA and gross salary against multiple fitment scenarios. Move the fitment slider from 2.0 to 3.0 to see best-case, base-case and conservative projections instantly, then check the arrears calculator to see what a delayed notification would be worth as a lump sum.",
       },
     ],
+
     faq: [
       {
         q: "Is the 8th Pay Commission approved?",
