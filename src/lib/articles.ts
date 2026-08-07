@@ -394,7 +394,11 @@ export const articles: Article[] = [
     faq: [
       {
         q: "Is the 8th Pay Commission approved?",
-        a: "The Union Cabinet granted in-principle approval in January 2025. Formal Terms of Reference and the chairperson appointment are pending, after which the commission will submit recommendations.",
+        a: "Yes — it was announced on 17 January 2025 and formally constituted through a notification dated 3 November 2025, with Justice Ranjana Prakash Desai as Chairperson. What is still pending is the report itself and the Government's notification of the revised pay structure.",
+      },
+      {
+        q: "How long does the 8th Pay Commission have to submit its report?",
+        a: "Eighteen months from the 3 November 2025 notification, which places submission around mid-2027 in the worst case. Government examination and notification follow after that, with revised pay applied retrospectively from 1 January 2026.",
       },
       {
         q: "When will the 8th Pay Commission be implemented?",
