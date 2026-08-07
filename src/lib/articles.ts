@@ -34,7 +34,7 @@ export type Block =
     }
   | { type: "quote"; text: string; cite?: string };
 
-const TODAY = "2026-06-17";
+const TODAY = "2026-08-07";
 
 export const articles: Article[] = [
   {
@@ -238,7 +238,7 @@ export const articles: Article[] = [
     description:
       "Latest 8th Pay Commission news for 2026 — formation status, expected implementation date, fitment factor, and how the salary hike will affect 1 crore central government employees and pensioners.",
     keyword: "8th pay commission 2026",
-    readMinutes: 9,
+    readMinutes: 13,
     date: "2026-01-20",
     updated: TODAY,
     category: "News",
@@ -421,7 +421,7 @@ export const articles: Article[] = [
     description:
       "Understand how the 8th CPC fitment factor is calculated, why unions are demanding 2.86, and what 2.28 vs 2.57 vs 2.86 means for your revised basic pay across all pay matrix levels.",
     keyword: "8th pay commission fitment factor",
-    readMinutes: 8,
+    readMinutes: 14,
     date: "2026-02-04",
     updated: TODAY,
     category: "Explainer",
@@ -594,7 +594,7 @@ export const articles: Article[] = [
     description:
       "Step-by-step guide to using the 8th CPC salary calculator. Learn how the pay matrix, fitment factor, DA percentage and HRA city classification interact to produce your revised monthly salary.",
     keyword: "8th cpc salary calculator",
-    readMinutes: 7,
+    readMinutes: 12,
     date: "2026-02-18",
     updated: TODAY,
     category: "Calculator",
@@ -755,7 +755,7 @@ export const articles: Article[] = [
     description:
       "Complete guide for central government pensioners under the 8th Pay Commission — how the new basic pension is calculated, Dearness Relief reset, family pension changes and arrear payment timeline.",
     keyword: "8th pay commission pensioners",
-    readMinutes: 8,
+    readMinutes: 13,
     date: "2026-03-05",
     updated: TODAY,
     category: "Pensioners",
@@ -890,7 +890,7 @@ export const articles: Article[] = [
     description:
       "Level-wise 8th CPC salary hike projection — see new basic pay, DA, HRA and net in-hand salary for every pay matrix level from MTS to Joint Secretary at fitment factors 2.28, 2.57 and 2.86.",
     keyword: "8th pay commission salary hike",
-    readMinutes: 9,
+    readMinutes: 14,
     date: "2026-03-22",
     updated: TODAY,
     category: "Salary",
