@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://paycommissionnews.lovable.app/sitemap.xml
+Sitemap: https://paycommissionnews.co.in/sitemap.xml
