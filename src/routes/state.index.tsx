@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, ArrowRight } from "lucide-react";
 import { STATE_PAGES } from "@/lib/seo-pages";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/state/")({
   head: () => ({

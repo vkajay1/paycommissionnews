@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 import { inr } from "@/lib/format";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/pay-level/")({
   head: () => ({

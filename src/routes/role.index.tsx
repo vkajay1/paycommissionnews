@@ -3,7 +3,7 @@ import { ArrowRight, Briefcase } from "lucide-react";
 import { ROLE_PAGES } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/role/")({
   head: () => ({

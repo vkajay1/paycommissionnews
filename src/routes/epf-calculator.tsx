@@ -13,7 +13,7 @@ import {
   Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 const faq: Faq[] = [
   {

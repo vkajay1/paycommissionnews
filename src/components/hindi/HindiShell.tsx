@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export const SITE = "https://paycommissionnews.lovable.app";
+export const SITE = "https://paycommissionnews.co.in";
 
 export type HindiFaq = { q: string; a: string };
 

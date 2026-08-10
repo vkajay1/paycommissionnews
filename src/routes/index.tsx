@@ -10,7 +10,7 @@ import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { BannerAd728x90, ContainerAd } from "@/components/ads/AdSlots";
 
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/")({
   head: () => ({

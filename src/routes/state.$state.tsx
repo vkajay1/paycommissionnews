@@ -5,7 +5,7 @@ import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { getStatePage, STATE_PAGES, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/state/$state")({
   beforeLoad: ({ params }) => {
