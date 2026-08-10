@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { GlobalAdScripts } from "@/components/ads/AdSlots";
+import { GlobalAdScripts, BannerAd728x90 } from "@/components/ads/AdSlots";
 
 
 function NotFoundComponent() {
@@ -156,6 +156,9 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
+          <BannerAd728x90 />
+        </div>
         <main className="flex-1 pb-20 md:pb-0">
           <Outlet />
         </main>

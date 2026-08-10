@@ -7,7 +7,7 @@ import { Features } from "@/components/landing/Features";
 import { SalaryGuide } from "@/components/landing/SalaryGuide";
 import { FAQ, homeFaqs } from "@/components/landing/FAQ";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
-import { BannerAd728x90, ContainerAd } from "@/components/ads/AdSlots";
+import { ContainerAd } from "@/components/ads/AdSlots";
 
 
 const SITE = "https://paycommissionnews.co.in";
@@ -107,9 +107,6 @@ function Index() {
       <QuickCalc />
       <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
         <DisclaimerBanner />
-      </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <BannerAd728x90 />
       </div>
       <CpcSnapshot />
       <CalculatorGrid />
