@@ -28,9 +28,22 @@ export function Footer() {
               { label: "Fitment Factor Table", to: "/fitment-factor" },
               { label: "Pay Matrix Levels", to: "/pay-level" },
               { label: "State-wise Salary", to: "/state" },
+              { label: "Role-wise Salary", to: "/role" },
               { label: "Blog & News", to: "/blog" },
             ]}
           />
+
+          <FooterCol
+            title="State pages"
+            links={[
+              { label: "8th CPC Tamil Nadu", to: "/8th-pay-commission-tamil-nadu" },
+              { label: "8th CPC Maharashtra", to: "/8th-pay-commission-maharashtra" },
+              { label: "8th CPC Uttar Pradesh", to: "/8th-pay-commission-uttar-pradesh" },
+              { label: "8th CPC West Bengal", to: "/8th-pay-commission-west-bengal" },
+              { label: "8th CPC Odisha", to: "/8th-pay-commission-odisha" },
+            ]}
+          />
+
 
           <FooterCol
             title="हिंदी में"
