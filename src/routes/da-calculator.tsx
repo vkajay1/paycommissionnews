@@ -25,7 +25,7 @@ import {
   daPctFor,
 } from "@/lib/da-rates";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 const faq = [
   {

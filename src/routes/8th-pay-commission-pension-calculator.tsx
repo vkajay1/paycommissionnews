@@ -3,7 +3,7 @@ import { KeywordHub } from "@/components/seo/KeywordHub";
 import { faqLd } from "@/components/calc/CalcShell";
 import { CURRENT_DA, CURRENT_DA_FROM } from "@/lib/da-rates";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 const faq = [
   {

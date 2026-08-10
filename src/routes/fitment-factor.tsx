@@ -8,7 +8,7 @@ import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { inr } from "@/lib/format";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 const FACTORS = [1.92, 2.08, 2.28, 2.57, 2.86, 3.0, 3.68, 3.83];
 
 export const Route = createFileRoute("/fitment-factor")({

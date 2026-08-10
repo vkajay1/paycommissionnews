@@ -7,7 +7,7 @@ import { getLevel, LEVEL_FITMENTS, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 import { transportAllowance } from "@/lib/pay-matrix";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/pay-level/$level")({
   beforeLoad: ({ params }) => {

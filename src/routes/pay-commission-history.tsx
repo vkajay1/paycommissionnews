@@ -11,7 +11,7 @@ import {
   MERGE_MULTIPLIER,
 } from "@/lib/cpc-facts";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 const faq = [
   {

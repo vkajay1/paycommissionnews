@@ -10,7 +10,7 @@ import {
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { inr } from "@/lib/format";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/ltc-planner")({
   head: () => ({

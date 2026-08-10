@@ -44,7 +44,7 @@ export const Route = createFileRoute("/blog/$slug")({
               "@type": "Organization",
               name: "8th CPC Calculator",
             },
-            mainEntityOfPage: `https://paycommissionnews.lovable.app${url}`,
+            mainEntityOfPage: `https://paycommissionnews.co.in${url}`,
           }),
         },
         {

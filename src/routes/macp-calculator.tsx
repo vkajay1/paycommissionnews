@@ -9,7 +9,7 @@ import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { inr } from "@/lib/format";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/macp-calculator")({
   head: () => ({

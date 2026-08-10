@@ -18,7 +18,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/fitment-simulator")({
   head: () => ({

@@ -6,7 +6,7 @@ import { getRolePage, ROLE_PAGES, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 import { transportAllowance } from "@/lib/pay-matrix";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 export const Route = createFileRoute("/role/$role")({
   beforeLoad: ({ params }) => {

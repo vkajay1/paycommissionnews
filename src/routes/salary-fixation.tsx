@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { KeywordHub } from "@/components/seo/KeywordHub";
 import { faqLd } from "@/components/calc/CalcShell";
 
-const SITE = "https://paycommissionnews.lovable.app";
+const SITE = "https://paycommissionnews.co.in";
 
 const faq = [
   {
