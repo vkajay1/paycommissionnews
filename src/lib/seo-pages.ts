@@ -195,6 +195,116 @@ export const ROLE_PAGES: RolePage[] = [
     ],
     promotion: "PEO → Additional BDO → Block Development Officer.",
   },
+  {
+    slug: "assistant-loco-pilot",
+    name: "Assistant Loco Pilot (ALP)",
+    keyword: "alp salary after 8th pay",
+    level: 2,
+    basic: 19900,
+    city: "Y",
+    department: "Indian Railways",
+    description:
+      "Assistant Loco Pilots are recruited through RRB in Level 2 of the 7th CPC pay matrix with an entry basic pay of ₹19,900, plus running allowance which is a large part of an ALP's earnings. Under the 8th Pay Commission an ALP's basic pay is projected at roughly ₹45,400 at a 2.28x fitment factor and about ₹56,900 at 2.86x, with running allowance and DA on top.",
+    duties: [
+      "Assist the Loco Pilot in operating goods and coaching trains",
+      "Monitor signals, brake power tests and locomotive gauges en route",
+      "Carry out shunting duties and pre-departure loco inspections",
+    ],
+    perks: [
+      "Running (kilometreage) allowance, treated as pay for several purposes",
+      "Night duty allowance, breach-of-rest and outstation allowance",
+      "Railway quarters or HRA, RELHS medical cover and pass facility",
+    ],
+    promotion: "ALP → Sr. ALP → Loco Pilot Goods → LP Passenger → LP Mail/Express.",
+  },
+  {
+    slug: "upsssc-junior-assistant",
+    name: "Junior Assistant (UPSSSC)",
+    keyword: "upsssc junior assistant salary after 8th pay commission",
+    level: 2,
+    basic: 19900,
+    city: "Y",
+    department: "Government of Uttar Pradesh — UPSSSC",
+    description:
+      "UPSSSC Junior Assistants are appointed in Level 2 of the UP Revised Pay Rules matrix at an entry basic pay of ₹19,900. Because Uttar Pradesh mirrors the central pay matrix, an 8th CPC fitment of 2.28x projects a revised basic of about ₹45,400 and 2.86x about ₹56,900, before DA, HRA and other allowances.",
+    duties: [
+      "Handle dak, file movement and computer typing work in state offices",
+      "Maintain registers, service records and departmental correspondence",
+      "Assist in preparing replies to RTI and assembly questions",
+    ],
+    perks: [
+      "Dearness Allowance at the central rate as sanctioned by UP",
+      "HRA by city class and transport allowance",
+      "NPS, medical reimbursement and earned leave benefits",
+    ],
+    promotion: "Junior Assistant → Senior Assistant → Head Clerk → Office Superintendent.",
+  },
+  {
+    slug: "talathi",
+    name: "Talathi (Maharashtra)",
+    keyword: "talathi salary after 8th pay maharashtra",
+    level: 4,
+    basic: 25500,
+    city: "Y",
+    department: "Revenue Department, Maharashtra",
+    description:
+      "Talathis are village revenue officers in Maharashtra placed in Level 4 (S-8 equivalent) of the state pay matrix with an entry basic pay of ₹25,500. Under the 8th Pay Commission pattern, a Talathi's basic pay projects to about ₹58,100 at a 2.28x fitment factor and roughly ₹72,900 at 2.86x, plus DA and HRA.",
+    duties: [
+      "Maintain 7/12 extracts, mutation entries and village land records",
+      "Collect land revenue and issue income, residence and caste certificates",
+      "Report crop position, natural calamity damage and survey work",
+    ],
+    perks: [
+      "Dearness Allowance at the central rate adopted by Maharashtra",
+      "HRA by city class, local travel allowance for village circuits",
+      "NPS, medical reimbursement and leave encashment benefits",
+    ],
+    promotion: "Talathi → Circle Officer → Awal Karkun → Naib Tahsildar → Tahsildar.",
+  },
+  {
+    slug: "dda-mts",
+    name: "MTS (DDA / Central Offices)",
+    keyword: "dda mts salary 8th pay commission",
+    level: 1,
+    basic: 18000,
+    city: "X",
+    department: "Delhi Development Authority / Central Government",
+    description:
+      "Multi-Tasking Staff in DDA and other central offices are in Level 1 of the pay matrix at an entry basic pay of ₹18,000. Under the 8th CPC, this minimum pay is the most-watched cell in the matrix: 2.28x gives about ₹41,000 and 2.86x about ₹51,500, with X-class HRA for Delhi postings added on top.",
+    duties: [
+      "Handle dak, photocopying, record keeping and office upkeep",
+      "Assist in file movement, dispatch and routine clerical support",
+      "Carry out watch and ward or field errands as assigned",
+    ],
+    perks: [
+      "X-class HRA for Delhi (27% of basic at current rates) and transport allowance",
+      "CGHS medical cover and CGEGIS insurance",
+      "NPS/UPS pension, LTC and 30 days earned leave a year",
+    ],
+    promotion: "MTS → LDC → UDC → Assistant Section Officer (through departmental exam).",
+  },
+  {
+    slug: "sub-inspector",
+    name: "Sub-Inspector (Police / CAPF)",
+    keyword: "si salary 8th pay commission",
+    level: 6,
+    basic: 35400,
+    city: "Y",
+    department: "State Police / CAPF / Delhi Police",
+    description:
+      "Sub-Inspectors in state police forces, Delhi Police and CAPF are placed in Level 6 of the pay matrix with an entry basic pay of ₹35,400. Under the 8th Pay Commission, an SI's basic pay is projected at about ₹80,700 at a 2.28x fitment factor and roughly ₹1,01,200 at 2.86x, before DA, HRA and risk allowances.",
+    duties: [
+      "Register FIRs, lead investigations and file charge sheets",
+      "Command a police station beat or a CAPF section on operational duty",
+      "Handle law and order bandobast, court work and prisoner escort",
+    ],
+    perks: [
+      "Risk and hardship allowance, uniform allowance, ration money",
+      "HRA by city class or departmental quarters, transport allowance",
+      "One additional increment for CAPF personnel on completing training",
+    ],
+    promotion: "SI → Inspector → Deputy SP / Assistant Commandant → Additional SP.",
+  },
 ];
 
 export function getRolePage(slug: string): RolePage | undefined {
