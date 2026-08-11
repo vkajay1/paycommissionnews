@@ -110,16 +110,15 @@ function Page() {
         const ta7 = taBase + Math.round((taBase * daPct) / 100);
         const gross7 = basic7 + da7 + hra7 + ta7;
 
-        const base = mergeDa === "yes" ? basic7 + da7 : basic7;
-        const basic8 = Math.round((mergeDa === "yes" ? basic7 : basic7) * fit);
-        const revised = mergeDa === "yes" ? Math.round(basic7 * fit) : basic8;
+        const revised = Math.round(basic7 * fit);
+        const da8 = mergeDa === "yes" ? 0 : Math.round((revised * daPct) / 100);
         const hra8 = Math.round((revised * HRA_8[city]) / 100);
         const ta8 = Math.round(taBase * 1.25);
-        const gross8 = revised + hra8 + ta8;
+        const gross8 = revised + da8 + hra8 + ta8;
 
         const diff = gross8 - gross7;
         const pct = gross7 > 0 ? (diff / gross7) * 100 : 0;
-        return { ...p, base, basic7, da7, hra7, ta7, gross7, basic8: revised, hra8, ta8, gross8, diff, pct };
+        return { ...p, basic7, da7, hra7, ta7, gross7, basic8: revised, hra8, ta8, gross8, diff, pct };
       }),
     [fit, city, daPct, mergeDa],
   );
