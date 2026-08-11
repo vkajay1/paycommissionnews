@@ -34,6 +34,8 @@ const STATIC: SitemapEntry[] = [
   { path: "/leave-encashment-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/macp-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/fitment-factor", changefreq: "weekly", priority: "0.9" },
+  { path: "/7th-pay-commission-calculator", changefreq: "weekly", priority: "0.9" },
+  { path: "/7th-vs-8th-pay-commission", changefreq: "weekly", priority: "0.9" },
   { path: "/6th-pay-commission-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-arrears-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-pension-calculator", changefreq: "weekly", priority: "0.9" },
