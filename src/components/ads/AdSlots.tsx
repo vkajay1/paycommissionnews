@@ -69,3 +69,26 @@ export function GlobalAdScripts() {
   }, []);
   return null;
 }
+
+/**
+ * Reserved space for a Google AdSense vertical unit (160x600 / 300x600).
+ * Renders a quiet placeholder until the AdSense code is added.
+ */
+export function SidebarAdSlot({ label }: { label?: string }) {
+  return (
+    <aside
+      aria-hidden="true"
+      className="sticky top-24 hidden xl:block"
+      data-ad-slot="sidebar"
+    >
+      <div className="flex h-[600px] w-[160px] flex-col items-center justify-center rounded-2xl border border-dashed border-border/70 bg-secondary/30 text-center">
+        <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/70">
+          Advertisement
+        </span>
+        {label && (
+          <span className="mt-1 px-2 text-[10px] text-muted-foreground/50">{label}</span>
+        )}
+      </div>
+    </aside>
+  );
+}
