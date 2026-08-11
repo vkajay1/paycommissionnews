@@ -42,6 +42,7 @@ const STATIC: SitemapEntry[] = [
   { path: "/salary-fixation", changefreq: "weekly", priority: "0.9" },
   { path: "/fitment-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/rajasthan-government-salary-calculator", changefreq: "weekly", priority: "0.9" },
+  { path: "/8th-pay-commission-rajasthan", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-odisha", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-tamil-nadu", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-west-bengal", changefreq: "weekly", priority: "0.9" },
