@@ -15,6 +15,8 @@ import {
   CalendarCheck,
   ArrowRight,
   Check,
+  Calculator,
+  GitCompareArrows,
 } from "lucide-react";
 
 const tools = [
@@ -136,6 +138,20 @@ const tools = [
     desc: "The full fitment table for 1.92x, 2.28x, 2.57x, 2.86x and 3.83x across all 18 levels, so you can compare every scenario at once.",
     points: ["Entry pay per level", "Real hike after DA merge", "Who backs each factor"],
     href: "/fitment-factor",
+  },
+  {
+    icon: Calculator,
+    title: "7th CPC Calculator",
+    desc: "Your salary as it stands today: pay matrix basic, dearness allowance at 60%, city-wise HRA and transport allowance with DA on TA.",
+    points: ["All 18 levels with entry pay", "Gross and approx in-hand", "DA history selector"],
+    href: "/7th-pay-commission-calculator",
+  },
+  {
+    icon: GitCompareArrows,
+    title: "7th vs 8th CPC Comparison",
+    desc: "Side-by-side comparison table of current and projected salary for every pay level and post, driven by a live fitment slider.",
+    points: ["All 18 levels in one table", "Rupee and percentage hike", "Average hike across levels"],
+    href: "/7th-vs-8th-pay-commission",
   },
   {
     icon: History,
