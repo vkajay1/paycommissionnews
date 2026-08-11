@@ -15,6 +15,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
+import { Route as RajasthanGovernmentSalaryCalculatorRouteImport } from './routes/rajasthan-government-salary-calculator'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
@@ -92,6 +93,12 @@ const RoleRoute = RoleRouteImport.update({
   path: '/role',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RajasthanGovernmentSalaryCalculatorRoute =
+  RajasthanGovernmentSalaryCalculatorRouteImport.update({
+    id: '/rajasthan-government-salary-calculator',
+    path: '/rajasthan-government-salary-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PensionArrearRoute = PensionArrearRouteImport.update({
   id: '/pension-arrear',
   path: '/pension-arrear',
@@ -375,6 +382,7 @@ export interface FileRoutesByFullPath {
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/salary-fixation': typeof SalaryFixationRoute
@@ -428,6 +436,7 @@ export interface FileRoutesByTo {
   '/pay-fixation': typeof PayFixationRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/salary': typeof SalaryRoute
   '/salary-fixation': typeof SalaryFixationRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -481,6 +490,7 @@ export interface FileRoutesById {
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
   '/salary-fixation': typeof SalaryFixationRoute
@@ -537,6 +547,7 @@ export interface FileRouteTypes {
     | '/pay-level'
     | '/pension'
     | '/pension-arrear'
+    | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
     | '/salary-fixation'
@@ -590,6 +601,7 @@ export interface FileRouteTypes {
     | '/pay-fixation'
     | '/pension'
     | '/pension-arrear'
+    | '/rajasthan-government-salary-calculator'
     | '/salary'
     | '/salary-fixation'
     | '/sitemap.xml'
@@ -642,6 +654,7 @@ export interface FileRouteTypes {
     | '/pay-level'
     | '/pension'
     | '/pension-arrear'
+    | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
     | '/salary-fixation'
@@ -697,6 +710,7 @@ export interface RootRouteChildren {
   PayLevelRoute: typeof PayLevelRouteWithChildren
   PensionRoute: typeof PensionRoute
   PensionArrearRoute: typeof PensionArrearRoute
+  RajasthanGovernmentSalaryCalculatorRoute: typeof RajasthanGovernmentSalaryCalculatorRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
   SalaryFixationRoute: typeof SalaryFixationRoute
@@ -750,6 +764,13 @@ declare module '@tanstack/react-router' {
       path: '/role'
       fullPath: '/role'
       preLoaderRoute: typeof RoleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rajasthan-government-salary-calculator': {
+      id: '/rajasthan-government-salary-calculator'
+      path: '/rajasthan-government-salary-calculator'
+      fullPath: '/rajasthan-government-salary-calculator'
+      preLoaderRoute: typeof RajasthanGovernmentSalaryCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pension-arrear': {
@@ -1167,6 +1188,8 @@ const rootRouteChildren: RootRouteChildren = {
   PayLevelRoute: PayLevelRouteWithChildren,
   PensionRoute: PensionRoute,
   PensionArrearRoute: PensionArrearRoute,
+  RajasthanGovernmentSalaryCalculatorRoute:
+    RajasthanGovernmentSalaryCalculatorRoute,
   RoleRoute: RoleRouteWithChildren,
   SalaryRoute: SalaryRoute,
   SalaryFixationRoute: SalaryFixationRoute,
