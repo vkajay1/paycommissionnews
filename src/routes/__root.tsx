@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { GlobalAdScripts, BannerAd728x90 } from "@/components/ads/AdSlots";
+import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot } from "@/components/ads/AdSlots";
 
 
 function NotFoundComponent() {
@@ -159,9 +159,13 @@ function RootComponent() {
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
           <BannerAd728x90 />
         </div>
-        <main className="flex-1 pb-20 md:pb-0">
-          <Outlet />
-        </main>
+        <div className="flex flex-1 justify-center gap-6 px-0 xl:gap-8 xl:px-6">
+          <SidebarAdSlot label="160 x 600" />
+          <main className="min-w-0 flex-1 pb-20 md:pb-0">
+            <Outlet />
+          </main>
+          <SidebarAdSlot label="160 x 600" />
+        </div>
         <Footer />
         <MobileNav />
         <GlobalAdScripts />
