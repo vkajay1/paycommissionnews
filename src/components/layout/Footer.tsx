@@ -38,6 +38,7 @@ export function Footer() {
             links={[
               { label: "8th CPC Tamil Nadu", to: "/8th-pay-commission-tamil-nadu" },
               { label: "8th CPC Maharashtra", to: "/8th-pay-commission-maharashtra" },
+              { label: "8th CPC Rajasthan", to: "/8th-pay-commission-rajasthan" },
               { label: "Rajasthan salary calculator", to: "/rajasthan-government-salary-calculator" },
               { label: "8th CPC Uttar Pradesh", to: "/8th-pay-commission-uttar-pradesh" },
               { label: "8th CPC West Bengal", to: "/8th-pay-commission-west-bengal" },
