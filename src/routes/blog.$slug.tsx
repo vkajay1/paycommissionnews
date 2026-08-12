@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Calendar, Clock, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { articles, getArticle, type Block } from "@/lib/articles";
+import { InArticleAd } from "@/components/ads/AdSlots";
 
 export const Route = createFileRoute("/blog/$slug")({
   beforeLoad: ({ params }) => {
@@ -134,9 +135,23 @@ function ArticlePage() {
       />
 
       <article className="prose-article">
-        {article.body.map((block, i) => (
-          <RenderBlock key={i} block={block} />
-        ))}
+        {(() => {
+          let paras = 0;
+          return article.body.map((block, i) => {
+            if (block.type === "p") paras += 1;
+            const showAd = block.type === "p" && paras % 2 === 0;
+            return (
+              <div key={i}>
+                <RenderBlock block={block} />
+                {showAd ? (
+                  <div className="not-prose">
+                    <InArticleAd />
+                  </div>
+                ) : null}
+              </div>
+            );
+          });
+        })()}
 
         <h2>Frequently asked questions</h2>
         <div className="not-prose space-y-3">
