@@ -46,28 +46,17 @@ export function BannerAd728x90() {
   );
 }
 
-/** Global site-wide scripts (#1 and #3) — mount once in root */
+/**
+ * Popunder / social-bar scripts were removed on purpose: they hijacked clicks
+ * anywhere on the page and opened new ad tabs. Do not re-add them.
+ */
 export function GlobalAdScripts() {
-  useEffect(() => {
-    const urls = [
-      "https://pl30192467.effectivecpmnetwork.com/eb/8d/ac/eb8dacd360213b939688729bdf3608e6.js",
-      "https://pl30192470.effectivecpmnetwork.com/37/42/03/3742030cccd806f11e5a88e353c03be0.js",
-    ];
-    const nodes: HTMLScriptElement[] = [];
-    for (const src of urls) {
-      if (document.querySelector(`script[data-ad-src="${src}"]`)) continue;
-      const s = document.createElement("script");
-      s.src = src;
-      s.async = true;
-      s.dataset.adSrc = src;
-      document.body.appendChild(s);
-      nodes.push(s);
-    }
-    return () => {
-      // keep loaded; nothing to cleanup
-    };
-  }, []);
   return null;
+}
+
+/** Inline in-article banner, injected after every 2 paragraphs. */
+export function InArticleAd() {
+  return <BannerAd728x90 />;
 }
 
 /**
