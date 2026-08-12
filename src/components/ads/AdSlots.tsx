@@ -1,41 +1,79 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+/**
+ * Loads an ad only once its placeholder scrolls near the viewport.
+ * Keeps third-party requests off the critical path so pages paint fast.
+ */
+function useInView<T extends HTMLElement>(rootMargin = "300px") {
+  const ref = useRef<T>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || inView) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setInView(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setInView(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [inView, rootMargin]);
+
+  return { ref, inView };
+}
 
 /** Effective CPM Network — invoke container ad (script #2) */
 export function ContainerAd() {
-  const ref = useRef<HTMLDivElement>(null);
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const loaded = useRef(false);
+
   useEffect(() => {
-    if (!ref.current) return;
-    if (ref.current.dataset.loaded === "1") return;
-    ref.current.dataset.loaded = "1";
+    const host = ref.current;
+    if (!inView || !host || loaded.current) return;
+    loaded.current = true;
     const s = document.createElement("script");
     s.async = true;
     s.setAttribute("data-cfasync", "false");
     s.src =
       "https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js";
-    ref.current.appendChild(s);
-  }, []);
+    host.appendChild(s);
+  }, [inView, ref]);
+
   return (
-    <div ref={ref} className="my-6 flex justify-center">
+    <div ref={ref} className="my-6 flex justify-center" style={{ minHeight: 90 }}>
       <div id="container-d5a20eba278ba406e416778624f0684b" />
     </div>
   );
 }
 
-/** HighPerformanceFormat 728x90 banner (script #4) */
+/** HighPerformanceFormat 728x90 banner (script #4), lazily loaded. */
 export function BannerAd728x90() {
-  const ref = useRef<HTMLDivElement>(null);
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const loaded = useRef(false);
+
   useEffect(() => {
-    if (!ref.current) return;
-    if (ref.current.dataset.loaded === "1") return;
-    ref.current.dataset.loaded = "1";
+    const host = ref.current;
+    if (!inView || !host || loaded.current) return;
+    loaded.current = true;
     const cfg = document.createElement("script");
     cfg.text = `atOptions = { 'key' : 'a646da14ee6ef2ec2ac1740f89290e52', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };`;
     const inv = document.createElement("script");
+    inv.async = true;
     inv.src =
       "https://www.highperformanceformat.com/a646da14ee6ef2ec2ac1740f89290e52/invoke.js";
-    ref.current.appendChild(cfg);
-    ref.current.appendChild(inv);
-  }, []);
+    host.appendChild(cfg);
+    host.appendChild(inv);
+  }, [inView, ref]);
+
   return (
     <div
       ref={ref}
@@ -61,9 +99,9 @@ export function InArticleAd() {
 
 /**
  * Reserved space for a Google AdSense vertical unit (160x600 / 300x600).
- * Renders a quiet placeholder until the AdSense code is added.
+ * Renders quiet reserved space until the AdSense code is added.
  */
-export function SidebarAdSlot({ label }: { label?: string }) {
+export function SidebarAdSlot(_props: { label?: string }) {
   return (
     <aside
       aria-hidden="true"
