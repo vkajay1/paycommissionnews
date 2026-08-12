@@ -3,9 +3,20 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import type { SalaryBreakdown } from "@/lib/cpc";
 import { inr, pct } from "@/lib/format";
-import { BreakdownPie } from "./BreakdownPie";
-import { GrowthBar } from "./GrowthBar";
-import { MonthlyLine } from "./MonthlyLine";
+import { lazyChart } from "@/components/charts/lazyChart";
+
+const BreakdownPie = lazyChart<{ data: SalaryBreakdown }>(
+  () => import("./BreakdownPie").then((m) => ({ default: m.BreakdownPie })),
+  280,
+);
+const GrowthBar = lazyChart<{ current: SalaryBreakdown; projected: SalaryBreakdown }>(
+  () => import("./GrowthBar").then((m) => ({ default: m.GrowthBar })),
+  280,
+);
+const MonthlyLine = lazyChart<{ currentGross: number; projectedGross: number }>(
+  () => import("./MonthlyLine").then((m) => ({ default: m.MonthlyLine })),
+  280,
+);
 
 export function ResultsDashboard({
   current,
