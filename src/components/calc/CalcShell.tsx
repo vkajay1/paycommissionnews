@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import { InArticleAd } from "@/components/ads/AdSlots";
 import {
   Accordion,
   AccordionContent,
@@ -110,10 +111,15 @@ export function CalcContent({
       <article className="prose-article">
         <h2>{heading}</h2>
         <p>{intro}</p>
-        {method.map((m) => (
+        {method.map((m, i) => (
           <div key={m.title}>
             <h3>{m.title}</h3>
             <p>{m.body}</p>
+            {i % 2 === 1 ? (
+              <div className="not-prose">
+                <InArticleAd />
+              </div>
+            ) : null}
           </div>
         ))}
       </article>

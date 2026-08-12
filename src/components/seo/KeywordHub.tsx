@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import type { Faq } from "@/components/calc/CalcShell";
+import { InArticleAd } from "@/components/ads/AdSlots";
 
 export type HubLink = { label: string; to: string; description: string };
 
@@ -71,8 +72,15 @@ export function KeywordHub({
         {sections.map((s) => (
           <div key={s.heading}>
             <h2>{s.heading}</h2>
-            {s.body.map((p) => (
-              <p key={p.slice(0, 40)}>{p}</p>
+            {s.body.map((p, i) => (
+              <div key={p.slice(0, 40)}>
+                <p>{p}</p>
+                {i % 2 === 1 ? (
+                  <div className="not-prose">
+                    <InArticleAd />
+                  </div>
+                ) : null}
+              </div>
             ))}
           </div>
         ))}
