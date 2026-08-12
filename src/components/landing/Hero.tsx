@@ -1,7 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FitmentChart } from "./FitmentChart";
+import { lazyChart } from "@/components/charts/lazyChart";
+
+const FitmentChart = lazyChart<{ basic?: number }>(
+  () => import("./FitmentChart").then((m) => ({ default: m.FitmentChart })),
+  280,
+);
 
 export function Hero() {
   return (
