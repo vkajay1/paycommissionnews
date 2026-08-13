@@ -164,7 +164,7 @@ function RootComponent() {
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
           <BannerAd728x90 />
         </div>
-        <div className="flex flex-1 items-start justify-center gap-6 px-0 lg:gap-8 lg:px-6">
+        <div className="flex flex-1 items-start justify-center gap-6 px-0 lg:px-6">
           <SidebarAdSlot />
           <main className="min-w-0 flex-1 pb-20 md:pb-0">
             <Outlet />
