@@ -106,7 +106,7 @@ function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
     <div
       ref={ref}
       className={
-        (sticky ? "sticky top-24 " : "") + "h-[600px] w-[200px] xl:w-[300px]"
+        (sticky ? "sticky top-24 " : "") + "h-[600px] w-[160px]"
       }
     >
       {inView ? (
