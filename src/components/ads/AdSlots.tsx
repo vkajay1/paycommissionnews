@@ -98,18 +98,34 @@ export function InArticleAd() {
 }
 
 /**
- * Reserved space for a Google AdSense vertical unit (160x600 / 300x600).
- * Renders quiet reserved space until the AdSense code is added.
+ * Sidebar vertical slot (160x600 reserved) running the Effective CPM Network
+ * container ad, lazily loaded when it scrolls into view.
  */
 export function SidebarAdSlot(_props: { label?: string }) {
+  const { ref, inView } = useInView<HTMLDivElement>();
+  const loaded = useRef(false);
+
+  useEffect(() => {
+    const host = ref.current;
+    if (!inView || !host || loaded.current) return;
+    loaded.current = true;
+    const s = document.createElement("script");
+    s.async = true;
+    s.setAttribute("data-cfasync", "false");
+    s.src =
+      "https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js";
+    host.appendChild(s);
+  }, [inView, ref]);
+
   return (
     <aside
-      aria-hidden="true"
       className="sticky top-24 hidden xl:block"
       data-ad-slot="sidebar"
+      aria-label="advertisement"
     >
-      {/* Reserved 160x600 space for future AdSense sidebar unit */}
-      <div className="h-[600px] w-[160px]" />
+      <div ref={ref} className="min-h-[600px] w-[160px]">
+        <div id="container-d5a20eba278ba406e416778624f0684b" />
+      </div>
     </aside>
   );
 }
