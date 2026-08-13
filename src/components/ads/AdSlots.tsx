@@ -99,29 +99,45 @@ export function InArticleAd() {
 
 const SIDEBAR_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}</style></head><body><div id="container-d5a20eba278ba406e416778624f0684b"></div><script async data-cfasync="false" src="https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js"><\/script></body></html>`;
 
-/**
- * Sticky sidebar vertical ad rail. The ad network's container has a fixed DOM
- * id, so each rail renders it inside its own iframe document — otherwise only
- * the first of the two rails would ever fill.
- */
-export function SidebarAdSlot(_props: { label?: string }) {
+function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
   const { ref, inView } = useInView<HTMLDivElement>();
 
   return (
+    <div
+      ref={ref}
+      className={
+        (sticky ? "sticky top-24 " : "") + "h-[600px] w-[200px] xl:w-[300px]"
+      }
+    >
+      {inView ? (
+        <iframe
+          title="advertisement"
+          srcDoc={SIDEBAR_AD_HTML}
+          scrolling="no"
+          className="h-full w-full border-0"
+        />
+      ) : null}
+    </div>
+  );
+}
+
+/**
+ * Sidebar vertical ad rail: a stack of units that scrolls with the page, with
+ * the last one pinned so an ad stays in view after the stack is passed.
+ * The ad network's container id is fixed, so each unit gets its own iframe
+ * document — otherwise only the first would ever fill.
+ */
+export function SidebarAdSlot({ count = 3 }: { label?: string; count?: number }) {
+  return (
     <aside
-      className="sticky top-24 hidden h-[620px] shrink-0 self-start lg:block"
+      className="hidden shrink-0 self-stretch lg:block"
       data-ad-slot="sidebar"
       aria-label="advertisement"
     >
-      <div ref={ref} className="h-[600px] w-[200px] xl:w-[300px]">
-        {inView ? (
-          <iframe
-            title="advertisement"
-            srcDoc={SIDEBAR_AD_HTML}
-            scrolling="no"
-            className="h-full w-full border-0"
-          />
-        ) : null}
+      <div className="flex flex-col gap-6">
+        {Array.from({ length: count }).map((_, i) => (
+          <SidebarAdUnit key={i} sticky={i === count - 1} />
+        ))}
       </div>
     </aside>
   );
