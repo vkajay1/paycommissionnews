@@ -15,6 +15,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot } from "@/components/ads/AdSlots";
+import { AutoBannerAds } from "@/components/ads/AutoBannerAds";
 
 
 function NotFoundComponent() {
@@ -171,9 +172,14 @@ function RootComponent() {
           </main>
           <SidebarAdSlot />
         </div>
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
+          <BannerAd728x90 />
+        </div>
         <Footer />
         <MobileNav />
         <GlobalAdScripts />
+        <AutoBannerAds target={5} />
+
       </div>
 
     </QueryClientProvider>
