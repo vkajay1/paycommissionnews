@@ -171,9 +171,14 @@ function RootComponent() {
           </main>
           <SidebarAdSlot />
         </div>
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
+          <BannerAd728x90 />
+        </div>
         <Footer />
         <MobileNav />
         <GlobalAdScripts />
+        <AutoBannerAds target={5} />
+
       </div>
 
     </QueryClientProvider>
