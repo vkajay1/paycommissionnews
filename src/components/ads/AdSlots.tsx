@@ -55,32 +55,33 @@ export function ContainerAd() {
   );
 }
 
-/** HighPerformanceFormat 728x90 banner (script #4), lazily loaded. */
+const BANNER_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden;display:flex;justify-content:center}</style></head><body><script type="text/javascript">atOptions = { 'key' : 'a646da14ee6ef2ec2ac1740f89290e52', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };<\/script><script type="text/javascript" src="https://www.highperformanceformat.com/a646da14ee6ef2ec2ac1740f89290e52/invoke.js"><\/script></body></html>`;
+
+/**
+ * HighPerformanceFormat 728x90 banner, lazily loaded.
+ * Each unit lives in its own iframe document so several banners can coexist
+ * on the same page (the network's script uses a single global config object).
+ */
 export function BannerAd728x90() {
   const { ref, inView } = useInView<HTMLDivElement>();
-  const loaded = useRef(false);
-
-  useEffect(() => {
-    const host = ref.current;
-    if (!inView || !host || loaded.current) return;
-    loaded.current = true;
-    const cfg = document.createElement("script");
-    cfg.text = `atOptions = { 'key' : 'a646da14ee6ef2ec2ac1740f89290e52', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };`;
-    const inv = document.createElement("script");
-    inv.async = true;
-    inv.src =
-      "https://www.highperformanceformat.com/a646da14ee6ef2ec2ac1740f89290e52/invoke.js";
-    host.appendChild(cfg);
-    host.appendChild(inv);
-  }, [inView, ref]);
 
   return (
     <div
       ref={ref}
       className="my-6 flex justify-center overflow-hidden"
       style={{ minHeight: 90 }}
+      data-ad-slot="banner"
       aria-label="advertisement"
-    />
+    >
+      {inView ? (
+        <iframe
+          title="advertisement"
+          srcDoc={BANNER_AD_HTML}
+          scrolling="no"
+          className="h-[90px] w-full max-w-[728px] border-0"
+        />
+      ) : null}
+    </div>
   );
 }
 
@@ -92,10 +93,11 @@ export function GlobalAdScripts() {
   return null;
 }
 
-/** Inline in-article banner, injected after every 2 paragraphs. */
+/** Inline in-article banner, injected between content blocks. */
 export function InArticleAd() {
   return <BannerAd728x90 />;
 }
+
 
 const SIDEBAR_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}</style></head><body><div id="container-d5a20eba278ba406e416778624f0684b"></div><script async data-cfasync="false" src="https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js"><\/script></body></html>`;
 
