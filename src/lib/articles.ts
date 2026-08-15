@@ -13,7 +13,15 @@ export type Article = {
   updated: string; // ISO
   category: string;
   hero: string; // gradient class
+  /** Absolute URL of the article's lead image (optional). */
+  image?: string;
+  imageAlt?: string;
+  /** Content language. Defaults to English. */
+  lang?: "en" | "hi";
+  /** Slug of the same article in the other language, for hreflang pairing. */
+  altLangSlug?: string;
   excerpt: string;
+
   // Rich content as structured blocks so we can render with consistent styling.
   body: Block[];
   faq: { q: string; a: string }[];
