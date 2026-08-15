@@ -13,7 +13,15 @@ export type Article = {
   updated: string; // ISO
   category: string;
   hero: string; // gradient class
+  /** Absolute URL of the article's lead image (optional). */
+  image?: string;
+  imageAlt?: string;
+  /** Content language. Defaults to English. */
+  lang?: "en" | "hi";
+  /** Slug of the same article in the other language, for hreflang pairing. */
+  altLangSlug?: string;
   excerpt: string;
+
   // Rich content as structured blocks so we can render with consistent styling.
   body: Block[];
   faq: { q: string; a: string }[];
@@ -37,6 +45,377 @@ export type Block =
 const TODAY = "2026-08-07";
 
 export const articles: Article[] = [
+  {
+    slug: "8th-pay-commission-arrears-full-payment-explained",
+    title:
+      "8th Pay Commission: Will Employees Get Full Arrears? Here's What We Know",
+    description:
+      "Will central government employees get full 8th Pay Commission arrears from 1 January 2026 if implementation is delayed? Understand the effective date, arrears calculation, fitment factor demands and what to watch for.",
+    keyword: "8th pay commission arrears",
+    readMinutes: 9,
+    date: "2026-08-15",
+    updated: "2026-08-15",
+    category: "News",
+    lang: "en",
+    altLangSlug: "8th-pay-commission-arrears-puri-jankari-hindi",
+    hero: "from-blue-600 via-teal-500 to-emerald-500",
+    image: "https://paycommissionnews.co.in/images/8th-pay-commission-arrears-en.jpg",
+    imageAlt:
+      "Indian rupee notes, a calculator, a 2026 calendar and a rising bar chart illustrating 8th Pay Commission arrears",
+    excerpt:
+      "If the revised pay is notified late but stays effective from 1 January 2026, the salary difference for the in-between months could become arrears. Here is what is confirmed and what is still only a demand.",
+    body: [
+      {
+        type: "p",
+        text: "8th Pay Commission Latest Update: The 8th Pay Commission has become a major topic of discussion among central government employees and pensioners. Everyone wants to know how much their salary could increase, what the new fitment factor might be, and, most importantly, whether they will receive full 8th Pay Commission arrears.",
+      },
+      {
+        type: "p",
+        text: "One question is being discussed a lot right now: if the 8th Pay Commission is implemented late, will employees get arrears from 1 January 2026? This is an important question because even a few months of delay can make a significant difference to the total arrears amount.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "No official arrears cut has been announced",
+        text: "So far there has been no government announcement saying arrears will be reduced because of the delay. It would be too early to assume employees will lose part of their arrears.",
+      },
+      { type: "h2", text: "Will employees get full 8th Pay Commission arrears?" },
+      {
+        type: "p",
+        text: "The 8th Pay Commission is expected to be effective from 1 January 2026. However, the actual implementation of the revised salary may take place at a later date. Until then, employees may continue to receive their salary under the existing 7th Pay Commission structure.",
+      },
+      {
+        type: "p",
+        text: "If the revised salary is later made effective from 1 January 2026, the difference between the old salary and the revised salary for the eligible period could become the 8th Pay Commission arrears. For example, if the government implements the revised salary in October 2026 but keeps 1 January 2026 as the effective date, there could be a salary difference for the months between January and September that is paid as arrears.",
+      },
+      {
+        type: "p",
+        text: "This is only an example to explain how arrears could work. The actual amount will depend on the final basic pay, fitment factor, allowances and other rules announced by the government.",
+      },
+      { type: "h2", text: "Why are 8th Pay Commission arrears so important?" },
+      {
+        type: "p",
+        text: "Whenever a new pay commission is introduced, employees naturally focus on two things — their new monthly salary and the arrears they may receive. Even a difference of ₹10,000 per month becomes a sizeable amount when calculated for several months.",
+      },
+      {
+        type: "table",
+        caption:
+          "Illustration only: how a monthly salary difference builds into arrears. Not an official calculation.",
+        headers: ["Monthly difference", "3 months", "6 months", "9 months"],
+        rows: [
+          ["₹5,000", "₹15,000", "₹30,000", "₹45,000"],
+          ["₹10,000", "₹30,000", "₹60,000", "₹90,000"],
+          ["₹15,000", "₹45,000", "₹90,000", "₹1,35,000"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The final 8th Pay Commission salary and arrears will depend on the revised pay matrix, fitment factor, DA, HRA and other salary components, so these figures should be treated as examples only.",
+      },
+      { type: "h2", text: "Will the government cut 8th Pay Commission arrears?" },
+      {
+        type: "p",
+        text: "At present there is no official announcement confirming that the government has decided to cut the arrears. Because of this, claims circulating on social media should be treated carefully. There is a big difference between an employee demand, an unofficial calculation and an actual government decision.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Check the source before believing a claim",
+        text: "Until the final notification is issued, it is difficult to say exactly how arrears will be calculated. Verify whether a report is based on a government notification or only on estimates and social media posts.",
+      },
+      { type: "h2", text: "What could happen if the 8th Pay Commission is delayed?" },
+      { type: "h3", text: "1. 1 January 2026 remains the effective date" },
+      {
+        type: "p",
+        text: "If the government keeps 1 January 2026 as the effective date and implements the revised salary later, employees could receive arrears for the eligible period. This would be the most favourable situation for employees.",
+      },
+      { type: "h3", text: "2. A new effective date is announced" },
+      {
+        type: "p",
+        text: "Another possibility is that the government decides to implement the revised salary from a later date. If that happens, arrears payable from 1 January 2026 could be different or may not apply to the entire period.",
+      },
+      { type: "h3", text: "3. Separate arrears rules are announced" },
+      {
+        type: "p",
+        text: "The government may also introduce specific rules for calculating arrears, clarifying which components of salary and allowances are included. This is why the official implementation notification will matter far more than unofficial calculations available online.",
+      },
+      { type: "h2", text: "How much could the 8th Pay Commission salary increase?" },
+      {
+        type: "p",
+        text: "Salary increase is probably the biggest reason employees are following the 8th Pay Commission so closely. Different fitment factors are being discussed and demanded by employee groups; among them, a 3.83 fitment factor is one of the figures being discussed widely. If such a fitment factor were eventually approved, the increase in basic pay would be significant.",
+      },
+      {
+        type: "p",
+        text: "However, a fitment factor of 3.83 or 3.833 is not a confirmed government figure. These numbers are demands and expectations. The actual salary increase will become clear only after the government announces the final fitment factor and revised pay matrix.",
+      },
+      { type: "h2", text: "Why is the 8th Pay Commission fitment factor important?" },
+      {
+        type: "p",
+        text: "The fitment factor is expected to play a major role in determining the revised basic pay. Generally a higher fitment factor results in a higher revised basic salary. However, the final salary will not depend on the fitment factor alone — the new pay matrix, DA, HRA and other allowances will also matter. For this reason, online 8th Pay Commission salary calculators should be treated as estimates until official figures are announced.",
+      },
+      { type: "h2", text: "Major demands for the 8th Pay Commission" },
+      {
+        type: "ul",
+        items: [
+          "Fitment factor of 3.833",
+          "Minimum basic pay of ₹69,000",
+          "6% annual increment",
+          "Minimum HRA slab of 30%",
+          "Pension equivalent to 67% of the last drawn salary",
+          "50% family pension",
+          "Restoration of the Old Pension Scheme (OPS)",
+        ],
+      },
+      {
+        type: "p",
+        text: "It is important to understand that these are demands and proposals, not final government decisions. The final figures will only be known after the government officially announces the recommendations and implementation rules.",
+      },
+      { type: "h2", text: "What is the current situation regarding arrears?" },
+      {
+        type: "p",
+        text: "If the government makes the revised salary effective from 1 January 2026 but starts paying it later, employees can reasonably expect the salary difference for the eligible period to be treated as arrears. However, it is not possible to say at this stage exactly how much arrears each employee will receive.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Final fitment factor",
+          "New pay matrix",
+          "Revised basic pay",
+          "DA and HRA calculation",
+          "Eligible arrears period",
+          "Final implementation date",
+          "Government rules regarding arrears",
+        ],
+      },
+      {
+        type: "p",
+        text: "Therefore, any specific arrears amount currently circulating online should be considered an estimate rather than confirmed information.",
+      },
+      { type: "h2", text: "What should central government employees watch for?" },
+      {
+        type: "ol",
+        items: [
+          "The 8th Pay Commission fitment factor, which will directly decide the revised basic pay.",
+          "The new 8th Pay Commission pay matrix, which will make level-wise salary estimates possible.",
+          "The official implementation date and the rules for calculating and paying arrears.",
+        ],
+      },
+      { type: "h2", text: "Conclusion" },
+      {
+        type: "p",
+        text: "The delay in the 8th Pay Commission has naturally created uncertainty among central government employees and pensioners, especially regarding arrears. However, there is currently no official confirmation that the government has decided to cut 8th Pay Commission arrears because of the delay.",
+      },
+      {
+        type: "p",
+        text: "If the revised salary is made effective from 1 January 2026 while actual payment starts later, there could be a possibility of arrears for the eligible period — but the final decision will depend on the government's official notification. Until then, viral social media claims and unofficial salary calculations should not be treated as final information.",
+      },
+    ],
+    faq: [
+      {
+        q: "Will employees get full arrears from 1 January 2026?",
+        a: "If the government keeps 1 January 2026 as the effective date and pays the revised salary later, the difference for the in-between months can be paid as arrears. Nothing is confirmed until the official notification is issued.",
+      },
+      {
+        q: "Has the government announced any cut in 8th Pay Commission arrears?",
+        a: "No. There is no official announcement about reducing or cutting arrears because of a delay in implementation.",
+      },
+      {
+        q: "Is the 3.83 fitment factor final?",
+        a: "No. A fitment factor of 3.83 or 3.833 is a demand raised by employee organisations, not a confirmed government figure.",
+      },
+      {
+        q: "How is 8th Pay Commission arrears calculated?",
+        a: "Arrears are the difference between the revised salary and the salary actually drawn for each eligible month, based on the new basic pay, DA, HRA and any rules the government notifies for arrears.",
+      },
+      {
+        q: "Will pensioners also receive arrears?",
+        a: "Pension is normally revised along with the pay structure, so pensioners can expect arrears for the eligible period if the revision is made retrospectively. The exact rules will be in the government order.",
+      },
+    ],
+  },
+  {
+    slug: "8th-pay-commission-arrears-puri-jankari-hindi",
+    title:
+      "8वां वेतन आयोग: क्या कर्मचारियों को पूरा एरियर मिलेगा? जानिए पूरी जानकारी",
+    description:
+      "8वें वेतन आयोग में देरी होने पर क्या 1 जनवरी 2026 से पूरा एरियर मिलेगा? जानिए 8th Pay Commission Arrears, फिटमेंट फैक्टर, नया पे मैट्रिक्स और सैलरी बढ़ोतरी की पूरी जानकारी हिंदी में।",
+    keyword: "8वां वेतन आयोग एरियर",
+    readMinutes: 9,
+    date: "2026-08-15",
+    updated: "2026-08-15",
+    category: "समाचार (Hindi)",
+    lang: "hi",
+    altLangSlug: "8th-pay-commission-arrears-full-payment-explained",
+    hero: "from-orange-500 via-amber-500 to-emerald-500",
+    image: "https://paycommissionnews.co.in/images/8th-pay-commission-arrears-hi.jpg",
+    imageAlt:
+      "सरकारी दफ्तर की मेज पर वेतन पर्ची, रुपये के नोट, लैपटॉप पर पे मैट्रिक्स और 2026 का कैलेंडर",
+    excerpt:
+      "अगर 8वां वेतन आयोग देर से लागू होता है लेकिन प्रभावी तारीख 1 जनवरी 2026 रहती है, तो बीच के महीनों का वेतन अंतर एरियर बन सकता है। जानिए क्या तय है और क्या सिर्फ मांग है।",
+    body: [
+      {
+        type: "p",
+        text: "8th Pay Commission Latest Update: 8वें वेतन आयोग को लेकर केंद्रीय कर्मचारियों और पेंशनर्स के बीच लगातार चर्चा हो रही है। हर कर्मचारी यह जानना चाहता है कि नए वेतन आयोग के लागू होने के बाद उसकी सैलरी कितनी बढ़ेगी, नया फिटमेंट फैक्टर कितना होगा और सबसे बड़ा सवाल यह है कि 8th Pay Commission Arrears यानी एरियर कितना मिलेगा?",
+      },
+      {
+        type: "p",
+        text: "इन दिनों सबसे ज्यादा चर्चा इसी बात की है कि अगर 8वां वेतन आयोग लागू होने में देरी होती है, तो क्या कर्मचारियों को 1 जनवरी 2026 से पूरा एरियर मिलेगा? यह सवाल इसलिए भी महत्वपूर्ण है क्योंकि अगर वेतन आयोग लागू होने में कई महीने की देरी होती है, तो कर्मचारियों के लिए बनने वाला एरियर भी काफी बड़ा हो सकता है।",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "एरियर कटौती की कोई आधिकारिक सूचना नहीं",
+        text: "फिलहाल सरकार की ओर से ऐसी कोई आधिकारिक जानकारी सामने नहीं आई है जिसमें कहा गया हो कि देरी होने की वजह से एरियर में कटौती की जाएगी। इसलिए अभी से यह मान लेना सही नहीं होगा कि कर्मचारियों का एरियर कम कर दिया जाएगा।",
+      },
+      { type: "h2", text: "क्या 8वें वेतन आयोग में पूरा एरियर मिलेगा?" },
+      {
+        type: "p",
+        text: "8वें वेतन आयोग को 1 जनवरी 2026 से प्रभावी माना जा रहा है। हालांकि, इसका वास्तविक क्रियान्वयन और संशोधित वेतन का भुगतान बाद में हो सकता है। ऐसी स्थिति में कर्मचारियों को अभी 7वें वेतन आयोग के अनुसार वेतन मिल रहा होगा, जबकि नए वेतन आयोग के अनुसार उनका वेतन अधिक हो सकता है। यही अंतर बाद में 8th Pay Commission Arrears का आधार बन सकता है।",
+      },
+      {
+        type: "p",
+        text: "उदाहरण के लिए, अगर सरकार अक्टूबर 2026 में नया वेतन लागू करती है, लेकिन इसकी प्रभावी तारीख 1 जनवरी 2026 रखती है, तो जनवरी से सितंबर 2026 के बीच की वेतन राशि में जो अंतर बनेगा, वह एरियर के रूप में मिल सकता है। हालांकि, यह सिर्फ समझाने के लिए उदाहरण है। वास्तविक एरियर की गणना नए बेसिक पे, फिटमेंट फैक्टर, भत्तों और सरकार द्वारा तय किए गए नियमों के आधार पर होगी।",
+      },
+      { type: "h2", text: "एरियर का मुद्दा इतना महत्वपूर्ण क्यों है?" },
+      {
+        type: "p",
+        text: "जब भी कोई नया वेतन आयोग आता है, कर्मचारियों की नजर सिर्फ नई मासिक सैलरी पर नहीं होती। वे यह भी देखते हैं कि पिछले महीनों का कितना एरियर मिलेगा। मान लीजिए किसी कर्मचारी की संशोधित सैलरी में हर महीने ₹10,000 का अंतर बनता है और नया वेतन छह महीने की देरी से लागू होता है — तो सिर्फ छह महीने का अंतर लगभग ₹60,000 हो सकता है।",
+      },
+      {
+        type: "table",
+        caption:
+          "यह केवल उदाहरण है: मासिक वेतन अंतर से एरियर कैसे बनता है। यह आधिकारिक गणना नहीं है।",
+        headers: ["मासिक अंतर", "3 महीने", "6 महीने", "9 महीने"],
+        rows: [
+          ["₹5,000", "₹15,000", "₹30,000", "₹45,000"],
+          ["₹10,000", "₹30,000", "₹60,000", "₹90,000"],
+          ["₹15,000", "₹45,000", "₹90,000", "₹1,35,000"],
+        ],
+      },
+      {
+        type: "p",
+        text: "वास्तविक 8th Pay Commission Salary और एरियर इससे काफी अलग हो सकता है, क्योंकि इसमें बेसिक पे, DA, HRA और अन्य वेतन घटकों के नियम भी महत्वपूर्ण होंगे।",
+      },
+      { type: "h2", text: "क्या सरकार 8वें वेतन आयोग का एरियर काट सकती है?" },
+      {
+        type: "p",
+        text: "फिलहाल ऐसी कोई आधिकारिक घोषणा सामने नहीं आई है जिसमें सरकार ने कहा हो कि 8वें वेतन आयोग के एरियर में कटौती की जाएगी। इसलिए सोशल मीडिया पर चल रहे ऐसे दावों को लेकर सावधान रहना चाहिए।",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "खबर का स्रोत जरूर देखें",
+        text: "किसी भी खबर को सही मानने से पहले यह देखना जरूरी है कि वह सरकारी नोटिफिकेशन पर आधारित है या सिर्फ अनुमान और सोशल मीडिया पोस्ट पर। जब तक अंतिम आदेश जारी नहीं होते, एरियर के तरीके पर निश्चित रूप से कुछ कहना मुश्किल है।",
+      },
+      { type: "h2", text: "अगर 8वें वेतन आयोग में देरी होती है तो क्या हो सकता है?" },
+      { type: "h3", text: "1. प्रभावी तारीख 1 जनवरी 2026 ही रहती है" },
+      {
+        type: "p",
+        text: "अगर सरकार 8वें वेतन आयोग को 1 जनवरी 2026 से प्रभावी मानती है और वेतन संशोधन बाद में लागू करती है, तो बीच के महीनों के लिए एरियर बनने की संभावना हो सकती है। कर्मचारियों के लिए यह सबसे बेहतर स्थिति होगी।",
+      },
+      { type: "h3", text: "2. सरकार नई प्रभावी तारीख तय करती है" },
+      {
+        type: "p",
+        text: "दूसरी संभावना यह है कि सरकार संशोधित वेतन को किसी बाद की तारीख से लागू करने का फैसला करे। ऐसी स्थिति में 1 जनवरी 2026 से पूरा एरियर मिलने का सवाल अलग हो जाएगा और एरियर की राशि भी कम हो सकती है।",
+      },
+      { type: "h3", text: "3. एरियर के लिए अलग नियम बनाए जाते हैं" },
+      {
+        type: "p",
+        text: "सरकार वेतन संशोधन के साथ एरियर के संबंध में अलग नियम भी जारी कर सकती है। इसमें यह तय किया जा सकता है कि किन वेतन घटकों पर एरियर मिलेगा और किन भत्तों को एरियर की गणना में शामिल किया जाएगा। इसीलिए अंतिम 8th Pay Commission Latest News के लिए सरकारी घोषणा का इंतजार करना जरूरी है।",
+      },
+      { type: "h2", text: "8th Pay Commission Salary कितनी बढ़ सकती है?" },
+      {
+        type: "p",
+        text: "8वें वेतन आयोग को लेकर सबसे ज्यादा चर्चा सैलरी बढ़ोतरी की ही है। कर्मचारियों और विभिन्न संगठनों की तरफ से अलग-अलग फिटमेंट फैक्टर की मांग की जा रही है। इनमें 3.83 फिटमेंट फैक्टर की मांग भी काफी चर्चा में है। अगर भविष्य में ऐसा कोई फिटमेंट फैक्टर स्वीकार किया जाता है, तो कर्मचारियों के बेसिक पे में काफी बढ़ोतरी हो सकती है।",
+      },
+      {
+        type: "p",
+        text: "लेकिन यहां एक बात समझना जरूरी है — 3.83 या 3.833 अभी अंतिम सरकारी फिटमेंट फैक्टर नहीं है। इसे कर्मचारी संगठनों की मांग या चर्चा के रूप में देखना चाहिए। अंतिम सैलरी तभी पता चलेगी जब सरकार नया पे मैट्रिक्स और फिटमेंट फैक्टर घोषित करेगी।",
+      },
+      { type: "h2", text: "8th Pay Commission Fitment Factor क्यों है इतना महत्वपूर्ण?" },
+      {
+        type: "p",
+        text: "Fitment Factor नए वेतन की गणना में सबसे महत्वपूर्ण चीजों में से एक हो सकता है। फिटमेंट फैक्टर जितना अधिक होगा, नए बेसिक पे पर उसका प्रभाव उतना ही बड़ा हो सकता है। हालांकि वास्तविक सैलरी सिर्फ फिटमेंट फैक्टर से तय नहीं होगी — नए पे मैट्रिक्स, DA, HRA और दूसरे भत्तों की गणना भी महत्वपूर्ण होगी। इसी वजह से इंटरनेट पर उपलब्ध अलग-अलग 8th Pay Commission Salary Calculator से मिलने वाली राशि को अंतिम सैलरी नहीं माना जाना चाहिए।",
+      },
+      { type: "h2", text: "8वें वेतन आयोग को लेकर प्रमुख मांगें" },
+      {
+        type: "ul",
+        items: [
+          "3.833 फिटमेंट फैक्टर",
+          "न्यूनतम बेसिक पे ₹69,000",
+          "सालाना वेतन वृद्धि 6%",
+          "न्यूनतम HRA स्लैब 30%",
+          "अंतिम वेतन का 67% पेंशन",
+          "50% फैमिली पेंशन",
+          "पुरानी पेंशन योजना (OPS) को बहाल करने की मांग",
+        ],
+      },
+      {
+        type: "p",
+        text: "यहां यह समझना बहुत जरूरी है कि ये मांगें और प्रस्ताव हैं, सरकार के अंतिम फैसले नहीं। अंतिम नियम सरकार द्वारा जारी किए जाने वाले आधिकारिक आदेश के बाद ही स्पष्ट होंगे।",
+      },
+      { type: "h2", text: "8th Pay Commission Arrears पर क्या स्थिति है?" },
+      {
+        type: "p",
+        text: "अगर सरकार 1 जनवरी 2026 को प्रभावी तारीख मानती है और नया वेतन बाद में लागू होता है, तो कर्मचारियों को उस अवधि के वेतन अंतर का एरियर मिलने की उम्मीद स्वाभाविक है। लेकिन अभी यह कहना सही नहीं होगा कि हर कर्मचारी को निश्चित रूप से कितने रुपये का एरियर मिलेगा। इसके लिए कई चीजें तय होना बाकी हैं:",
+      },
+      {
+        type: "ul",
+        items: [
+          "फिटमेंट फैक्टर",
+          "नया पे मैट्रिक्स",
+          "संशोधित बेसिक पे",
+          "DA और HRA की गणना",
+          "एरियर की पात्र अवधि",
+          "सरकार की अंतिम Implementation Date",
+        ],
+      },
+      {
+        type: "p",
+        text: "इसलिए सोशल मीडिया पर चल रहे किसी भी 8th Pay Commission Arrears के आंकड़े को अंतिम नहीं माना जाना चाहिए।",
+      },
+      { type: "h2", text: "केंद्रीय कर्मचारियों को अभी किन चीजों पर नजर रखनी चाहिए?" },
+      {
+        type: "ol",
+        items: [
+          "8th Pay Commission Fitment Factor — सरकार कितना फिटमेंट फैक्टर स्वीकार करती है, इसका सीधा असर नए बेसिक पे पर पड़ेगा।",
+          "नया 8th Pay Commission Pay Matrix — इसके बाद अलग-अलग Pay Level पर सैलरी का वास्तविक अनुमान लगाना आसान होगा।",
+          "Official Arrears & Implementation Date — सरकार संशोधित वेतन को किस तारीख से प्रभावी करती है और एरियर के क्या नियम बनाती है।",
+        ],
+      },
+      { type: "h2", text: "निष्कर्ष" },
+      {
+        type: "p",
+        text: "8वें वेतन आयोग में देरी को लेकर केंद्रीय कर्मचारियों और पेंशनर्स के बीच स्वाभाविक रूप से चिंता है, खासकर एरियर को लेकर। लेकिन अभी किसी भी अफवाह के आधार पर यह मान लेना सही नहीं है कि 8th Pay Commission Arrears में कटौती होगी।",
+      },
+      {
+        type: "p",
+        text: "अगर सरकार संशोधित वेतन को 1 जनवरी 2026 से प्रभावी करती है और भुगतान बाद में शुरू होता है, तो उस अवधि के लिए एरियर मिलने की संभावना बन सकती है। लेकिन अंतिम फैसला सरकार की आधिकारिक अधिसूचना पर ही निर्भर करेगा। तब तक किसी भी वायरल दावे या अनुमानित सैलरी कैलकुलेशन को अंतिम जानकारी मानना सही नहीं होगा।",
+      },
+    ],
+    faq: [
+      {
+        q: "क्या 1 जनवरी 2026 से पूरा एरियर मिलेगा?",
+        a: "अगर सरकार 1 जनवरी 2026 को प्रभावी तारीख रखती है और संशोधित वेतन बाद में देती है, तो बीच के महीनों का वेतन अंतर एरियर के रूप में मिल सकता है। अंतिम स्थिति सरकारी अधिसूचना से ही स्पष्ट होगी।",
+      },
+      {
+        q: "क्या सरकार ने एरियर में कटौती की घोषणा की है?",
+        a: "नहीं। देरी की वजह से एरियर घटाने या काटने से संबंधित कोई आधिकारिक घोषणा अभी तक नहीं हुई है।",
+      },
+      {
+        q: "क्या 3.83 फिटमेंट फैक्टर तय हो गया है?",
+        a: "नहीं। 3.83 या 3.833 कर्मचारी संगठनों की मांग है, सरकार द्वारा तय किया गया अंतिम आंकड़ा नहीं।",
+      },
+      {
+        q: "8वें वेतन आयोग का एरियर कैसे जोड़ा जाएगा?",
+        a: "हर पात्र महीने के लिए संशोधित वेतन और वास्तव में मिले वेतन का अंतर एरियर होगा, जिसमें नया बेसिक पे, DA, HRA और सरकार के एरियर नियम शामिल होंगे।",
+      },
+      {
+        q: "क्या पेंशनर्स को भी एरियर मिलेगा?",
+        a: "पेंशन आमतौर पर वेतन ढांचे के साथ ही संशोधित होती है, इसलिए पात्र अवधि का एरियर मिलने की संभावना है। अंतिम नियम सरकारी आदेश में स्पष्ट होंगे।",
+      },
+    ],
+  },
   {
     slug: "8th-pay-commission-consultation-phase-timeline-arrears-guide",
     title:
