@@ -48,6 +48,16 @@ export function Footer() {
 
 
           <FooterCol
+            title="Company"
+            links={[
+              { label: "About Us", to: "/about" },
+              { label: "Contact Us", to: "/contact" },
+              { label: "Privacy Policy", to: "/privacy-policy" },
+              { label: "Disclaimer", to: "/disclaimer" },
+              { label: "Blog & News", to: "/blog" },
+            ]}
+          />
+          <FooterCol
             title="हिंदी में"
             links={[
               { label: "सैलरी कैलकुलेटर", to: "/8th-pay-commission-salary-calculator-in-hindi" },
@@ -57,6 +67,7 @@ export function Footer() {
               { label: "फिटमेंट फैक्टर", to: "/fitment-factor-in-hindi" },
             ]}
           />
+
 
         </div>
         <div className="mt-10 border-t border-border/60 pt-6 text-xs text-muted-foreground">
