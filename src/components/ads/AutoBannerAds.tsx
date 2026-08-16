@@ -25,26 +25,35 @@ export function AutoBannerAds({ target = 5 }: { target?: number }) {
       main.querySelectorAll("[data-auto-ad]").forEach((el) => el.remove());
 
       const existing = main.querySelectorAll('[data-ad-slot="banner"]').length;
-      const needed = Math.max(0, target - existing);
+
+      // Candidate anchors: substantial content blocks that are not ad wrappers
+      const blocks = (Array.from(main.children) as HTMLElement[]).filter(
+        (el) =>
+          el.offsetHeight > 320 &&
+          !el.hasAttribute("data-auto-ad") &&
+          !el.querySelector('[data-ad-slot]'),
+      );
+
+      // one ad per gap between blocks, never two in a row
+      const gaps = Math.max(0, blocks.length - 1);
+      const needed = Math.min(Math.max(0, target - existing), gaps);
       if (needed === 0) return;
 
-      const blocks = Array.from(main.children).filter(
-        (el) => (el as HTMLElement).offsetHeight > 120,
-      ) as HTMLElement[];
-      if (blocks.length === 0) return;
-
       const created: HTMLElement[] = [];
-      const step = Math.max(1, Math.floor(blocks.length / (needed + 1)));
+      const used = new Set<HTMLElement>();
+      const step = gaps / needed;
       for (let i = 0; i < needed; i++) {
-        const anchor = blocks[Math.min(blocks.length - 1, (i + 1) * step)];
-        if (!anchor) break;
+        const anchor = blocks[Math.min(gaps - 1, Math.round(i * step))];
+        if (!anchor || used.has(anchor)) continue;
+        used.add(anchor);
         const host = document.createElement("div");
         host.setAttribute("data-auto-ad", "");
-        host.className = "mx-auto w-full max-w-7xl px-4 sm:px-6";
+        host.className = "mx-auto w-full max-w-7xl px-4 py-4 sm:px-6";
         anchor.after(host);
         created.push(host);
       }
       if (!cancelled) setHosts(created);
+
     };
 
     const t = window.setTimeout(build, 400);
