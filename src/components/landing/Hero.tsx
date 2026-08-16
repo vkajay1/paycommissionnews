@@ -32,12 +32,12 @@ export function Hero() {
             employees — built with the polish of a modern fintech dashboard.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" className="rounded-md">
               <Link to="/salary">
                 Calculate Salary <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full">
+            <Button asChild variant="outline" size="lg" className="rounded-md">
               <a href="#tools">Explore Tools</a>
             </Button>
           </div>

@@ -141,7 +141,7 @@ export function QuickCalc() {
               <Row label="Current Gross" value={inr(result.current.gross)} muted />
             </dl>
 
-            <Button asChild className="mt-6 w-full rounded-full">
+            <Button asChild className="mt-6 w-full rounded-md">
               <Link to="/salary" search={{ level, basic, city, fit } as never}>
                 Open full calculator
                 <ArrowUpRight className="ml-1 h-4 w-4" />

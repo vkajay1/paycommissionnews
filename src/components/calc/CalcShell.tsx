@@ -153,7 +153,7 @@ export function CalcContent({
               <Link
                 key={r.to}
                 to={r.to}
-                className="rounded-full border border-border px-4 py-1.5 text-sm font-medium hover:border-primary/40 hover:bg-primary/5"
+                className="rounded-md border border-border px-4 py-1.5 text-sm font-medium hover:border-primary/40 hover:bg-primary/5"
               >
                 {r.label}
               </Link>

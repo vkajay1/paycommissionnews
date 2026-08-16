@@ -70,13 +70,13 @@ export function CpcSnapshot() {
       <div className="mt-8 flex flex-wrap gap-3">
         <Link
           to="/pay-commission-history"
-          className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+          className="inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
         >
           How the 8th CPC figures are estimated <ArrowRight className="h-4 w-4" />
         </Link>
         <Link
           to="/fitment-factor"
-          className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 text-sm font-semibold hover:border-primary/40 hover:bg-primary/5"
+          className="inline-flex items-center gap-1.5 rounded-md border border-border px-4 py-2 text-sm font-semibold hover:border-primary/40 hover:bg-primary/5"
         >
           Compare fitment factor scenarios
         </Link>
