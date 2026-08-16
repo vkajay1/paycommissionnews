@@ -55,7 +55,7 @@ export function KeywordHub({
         <h2 className="mb-4 text-xl font-bold">Calculators for this topic</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {tools.map((t) => (
-            <Card key={t.to + t.label} className="rounded-2xl p-5">
+            <Card key={t.to + t.label} className="rounded-lg p-5">
               <Link to={t.to} className="group">
                 <h3 className="flex items-center gap-2 text-base font-semibold group-hover:text-primary">
                   {t.label}
@@ -89,7 +89,7 @@ export function KeywordHub({
       {table ? (
         <section className="mt-12">
           <h2 className="mb-3 text-xl font-bold">{table.caption}</h2>
-          <div className="overflow-x-auto rounded-2xl border border-border">
+          <div className="overflow-x-auto rounded-lg border border-border">
             <table className="w-full text-sm">
               <thead className="bg-secondary text-left">
                 <tr>
@@ -118,7 +118,7 @@ export function KeywordHub({
 
       <section className="mt-12">
         <h2 className="mb-3 text-xl font-bold">Frequently asked questions</h2>
-        <Accordion type="single" collapsible className="rounded-2xl border border-border bg-card px-4">
+        <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
           {faq.map((f, i) => (
             <AccordionItem key={f.q} value={`h${i}`}>
               <AccordionTrigger className="text-left text-sm font-semibold">{f.q}</AccordionTrigger>

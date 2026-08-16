@@ -88,7 +88,7 @@ function LevelPage() {
       {/* 7th CPC breakdown */}
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">7th CPC in-hand salary (July 2025 DA)</h2>
-        <div className="overflow-hidden rounded-2xl border border-border">
+        <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <tbody>
               <Trow label="Basic pay (entry cell)" value={inr(basic)} />
@@ -118,7 +118,7 @@ function LevelPage() {
             return (
               <div
                 key={fit}
-                className="rounded-2xl border border-border bg-card p-4 shadow-card"
+                className="rounded-lg border border-border bg-card p-4 shadow-card"
               >
                 <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   Fitment {fit}x

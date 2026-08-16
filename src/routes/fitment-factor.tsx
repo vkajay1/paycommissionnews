@@ -76,7 +76,7 @@ function Page() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <div className="mb-6 flex items-center gap-3">
-        <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/10 text-primary">
+        <div className="grid h-11 w-11 place-items-center rounded-lg bg-primary/10 text-primary">
           <Grid3x3 className="h-5 w-5" />
         </div>
         <div>
@@ -88,14 +88,14 @@ function Page() {
       </div>
       <DisclaimerBanner />
 
-      <Card className="mt-6 space-y-4 rounded-3xl p-6">
+      <Card className="mt-6 space-y-4 rounded-xl p-6">
         <div className="space-y-1.5 sm:max-w-xs">
           <Label className="text-xs text-muted-foreground">Your basic pay (₹)</Label>
           <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {FACTORS.map((f) => (
-            <div key={f} className="rounded-2xl bg-secondary/50 p-4">
+            <div key={f} className="rounded-lg bg-secondary/50 p-4">
               <div className="text-xs text-muted-foreground">{f.toFixed(2)}x fitment</div>
               <div className="mt-1 text-lg font-bold text-primary">{inr(basic * f)}</div>
             </div>
@@ -106,7 +106,7 @@ function Page() {
       <h2 className="mt-12 text-2xl font-bold tracking-tight">
         8th Pay Commission fitment table (all pay levels)
       </h2>
-      <div className="mt-4 overflow-x-auto rounded-3xl border border-border">
+      <div className="mt-4 overflow-x-auto rounded-xl border border-border">
         <table className="w-full text-sm">
           <thead className="bg-secondary/60 text-left">
             <tr>

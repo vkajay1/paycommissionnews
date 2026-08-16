@@ -86,7 +86,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Last drawn basic pay (₹/month)</Label>
             <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
@@ -102,7 +102,7 @@ function Page() {
           <p className="text-xs text-muted-foreground">Encashment is limited to 300 days of earned leave.</p>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Emoluments (basic + DA)" value={inr(r.emoluments)} />
           <ResultRow label="Per-day rate (÷ 30)" value={inr(r.perDay)} />
           <ResultRow label="Days considered" value={`${r.capped} days`} />

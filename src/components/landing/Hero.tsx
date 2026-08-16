@@ -51,7 +51,7 @@ export function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="rounded-3xl border border-border bg-card p-5 shadow-card sm:p-6">
+          <div className="rounded-xl border border-border bg-card p-5 shadow-card sm:p-6">
             <div className="mb-3 flex items-center justify-between">
               <div>
                 <div className="text-xs font-medium text-muted-foreground">

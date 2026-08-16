@@ -147,7 +147,7 @@ function DaCalculatorPage() {
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,400px)_1fr]">
         {/* Calculator */}
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
+        <div className="rounded-lg border border-border bg-card p-6 shadow-card">
           <h2 className="text-lg font-semibold">Calculate DA &amp; DA arrears</h2>
           <div className="mt-6 space-y-6">
             <div>
@@ -220,7 +220,7 @@ function DaCalculatorPage() {
         </div>
 
         {/* Results */}
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
+        <div className="rounded-lg border border-border bg-card p-6 shadow-card">
           <h2 className="text-lg font-semibold">Your DA breakdown</h2>
           <div className="mt-6 space-y-4">
             <Row label="Basic pay" value={inr(basic)} />
@@ -267,7 +267,7 @@ function DaCalculatorPage() {
           <TrendingUp className="h-5 w-5 text-primary" />
           <h2 className="text-xl font-bold">DA rate history under the 7th CPC (2016–2026)</h2>
         </div>
-        <div className="overflow-hidden rounded-2xl border border-border">
+        <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">
               <tr>

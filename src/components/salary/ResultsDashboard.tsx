@@ -48,7 +48,7 @@ export function ResultsDashboard({
         <SalaryCard title="Projected salary" data={projected} accent />
       </div>
 
-      <Card className="rounded-3xl border-border/80 p-5 shadow-card">
+      <Card className="rounded-xl border-border/80 p-5 shadow-card">
         <Tabs defaultValue="breakdown">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
             <div>
@@ -99,7 +99,7 @@ function StatCard({
   }[tone];
   return (
     <Card
-      className={`rounded-3xl border-border/80 p-5 shadow-card ${
+      className={`rounded-xl border-border/80 p-5 shadow-card ${
         highlight ? "bg-gradient-to-br from-primary/5 to-accent/5" : ""
       }`}
     >
@@ -134,7 +134,7 @@ function SalaryCard({
 }) {
   return (
     <Card
-      className={`rounded-3xl border-border/80 p-5 shadow-card ${
+      className={`rounded-xl border-border/80 p-5 shadow-card ${
         accent ? "border-primary/30 bg-primary/[0.03]" : ""
       }`}
     >

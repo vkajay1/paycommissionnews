@@ -96,7 +96,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Employment type</Label>
             <Select value={sector} onValueChange={(v) => setSector(v as typeof sector)}>
@@ -121,7 +121,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Emoluments (basic + DA)" value={inr(r.emoluments)} />
           {sector === "govt" && <ResultRow label="Six-monthly periods counted" value={`${r.halfYears}`} />}
           <ResultRow label="Gratuity as per formula" value={inr(r.raw)} />

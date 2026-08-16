@@ -7,7 +7,7 @@ import { Suspense, lazy, type ComponentType } from "react";
 function ChartSkeleton({ height }: { height: number }) {
   return (
     <div
-      className="animate-pulse rounded-2xl bg-muted/40"
+      className="animate-pulse rounded-lg bg-muted/40"
       style={{ height }}
       aria-hidden="true"
     />

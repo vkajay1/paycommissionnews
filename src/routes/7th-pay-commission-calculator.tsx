@@ -120,7 +120,7 @@ function Page() {
       <DisclaimerBanner />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Pay level</Label>
             <Select
@@ -185,7 +185,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Basic pay" value={inr(basic)} />
           <ResultRow label={`Dearness allowance @ ${daPct}%`} value={inr(r.da)} />
           <ResultRow label={`HRA @ ${HRA[city]}% (${city} class)`} value={inr(r.hra)} />
@@ -202,7 +202,7 @@ function Page() {
 
       <section className="mt-12">
         <h2 className="mb-4 text-xl font-bold">7th CPC pay matrix — entry pay and gross at {daPct}% DA</h2>
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">
               <tr>

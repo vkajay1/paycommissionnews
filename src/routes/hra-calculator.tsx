@@ -95,7 +95,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Basic pay (₹/month)</Label>
             <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
@@ -118,7 +118,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Salary for HRA (basic + DA)" value={inr(r.salary)} />
           <ResultRow label="Actual HRA received" value={inr(hra)} />
           <ResultRow label="Rent paid − 10% of salary" value={inr(r.rentMinus10)} />
@@ -131,7 +131,7 @@ function Page() {
 
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">Government HRA slabs on your basic pay</h2>
-        <div className="overflow-hidden rounded-2xl border border-border">
+        <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">
               <tr>

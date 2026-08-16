@@ -57,7 +57,7 @@ function Page() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <div className="mb-6 flex items-center gap-3">
-        <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/10 text-primary">
+        <div className="grid h-11 w-11 place-items-center rounded-lg bg-primary/10 text-primary">
           <Sliders className="h-5 w-5" />
         </div>
         <div>
@@ -68,7 +68,7 @@ function Page() {
       <DisclaimerBanner />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Current basic pay (₹)</Label>
             <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
@@ -93,7 +93,7 @@ function Page() {
               ))}
             </div>
           </div>
-          <div className="grid gap-3 rounded-2xl bg-secondary/50 p-4">
+          <div className="grid gap-3 rounded-lg bg-secondary/50 p-4">
             <div className="flex items-baseline justify-between">
               <span className="text-sm text-muted-foreground">Revised basic</span>
               <span className="text-2xl font-bold text-primary">{inr(projected)}</span>
@@ -105,7 +105,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="rounded-3xl p-6">
+        <Card className="rounded-xl p-6">
           <div className="mb-3 text-sm font-semibold">Revised basic across fitment factors</div>
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">

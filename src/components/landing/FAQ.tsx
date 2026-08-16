@@ -64,7 +64,7 @@ export function FAQ() {
           Answers to the most-searched questions on 8th CPC salary, fitment factor, DA, HRA and pension.
         </p>
       </div>
-      <Accordion type="single" collapsible className="rounded-2xl border border-border bg-card px-4">
+      <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
         {homeFaqs.map((f, i) => (
           <AccordionItem key={i} value={`i${i}`} className="border-border">
             <AccordionTrigger className="text-left text-sm font-semibold">

@@ -45,12 +45,12 @@ function BlogIndex() {
       <Link
         to="/blog/$slug"
         params={{ slug: featured.slug }}
-        className="group relative mb-12 block overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-0.5 hover:shadow-lg"
+        className="group relative mb-12 block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all hover:-translate-y-0.5 hover:shadow-lg"
       >
         <div className={`absolute inset-0 bg-gradient-to-br ${featured.hero} opacity-10`} />
         <div className="relative grid gap-6 p-8 md:grid-cols-[1fr,1.3fr] md:p-10">
           <div
-            className={`hidden aspect-[4/3] rounded-2xl bg-gradient-to-br ${featured.hero} md:block`}
+            className={`hidden aspect-[4/3] rounded-lg bg-gradient-to-br ${featured.hero} md:block`}
           />
           <div className="flex flex-col justify-center">
             <div className="mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-primary">
@@ -88,7 +88,7 @@ function BlogIndex() {
             key={a.slug}
             to="/blog/$slug"
             params={{ slug: a.slug }}
-            className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-card"
+            className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-card"
           >
             <div className={`h-32 bg-gradient-to-br ${a.hero}`} />
             <div className="p-6">

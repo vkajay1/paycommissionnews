@@ -41,7 +41,7 @@ function PayLevelIndex() {
             key={l.level}
             to="/pay-level/$level"
             params={{ level: String(l.level) }}
-            className="group flex items-center justify-between rounded-2xl border border-border bg-card p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40"
+            className="group flex items-center justify-between rounded-lg border border-border bg-card p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40"
           >
             <div>
               <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">

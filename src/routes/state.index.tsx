@@ -39,7 +39,7 @@ function StateIndex() {
             key={s.slug}
             to="/state/$state"
             params={{ state: s.slug }}
-            className="group rounded-2xl border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40"
+            className="group rounded-lg border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40"
           >
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               <MapPin className="h-3 w-3" /> {s.employees}

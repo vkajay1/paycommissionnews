@@ -135,7 +135,7 @@ function Page() {
       />
       <DisclaimerBanner />
 
-      <Card className="mt-6 grid gap-6 rounded-3xl p-6 md:grid-cols-3">
+      <Card className="mt-6 grid gap-6 rounded-xl p-6 md:grid-cols-3">
         <div className="md:col-span-1">
           <Label className="text-xs text-muted-foreground">
             Fitment factor — {fit.toFixed(2)}x
@@ -202,7 +202,7 @@ function Page() {
               <SelectItem value="no">DA continues on revised basic</SelectItem>
             </SelectContent>
           </Select>
-          <div className="mt-4 rounded-2xl bg-secondary/50 p-4">
+          <div className="mt-4 rounded-lg bg-secondary/50 p-4">
             <div className="text-xs text-muted-foreground">Average gross hike</div>
             <div className="text-2xl font-bold text-primary">{avgPct.toFixed(1)}%</div>
             <div className="mt-1 text-xs text-muted-foreground">
@@ -216,7 +216,7 @@ function Page() {
         <h2 className="mb-4 text-xl font-bold">
           Level-wise 7th CPC vs 8th CPC salary comparison table
         </h2>
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[820px] text-sm">
             <thead className="bg-secondary text-left">
               <tr>

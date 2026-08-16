@@ -69,7 +69,7 @@ function StatePageView() {
 
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">Cadre-wise salary breakdown ({s.name})</h2>
-        <div className="overflow-hidden rounded-2xl border border-border">
+        <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">
               <tr>

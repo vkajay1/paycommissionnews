@@ -38,7 +38,7 @@ export function NetInHand({
   ];
 
   return (
-    <Card className="rounded-3xl border-border/80 p-5 shadow-card">
+    <Card className="rounded-xl border-border/80 p-5 shadow-card">
       <div className="mb-1 text-sm font-semibold">Monthly take-home, side by side</div>
       <p className="mb-4 text-xs text-muted-foreground">
         Gross pay is only half the story. NPS at 10 per cent of basic plus DA, the CGHS
@@ -83,7 +83,7 @@ export function NetInHand({
       </div>
 
       {pension === "NPS" && (
-        <p className="mt-4 rounded-2xl bg-secondary/50 p-3 text-xs text-muted-foreground">
+        <p className="mt-4 rounded-lg bg-secondary/50 p-3 text-xs text-muted-foreground">
           Worth knowing: the government adds another {inr(dp.employerNps)} a month at 14 per cent
           of your projected basic plus DA. It never appears in your salary slip, but it builds
           your pension corpus. Annual projected in-hand works out to roughly {inr(netP * 12)}.

@@ -20,7 +20,7 @@ export function CpcSnapshot() {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-        <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-card">
+        <div className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
           <table className="w-full text-sm">
             <tbody>
               {CPC8_SNAPSHOT.map((f) => (

@@ -33,7 +33,7 @@ export function SalaryForm({
     onChange({ ...value, [k]: v });
 
   return (
-    <Card className="space-y-6 rounded-3xl border-border/80 p-6 shadow-card">
+    <Card className="space-y-6 rounded-xl border-border/80 p-6 shadow-card">
       <Section title="Employee details">
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Pay Level">

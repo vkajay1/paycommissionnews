@@ -20,7 +20,7 @@ export function Features() {
           Everything calculated. Nothing assumed.
         </h2>
       </div>
-      <div className="grid gap-px overflow-hidden rounded-3xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
         {items.map(({ icon: Icon, title, desc }) => (
           <div key={title} className="bg-card p-6">
             <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary/10 text-primary">

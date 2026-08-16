@@ -73,7 +73,7 @@ function RolePageView() {
 
       {/* Salary breakdown */}
       <section className="mt-10 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
+        <div className="rounded-lg border border-border bg-card p-6 shadow-card">
           <h2 className="text-lg font-bold">Current 7th CPC in-hand salary</h2>
           <div className="mt-4 space-y-2 text-sm">
             <Row label="Pay level" value={`Level ${r.level}`} />
@@ -86,7 +86,7 @@ function RolePageView() {
           </div>
         </div>
 
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
+        <div className="rounded-lg border border-border bg-card p-6 shadow-card">
           <h2 className="text-lg font-bold">8th Pay Commission projection</h2>
           <div className="mt-4 space-y-2 text-sm">
             <Row label="Fitment 2.28x" value={inr(levelProjection(r.basic, 2.28))} />
@@ -105,7 +105,7 @@ function RolePageView() {
       <section className="mt-10 grid gap-4 md:grid-cols-3">
         <InfoCard title="Duties" items={r.duties} />
         <InfoCard title="Allowances & perks" items={r.perks} />
-        <div className="rounded-2xl border border-border bg-card p-5">
+        <div className="rounded-lg border border-border bg-card p-5">
           <h3 className="text-sm font-bold">Promotion path</h3>
           <p className="mt-2 text-sm text-muted-foreground">{r.promotion}</p>
         </div>
@@ -175,7 +175,7 @@ function Row({
 
 function InfoCard({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5">
+    <div className="rounded-lg border border-border bg-card p-5">
       <h3 className="text-sm font-bold">{title}</h3>
       <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
         {items.map((i) => (
