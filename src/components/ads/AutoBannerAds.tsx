@@ -12,13 +12,14 @@ import { BannerAd728x90 } from "./AdSlots";
 const ADS_PAUSED = true;
 
 export function AutoBannerAds({ target = 5 }: { target?: number }) {
-  if (ADS_PAUSED) return null;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [hosts, setHosts] = useState<HTMLElement[]>([]);
 
   useEffect(() => {
     setHosts([]);
     let cancelled = false;
+
+    if (ADS_PAUSED) return;
 
     const build = () => {
       if (cancelled) return;
@@ -69,6 +70,8 @@ export function AutoBannerAds({ target = 5 }: { target?: number }) {
         .forEach((el) => el.remove());
     };
   }, [pathname, target]);
+
+  if (ADS_PAUSED) return null;
 
   return (
     <>

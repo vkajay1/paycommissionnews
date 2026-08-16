@@ -40,13 +40,12 @@ function useInView<T extends HTMLElement>(rootMargin = "300px") {
 
 /** Effective CPM Network — invoke container ad (script #2) */
 export function ContainerAd() {
-  if (ADS_PAUSED) return null;
   const { ref, inView } = useInView<HTMLDivElement>();
   const loaded = useRef(false);
 
   useEffect(() => {
     const host = ref.current;
-    if (!inView || !host || loaded.current) return;
+    if (ADS_PAUSED || !inView || !host || loaded.current) return;
     loaded.current = true;
     const s = document.createElement("script");
     s.async = true;
@@ -55,6 +54,8 @@ export function ContainerAd() {
       "https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js";
     host.appendChild(s);
   }, [inView, ref]);
+
+  if (ADS_PAUSED) return null;
 
   return (
     <div ref={ref} className="my-6 flex justify-center" style={{ minHeight: 90 }}>
@@ -71,8 +72,9 @@ const BANNER_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>
  * on the same page (the network's script uses a single global config object).
  */
 export function BannerAd728x90() {
-  if (ADS_PAUSED) return null;
   const { ref, inView } = useInView<HTMLDivElement>();
+
+  if (ADS_PAUSED) return null;
 
   return (
     <div
