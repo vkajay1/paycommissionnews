@@ -109,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Urbanist:wght@600;700;800&family=Epilogue:wght@400;500;600;700&display=swap",
       },
     ],
     scripts: [
@@ -165,8 +165,8 @@ function RootComponent() {
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
           <BannerAd728x90 />
         </div>
-        <div className="flex flex-1 items-start justify-center gap-6 px-0 lg:px-6">
-          <SidebarAdSlot />
+        <div className="mx-auto flex w-full max-w-[1400px] flex-1 items-start gap-6 px-0 lg:px-6">
+          <SideNav />
           <main className="min-w-0 flex-1 pb-20 md:pb-0">
             <Outlet />
           </main>
