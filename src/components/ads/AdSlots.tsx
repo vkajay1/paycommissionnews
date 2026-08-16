@@ -4,6 +4,13 @@ import { useEffect, useRef, useState } from "react";
  * Loads an ad only once its placeholder scrolls near the viewport.
  * Keeps third-party requests off the critical path so pages paint fast.
  */
+/**
+ * Adsterra / EffectiveCPM units are PAUSED while the site is under Google
+ * AdSense review (third-party ad networks and empty placeholders hurt
+ * approval). Flip this back to false to re-enable them.
+ */
+const ADS_PAUSED = true;
+
 function useInView<T extends HTMLElement>(rootMargin = "300px") {
   const ref = useRef<T>(null);
   const [inView, setInView] = useState(false);
@@ -38,7 +45,7 @@ export function ContainerAd() {
 
   useEffect(() => {
     const host = ref.current;
-    if (!inView || !host || loaded.current) return;
+    if (ADS_PAUSED || !inView || !host || loaded.current) return;
     loaded.current = true;
     const s = document.createElement("script");
     s.async = true;
@@ -47,6 +54,8 @@ export function ContainerAd() {
       "https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js";
     host.appendChild(s);
   }, [inView, ref]);
+
+  if (ADS_PAUSED) return null;
 
   return (
     <div ref={ref} className="my-6 flex justify-center" style={{ minHeight: 90 }}>
@@ -64,6 +73,8 @@ const BANNER_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>
  */
 export function BannerAd728x90() {
   const { ref, inView } = useInView<HTMLDivElement>();
+
+  if (ADS_PAUSED) return null;
 
   return (
     <div
@@ -130,6 +141,7 @@ function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
  * document — otherwise only the first would ever fill.
  */
 export function SidebarAdSlot({ count = 3 }: { label?: string; count?: number }) {
+  if (ADS_PAUSED) return null;
   return (
     <aside
       className="hidden shrink-0 self-stretch lg:block"
