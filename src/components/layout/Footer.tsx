@@ -80,9 +80,22 @@ export function Footer() {
 
 
         </div>
-        <div className="mt-10 border-t border-border/60 pt-6 text-xs text-muted-foreground">
-          Figures shown are estimates based on sample data. Not affiliated with any government body.
-          © {new Date().getFullYear()} 8th CPC Calculator.
+        <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+          <span>
+            © {new Date().getFullYear()} 8th CPC Calculator. All rights reserved.
+          </span>
+          <span className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link to="/privacy-policy" className="hover:text-primary">
+              Privacy
+            </Link>
+            <Link to="/disclaimer" className="hover:text-primary">
+              Disclaimer
+            </Link>
+            <Link to="/contact" className="hover:text-primary">
+              Contact
+            </Link>
+            <span>Not affiliated with any government body.</span>
+          </span>
         </div>
       </div>
     </footer>
