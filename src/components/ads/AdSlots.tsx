@@ -4,6 +4,13 @@ import { useEffect, useRef, useState } from "react";
  * Loads an ad only once its placeholder scrolls near the viewport.
  * Keeps third-party requests off the critical path so pages paint fast.
  */
+/**
+ * Adsterra / EffectiveCPM units are PAUSED while the site is under Google
+ * AdSense review (third-party ad networks and empty placeholders hurt
+ * approval). Flip this back to false to re-enable them.
+ */
+const ADS_PAUSED = true;
+
 function useInView<T extends HTMLElement>(rootMargin = "300px") {
   const ref = useRef<T>(null);
   const [inView, setInView] = useState(false);
@@ -33,6 +40,7 @@ function useInView<T extends HTMLElement>(rootMargin = "300px") {
 
 /** Effective CPM Network — invoke container ad (script #2) */
 export function ContainerAd() {
+  if (ADS_PAUSED) return null;
   const { ref, inView } = useInView<HTMLDivElement>();
   const loaded = useRef(false);
 
@@ -63,6 +71,7 @@ const BANNER_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>
  * on the same page (the network's script uses a single global config object).
  */
 export function BannerAd728x90() {
+  if (ADS_PAUSED) return null;
   const { ref, inView } = useInView<HTMLDivElement>();
 
   return (
@@ -130,6 +139,7 @@ function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
  * document — otherwise only the first would ever fill.
  */
 export function SidebarAdSlot({ count = 3 }: { label?: string; count?: number }) {
+  if (ADS_PAUSED) return null;
   return (
     <aside
       className="hidden shrink-0 self-stretch lg:block"

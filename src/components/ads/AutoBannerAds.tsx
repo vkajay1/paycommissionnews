@@ -8,7 +8,11 @@ import { BannerAd728x90 } from "./AdSlots";
  * After each navigation it counts the banners a page already renders and
  * spreads extra placeholders between the top-level content blocks of <main>.
  */
+/** Paused during Google AdSense review — see ADS_PAUSED in AdSlots.tsx. */
+const ADS_PAUSED = true;
+
 export function AutoBannerAds({ target = 5 }: { target?: number }) {
+  if (ADS_PAUSED) return null;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [hosts, setHosts] = useState<HTMLElement[]>([]);
 
