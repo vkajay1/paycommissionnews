@@ -16,6 +16,7 @@ import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
 import { Route as RajasthanGovernmentSalaryCalculatorRouteImport } from './routes/rajasthan-government-salary-calculator'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
@@ -34,10 +35,13 @@ import { Route as FitmentFactorInHindiRouteImport } from './routes/fitment-facto
 import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
 import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-in-hindi'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
 import { Route as R8thPayCommissionUttarPradeshRouteImport } from './routes/8th-pay-commission-uttar-pradesh'
 import { Route as R8thPayCommissionTamilNaduRouteImport } from './routes/8th-pay-commission-tamil-nadu'
@@ -100,6 +104,11 @@ const RajasthanGovernmentSalaryCalculatorRoute =
     path: '/rajasthan-government-salary-calculator',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PensionArrearRoute = PensionArrearRouteImport.update({
   id: '/pension-arrear',
   path: '/pension-arrear',
@@ -191,6 +200,11 @@ const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
   path: '/epf-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DaCalculatorInHindiRoute = DaCalculatorInHindiRouteImport.update({
   id: '/da-calculator-in-hindi',
   path: '/da-calculator-in-hindi',
@@ -201,6 +215,11 @@ const DaCalculatorRoute = DaCalculatorRouteImport.update({
   path: '/da-calculator',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -209,6 +228,11 @@ const BlogRoute = BlogRouteImport.update({
 const ArrearRoute = ArrearRouteImport.update({
   id: '/arrear',
   path: '/arrear',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const R8thPayCommissionWestBengalRoute =
@@ -368,10 +392,13 @@ export interface FileRoutesByFullPath {
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
+  '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
+  '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -390,6 +417,7 @@ export interface FileRoutesByFullPath {
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
@@ -424,10 +452,13 @@ export interface FileRoutesByTo {
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
+  '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
+  '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -445,6 +476,7 @@ export interface FileRoutesByTo {
   '/pay-fixation': typeof PayFixationRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/salary': typeof SalaryRoute
   '/salary-fixation': typeof SalaryFixationRoute
@@ -478,10 +510,13 @@ export interface FileRoutesById {
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
+  '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
   '/blog': typeof BlogRouteWithChildren
+  '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -500,6 +535,7 @@ export interface FileRoutesById {
   '/pay-level': typeof PayLevelRouteWithChildren
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
@@ -536,10 +572,13 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-tamil-nadu'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
+    | '/about'
     | '/arrear'
     | '/blog'
+    | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
+    | '/disclaimer'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -558,6 +597,7 @@ export interface FileRouteTypes {
     | '/pay-level'
     | '/pension'
     | '/pension-arrear'
+    | '/privacy-policy'
     | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
@@ -592,10 +632,13 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-tamil-nadu'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
+    | '/about'
     | '/arrear'
     | '/blog'
+    | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
+    | '/disclaimer'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -613,6 +656,7 @@ export interface FileRouteTypes {
     | '/pay-fixation'
     | '/pension'
     | '/pension-arrear'
+    | '/privacy-policy'
     | '/rajasthan-government-salary-calculator'
     | '/salary'
     | '/salary-fixation'
@@ -645,10 +689,13 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-tamil-nadu'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
+    | '/about'
     | '/arrear'
     | '/blog'
+    | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
+    | '/disclaimer'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -667,6 +714,7 @@ export interface FileRouteTypes {
     | '/pay-level'
     | '/pension'
     | '/pension-arrear'
+    | '/privacy-policy'
     | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
@@ -702,10 +750,13 @@ export interface RootRouteChildren {
   R8thPayCommissionTamilNaduRoute: typeof R8thPayCommissionTamilNaduRoute
   R8thPayCommissionUttarPradeshRoute: typeof R8thPayCommissionUttarPradeshRoute
   R8thPayCommissionWestBengalRoute: typeof R8thPayCommissionWestBengalRoute
+  AboutRoute: typeof AboutRoute
   ArrearRoute: typeof ArrearRoute
   BlogRoute: typeof BlogRouteWithChildren
+  ContactRoute: typeof ContactRoute
   DaCalculatorRoute: typeof DaCalculatorRoute
   DaCalculatorInHindiRoute: typeof DaCalculatorInHindiRoute
+  DisclaimerRoute: typeof DisclaimerRoute
   EpfCalculatorRoute: typeof EpfCalculatorRoute
   FitmentCalculatorRoute: typeof FitmentCalculatorRoute
   FitmentFactorRoute: typeof FitmentFactorRoute
@@ -724,6 +775,7 @@ export interface RootRouteChildren {
   PayLevelRoute: typeof PayLevelRouteWithChildren
   PensionRoute: typeof PensionRoute
   PensionArrearRoute: typeof PensionArrearRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RajasthanGovernmentSalaryCalculatorRoute: typeof RajasthanGovernmentSalaryCalculatorRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
@@ -785,6 +837,13 @@ declare module '@tanstack/react-router' {
       path: '/rajasthan-government-salary-calculator'
       fullPath: '/rajasthan-government-salary-calculator'
       preLoaderRoute: typeof RajasthanGovernmentSalaryCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pension-arrear': {
@@ -913,6 +972,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EpfCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/da-calculator-in-hindi': {
       id: '/da-calculator-in-hindi'
       path: '/da-calculator-in-hindi'
@@ -927,6 +993,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DaCalculatorRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -939,6 +1012,13 @@ declare module '@tanstack/react-router' {
       path: '/arrear'
       fullPath: '/arrear'
       preLoaderRoute: typeof ArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/8th-pay-commission-west-bengal': {
@@ -1188,10 +1268,13 @@ const rootRouteChildren: RootRouteChildren = {
   R8thPayCommissionTamilNaduRoute: R8thPayCommissionTamilNaduRoute,
   R8thPayCommissionUttarPradeshRoute: R8thPayCommissionUttarPradeshRoute,
   R8thPayCommissionWestBengalRoute: R8thPayCommissionWestBengalRoute,
+  AboutRoute: AboutRoute,
   ArrearRoute: ArrearRoute,
   BlogRoute: BlogRouteWithChildren,
+  ContactRoute: ContactRoute,
   DaCalculatorRoute: DaCalculatorRoute,
   DaCalculatorInHindiRoute: DaCalculatorInHindiRoute,
+  DisclaimerRoute: DisclaimerRoute,
   EpfCalculatorRoute: EpfCalculatorRoute,
   FitmentCalculatorRoute: FitmentCalculatorRoute,
   FitmentFactorRoute: FitmentFactorRoute,
@@ -1210,6 +1293,7 @@ const rootRouteChildren: RootRouteChildren = {
   PayLevelRoute: PayLevelRouteWithChildren,
   PensionRoute: PensionRoute,
   PensionArrearRoute: PensionArrearRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   RajasthanGovernmentSalaryCalculatorRoute:
     RajasthanGovernmentSalaryCalculatorRoute,
   RoleRoute: RoleRouteWithChildren,
