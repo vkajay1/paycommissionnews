@@ -35,17 +35,27 @@ export function Hero() {
               <a href="#tools">Explore Tools</a>
             </Button>
           </div>
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1.5">
-              <TrendingUp className="h-3.5 w-3.5 text-success" />
-              Live, no-reload calculations
-            </span>
-            <span>· 18 pay levels supported</span>
-            <span>· Dark mode</span>
-          </div>
+          <dl className="mt-9 grid max-w-lg grid-cols-3 divide-x divide-border border-y border-border">
+            {[
+              { k: "18", v: "Pay levels covered" },
+              { k: "36", v: "States & UTs" },
+              { k: "25+", v: "Calculators" },
+            ].map((s) => (
+              <div key={s.v} className="px-4 py-3 first:pl-0">
+                <dt className="text-xl font-bold text-primary">{s.k}</dt>
+                <dd className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                  {s.v}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+            <TrendingUp className="h-3.5 w-3.5 text-success" />
+            Live, no-reload calculations · methodology published on every page
+          </p>
         </div>
         <div className="relative">
-          <div className="rounded-xl border border-border bg-card p-5 shadow-card sm:p-6">
+          <div className="rounded-lg border border-border bg-background p-5 shadow-card sm:p-6">
             <div className="mb-3 flex items-center justify-between">
               <div>
                 <div className="text-xs font-medium text-muted-foreground">
