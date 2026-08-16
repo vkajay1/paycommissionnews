@@ -10,26 +10,20 @@ const FitmentChart = lazyChart<{ basic?: number }>(
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-32 left-1/3 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute right-0 top-40 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
-      </div>
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-12 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:pb-20 lg:pt-20">
+    <section className="relative border-b border-border bg-card">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:pb-16 lg:pt-14">
         <div className="flex flex-col justify-center">
-          <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-md border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-primary">
             <Sparkles className="h-3 w-3" />
-            8th Pay Commission · Projection Engine
+            8th Pay Commission · Projection Desk
           </span>
-          <h1 className="mt-4 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Estimate your 8th Pay Commission salary{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              instantly.
-            </span>
+          <h1 className="mt-4 text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-5xl">
+            8th Pay Commission salary, pension and arrear projections
           </h1>
-          <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-            Advanced salary, pension, arrear and pay-matrix calculators for Central Government
-            employees — built with the polish of a modern fintech dashboard.
+          <p className="mt-5 max-w-xl text-base text-muted-foreground">
+            A professional-grade calculator suite for Central and State Government employees,
+            pensioners and defence personnel. Model any fitment factor, DA rate and city class in
+            seconds — with the methodology shown alongside every result.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button asChild size="lg" className="rounded-md">
