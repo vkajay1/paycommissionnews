@@ -39,7 +39,6 @@ import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-in-hindi'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ArrearRouteImport } from './routes/arrear'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
@@ -60,6 +59,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
 import { Route as RoleIndexRouteImport } from './routes/role.index'
 import { Route as PayLevelIndexRouteImport } from './routes/pay-level.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as StateStateRouteImport } from './routes/state.$state'
 import { Route as RoleRoleRouteImport } from './routes/role.$role'
 import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
@@ -220,11 +220,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogRoute = BlogRouteImport.update({
-  id: '/blog',
-  path: '/blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ArrearRoute = ArrearRouteImport.update({
   id: '/arrear',
   path: '/arrear',
@@ -337,6 +332,11 @@ const PayLevelIndexRoute = PayLevelIndexRouteImport.update({
   path: '/',
   getParentRoute: () => PayLevelRoute,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StateStateRoute = StateStateRouteImport.update({
   id: '/$state',
   path: '/$state',
@@ -353,9 +353,9 @@ const PayLevelLevelRoute = PayLevelLevelRouteImport.update({
   getParentRoute: () => PayLevelRoute,
 } as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => BlogRoute,
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const Char91DotwellKnownChar93OauthProtectedResourceRoute =
   Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
@@ -394,7 +394,6 @@ export interface FileRoutesByFullPath {
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
-  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
@@ -431,6 +430,7 @@ export interface FileRoutesByFullPath {
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
+  '/blog/': typeof BlogIndexRoute
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
@@ -454,7 +454,6 @@ export interface FileRoutesByTo {
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
-  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
@@ -488,6 +487,7 @@ export interface FileRoutesByTo {
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
+  '/blog': typeof BlogIndexRoute
   '/pay-level': typeof PayLevelIndexRoute
   '/role': typeof RoleIndexRoute
   '/state': typeof StateIndexRoute
@@ -512,7 +512,6 @@ export interface FileRoutesById {
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
   '/arrear': typeof ArrearRoute
-  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
@@ -549,6 +548,7 @@ export interface FileRoutesById {
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
+  '/blog/': typeof BlogIndexRoute
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
@@ -574,7 +574,6 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-west-bengal'
     | '/about'
     | '/arrear'
-    | '/blog'
     | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
@@ -611,6 +610,7 @@ export interface FileRouteTypes {
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
+    | '/blog/'
     | '/pay-level/'
     | '/role/'
     | '/state/'
@@ -634,7 +634,6 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-west-bengal'
     | '/about'
     | '/arrear'
-    | '/blog'
     | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
@@ -668,6 +667,7 @@ export interface FileRouteTypes {
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
+    | '/blog'
     | '/pay-level'
     | '/role'
     | '/state'
@@ -691,7 +691,6 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-west-bengal'
     | '/about'
     | '/arrear'
-    | '/blog'
     | '/contact'
     | '/da-calculator'
     | '/da-calculator-in-hindi'
@@ -728,6 +727,7 @@ export interface FileRouteTypes {
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
+    | '/blog/'
     | '/pay-level/'
     | '/role/'
     | '/state/'
@@ -752,7 +752,6 @@ export interface RootRouteChildren {
   R8thPayCommissionWestBengalRoute: typeof R8thPayCommissionWestBengalRoute
   AboutRoute: typeof AboutRoute
   ArrearRoute: typeof ArrearRoute
-  BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   DaCalculatorRoute: typeof DaCalculatorRoute
   DaCalculatorInHindiRoute: typeof DaCalculatorInHindiRoute
@@ -785,6 +784,8 @@ export interface RootRouteChildren {
   TakeHomeSalaryRoute: typeof TakeHomeSalaryRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  BlogSlugRoute: typeof BlogSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
@@ -1000,13 +1001,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog': {
-      id: '/blog'
-      path: '/blog'
-      fullPath: '/blog'
-      preLoaderRoute: typeof BlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/arrear': {
       id: '/arrear'
       path: '/arrear'
@@ -1147,6 +1141,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayLevelIndexRouteImport
       parentRoute: typeof PayLevelRoute
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/state/$state': {
       id: '/state/$state'
       path: '/$state'
@@ -1170,10 +1171,10 @@ declare module '@tanstack/react-router' {
     }
     '/blog/$slug': {
       id: '/blog/$slug'
-      path: '/$slug'
+      path: '/blog/$slug'
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof BlogRoute
+      parentRoute: typeof rootRouteImport
     }
     '/.well-known/oauth-protected-resource': {
       id: '/.well-known/oauth-protected-resource'
@@ -1198,16 +1199,6 @@ declare module '@tanstack/react-router' {
     }
   }
 }
-
-interface BlogRouteChildren {
-  BlogSlugRoute: typeof BlogSlugRoute
-}
-
-const BlogRouteChildren: BlogRouteChildren = {
-  BlogSlugRoute: BlogSlugRoute,
-}
-
-const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 interface PayLevelRouteChildren {
   PayLevelLevelRoute: typeof PayLevelLevelRoute
@@ -1270,7 +1261,6 @@ const rootRouteChildren: RootRouteChildren = {
   R8thPayCommissionWestBengalRoute: R8thPayCommissionWestBengalRoute,
   AboutRoute: AboutRoute,
   ArrearRoute: ArrearRoute,
-  BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   DaCalculatorRoute: DaCalculatorRoute,
   DaCalculatorInHindiRoute: DaCalculatorInHindiRoute,
@@ -1305,6 +1295,8 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
+  BlogSlugRoute: BlogSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
