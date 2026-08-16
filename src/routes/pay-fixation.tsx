@@ -55,7 +55,7 @@ function Page() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <div className="mb-6 flex items-center gap-3">
-        <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/10 text-primary">
+        <div className="grid h-11 w-11 place-items-center rounded-lg bg-primary/10 text-primary">
           <ClipboardList className="h-5 w-5" />
         </div>
         <div>
@@ -66,7 +66,7 @@ function Page() {
       <DisclaimerBanner />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Current basic pay (₹)</Label>
             <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
@@ -90,7 +90,7 @@ function Page() {
           )}
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           {mode !== "rollover" && (
             <>
               <Row label="3% notional increment" value={inr(r.increment)} />

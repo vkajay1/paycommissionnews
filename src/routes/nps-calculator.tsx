@@ -99,7 +99,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <Label className="text-xs text-muted-foreground">Basic pay (₹)</Label>
@@ -132,7 +132,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Years of contribution" value={`${r.years}`} />
           <ResultRow label="Corpus at age 60" value={inr(r.corpus)} highlight />
           <div className="my-1 h-px bg-border" />

@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { SideNav } from "@/components/layout/SideNav";
 import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot } from "@/components/ads/AdSlots";
 import { AutoBannerAds } from "@/components/ads/AutoBannerAds";
 

@@ -108,7 +108,7 @@ function HistoryPage() {
           number everyone remembers, because it is the single multiplier that converts old
           basic pay into new basic pay.
         </p>
-        <div className="overflow-x-auto rounded-2xl border border-border bg-card">
+        <div className="overflow-x-auto rounded-lg border border-border bg-card">
           <table className="w-full min-w-[720px] text-sm">
             <thead className="bg-secondary/50 text-left">
               <tr>
@@ -134,7 +134,7 @@ function HistoryPage() {
 
       <section className="mt-12">
         <h2 className="mb-3 text-xl font-bold">Fitment factor scenarios on the table</h2>
-        <div className="overflow-x-auto rounded-2xl border border-border bg-card">
+        <div className="overflow-x-auto rounded-lg border border-border bg-card">
           <table className="w-full min-w-[620px] text-sm">
             <thead className="bg-secondary/50 text-left">
               <tr>
@@ -163,7 +163,7 @@ function HistoryPage() {
 
       <section className="mt-12">
         <h2 className="mb-3 text-xl font-bold">The HRA staircase after a new commission</h2>
-        <div className="overflow-x-auto rounded-2xl border border-border bg-card">
+        <div className="overflow-x-auto rounded-lg border border-border bg-card">
           <table className="w-full min-w-[520px] text-sm">
             <thead className="bg-secondary/50 text-left">
               <tr>
@@ -255,7 +255,7 @@ function HistoryPage() {
         <h2 className="mb-3 text-xl font-bold">Orders and notifications behind these numbers</h2>
         <div className="space-y-5">
           {OFFICIAL_SOURCES.map((g) => (
-            <div key={g.area} className="rounded-2xl border border-border bg-card p-5">
+            <div key={g.area} className="rounded-lg border border-border bg-card p-5">
               <div className="mb-2 text-sm font-semibold">{g.area}</div>
               <ul className="list-disc space-y-1.5 pl-5 text-sm text-muted-foreground">
                 {g.items.map((it) => (

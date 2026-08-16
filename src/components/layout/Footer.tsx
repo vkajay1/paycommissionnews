@@ -2,14 +2,24 @@ import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border/60 bg-card/50">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <footer className="mt-24 border-t-2 border-primary/70 bg-secondary/50">
+      <div className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <div className="text-base font-bold">8th CPC Calculator</div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Modern salary, pension and arrear estimators for Central Government employees.
+              An independent research desk publishing salary, pension and arrear projections for
+              Central and State Government employees.
             </p>
+            <div className="mt-4 space-y-1 text-xs text-muted-foreground">
+              <div className="font-semibold uppercase tracking-wider text-foreground/70">
+                Editorial policy
+              </div>
+              <p>
+                Every figure is model-based and clearly labelled. Official notifications always
+                override our estimates.
+              </p>
+            </div>
           </div>
           <FooterCol
             title="Calculators"
@@ -70,9 +80,22 @@ export function Footer() {
 
 
         </div>
-        <div className="mt-10 border-t border-border/60 pt-6 text-xs text-muted-foreground">
-          Figures shown are estimates based on sample data. Not affiliated with any government body.
-          © {new Date().getFullYear()} 8th CPC Calculator.
+        <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+          <span>
+            © {new Date().getFullYear()} 8th CPC Calculator. All rights reserved.
+          </span>
+          <span className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link to="/privacy-policy" className="hover:text-primary">
+              Privacy
+            </Link>
+            <Link to="/disclaimer" className="hover:text-primary">
+              Disclaimer
+            </Link>
+            <Link to="/contact" className="hover:text-primary">
+              Contact
+            </Link>
+            <span>Not affiliated with any government body.</span>
+          </span>
         </div>
       </div>
     </footer>

@@ -48,7 +48,7 @@ export function CalcHeader({
 }) {
   return (
     <div className="mb-6 flex items-start gap-3">
-      <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary">
+      <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
         <Icon className="h-5 w-5" />
       </div>
       <div>
@@ -126,7 +126,7 @@ export function CalcContent({
 
       <section>
         <h2 className="mb-3 text-xl font-bold">Calculation formula</h2>
-        <div className="space-y-2 rounded-2xl border border-border bg-secondary/40 p-5 font-mono text-sm">
+        <div className="space-y-2 rounded-lg border border-border bg-secondary/40 p-5 font-mono text-sm">
           {formula.map((f) => (
             <div key={f}>{f}</div>
           ))}
@@ -135,7 +135,7 @@ export function CalcContent({
 
       <section>
         <h2 className="mb-3 text-xl font-bold">Frequently asked questions</h2>
-        <Accordion type="single" collapsible className="rounded-2xl border border-border bg-card px-4">
+        <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
           {faq.map((f, i) => (
             <AccordionItem key={f.q} value={`i${i}`}>
               <AccordionTrigger className="text-left text-sm font-semibold">{f.q}</AccordionTrigger>
@@ -153,7 +153,7 @@ export function CalcContent({
               <Link
                 key={r.to}
                 to={r.to}
-                className="rounded-full border border-border px-4 py-1.5 text-sm font-medium hover:border-primary/40 hover:bg-primary/5"
+                className="rounded-md border border-border px-4 py-1.5 text-sm font-medium hover:border-primary/40 hover:bg-primary/5"
               >
                 {r.label}
               </Link>

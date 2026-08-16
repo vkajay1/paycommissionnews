@@ -121,7 +121,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Annual gross salary (₹)</Label>
             <Input type="number" value={gross} onChange={(e) => setGross(Number(e.target.value) || 0)} />
@@ -148,17 +148,17 @@ function Page() {
         </Card>
 
         <div className="space-y-4">
-          <Card className="space-y-3 rounded-3xl p-6">
+          <Card className="space-y-3 rounded-xl p-6">
             <div className="text-sm font-semibold">New regime</div>
             <ResultRow label="Taxable income" value={inr(r.newTaxable)} />
             <ResultRow label="Tax + 4% cess" value={inr(r.newTotal)} highlight />
           </Card>
-          <Card className="space-y-3 rounded-3xl p-6">
+          <Card className="space-y-3 rounded-xl p-6">
             <div className="text-sm font-semibold">Old regime</div>
             <ResultRow label="Taxable income" value={inr(r.oldTaxable)} />
             <ResultRow label="Tax + 4% cess" value={inr(r.oldTotal)} highlight />
           </Card>
-          <Card className="rounded-3xl bg-primary/5 p-6">
+          <Card className="rounded-xl bg-primary/5 p-6">
             <div className="text-sm text-muted-foreground">Recommended</div>
             <div className="mt-1 text-xl font-bold text-primary">
               {r.better === "new" ? "New regime" : "Old regime"} saves {inr(r.saving)}

@@ -108,7 +108,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Monthly basic pay + DA (₹)</Label>
             <Input type="number" value={basic} onChange={(e) => setBasic(Number(e.target.value) || 0)} />
@@ -137,7 +137,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Your total contribution" value={inr(employee)} />
           <ResultRow label="Employer EPF contribution" value={inr(employer)} />
           <ResultRow label="Interest earned" value={inr(interest)} />

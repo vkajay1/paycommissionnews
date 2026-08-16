@@ -55,14 +55,14 @@ function ContactPage() {
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
-        <div className="rounded-2xl border border-border bg-card p-5">
+        <div className="rounded-lg border border-border bg-card p-5">
           <Mail className="h-6 w-6 text-primary" />
           <h2 className="mt-3 text-base font-semibold">Email</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             support@paycommissionnews.co.in
           </p>
         </div>
-        <div className="rounded-2xl border border-border bg-card p-5">
+        <div className="rounded-lg border border-border bg-card p-5">
           <MapPin className="h-6 w-6 text-primary" />
           <h2 className="mt-3 text-base font-semibold">Headquarters</h2>
           <p className="mt-1 text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ function ContactPage() {
       </div>
 
       <form
-        className="mt-10 space-y-5 rounded-2xl border border-border bg-card p-6"
+        className="mt-10 space-y-5 rounded-lg border border-border bg-card p-6"
         onSubmit={(e) => {
           e.preventDefault();
           const form = e.currentTarget;

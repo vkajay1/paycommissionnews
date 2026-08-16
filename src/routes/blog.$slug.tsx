@@ -131,7 +131,7 @@ function ArticlePage() {
       </div>
 
       <div
-        className={`my-8 h-44 rounded-2xl bg-gradient-to-br ${article.hero} shadow-card`}
+        className={`my-8 h-44 rounded-lg bg-gradient-to-br ${article.hero} shadow-card`}
       />
 
       <article className="prose-article">
@@ -170,7 +170,7 @@ function ArticlePage() {
         </div>
       </article>
 
-      <div className="mt-10 rounded-2xl border border-border bg-secondary/40 p-6 text-sm text-muted-foreground">
+      <div className="mt-10 rounded-lg border border-border bg-secondary/40 p-6 text-sm text-muted-foreground">
         <strong className="text-foreground">Disclaimer:</strong> Figures shown are
         indicative projections based on publicly discussed scenarios. Final salary,
         pension, fitment factor and implementation date are subject to the official
@@ -245,7 +245,7 @@ function RenderBlock({ block }: { block: Block }) {
           ? "border-amber-500/30 bg-amber-500/5"
           : "border-emerald-500/30 bg-emerald-500/5";
       return (
-        <div className={`not-prose my-6 rounded-2xl border p-5 ${toneClass}`}>
+        <div className={`not-prose my-6 rounded-lg border p-5 ${toneClass}`}>
           <div className="flex items-start gap-3">
             <Icon className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
             <div>
@@ -258,7 +258,7 @@ function RenderBlock({ block }: { block: Block }) {
     }
     case "table":
       return (
-        <div className="not-prose my-6 overflow-x-auto rounded-2xl border border-border">
+        <div className="not-prose my-6 overflow-x-auto rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary/60">
               <tr>

@@ -104,7 +104,7 @@ function HindiFitmentPage() {
           </p>
         </HindiCard>
 
-        <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-card">
+        <div className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
           <table className="w-full text-sm">
             <thead className="bg-secondary/60 text-xs uppercase tracking-wider text-muted-foreground">
               <tr>

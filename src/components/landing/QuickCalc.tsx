@@ -36,7 +36,7 @@ export function QuickCalc() {
 
   return (
     <section className="mx-auto -mt-6 max-w-7xl px-4 sm:px-6">
-      <Card className="overflow-hidden rounded-3xl border-border/80 bg-card p-0 shadow-card">
+      <Card className="overflow-hidden rounded-xl border-border/80 bg-card p-0 shadow-card">
         <div className="grid gap-0 lg:grid-cols-[1.1fr_1fr]">
           <div className="p-6 sm:p-8">
             <div className="mb-5 flex items-center justify-between">
@@ -141,7 +141,7 @@ export function QuickCalc() {
               <Row label="Current Gross" value={inr(result.current.gross)} muted />
             </dl>
 
-            <Button asChild className="mt-6 w-full rounded-full">
+            <Button asChild className="mt-6 w-full rounded-md">
               <Link to="/salary" search={{ level, basic, city, fit } as never}>
                 Open full calculator
                 <ArrowUpRight className="ml-1 h-4 w-4" />

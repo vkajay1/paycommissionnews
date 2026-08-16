@@ -10,48 +10,52 @@ const FitmentChart = lazyChart<{ basic?: number }>(
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-32 left-1/3 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute right-0 top-40 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
-      </div>
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-12 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:pb-20 lg:pt-20">
+    <section className="relative border-b border-border bg-card">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:pb-16 lg:pt-14">
         <div className="flex flex-col justify-center">
-          <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-md border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-primary">
             <Sparkles className="h-3 w-3" />
-            8th Pay Commission · Projection Engine
+            8th Pay Commission · Projection Desk
           </span>
-          <h1 className="mt-4 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Estimate your 8th Pay Commission salary{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              instantly.
-            </span>
+          <h1 className="mt-4 text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-5xl">
+            8th Pay Commission salary, pension and arrear projections
           </h1>
-          <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-            Advanced salary, pension, arrear and pay-matrix calculators for Central Government
-            employees — built with the polish of a modern fintech dashboard.
+          <p className="mt-5 max-w-xl text-base text-muted-foreground">
+            A professional-grade calculator suite for Central and State Government employees,
+            pensioners and defence personnel. Model any fitment factor, DA rate and city class in
+            seconds — with the methodology shown alongside every result.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" className="rounded-md">
               <Link to="/salary">
                 Calculate Salary <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full">
+            <Button asChild variant="outline" size="lg" className="rounded-md">
               <a href="#tools">Explore Tools</a>
             </Button>
           </div>
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1.5">
-              <TrendingUp className="h-3.5 w-3.5 text-success" />
-              Live, no-reload calculations
-            </span>
-            <span>· 18 pay levels supported</span>
-            <span>· Dark mode</span>
-          </div>
+          <dl className="mt-9 grid max-w-lg grid-cols-3 divide-x divide-border border-y border-border">
+            {[
+              { k: "18", v: "Pay levels covered" },
+              { k: "36", v: "States & UTs" },
+              { k: "25+", v: "Calculators" },
+            ].map((s) => (
+              <div key={s.v} className="px-4 py-3 first:pl-0">
+                <dt className="text-xl font-bold text-primary">{s.k}</dt>
+                <dd className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                  {s.v}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+            <TrendingUp className="h-3.5 w-3.5 text-success" />
+            Live, no-reload calculations · methodology published on every page
+          </p>
         </div>
         <div className="relative">
-          <div className="rounded-3xl border border-border bg-card p-5 shadow-card sm:p-6">
+          <div className="rounded-lg border border-border bg-background p-5 shadow-card sm:p-6">
             <div className="mb-3 flex items-center justify-between">
               <div>
                 <div className="text-xs font-medium text-muted-foreground">

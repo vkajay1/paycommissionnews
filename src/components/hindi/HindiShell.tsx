@@ -58,7 +58,7 @@ export function HindiHeader({
   return (
     <div className="mb-6">
       <div className="flex items-start gap-3">
-        <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary">
+        <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
           <Icon className="h-5 w-5" />
         </div>
         <div>
@@ -117,7 +117,7 @@ export function HindiCard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5 shadow-card">
+    <div className="rounded-lg border border-border bg-card p-5 shadow-card">
       <div className="mb-4 text-sm font-semibold">{title}</div>
       <div className="space-y-3">{children}</div>
     </div>
@@ -160,7 +160,7 @@ export function HindiContent({
 
       <section>
         <h2 className="mb-3 text-xl font-bold">गणना का सूत्र</h2>
-        <div className="space-y-2 rounded-2xl border border-border bg-secondary/40 p-5 font-mono text-sm">
+        <div className="space-y-2 rounded-lg border border-border bg-secondary/40 p-5 font-mono text-sm">
           {formula.map((f) => (
             <div key={f}>{f}</div>
           ))}
@@ -172,7 +172,7 @@ export function HindiContent({
         <Accordion
           type="single"
           collapsible
-          className="rounded-2xl border border-border bg-card px-4"
+          className="rounded-lg border border-border bg-card px-4"
         >
           {faq.map((f, i) => (
             <AccordionItem key={f.q} value={`i${i}`}>
@@ -194,7 +194,7 @@ export function HindiContent({
             <Link
               key={p.to}
               to={p.to}
-              className="rounded-2xl border border-border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-primary/5"
+              className="rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-primary/5"
             >
               <div className="text-sm font-semibold">{p.label}</div>
               <div className="mt-1 text-xs text-muted-foreground">{p.desc}</div>
@@ -203,7 +203,7 @@ export function HindiContent({
         </div>
       </section>
 
-      <p className="rounded-2xl border border-border bg-secondary/40 p-4 text-xs text-muted-foreground">
+      <p className="rounded-lg border border-border bg-secondary/40 p-4 text-xs text-muted-foreground">
         अस्वीकरण: 8वें वेतन आयोग की सिफारिशें अभी जारी नहीं हुई हैं। यहाँ दिए गए
         आंकड़े नमूना पे मैट्रिक्स और सार्वजनिक रूप से चर्चित फिटमेंट फैक्टर पर
         आधारित अनुमान हैं। यह वेबसाइट किसी सरकारी विभाग से संबंधित नहीं है।

@@ -138,7 +138,7 @@ function Page() {
       />
 
       <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Annual CTC (₹)</Label>
             <Input type="number" value={ctc} onChange={(e) => setCtc(Number(e.target.value) || 0)} />
@@ -157,7 +157,7 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="space-y-4 rounded-3xl p-6">
+        <Card className="space-y-4 rounded-xl p-6">
           <ResultRow label="Basic pay (annual)" value={inr(r.basicAnnual)} />
           <ResultRow label="Employer PF (not in hand)" value={`- ${inr(r.employerPf)}`} negative />
           <ResultRow label="Gratuity provision (not in hand)" value={`- ${inr(r.gratuityProv)}`} negative />

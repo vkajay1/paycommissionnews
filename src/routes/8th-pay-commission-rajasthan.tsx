@@ -200,7 +200,7 @@ function Page() {
       <DisclaimerBanner />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,380px)_1fr]">
-        <Card className="space-y-5 rounded-3xl p-6">
+        <Card className="space-y-5 rounded-xl p-6">
           <div className="space-y-1.5">
             <Label className="text-xs text-muted-foreground">Pay level</Label>
             <Select
@@ -294,7 +294,7 @@ function Page() {
                 </button>
               ))}
             </div>
-            <div className="mt-4 grid gap-2 rounded-2xl bg-secondary/50 p-4">
+            <div className="mt-4 grid gap-2 rounded-lg bg-secondary/50 p-4">
               <div className="flex items-baseline justify-between">
                 <span className="text-sm text-muted-foreground">Revised basic pay</span>
                 <span className="text-xl font-bold text-primary">{inr(r.newBasic)}</span>
@@ -315,11 +315,11 @@ function Page() {
           </div>
         </Card>
 
-        <Card className="rounded-3xl p-6">
+        <Card className="rounded-xl p-6">
           <div className="mb-4 text-sm font-semibold">
             Present Rajasthan pay vs 8th CPC projection at {fit.toFixed(2)}x
           </div>
-          <div className="overflow-x-auto rounded-2xl border border-border">
+          <div className="overflow-x-auto rounded-lg border border-border">
             <table className="w-full text-sm">
               <thead className="bg-secondary text-left">
                 <tr>
@@ -352,7 +352,7 @@ function Page() {
 
       <section className="mt-12">
         <h2 className="mb-4 text-xl font-bold">Level-wise 8th CPC projection for Rajasthan</h2>
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[720px] text-sm">
             <thead className="bg-secondary text-left">
               <tr>
@@ -392,7 +392,7 @@ function Page() {
 
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">How Rajasthan is likely to adopt the 8th CPC</h2>
-        <div className="overflow-hidden rounded-2xl border border-border">
+        <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">
               <tr>
@@ -414,7 +414,7 @@ function Page() {
 
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">Rajasthan pay commission adoption history</h2>
-        <div className="overflow-x-auto rounded-2xl border border-border">
+        <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[640px] text-sm">
             <thead className="bg-secondary text-left">
               <tr>

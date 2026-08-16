@@ -186,7 +186,7 @@ export function CalculatorGrid() {
             <Link
               key={t.title}
               to={t.href}
-              className="group relative flex flex-col rounded-2xl border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg"
+              className="group relative flex flex-col rounded-lg border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg"
             >
               <div className="mb-4 flex items-center justify-between">
                 <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary/10 text-primary">
