@@ -139,7 +139,19 @@ function BlogIndex() {
             params={{ slug: a.slug }}
             className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-card"
           >
-            <div className={`h-32 bg-gradient-to-br ${a.hero}`} />
+            {a.image ? (
+              <img
+                src={a.image}
+                alt={a.imageAlt ?? a.title}
+                width={1200}
+                height={675}
+                loading="lazy"
+                decoding="async"
+                className="h-40 w-full object-cover"
+              />
+            ) : (
+              <div className={`h-32 bg-gradient-to-br ${a.hero}`} />
+            )}
             <div className="p-6">
               <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
                 {a.category}
