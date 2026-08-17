@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Calendar, Clock, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock, User, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { articles, getArticle, type Block } from "@/lib/articles";
 import { InArticleAd } from "@/components/ads/AdSlots";
 
