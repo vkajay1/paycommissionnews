@@ -198,15 +198,32 @@ function ArticlePage() {
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">{article.excerpt}</p>
 
-      <div className="mt-6 flex items-center gap-5 border-b border-border pb-6 text-xs text-muted-foreground">
+      <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-b border-border pb-6 text-xs text-muted-foreground">
+        <span className="inline-flex items-center gap-1.5">
+          <User className="h-3.5 w-3.5" />
+          By <span className="font-semibold text-foreground">8th CPC Calculator Editorial Team</span>
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <Calendar className="h-3.5 w-3.5" />
+          Published{" "}
+          <time dateTime={article.date}>
+            {new Date(article.date).toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
+          </time>
+        </span>
         <span className="inline-flex items-center gap-1.5">
           <Calendar className="h-3.5 w-3.5" />
           Updated{" "}
-          {new Date(article.updated).toLocaleDateString("en-IN", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
+          <time dateTime={article.updated}>
+            {new Date(article.updated).toLocaleDateString("en-IN", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
+          </time>
         </span>
         <span className="inline-flex items-center gap-1.5">
           <Clock className="h-3.5 w-3.5" />
@@ -214,9 +231,29 @@ function ArticlePage() {
         </span>
       </div>
 
-      <div
-        className={`my-8 h-44 rounded-lg bg-gradient-to-br ${article.hero} shadow-card`}
-      />
+      {article.image ? (
+        <figure className="my-8">
+          <img
+            src={article.image}
+            alt={article.imageAlt ?? article.title}
+            width={1200}
+            height={675}
+            fetchPriority="high"
+            decoding="async"
+            className="w-full rounded-lg shadow-card"
+          />
+          {article.imageAlt ? (
+            <figcaption className="mt-2 text-xs text-muted-foreground">
+              {article.imageAlt}
+            </figcaption>
+          ) : null}
+        </figure>
+      ) : (
+        <div
+          className={`my-8 h-44 rounded-lg bg-gradient-to-br ${article.hero} shadow-card`}
+        />
+      )}
+
 
       <article className="prose-article">
         {(() => {
