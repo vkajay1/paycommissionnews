@@ -12,40 +12,123 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
     const a = getArticle(params.slug);
     if (!a) return {};
+    const SITE = "https://paycommissionnews.co.in";
     const url = `/blog/${a.slug}`;
+    const absUrl = `${SITE}${url}`;
+    const image = a.image;
+    const isNews = /news|समाचार/i.test(a.category);
+    const alt = a.altLangSlug ? getArticle(a.altLangSlug) : undefined;
+
     return {
       meta: [
         { title: `${a.title} | 8th CPC Calculator` },
         { name: "description", content: a.description },
         { name: "keywords", content: a.keyword },
+        // Google Discover requires large image previews to be allowed.
+        {
+          name: "robots",
+          content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        },
         { property: "og:type", content: "article" },
         { property: "og:title", content: a.title },
         { property: "og:description", content: a.description },
-        { property: "og:url", content: url },
+        { property: "og:url", content: absUrl },
+        { property: "og:locale", content: a.lang === "hi" ? "hi_IN" : "en_IN" },
         { property: "article:published_time", content: a.date },
         { property: "article:modified_time", content: a.updated },
         { property: "article:section", content: a.category },
+        { property: "article:tag", content: a.keyword },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: a.title },
         { name: "twitter:description", content: a.description },
+        ...(image
+          ? [
+              { property: "og:image", content: image },
+              { property: "og:image:width", content: "1200" },
+              { property: "og:image:height", content: "675" },
+              { property: "og:image:alt", content: a.imageAlt ?? a.title },
+              { name: "twitter:image", content: image },
+              { name: "twitter:image:alt", content: a.imageAlt ?? a.title },
+            ]
+          : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [
+        { rel: "canonical", href: url },
+        ...(alt
+          ? [
+              {
+                rel: "alternate",
+                hrefLang: a.lang === "hi" ? "en-IN" : "hi-IN",
+                href: `${SITE}/blog/${alt.slug}`,
+              },
+              { rel: "alternate", hrefLang: a.lang === "hi" ? "hi-IN" : "en-IN", href: absUrl },
+              { rel: "alternate", hrefLang: "x-default", href: a.lang === "hi" ? `${SITE}/blog/${alt.slug}` : absUrl },
+            ]
+          : []),
+      ],
       scripts: [
         {
           type: "application/ld+json",
           children: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
-            headline: a.title,
+            "@type": isNews ? "NewsArticle" : "Article",
+            mainEntityOfPage: { "@type": "WebPage", "@id": absUrl },
+            headline: a.title.slice(0, 110),
+            name: a.title,
             description: a.description,
+            articleSection: a.category,
+            keywords: a.keyword,
+            inLanguage: a.lang === "hi" ? "hi-IN" : "en-IN",
             datePublished: a.date,
             dateModified: a.updated,
-            author: { "@type": "Organization", name: "8th CPC Calculator" },
+            url: absUrl,
+            isAccessibleForFree: true,
+            wordCount: a.body.reduce(
+              (n, b) =>
+                n +
+                ("text" in b && typeof b.text === "string" ? b.text.split(/\s+/).length : 0),
+              0,
+            ),
+            ...(image
+              ? {
+                  image: [
+                    {
+                      "@type": "ImageObject",
+                      url: image,
+                      width: 1200,
+                      height: 675,
+                      caption: a.imageAlt ?? a.title,
+                    },
+                  ],
+                  thumbnailUrl: image,
+                }
+              : {}),
+            author: {
+              "@type": "Organization",
+              name: "8th CPC Calculator Editorial Team",
+              url: `${SITE}/about`,
+            },
             publisher: {
               "@type": "Organization",
               name: "8th CPC Calculator",
+              url: SITE,
+              logo: {
+                "@type": "ImageObject",
+                url: `${SITE}/favicon.ico`,
+              },
             },
-            mainEntityOfPage: `https://paycommissionnews.co.in${url}`,
+          }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+              { "@type": "ListItem", position: 2, name: "News & Articles", item: `${SITE}/blog` },
+              { "@type": "ListItem", position: 3, name: a.title, item: absUrl },
+            ],
           }),
         },
         {
@@ -63,6 +146,7 @@ export const Route = createFileRoute("/blog/$slug")({
       ],
     };
   },
+
   notFoundComponent: () => (
     <main className="mx-auto max-w-3xl px-4 py-24 text-center">
       <h1 className="text-3xl font-bold">Article not found</h1>
