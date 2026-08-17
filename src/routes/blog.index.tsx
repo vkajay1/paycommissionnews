@@ -87,9 +87,20 @@ function BlogIndex() {
       >
         <div className={`absolute inset-0 bg-gradient-to-br ${featured.hero} opacity-10`} />
         <div className="relative grid gap-6 p-8 md:grid-cols-[1fr,1.3fr] md:p-10">
-          <div
-            className={`hidden aspect-[4/3] rounded-lg bg-gradient-to-br ${featured.hero} md:block`}
-          />
+          {featured.image ? (
+            <img
+              src={featured.image}
+              alt={featured.imageAlt ?? featured.title}
+              width={1200}
+              height={675}
+              className="hidden w-full rounded-lg object-cover md:block"
+            />
+          ) : (
+            <div
+              className={`hidden aspect-[4/3] rounded-lg bg-gradient-to-br ${featured.hero} md:block`}
+            />
+          )}
+
           <div className="flex flex-col justify-center">
             <div className="mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-primary">
               <span>{featured.category}</span>
