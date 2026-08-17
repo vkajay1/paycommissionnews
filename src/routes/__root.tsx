@@ -93,6 +93,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Advanced 8th Pay Commission salary, pension and arrear calculators for Indian Central Government employees. Live fitment-factor projections in a modern fintech-style dashboard.",
       },
       { name: "author", content: "8th CPC Calculator" },
+      {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+      { name: "googlebot-news", content: "index, follow" },
       { property: "og:site_name", content: "8th CPC Calculator" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
