@@ -23,6 +23,7 @@ import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as PayCommissionHistoryRouteImport } from './routes/pay-commission-history'
 import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
+import { Route as NewsSitemapDotxmlRouteImport } from './routes/news-sitemap[.]xml'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as MacpCalculatorRouteImport } from './routes/macp-calculator'
 import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
@@ -137,6 +138,11 @@ const PayCommissionHistoryRoute = PayCommissionHistoryRouteImport.update({
 const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
   id: '/nps-calculator',
   path: '/nps-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsSitemapDotxmlRoute = NewsSitemapDotxmlRouteImport.update({
+  id: '/news-sitemap.xml',
+  path: '/news-sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -410,6 +416,7 @@ export interface FileRoutesByFullPath {
   '/ltc-planner': typeof LtcPlannerRoute
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
+  '/news-sitemap.xml': typeof NewsSitemapDotxmlRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -470,6 +477,7 @@ export interface FileRoutesByTo {
   '/ltc-planner': typeof LtcPlannerRoute
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
+  '/news-sitemap.xml': typeof NewsSitemapDotxmlRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -528,6 +536,7 @@ export interface FileRoutesById {
   '/ltc-planner': typeof LtcPlannerRoute
   '/macp-calculator': typeof MacpCalculatorRoute
   '/mcp': typeof McpRoute
+  '/news-sitemap.xml': typeof NewsSitemapDotxmlRoute
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
@@ -590,6 +599,7 @@ export interface FileRouteTypes {
     | '/ltc-planner'
     | '/macp-calculator'
     | '/mcp'
+    | '/news-sitemap.xml'
     | '/nps-calculator'
     | '/pay-commission-history'
     | '/pay-fixation'
@@ -650,6 +660,7 @@ export interface FileRouteTypes {
     | '/ltc-planner'
     | '/macp-calculator'
     | '/mcp'
+    | '/news-sitemap.xml'
     | '/nps-calculator'
     | '/pay-commission-history'
     | '/pay-fixation'
@@ -707,6 +718,7 @@ export interface FileRouteTypes {
     | '/ltc-planner'
     | '/macp-calculator'
     | '/mcp'
+    | '/news-sitemap.xml'
     | '/nps-calculator'
     | '/pay-commission-history'
     | '/pay-fixation'
@@ -768,6 +780,7 @@ export interface RootRouteChildren {
   LtcPlannerRoute: typeof LtcPlannerRoute
   MacpCalculatorRoute: typeof MacpCalculatorRoute
   McpRoute: typeof McpRoute
+  NewsSitemapDotxmlRoute: typeof NewsSitemapDotxmlRoute
   NpsCalculatorRoute: typeof NpsCalculatorRoute
   PayCommissionHistoryRoute: typeof PayCommissionHistoryRoute
   PayFixationRoute: typeof PayFixationRoute
@@ -887,6 +900,13 @@ declare module '@tanstack/react-router' {
       path: '/nps-calculator'
       fullPath: '/nps-calculator'
       preLoaderRoute: typeof NpsCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news-sitemap.xml': {
+      id: '/news-sitemap.xml'
+      path: '/news-sitemap.xml'
+      fullPath: '/news-sitemap.xml'
+      preLoaderRoute: typeof NewsSitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -1277,6 +1297,7 @@ const rootRouteChildren: RootRouteChildren = {
   LtcPlannerRoute: LtcPlannerRoute,
   MacpCalculatorRoute: MacpCalculatorRoute,
   McpRoute: McpRoute,
+  NewsSitemapDotxmlRoute: NewsSitemapDotxmlRoute,
   NpsCalculatorRoute: NpsCalculatorRoute,
   PayCommissionHistoryRoute: PayCommissionHistoryRoute,
   PayFixationRoute: PayFixationRoute,

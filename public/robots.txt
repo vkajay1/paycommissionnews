@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://paycommissionnews.co.in/sitemap.xml
+Sitemap: https://paycommissionnews.co.in/news-sitemap.xml
