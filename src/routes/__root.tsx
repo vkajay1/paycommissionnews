@@ -130,10 +130,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "8th CPC Calculator",
+          url: "https://paycommissionnews.co.in",
+          inLanguage: ["en-IN", "hi-IN"],
           description:
             "Salary, pension and arrear calculators for the 8th Central Pay Commission.",
+          publisher: { "@id": "https://paycommissionnews.co.in/#organization" },
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NewsMediaOrganization",
+          "@id": "https://paycommissionnews.co.in/#organization",
+          name: "8th CPC Calculator",
+          url: "https://paycommissionnews.co.in",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://paycommissionnews.co.in/favicon.ico",
+          },
+          description:
+            "Independent coverage, calculators and explainers on the 8th Central Pay Commission for Indian government employees and pensioners.",
+          publishingPrinciples: "https://paycommissionnews.co.in/disclaimer",
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "editorial",
+            url: "https://paycommissionnews.co.in/contact",
+          },
+        }),
+      },
+
     ],
   }),
   shellComponent: RootShell,
