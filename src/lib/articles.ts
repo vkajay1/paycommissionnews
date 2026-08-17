@@ -428,6 +428,8 @@ export const articles: Article[] = [
     updated: "2026-08-07",
     category: "News",
     hero: "from-sky-500 via-cyan-500 to-emerald-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-consultation-timeline.jpg",
+    imageAlt: "Government office desk with a 2026 calendar and 8th Pay Commission files illustrating the consultation phase timeline",
     excerpt:
       "A formal Chairperson is in place and a structured feedback window runs to mid-March 2026. Here is why 1 January 2026 is a reference date rather than a payday, and how the arrears mechanism actually works.",
     body: [
@@ -622,6 +624,8 @@ export const articles: Article[] = [
     updated: TODAY,
     category: "News",
     hero: "from-indigo-500 via-violet-500 to-fuchsia-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-latest-news-2026.jpg",
+    imageAlt: "Newspaper with Indian Parliament building, rising salary chart and a rupee coin illustrating 8th Pay Commission latest news 2026",
     excerpt:
       "From the January 2025 announcement to a constituted commission with Justice Ranjana Prakash Desai in the chair — here is the full status of India's biggest pay revision since 2016.",
     body: [
@@ -805,6 +809,8 @@ export const articles: Article[] = [
     updated: TODAY,
     category: "Explainer",
     hero: "from-emerald-500 via-teal-500 to-cyan-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-fitment-factor.jpg",
+    imageAlt: "Salary slip growing with a calculator and upward chart illustrating the 8th Pay Commission fitment factor",
     excerpt:
       "The fitment factor is the single multiplier that decides your new salary. Here is how it is derived, what unions are demanding, and how each scenario plays out.",
     body: [
@@ -978,6 +984,8 @@ export const articles: Article[] = [
     updated: TODAY,
     category: "Calculator",
     hero: "from-amber-500 via-orange-500 to-rose-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-salary-calculator-guide.jpg",
+    imageAlt: "Person using a laptop showing an 8th CPC salary calculator dashboard with charts",
     excerpt:
       "Six inputs — level, basic, city, DA%, fitment, pension scheme — produce a fully itemised revised salary. Here is how to use them.",
     body: [
@@ -1139,6 +1147,8 @@ export const articles: Article[] = [
     updated: TODAY,
     category: "Pensioners",
     hero: "from-sky-500 via-blue-500 to-indigo-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-pensioners.jpg",
+    imageAlt: "Senior pensioner reviewing revised pension documents with a rising chart illustrating 8th Pay Commission pension revision",
     excerpt:
       "65 lakh central government pensioners stand to gain from the 8th CPC. Here is how your basic pension, DR and family pension will be revised.",
     body: [
@@ -1274,6 +1284,8 @@ export const articles: Article[] = [
     updated: TODAY,
     category: "Salary",
     hero: "from-pink-500 via-rose-500 to-red-500",
+    image: "https://paycommissionnews.co.in/images/8th-cpc-pay-matrix-levels.jpg",
+    imageAlt: "Blue pay matrix grid beside rising stacks of gold coins illustrating level-wise 8th Pay Commission salary hike",
     excerpt:
       "From Level 1 MTS to Level 14 Joint Secretary, here is what every central government employee can expect in revised basic pay and take-home salary.",
     body: [
