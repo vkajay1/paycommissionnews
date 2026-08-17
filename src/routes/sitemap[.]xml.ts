@@ -13,6 +13,8 @@ interface SitemapEntry {
   lastmod?: string;
   changefreq?: Changefreq;
   priority?: string;
+  image?: string;
+  imageTitle?: string;
 }
 
 const STATIC: SitemapEntry[] = [
@@ -99,7 +101,9 @@ function buildEntries(): SitemapEntry[] {
     entries.push({
       path: `/blog/${article.slug}`,
       lastmod: article.updated,
-      changefreq: "monthly",
+      image: article.image,
+      imageTitle: article.title,
+      changefreq: "daily",
       priority: article.slug === "8th-pay-commission-consultation-phase-timeline-arrears-guide" ? "0.9" : "0.8",
     });
   }
@@ -130,13 +134,20 @@ export const Route = createFileRoute("/sitemap.xml")({
           if (e.lastmod) lines.push(`    <lastmod>${e.lastmod}</lastmod>`);
           if (e.changefreq) lines.push(`    <changefreq>${e.changefreq}</changefreq>`);
           if (e.priority) lines.push(`    <priority>${e.priority}</priority>`);
+          if (e.image) {
+            lines.push(`    <image:image>`);
+            lines.push(`      <image:loc>${escapeXml(e.image)}</image:loc>`);
+            if (e.imageTitle)
+              lines.push(`      <image:title>${escapeXml(e.imageTitle)}</image:title>`);
+            lines.push(`    </image:image>`);
+          }
           lines.push(`  </url>`);
           return lines.join("\n");
         });
 
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
-          `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
+          `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`,
           ...urls,
           `</urlset>`,
         ].join("\n");

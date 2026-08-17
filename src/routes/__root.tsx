@@ -93,6 +93,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Advanced 8th Pay Commission salary, pension and arrear calculators for Indian Central Government employees. Live fitment-factor projections in a modern fintech-style dashboard.",
       },
       { name: "author", content: "8th CPC Calculator" },
+      {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+      { name: "googlebot-news", content: "index, follow" },
       { property: "og:site_name", content: "8th CPC Calculator" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -125,10 +130,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "8th CPC Calculator",
+          url: "https://paycommissionnews.co.in",
+          inLanguage: ["en-IN", "hi-IN"],
           description:
             "Salary, pension and arrear calculators for the 8th Central Pay Commission.",
+          publisher: { "@id": "https://paycommissionnews.co.in/#organization" },
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NewsMediaOrganization",
+          "@id": "https://paycommissionnews.co.in/#organization",
+          name: "8th CPC Calculator",
+          url: "https://paycommissionnews.co.in",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://paycommissionnews.co.in/favicon.ico",
+          },
+          description:
+            "Independent coverage, calculators and explainers on the 8th Central Pay Commission for Indian government employees and pensioners.",
+          publishingPrinciples: "https://paycommissionnews.co.in/disclaimer",
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "editorial",
+            url: "https://paycommissionnews.co.in/contact",
+          },
+        }),
+      },
+
     ],
   }),
   shellComponent: RootShell,

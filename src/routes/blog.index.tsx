@@ -3,23 +3,61 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { articles } from "@/lib/articles";
 
 export const Route = createFileRoute("/blog/")({
-  head: () => ({
-    meta: [
-      { title: "8th Pay Commission Blog — News, Salary Hike & Pay Matrix Guides" },
-      {
-        name: "description",
-        content:
-          "In-depth articles on the 8th Pay Commission: latest news, fitment factor, salary hike projections, pay matrix, pensioner revisions and the 8th CPC salary calculator.",
-      },
-      { property: "og:title", content: "8th Pay Commission Blog" },
-      {
-        property: "og:description",
-        content: "News, calculators and pay-matrix guides for 8th CPC.",
-      },
-      { property: "og:url", content: "/blog" },
-    ],
-    links: [{ rel: "canonical", href: "/blog" }],
-  }),
+  head: () => {
+    const SITE = "https://paycommissionnews.co.in";
+    const featured = articles[0];
+    return {
+      meta: [
+        { title: "8th Pay Commission News & Articles — Salary, Pension, Pay Matrix" },
+        {
+          name: "description",
+          content:
+            "In-depth articles on the 8th Pay Commission: latest news, fitment factor, salary hike projections, pay matrix, pensioner revisions and the 8th CPC salary calculator.",
+        },
+        {
+          name: "robots",
+          content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "8th Pay Commission News & Articles" },
+        {
+          property: "og:description",
+          content: "News, calculators and pay-matrix guides for 8th CPC.",
+        },
+        { property: "og:url", content: `${SITE}/blog` },
+        { name: "twitter:card", content: "summary_large_image" },
+        ...(featured?.image
+          ? [
+              { property: "og:image", content: featured.image },
+              { name: "twitter:image", content: featured.image },
+            ]
+          : []),
+      ],
+      links: [{ rel: "canonical", href: "/blog" }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "8th Pay Commission News & Articles",
+            url: `${SITE}/blog`,
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: articles.map((a, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                url: `${SITE}/blog/${a.slug}`,
+                name: a.title,
+                ...(a.image ? { image: a.image } : {}),
+              })),
+            },
+          }),
+        },
+      ],
+    };
+  },
+
   component: BlogIndex,
 });
 
@@ -49,9 +87,20 @@ function BlogIndex() {
       >
         <div className={`absolute inset-0 bg-gradient-to-br ${featured.hero} opacity-10`} />
         <div className="relative grid gap-6 p-8 md:grid-cols-[1fr,1.3fr] md:p-10">
-          <div
-            className={`hidden aspect-[4/3] rounded-lg bg-gradient-to-br ${featured.hero} md:block`}
-          />
+          {featured.image ? (
+            <img
+              src={featured.image}
+              alt={featured.imageAlt ?? featured.title}
+              width={1200}
+              height={675}
+              className="hidden w-full rounded-lg object-cover md:block"
+            />
+          ) : (
+            <div
+              className={`hidden aspect-[4/3] rounded-lg bg-gradient-to-br ${featured.hero} md:block`}
+            />
+          )}
+
           <div className="flex flex-col justify-center">
             <div className="mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-primary">
               <span>{featured.category}</span>
@@ -90,7 +139,19 @@ function BlogIndex() {
             params={{ slug: a.slug }}
             className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-card"
           >
-            <div className={`h-32 bg-gradient-to-br ${a.hero}`} />
+            {a.image ? (
+              <img
+                src={a.image}
+                alt={a.imageAlt ?? a.title}
+                width={1200}
+                height={675}
+                loading="lazy"
+                decoding="async"
+                className="h-40 w-full object-cover"
+              />
+            ) : (
+              <div className={`h-32 bg-gradient-to-br ${a.hero}`} />
+            )}
             <div className="p-6">
               <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
                 {a.category}
