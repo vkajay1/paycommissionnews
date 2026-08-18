@@ -14,7 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      push_subscriptions: {
+        Row: {
+          active: boolean
+          auth: string
+          created_at: string
+          endpoint: string
+          id: string
+          lang: string
+          last_success_at: string | null
+          p256dh: string
+          updated_at: string
+          user_agent: string | null
+        }
+        Insert: {
+          active?: boolean
+          auth: string
+          created_at?: string
+          endpoint: string
+          id?: string
+          lang?: string
+          last_success_at?: string | null
+          p256dh: string
+          updated_at?: string
+          user_agent?: string | null
+        }
+        Update: {
+          active?: boolean
+          auth?: string
+          created_at?: string
+          endpoint?: string
+          id?: string
+          lang?: string
+          last_success_at?: string | null
+          p256dh?: string
+          updated_at?: string
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
