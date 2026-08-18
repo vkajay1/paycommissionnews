@@ -46,6 +46,6 @@ export async function sendToSubscription(
     vapid,
   );
 
-  const res = await fetch(sub.endpoint, payload);
+  const res = await fetch(sub.endpoint, payload as unknown as RequestInit);
   return res.status;
 }
