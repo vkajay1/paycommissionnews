@@ -17,6 +17,7 @@ import { MobileNav } from "@/components/layout/MobileNav";
 import { SideNav } from "@/components/layout/SideNav";
 import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot } from "@/components/ads/AdSlots";
 import { AutoBannerAds } from "@/components/ads/AutoBannerAds";
+import { PushPrompt } from "@/components/push/PushPrompt";
 
 
 function NotFoundComponent() {
@@ -211,6 +212,7 @@ function RootComponent() {
         <MobileNav />
         <GlobalAdScripts />
         <AutoBannerAds target={5} />
+        <PushPrompt />
 
       </div>
 
