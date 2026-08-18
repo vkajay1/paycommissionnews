@@ -16,6 +16,7 @@ import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
 import { Route as SalaryRouteImport } from './routes/salary'
 import { Route as RoleRouteImport } from './routes/role'
 import { Route as RajasthanGovernmentSalaryCalculatorRouteImport } from './routes/rajasthan-government-salary-calculator'
+import { Route as PushAdminRouteImport } from './routes/push-admin'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
@@ -105,6 +106,11 @@ const RajasthanGovernmentSalaryCalculatorRoute =
     path: '/rajasthan-government-salary-calculator',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PushAdminRoute = PushAdminRouteImport.update({
+  id: '/push-admin',
+  path: '/push-admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
@@ -424,6 +430,7 @@ export interface FileRoutesByFullPath {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/push-admin': typeof PushAdminRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
@@ -484,6 +491,7 @@ export interface FileRoutesByTo {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/push-admin': typeof PushAdminRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/salary': typeof SalaryRoute
   '/salary-fixation': typeof SalaryFixationRoute
@@ -544,6 +552,7 @@ export interface FileRoutesById {
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/push-admin': typeof PushAdminRoute
   '/rajasthan-government-salary-calculator': typeof RajasthanGovernmentSalaryCalculatorRoute
   '/role': typeof RoleRouteWithChildren
   '/salary': typeof SalaryRoute
@@ -607,6 +616,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
+    | '/push-admin'
     | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
@@ -667,6 +677,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
+    | '/push-admin'
     | '/rajasthan-government-salary-calculator'
     | '/salary'
     | '/salary-fixation'
@@ -726,6 +737,7 @@ export interface FileRouteTypes {
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
+    | '/push-admin'
     | '/rajasthan-government-salary-calculator'
     | '/role'
     | '/salary'
@@ -788,6 +800,7 @@ export interface RootRouteChildren {
   PensionRoute: typeof PensionRoute
   PensionArrearRoute: typeof PensionArrearRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  PushAdminRoute: typeof PushAdminRoute
   RajasthanGovernmentSalaryCalculatorRoute: typeof RajasthanGovernmentSalaryCalculatorRoute
   RoleRoute: typeof RoleRouteWithChildren
   SalaryRoute: typeof SalaryRoute
@@ -851,6 +864,13 @@ declare module '@tanstack/react-router' {
       path: '/rajasthan-government-salary-calculator'
       fullPath: '/rajasthan-government-salary-calculator'
       preLoaderRoute: typeof RajasthanGovernmentSalaryCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/push-admin': {
+      id: '/push-admin'
+      path: '/push-admin'
+      fullPath: '/push-admin'
+      preLoaderRoute: typeof PushAdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy-policy': {
@@ -1305,6 +1325,7 @@ const rootRouteChildren: RootRouteChildren = {
   PensionRoute: PensionRoute,
   PensionArrearRoute: PensionArrearRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  PushAdminRoute: PushAdminRoute,
   RajasthanGovernmentSalaryCalculatorRoute:
     RajasthanGovernmentSalaryCalculatorRoute,
   RoleRoute: RoleRouteWithChildren,
