@@ -46,6 +46,232 @@ const TODAY = "2026-08-07";
 
 export const articles: Article[] = [
   {
+    slug: "8th-pay-commission-jaipur-chennai-chandigarh-meetings-hindi",
+    title:
+      "8th Pay Commission Latest News: जयपुर, चेन्नई और चंडीगढ़ में बैठकें, Salary Hike और Pension Revision पर क्या होगा?",
+    description:
+      "8वें वेतन आयोग की जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ consultations की तारीखें, fitment factor 2.86 से 3.83 की चर्चा, salary hike, pension revision, DA-HRA और implementation date से जुड़ी पूरी जानकारी।",
+    keyword: "8th pay commission latest news hindi",
+    readMinutes: 10,
+    date: "2026-08-18",
+    updated: "2026-08-18",
+    category: "समाचार (Hindi)",
+    lang: "hi",
+    hero: "from-indigo-600 via-blue-500 to-teal-500",
+    image:
+      "https://paycommissionnews.co.in/images/8th-cpc-jaipur-chennai-chandigarh-meetings-hi.jpg",
+    imageAlt:
+      "भारत के नक्शे पर जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ के लोकेशन पिन, 8वें वेतन आयोग की बैठक और बढ़ती सैलरी का चार्ट",
+    excerpt:
+      "8वें वेतन आयोग की regional consultations अब जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ पहुंच रही हैं। जानिए तारीखें, fitment factor की चर्चा और salary–pension पर इसका क्या असर हो सकता है।",
+    body: [
+      {
+        type: "p",
+        text: "8th Pay Commission Latest News: केंद्रीय कर्मचारियों और पेंशनर्स के लिए 8वें वेतन आयोग से जुड़ी गतिविधियां अब तेज होती दिखाई दे रही हैं। आयोग देश के अलग-अलग हिस्सों में कर्मचारियों, पेंशनर्स, यूनियनों और अन्य संगठनों से बातचीत कर रहा है।",
+      },
+      {
+        type: "p",
+        text: "अब जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ में 8th Pay Commission की consultations का कार्यक्रम सामने आया है। इन बैठकों में कर्मचारियों और पेंशनर्स से उनकी मांगों और समस्याओं को समझने की कोशिश की जाएगी।",
+      },
+      {
+        type: "table",
+        caption:
+          "आधिकारिक notices के अनुसार 8वें वेतन आयोग की regional consultation तारीखें।",
+        headers: ["शहर", "तारीख", "Appointment deadline"],
+        rows: [
+          ["जयपुर", "31 अगस्त – 1 सितंबर 2026", "18 अगस्त 2026"],
+          ["चेन्नई", "7 – 8 सितंबर 2026", "आधिकारिक notice देखें"],
+          ["पुडुचेरी", "9 सितंबर 2026", "आधिकारिक notice देखें"],
+          ["चंडीगढ़", "16 – 18 सितंबर 2026", "25 अगस्त 2026"],
+        ],
+      },
+      {
+        type: "p",
+        text: "इन बैठकों को इसलिए महत्वपूर्ण माना जा रहा है क्योंकि 8वें वेतन आयोग की final recommendations में salary revision, fitment factor, pension, allowances और service conditions जैसे मुद्दों पर विचार किया जाना है।",
+      },
+      { type: "h2", text: "8th Pay Commission की नई Meetings क्यों हैं महत्वपूर्ण?" },
+      {
+        type: "p",
+        text: "8वें वेतन आयोग का काम केवल कर्मचारियों की basic salary बढ़ाने तक सीमित नहीं है। आयोग को वेतन, allowances, pension और service conditions से जुड़े कई मुद्दों पर recommendations देनी हैं। इसी वजह से अलग-अलग राज्यों और शहरों में stakeholders से बातचीत की जा रही है।",
+      },
+      {
+        type: "p",
+        text: "जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ की meetings में कर्मचारी संगठनों और pensioner associations को अपनी मांगें रखने का मौका मिलेगा। आधिकारिक notices में appointment के लिए अलग-अलग deadlines भी दी गई हैं। इस consultation process से यह समझने में मदद मिल सकती है कि अलग-अलग विभागों और कर्मचारी समूहों की सबसे बड़ी समस्याएं क्या हैं।",
+      },
+      { type: "h2", text: "8th Pay Commission Fitment Factor पर सबसे ज्यादा नजर" },
+      {
+        type: "p",
+        text: "8वें वेतन आयोग में fitment factor सबसे ज्यादा चर्चा में रहने वाले मुद्दों में से एक है। Fitment factor का इस्तेमाल revised basic pay की गणना में किया जाता है। इसी वजह से कर्मचारी संगठनों की तरफ से अलग-अलग fitment factor की मांग की जा रही है। 2.86 से लेकर 3.83 तक के आंकड़े अलग-अलग मांगों और चर्चाओं में सामने आते रहे हैं।",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "2.86 या 3.83 final नहीं है",
+        text: "अभी 8th Pay Commission को अपनी recommendations तैयार करनी हैं और उसके बाद सरकार अंतिम फैसला करेगी। इसलिए किसी भी fitment factor को final मानकर salary calculation करना सही नहीं होगा।",
+      },
+      { type: "h3", text: "अगर Fitment Factor 2.86 हुआ तो Basic Salary कितनी होगी?" },
+      {
+        type: "p",
+        text: "फिलहाल 7th Pay Commission के तहत minimum basic pay ₹18,000 है। अगर केवल उदाहरण के तौर पर 2.86 fitment factor से calculation की जाए, तो ₹18,000 × 2.86 = ₹51,480 बनती है। लेकिन इसे 8th Pay Commission की confirmed minimum salary नहीं माना जाना चाहिए।",
+      },
+      {
+        type: "p",
+        text: "वास्तविक salary इस बात पर निर्भर करेगी कि Commission किस fitment factor की recommendation करता है और सरकार उसे किस रूप में स्वीकार करती है। इसके अलावा नए pay matrix, DA, HRA और दूसरे allowances का भी total salary पर असर पड़ेगा।",
+      },
+      {
+        type: "table",
+        caption:
+          "उदाहरण मात्र: अलग-अलग fitment factor पर ₹18,000 minimum basic pay का mathematical calculation।",
+        headers: ["Fitment factor", "Minimum basic pay (उदाहरण)"],
+        rows: [
+          ["2.86", "₹51,480"],
+          ["3.00", "₹54,000"],
+          ["3.68", "₹66,240"],
+          ["3.83", "₹68,940"],
+        ],
+      },
+      { type: "h2", text: "8th Pay Commission Salary Hike कितनी होगी?" },
+      {
+        type: "p",
+        text: "केंद्रीय कर्मचारियों के बीच सबसे बड़ा सवाल यही है कि 8th Pay Commission Salary लागू होने के बाद कितनी बढ़ेगी। अभी इस सवाल का exact जवाब देना संभव नहीं है।",
+      },
+      {
+        type: "ul",
+        items: [
+          "Final fitment factor",
+          "Revised pay matrix",
+          "Minimum basic pay",
+          "DA calculation",
+          "HRA rules",
+          "दूसरे allowances",
+          "सरकार द्वारा मंजूर recommendations",
+        ],
+      },
+      {
+        type: "p",
+        text: "इसीलिए अभी internet पर चल रहे अलग-अलग salary calculators से मिलने वाली राशि को केवल estimated salary के रूप में देखना चाहिए।",
+      },
+      { type: "h2", text: "Pensioners के लिए भी बड़ा बदलाव हो सकता है" },
+      {
+        type: "p",
+        text: "8th Pay Commission की consultations में pension revision भी एक महत्वपूर्ण विषय है। केंद्रीय pensioners यह जानना चाहते हैं कि नए pay structure के बाद उनकी basic pension कैसे revise होगी और minimum pension में कितना बदलाव हो सकता है।",
+      },
+      {
+        type: "p",
+        text: "उदाहरण के लिए, यदि ₹9,000 की pension पर केवल 2.86 का mathematical multiplier लगाया जाए, तो राशि ₹9,000 × 2.86 = ₹25,740 होती है। लेकिन यह सिर्फ calculation है। Pension revision का वास्तविक formula Commission की recommendations और सरकार के final decision के बाद ही स्पष्ट होगा।",
+      },
+      { type: "h2", text: "DA और HRA पर भी रहेगी नजर" },
+      {
+        type: "p",
+        text: "8th Pay Commission में केवल basic salary और pension ही महत्वपूर्ण नहीं हैं। कर्मचारी Dearness Allowance (DA) और House Rent Allowance (HRA) को लेकर भी काफी उम्मीद लगाए हुए हैं। नए pay structure में allowances की calculation किस तरह होगी, इसका सीधा असर कर्मचारियों की monthly take-home salary पर पड़ सकता है।",
+      },
+      {
+        type: "p",
+        text: "इसलिए final recommendations आने के बाद केवल fitment factor देखना पर्याप्त नहीं होगा। पूरी salary structure को समझना जरूरी होगा।",
+      },
+      { type: "h2", text: "8th Pay Commission की Report कब आएगी?" },
+      {
+        type: "p",
+        text: "8th Central Pay Commission का गठन 3 नवंबर 2025 को किया गया था। सरकार ने Commission को अपनी recommendations देने के लिए 18 महीने का समय दिया है। इस हिसाब से Commission की report मई 2027 के आसपास आने की संभावना बनती है।",
+      },
+      {
+        type: "p",
+        text: "हालांकि report submit होने और salary revision लागू होने में अंतर हो सकता है। पहले Commission recommendations देगा, इसके बाद सरकार उन recommendations की समीक्षा करेगी और implementation को लेकर फैसला करेगी। इसलिए report date और actual salary implementation date एक ही चीज नहीं हैं।",
+      },
+      { type: "h3", text: "क्या 8th Pay Commission 2027 में लागू हो जाएगा?" },
+      {
+        type: "p",
+        text: "अगर Commission 2027 में अपनी recommendations submit करता है, तो इसका मतलब यह नहीं है कि revised salary उसी समय से मिलनी शुरू हो जाएगी। सरकार को recommendations की समीक्षा करनी होगी। इसके बाद approval, implementation orders और revised pay structure से जुड़े जरूरी फैसले लिए जाएंगे।",
+      },
+      {
+        type: "p",
+        text: "हाल ही में सरकार की ओर से भी यह स्पष्ट किया गया था कि Commission को recommendations देने के लिए 18 महीने दिए गए हैं और fiscal impact recommendations आने तथा सरकार द्वारा उन्हें स्वीकार किए जाने के बाद ही पता चलेगा।",
+      },
+      { type: "h2", text: "Jaipur, Chennai और Chandigarh Meetings में क्या होगा?" },
+      {
+        type: "p",
+        text: "इन regional consultations का सबसे महत्वपूर्ण हिस्सा employee और pensioner organisations की बात सुनना है।",
+      },
+      { type: "h3", text: "Jaipur Meeting" },
+      {
+        type: "p",
+        text: "8th Pay Commission की Jaipur visit 31 अगस्त और 1 सितंबर 2026 को निर्धारित है। Jaipur visit के लिए appointment requests की deadline 18 अगस्त थी।",
+      },
+      { type: "h3", text: "Chennai और Puducherry Meeting" },
+      {
+        type: "p",
+        text: "Chennai में Commission की consultation 7 और 8 सितंबर 2026 को होगी, जबकि Puducherry में meeting 9 सितंबर 2026 को निर्धारित है।",
+      },
+      { type: "h3", text: "Chandigarh Meeting" },
+      {
+        type: "p",
+        text: "Chandigarh में consultations 16, 17 और 18 सितंबर 2026 को होंगी। Appointment requests के लिए 25 अगस्त की deadline दी गई है। ये meetings यह संकेत देती हैं कि Commission अभी व्यापक consultation process में है और अलग-अलग stakeholder groups से feedback लिया जा रहा है।",
+      },
+      { type: "h2", text: "8th Pay Commission में अभी किन चीजों पर नजर रखें?" },
+      {
+        type: "ol",
+        items: [
+          "Final Fitment Factor — इससे revised basic pay की calculation पर सबसे बड़ा असर पड़ेगा।",
+          "New Pay Matrix — इसके आने के बाद अलग-अलग Pay Levels पर salary का अनुमान ज्यादा स्पष्ट होगा।",
+          "Pension Revision Formula — pensioners के लिए revised pension की calculation का तरीका।",
+          "DA और HRA Rules — allowances में बदलाव से overall salary पर बड़ा असर पड़ सकता है।",
+          "Implementation Date — सरकार किस तारीख से revised pay लागू करती है।",
+          "Arrears — किसी पिछली effective date से लागू होने पर arrears का मुद्दा महत्वपूर्ण होगा।",
+        ],
+      },
+      {
+        type: "h2",
+        text: "क्या अभी 8th Pay Commission Salary का Exact Calculation किया जा सकता है?",
+      },
+      {
+        type: "p",
+        text: "अभी exact calculation करना संभव नहीं है। Online अलग-अलग websites पर 2.86, 3.00, 3.68, 3.83 जैसे fitment factors के आधार पर salary calculations दिखाई जा रही हैं। लेकिन जब तक final fitment factor और revised pay matrix सामने नहीं आता, तब तक ये सभी calculations estimates हैं।",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Financial planning में सावधानी रखें",
+        text: "किसी भी estimated salary को final salary समझकर loan, EMI या investment से जुड़े बड़े फैसले न लें। हमारे 8वें वेतन आयोग सैलरी कैलकुलेटर से आप अलग-अलग fitment scenarios की तुलना कर सकते हैं।",
+      },
+      { type: "h2", text: "8th Pay Commission Latest News: आगे क्या होगा?" },
+      {
+        type: "p",
+        text: "अभी Commission का consultation process जारी है। जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ की meetings के बाद भी अलग-अलग राज्यों और stakeholder groups के साथ consultations जारी रहने की संभावना है। आधिकारिक Commission website पर नए notices और meeting updates लगातार जारी किए जा रहे हैं।",
+      },
+      {
+        type: "p",
+        text: "इसके बाद Commission employee demands, pension-related issues, allowances और अन्य service matters का अध्ययन करेगा और recommendations तैयार करेगा।",
+      },
+      { type: "h2", text: "निष्कर्ष" },
+      {
+        type: "p",
+        text: "8th Pay Commission Latest News में फिलहाल सबसे महत्वपूर्ण बात यह है कि Commission की regional consultation process आगे बढ़ रही है। जयपुर, चेन्नई, पुडुचेरी और चंडीगढ़ में होने वाली meetings से employees, pensioners और उनके organisations को अपनी मांगें रखने का मौका मिलेगा।",
+      },
+      {
+        type: "p",
+        text: "हालांकि, अभी fitment factor, salary hike, minimum basic pay या pension revision का कोई final figure घोषित नहीं हुआ है। Final salary और pension तभी स्पष्ट होगी जब Commission अपनी recommendations देगा और सरकार उस पर अंतिम निर्णय लेगी। आधिकारिक जानकारी के लिए 8th Central Pay Commission की website और उसके नए notices पर नजर रखना सबसे बेहतर रहेगा।",
+      },
+    ],
+    faq: [
+      {
+        q: "8वें वेतन आयोग की जयपुर, चेन्नई और चंडीगढ़ बैठकें कब हैं?",
+        a: "आधिकारिक notices के अनुसार जयपुर में 31 अगस्त और 1 सितंबर 2026, चेन्नई में 7 और 8 सितंबर, पुडुचेरी में 9 सितंबर तथा चंडीगढ़ में 16 से 18 सितंबर 2026 तक consultations निर्धारित हैं।",
+      },
+      {
+        q: "क्या 8वें वेतन आयोग का fitment factor 2.86 तय हो गया है?",
+        a: "नहीं। 2.86 और 3.83 जैसे आंकड़े मांगों और चर्चाओं का हिस्सा हैं। Final fitment factor Commission की recommendations और सरकार की मंजूरी के बाद ही तय होगा।",
+      },
+      {
+        q: "8वें वेतन आयोग की report कब आएगी?",
+        a: "Commission का गठन 3 नवंबर 2025 को हुआ और उसे 18 महीने का समय दिया गया है, इसलिए report मई 2027 के आसपास आने की संभावना है। Implementation date इसके बाद सरकार तय करेगी।",
+      },
+      {
+        q: "minimum pension कितनी हो सकती है?",
+        a: "उदाहरण के तौर पर ₹9,000 पर 2.86 का multiplier लगाने से ₹25,740 बनता है, लेकिन यह केवल calculation है। वास्तविक pension revision formula Commission की सिफारिशों पर निर्भर करेगा।",
+      },
+    ],
+  },
+  {
     slug: "8th-pay-commission-arrears-full-payment-explained",
     title:
       "8th Pay Commission: Will Employees Get Full Arrears? Here's What We Know",
