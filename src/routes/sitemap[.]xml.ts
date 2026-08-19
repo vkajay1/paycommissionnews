@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { articles } from "@/lib/articles";
+import { jobs } from "@/lib/jobs";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 import { ROLE_PAGES, STATE_PAGES } from "@/lib/seo-pages";
 
@@ -57,6 +58,7 @@ const STATIC: SitemapEntry[] = [
   { path: "/fitment-factor-in-hindi", changefreq: "weekly", priority: "0.9" },
   { path: "/pay-commission-history", changefreq: "monthly", priority: "0.8" },
   { path: "/blog", changefreq: "weekly", priority: "0.8" },
+  { path: "/latest-jobs", changefreq: "daily", priority: "0.8" },
   { path: "/pay-level", changefreq: "weekly", priority: "0.8" },
   { path: "/role", changefreq: "weekly", priority: "0.8" },
   { path: "/state", changefreq: "weekly", priority: "0.8" },
@@ -105,6 +107,18 @@ function buildEntries(): SitemapEntry[] {
       imageTitle: article.title,
       changefreq: "daily",
       priority: article.slug === "8th-pay-commission-consultation-phase-timeline-arrears-guide" ? "0.9" : "0.8",
+    });
+  }
+
+  // Latest government job postings
+  for (const job of jobs) {
+    entries.push({
+      path: `/latest-jobs/${job.slug}`,
+      lastmod: job.updated,
+      image: job.image,
+      imageTitle: job.title,
+      changefreq: "daily",
+      priority: "0.8",
     });
   }
 
