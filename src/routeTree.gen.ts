@@ -61,6 +61,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
 import { Route as RoleIndexRouteImport } from './routes/role.index'
 import { Route as PayLevelIndexRouteImport } from './routes/pay-level.index'
+import { Route as LatestJobsIndexRouteImport } from './routes/latest-jobs.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as StateStateRouteImport } from './routes/state.$state'
 import { Route as RoleRoleRouteImport } from './routes/role.$role'
@@ -344,6 +345,11 @@ const PayLevelIndexRoute = PayLevelIndexRouteImport.update({
   path: '/',
   getParentRoute: () => PayLevelRoute,
 } as any)
+const LatestJobsIndexRoute = LatestJobsIndexRouteImport.update({
+  id: '/latest-jobs/',
+  path: '/latest-jobs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -445,6 +451,7 @@ export interface FileRoutesByFullPath {
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
   '/blog/': typeof BlogIndexRoute
+  '/latest-jobs/': typeof LatestJobsIndexRoute
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
@@ -504,6 +511,7 @@ export interface FileRoutesByTo {
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
   '/blog': typeof BlogIndexRoute
+  '/latest-jobs': typeof LatestJobsIndexRoute
   '/pay-level': typeof PayLevelIndexRoute
   '/role': typeof RoleIndexRoute
   '/state': typeof StateIndexRoute
@@ -567,6 +575,7 @@ export interface FileRoutesById {
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
   '/blog/': typeof BlogIndexRoute
+  '/latest-jobs/': typeof LatestJobsIndexRoute
   '/pay-level/': typeof PayLevelIndexRoute
   '/role/': typeof RoleIndexRoute
   '/state/': typeof StateIndexRoute
@@ -631,6 +640,7 @@ export interface FileRouteTypes {
     | '/role/$role'
     | '/state/$state'
     | '/blog/'
+    | '/latest-jobs/'
     | '/pay-level/'
     | '/role/'
     | '/state/'
@@ -690,6 +700,7 @@ export interface FileRouteTypes {
     | '/role/$role'
     | '/state/$state'
     | '/blog'
+    | '/latest-jobs'
     | '/pay-level'
     | '/role'
     | '/state'
@@ -752,6 +763,7 @@ export interface FileRouteTypes {
     | '/role/$role'
     | '/state/$state'
     | '/blog/'
+    | '/latest-jobs/'
     | '/pay-level/'
     | '/role/'
     | '/state/'
@@ -812,6 +824,7 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
+  LatestJobsIndexRoute: typeof LatestJobsIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
 }
 
@@ -1181,6 +1194,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayLevelIndexRouteImport
       parentRoute: typeof PayLevelRoute
     }
+    '/latest-jobs/': {
+      id: '/latest-jobs/'
+      path: '/latest-jobs'
+      fullPath: '/latest-jobs/'
+      preLoaderRoute: typeof LatestJobsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -1339,6 +1359,7 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
+  LatestJobsIndexRoute: LatestJobsIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
 }
 export const routeTree = rootRouteImport
