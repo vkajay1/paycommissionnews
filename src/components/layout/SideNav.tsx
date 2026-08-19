@@ -12,6 +12,7 @@ import {
   Calculator,
   Building2,
   FileText,
+  Briefcase,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
