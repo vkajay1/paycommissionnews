@@ -12,6 +12,7 @@ const primary = [
   { to: "/role", label: "Roles" },
   { to: "/state", label: "States" },
   { to: "/blog", label: "News" },
+  { to: "/latest-jobs", label: "Latest Jobs" },
 ];
 
 const linkClass =
