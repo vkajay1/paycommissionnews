@@ -66,6 +66,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as StateStateRouteImport } from './routes/state.$state'
 import { Route as RoleRoleRouteImport } from './routes/role.$role'
 import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
+import { Route as LatestJobsSlugRouteImport } from './routes/latest-jobs.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
@@ -370,6 +371,11 @@ const PayLevelLevelRoute = PayLevelLevelRouteImport.update({
   path: '/$level',
   getParentRoute: () => PayLevelRoute,
 } as any)
+const LatestJobsSlugRoute = LatestJobsSlugRouteImport.update({
+  id: '/latest-jobs/$slug',
+  path: '/latest-jobs/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/blog/$slug',
   path: '/blog/$slug',
@@ -447,6 +453,7 @@ export interface FileRoutesByFullPath {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/latest-jobs/$slug': typeof LatestJobsSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
@@ -507,6 +514,7 @@ export interface FileRoutesByTo {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/latest-jobs/$slug': typeof LatestJobsSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
@@ -571,6 +579,7 @@ export interface FileRoutesById {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/latest-jobs/$slug': typeof LatestJobsSlugRoute
   '/pay-level/$level': typeof PayLevelLevelRoute
   '/role/$role': typeof RoleRoleRoute
   '/state/$state': typeof StateStateRoute
@@ -636,6 +645,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
+    | '/latest-jobs/$slug'
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
@@ -696,6 +706,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
+    | '/latest-jobs/$slug'
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
@@ -759,6 +770,7 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/blog/$slug'
+    | '/latest-jobs/$slug'
     | '/pay-level/$level'
     | '/role/$role'
     | '/state/$state'
@@ -823,6 +835,7 @@ export interface RootRouteChildren {
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   BlogSlugRoute: typeof BlogSlugRoute
+  LatestJobsSlugRoute: typeof LatestJobsSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   LatestJobsIndexRoute: typeof LatestJobsIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
@@ -1229,6 +1242,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PayLevelLevelRouteImport
       parentRoute: typeof PayLevelRoute
     }
+    '/latest-jobs/$slug': {
+      id: '/latest-jobs/$slug'
+      path: '/latest-jobs/$slug'
+      fullPath: '/latest-jobs/$slug'
+      preLoaderRoute: typeof LatestJobsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/blog/$slug'
@@ -1358,6 +1378,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   BlogSlugRoute: BlogSlugRoute,
+  LatestJobsSlugRoute: LatestJobsSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   LatestJobsIndexRoute: LatestJobsIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
