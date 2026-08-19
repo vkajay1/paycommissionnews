@@ -46,6 +46,238 @@ const TODAY = "2026-08-07";
 
 export const articles: Article[] = [
   {
+    slug: "8th-pay-commission-salary-kab-badhegi-fitment-factor-report-date-hindi",
+    title:
+      "8th Pay Commission Latest News: सैलरी कब बढ़ेगी? Fitment Factor, Salary Revision, DA Hike और Report Date की पूरी जानकारी",
+    description:
+      "8वें वेतन आयोग की सैलरी कब बढ़ेगी? Fitment factor, नई minimum basic pay, DA hike, pension revision, report date (मई 2027) और arrears से जुड़ी हर जरूरी जानकारी हिंदी में।",
+    keyword: "8th pay commission salary kab badhegi",
+    readMinutes: 11,
+    date: "2026-08-19",
+    updated: "2026-08-19",
+    category: "समाचार (Hindi)",
+    lang: "hi",
+    hero: "from-blue-700 via-indigo-600 to-teal-500",
+    image:
+      "https://paycommissionnews.co.in/images/8th-cpc-salary-kab-badhegi-hi.jpg",
+    imageAlt:
+      "8वें वेतन आयोग की संभावित सैलरी वृद्धि, फिटमेंट फैक्टर 2.28 से 2.86 और मई 2027 की रिपोर्ट तारीख दर्शाने वाला हिंदी इन्फोग्राफिक",
+    excerpt:
+      "8वां वेतन आयोग अभी consultation phase में है। जानिए report कब आएगी, fitment factor पर क्या स्थिति है, 1 जनवरी 2026 की तारीख का सच, DA hike, pension revision और arrears की पूरी तस्वीर।",
+    body: [
+      {
+        type: "p",
+        text: "8th Pay Commission Latest News: केंद्रीय कर्मचारी और पेंशनर्स लंबे समय से 8वें वेतन आयोग की सिफारिशों का इंतजार कर रहे हैं। सबसे बड़ा सवाल यही है कि 8th Pay Commission Salary कब बढ़ेगी, फिटमेंट फैक्टर कितना होगा और क्या कर्मचारियों को 1 जनवरी 2026 से बढ़ी हुई सैलरी मिलेगी?",
+      },
+      {
+        type: "p",
+        text: "फिलहाल 8वें वेतन आयोग का काम चल रहा है, इसलिए अभी फिटमेंट फैक्टर, नई बेसिक सैलरी, DA में बदलाव या वास्तविक salary hike को लेकर कोई अंतिम आंकड़ा सामने नहीं आया है। आयोग का गठन भारत सरकार ने 3 नवंबर 2025 को किया था और रिपोर्ट देने के लिए 18 महीने का समय दिया गया है।",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "एक बात साफ समझें",
+        text: "fitment factor, नई minimum basic pay, DA hike और implementation date — इनमें से कोई भी आंकड़ा अभी officially तय नहीं हुआ है। इंटरनेट पर दिख रही सभी calculations अनुमान हैं।",
+      },
+      { type: "h2", text: "8th Pay Commission Report कब आएगी?" },
+      {
+        type: "p",
+        text: "8th Central Pay Commission को अपनी recommendations देने के लिए 18 महीने का समय दिया गया है। इस समय सीमा के हिसाब से आयोग की रिपोर्ट मई 2027 के आसपास आने की उम्मीद है। हालांकि इसका मतलब यह नहीं है कि मई 2027 में ही कर्मचारियों की revised salary मिलना शुरू हो जाएगी।",
+      },
+      {
+        type: "p",
+        text: "पहले आयोग अपनी recommendations सरकार को देगा। इसके बाद सरकार इन recommendations की समीक्षा करेगी और implementation को लेकर फैसला लेगी। इसलिए 8th Pay Commission Report Date और Salary Implementation Date अलग-अलग हो सकती हैं।",
+      },
+      { type: "h2", text: "8th Pay Commission का Latest Status क्या है?" },
+      {
+        type: "p",
+        text: "फिलहाल आयोग consultation process में है। कर्मचारियों, pensioners, unions और अन्य stakeholders से उनकी मांगों और समस्याओं के बारे में जानकारी ली जा रही है। आयोग की official website पर अलग-अलग meetings और consultations से संबंधित notices भी जारी किए जा रहे हैं।",
+      },
+      {
+        type: "p",
+        text: "सितंबर 2026 में Chennai और Puducherry में stakeholder interactions का कार्यक्रम है, जबकि Chandigarh में भी सितंबर में consultation meetings निर्धारित हैं। इससे साफ है कि आयोग अभी recommendations तैयार करने की प्रक्रिया में है।",
+      },
+      { type: "h2", text: "8th Pay Commission Fitment Factor कितना होगा?" },
+      {
+        type: "p",
+        text: "Fitment Factor 8वें वेतन आयोग का सबसे महत्वपूर्ण और सबसे ज्यादा चर्चा में रहने वाला मुद्दा है। फिटमेंट फैक्टर के आधार पर revised basic pay की गणना की जाती है। इसी वजह से कर्मचारी और कर्मचारी संगठन अलग-अलग fitment factor की मांग कर रहे हैं।",
+      },
+      {
+        type: "p",
+        text: "ऑनलाइन 2.0, 2.28, 2.57 और इससे अधिक के कई आंकड़े चर्चा में हैं। लेकिन अभी तक इनमें से कोई भी सरकार द्वारा officially approved fitment factor नहीं है। अगर कहीं यह दावा किया जा रहा है कि कोई निश्चित fitment factor तय हो चुका है, तो उसे official confirmation के बिना final नहीं माना जाना चाहिए।",
+      },
+      {
+        type: "table",
+        caption:
+          "चर्चा में रहने वाले fitment factors पर ₹18,000 basic pay का अनुमानित हिसाब (केवल उदाहरण, official नहीं)।",
+        headers: ["Fitment Factor", "₹18,000 पर अनुमानित नई basic pay", "स्थिति"],
+        rows: [
+          ["2.00", "₹36,000", "चर्चा/अनुमान"],
+          ["2.28", "₹41,040", "चर्चा/अनुमान"],
+          ["2.57", "₹46,260", "चर्चा/अनुमान"],
+          ["2.86", "₹51,480", "यूनियनों की मांग"],
+        ],
+      },
+      { type: "h2", text: "8th Pay Commission Salary कितनी बढ़ सकती है?" },
+      {
+        type: "p",
+        text: "यह सवाल हर केंद्रीय कर्मचारी के लिए सबसे महत्वपूर्ण है, लेकिन अभी exact 8th Pay Commission Salary बताना संभव नहीं है। Salary revision कई factors पर निर्भर करेगा:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Final fitment factor",
+          "Revised pay matrix",
+          "Minimum basic pay",
+          "DA calculation",
+          "HRA और अन्य allowances",
+          "Government द्वारा approved recommendations",
+        ],
+      },
+      {
+        type: "p",
+        text: "इसलिए अलग-अलग fitment factors के आधार पर internet पर दिखाई जा रही salary calculations को अभी estimated salary माना जाना चाहिए। Final salary तभी सामने आएगी जब नया pay structure officially तय होगा।",
+      },
+      { type: "h2", text: "₹18,000 Minimum Basic Pay का क्या होगा?" },
+      {
+        type: "p",
+        text: "7th Pay Commission के तहत वर्तमान minimum basic pay ₹18,000 है। अब 8th Pay Commission मौजूदा pay structure की समीक्षा करके इसमें बदलाव की recommendations देगा। हालांकि अभी तक 8th Pay Commission के तहत नई minimum basic salary officially तय नहीं हुई है।",
+      },
+      {
+        type: "p",
+        text: "इसलिए ₹50,000, ₹60,000 या ₹69,000 जैसी किसी भी राशि को फिलहाल confirmed minimum salary नहीं कहा जा सकता। इन आंकड़ों को केवल demands, projections या calculations के रूप में देखना चाहिए।",
+      },
+      { type: "h2", text: "क्या 1 जनवरी 2026 से Salary बढ़ेगी?" },
+      {
+        type: "p",
+        text: "यहां एक महत्वपूर्ण बात समझना जरूरी है — 1 जनवरी 2026 को 8th Pay Commission की revised salary की confirmed implementation date नहीं माना जाना चाहिए। कई जगह इसे effective date बताकर salary और arrears की calculations की जा रही हैं, लेकिन अभी आयोग की recommendations ही final नहीं हुई हैं।",
+      },
+      {
+        type: "p",
+        text: "आयोग report submit करेगा और उसके बाद सरकार recommendations की समीक्षा करके implementation पर फैसला करेगी। अगर भविष्य में सरकार revised pay के लिए कोई retrospective effective date तय करती है, तो उस स्थिति में कर्मचारियों को उस तारीख से arrears मिलने की संभावना बन सकती है। लेकिन अभी final effective date और arrears rules तय नहीं हुए हैं।",
+      },
+      { type: "h2", text: "8th Pay Commission में DA Hike भी होगी?" },
+      {
+        type: "p",
+        text: "8th Pay Commission में केवल basic salary की revision ही महत्वपूर्ण नहीं है। Dearness Allowance (DA), House Rent Allowance (HRA) और दूसरे allowances भी कर्मचारियों की कुल salary को प्रभावित करते हैं। नए pay structure के साथ allowances की calculation और treatment में क्या बदलाव होगा, यह भी महत्वपूर्ण रहेगा।",
+      },
+      {
+        type: "p",
+        text: "लेकिन अभी DA hike को लेकर कोई final figure घोषित नहीं हुई है। इसलिए किसी निश्चित percentage की DA hike को अभी confirmed information नहीं माना जा सकता।",
+      },
+      { type: "h2", text: "Pensioners के लिए क्या बदल सकता है?" },
+      {
+        type: "p",
+        text: "8th Pay Commission की recommendations का असर pensioners पर भी पड़ सकता है। Pensioners की सबसे बड़ी चिंता यह है कि revised basic pension किस formula के आधार पर तय होगी और minimum pension में कितना बदलाव हो सकता है।",
+      },
+      {
+        type: "p",
+        text: "इस समय कई अनुमान और calculations सामने आ रहे हैं, लेकिन 8th Pay Commission Pension Revision का final formula अभी तय नहीं हुआ है। इसलिए minimum pension के किसी भी projected figure को official figure मानना सही नहीं होगा। Commission की recommendations और सरकार के final decision के बाद ही pension revision की पूरी तस्वीर स्पष्ट होगी।",
+      },
+      { type: "h2", text: "Report आने के बाद तुरंत Salary नहीं बढ़ेगी" },
+      {
+        type: "p",
+        text: "अगर 8th Pay Commission अपनी report मई 2027 में submit करता है, तो इसका मतलब यह नहीं है कि उसी महीने से revised salary का payment शुरू हो जाएगा। Report आने के बाद सरकार को recommendations का अध्ययन करना होगा।",
+      },
+      {
+        type: "p",
+        text: "इसके बाद approval, implementation orders और revised pay structure से संबंधित जरूरी प्रक्रियाएं पूरी की जाएंगी। इसलिए Report Date और Salary Implementation Date के बीच समय का अंतर हो सकता है।",
+      },
+      { type: "h2", text: "8th Pay Commission Arrears का क्या होगा?" },
+      {
+        type: "p",
+        text: "Arrears का मुद्दा भी salary revision के साथ काफी महत्वपूर्ण होगा। अगर सरकार भविष्य में revised salary के लिए कोई पिछली effective date तय करती है और actual payment बाद में शुरू होता है, तो eligible period के लिए salary difference के रूप में arrears बन सकता है। लेकिन अभी यह कहना संभव नहीं है कि:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Arrears किस तारीख से मिलेंगे",
+          "कितने महीनों का arrears मिलेगा",
+          "किन salary components पर arrears लागू होंगे",
+          "DA और HRA को किस तरह शामिल किया जाएगा",
+        ],
+      },
+      {
+        type: "p",
+        text: "इन सभी बातों पर final decision बाद में होगा। इसलिए अभी किसी निश्चित 8th Pay Commission Arrears Amount को confirmed नहीं माना जाना चाहिए।",
+      },
+      {
+        type: "h2",
+        text: "कर्मचारियों और पेंशनर्स के लिए अभी सबसे महत्वपूर्ण Updates",
+      },
+      { type: "h3", text: "1. Final Fitment Factor" },
+      {
+        type: "p",
+        text: "यह revised basic pay की calculation में सबसे महत्वपूर्ण factor होगा।",
+      },
+      { type: "h3", text: "2. New Pay Matrix" },
+      {
+        type: "p",
+        text: "नया pay matrix आने के बाद अलग-अलग Pay Levels पर salary का बेहतर अनुमान लगाया जा सकेगा।",
+      },
+      { type: "h3", text: "3. Minimum Basic Pay" },
+      {
+        type: "p",
+        text: "₹18,000 की मौजूदा minimum basic pay को कितना revise किया जाता है, इस पर भी नजर रहेगी।",
+      },
+      { type: "h3", text: "4. DA और HRA Rules" },
+      {
+        type: "p",
+        text: "Allowances में होने वाले बदलाव से total monthly salary पर सीधा असर पड़ सकता है।",
+      },
+      { type: "h3", text: "5. Pension Revision" },
+      {
+        type: "p",
+        text: "Pensioners के लिए revised pension calculation और minimum pension महत्वपूर्ण मुद्दे होंगे।",
+      },
+      { type: "h3", text: "6. Implementation Date" },
+      {
+        type: "p",
+        text: "सरकार revised salary को किस तारीख से लागू करती है, यह salary और arrears दोनों के लिए महत्वपूर्ण होगा।",
+      },
+      { type: "h2", text: "8th Pay Commission: अभी क्या उम्मीद की जा सकती है?" },
+      {
+        type: "p",
+        text: "फिलहाल सबसे सही तस्वीर यही है कि 8th Pay Commission का काम अभी पूरा नहीं हुआ है। Consultation process चल रहा है और अलग-अलग stakeholders से feedback लिया जा रहा है।",
+      },
+      {
+        type: "p",
+        text: "इसलिए अभी salary hike, fitment factor, minimum basic pay, pension revision और DA hike को लेकर जितने भी आंकड़े सामने आ रहे हैं, उनमें से अधिकांश अनुमान या demands पर आधारित हैं। Final recommendations आने के बाद ही यह पता चलेगा कि कर्मचारियों की salary में वास्तविक रूप से कितना बदलाव होगा।",
+      },
+      { type: "h2", text: "निष्कर्ष" },
+      {
+        type: "p",
+        text: "8th Pay Commission Latest News में फिलहाल सबसे महत्वपूर्ण बात यह है कि आयोग अपनी recommendations तैयार करने की प्रक्रिया में है और stakeholder consultations जारी हैं। आयोग को मई 2027 तक अपनी report देने की समयसीमा दी गई है, लेकिन report आने का मतलब तुरंत salary revision लागू होना नहीं है।",
+      },
+      {
+        type: "p",
+        text: "अभी तक fitment factor, revised minimum basic salary, salary hike, DA hike और pension revision के संबंध में कोई final figure तय नहीं हुई है। इसी तरह 1 जनवरी 2026 को revised salary की confirmed implementation date नहीं माना जा सकता। किसी भी वायरल salary calculation या fitment factor को final मानने से पहले official announcement का इंतजार करना बेहतर होगा।",
+      },
+    ],
+    faq: [
+      {
+        q: "8वें वेतन आयोग की सैलरी कब बढ़ेगी?",
+        a: "आयोग को 3 नवंबर 2025 से 18 महीने का समय मिला है, इसलिए report मई 2027 के आसपास आने की संभावना है। सैलरी बढ़ना सरकार द्वारा recommendations मंजूर करने और implementation orders जारी होने के बाद शुरू होगा, जिसकी कोई official तारीख अभी तय नहीं है।",
+      },
+      {
+        q: "8th Pay Commission का fitment factor कितना तय हुआ है?",
+        a: "अभी कोई fitment factor officially तय नहीं हुआ है। 2.0, 2.28, 2.57 और 2.86 जैसे आंकड़े केवल मांगों और अनुमानों पर आधारित हैं।",
+      },
+      {
+        q: "क्या 1 जनवरी 2026 से बढ़ी हुई सैलरी मिलेगी?",
+        a: "नहीं, इसे confirmed implementation date नहीं माना जा सकता। effective date सरकार अपनी official notification में तय करेगी।",
+      },
+      {
+        q: "क्या 8वें वेतन आयोग में minimum basic pay ₹51,480 होगी?",
+        a: "यह केवल 2.86 fitment factor पर ₹18,000 का गुणा है। नई minimum basic pay आयोग की सिफारिश और सरकार के फैसले के बाद ही तय होगी।",
+      },
+      {
+        q: "8th Pay Commission arrears कितने मिलेंगे?",
+        a: "arrears की राशि effective date, revised pay matrix और allowances के treatment पर निर्भर करेगी। ये सभी नियम अभी तय नहीं हुए हैं, इसलिए किसी भी arrears figure को confirmed नहीं माना जा सकता।",
+      },
+    ],
+  },
+  {
     slug: "8th-pay-commission-jaipur-chennai-chandigarh-meetings-hindi",
     title:
       "8th Pay Commission Latest News: जयपुर, चेन्नई और चंडीगढ़ में बैठकें, Salary Hike और Pension Revision पर क्या होगा?",
