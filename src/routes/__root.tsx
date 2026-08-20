@@ -122,6 +122,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       {
         async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-E7J9MWC6FQ",
+      },
+      {
+        type: "text/javascript",
+        children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E7J9MWC6FQ');`,
+      },
+      {
+        async: true,
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3146184997876133",
         crossOrigin: "anonymous",
       },
