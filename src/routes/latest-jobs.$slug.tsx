@@ -224,8 +224,36 @@ function JobPage() {
           rel="noopener noreferrer nofollow"
           className="mt-5 inline-flex items-center gap-1.5 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
         >
-          Apply / official notification <ExternalLink className="h-4 w-4" />
+          Apply online on the official portal <ExternalLink className="h-4 w-4" />
         </a>
+      ) : null}
+
+      {job.downloads?.length ? (
+        <section className="mt-8 overflow-hidden rounded-lg border border-border">
+          <h2 className="border-b border-border bg-secondary/60 px-4 py-3 text-sm font-bold">
+            Download notification & documents (PDF)
+          </h2>
+          <ul className="divide-y divide-border text-sm">
+            {job.downloads.map((d) => (
+              <li key={d.href}>
+                <a
+                  href={d.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 px-4 py-3 hover:bg-secondary/40"
+                >
+                  <FileDown className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
+                  <span>
+                    <span className="font-semibold">{d.label}</span>
+                    {d.note ? (
+                      <span className="mt-0.5 block text-xs text-muted-foreground">{d.note}</span>
+                    ) : null}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       ) : null}
 
       <article className="prose-article mt-10">
