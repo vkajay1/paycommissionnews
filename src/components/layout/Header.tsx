@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { Calculator, Mail, ShieldCheck } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
+import { MobileMenu } from "./MobileMenu";
+
 
 const primary = [
   { to: "/", label: "Home", exact: true },
