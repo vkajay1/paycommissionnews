@@ -22,7 +22,33 @@ export type Job = {
   applyEnd?: string;
   /** Official notification / apply link. */
   applyUrl?: string;
-  /** Self-hosted PDF documents for this notification. */
+  /** Recruiter website used for hiringOrganization.sameAs in JobPosting schema. */
+  organizationUrl?: string;
+  /** Self-hosted logo/emblem of the recruiter (absolute or root-relative). */
+  organizationLogo?: string;
+  /** Structured monthly pay for JobPosting baseSalary. */
+  salaryMin?: number;
+  salaryMax?: number;
+  /** Defaults to "MONTH". */
+  salaryUnit?: "HOUR" | "DAY" | "WEEK" | "MONTH" | "YEAR";
+  salaryCurrency?: string;
+  /** e.g. "FULL_TIME" (default) or "CONTRACTOR". */
+  employmentType?: string | string[];
+  /** Government job code / notice number, used as JobPosting identifier. */
+  noticeNumber?: string;
+  industry?: string;
+  occupationalCategory?: string;
+  experienceRequirements?: string;
+  educationRequirements?: string;
+  jobBenefits?: string;
+  /** Numeric vacancy count for schema (`vacancies` stays human-readable). */
+  numberOfPositions?: number;
+  /** Where applicants must be located, e.g. "India". */
+  applicantLocationRequirements?: string;
+  /** ISO date the selected candidate is expected to join. */
+  jobStartDate?: string;
+  /** True when candidates apply directly on the linked official portal. */
+  directApply?: boolean;
   downloads?: { label: string; href: string; note?: string }[];
   category: string;
   date: string; // ISO published
@@ -31,7 +57,10 @@ export type Job = {
   hero: string; // gradient classes
   image?: string;
   imageAlt?: string;
+  /** 1200x630 social share image; falls back to `image`. */
+  ogImage?: string;
   lang?: "en" | "hi";
+
   excerpt: string;
   body: Block[];
   faq: { q: string; a: string }[];
