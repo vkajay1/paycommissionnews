@@ -149,10 +149,36 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             ...(j.applyUrl ? { sameAs: j.applyUrl } : {}),
           }),
         },
-
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+              { "@type": "ListItem", position: 2, name: "Latest Jobs", item: `${SITE}/latest-jobs` },
+              { "@type": "ListItem", position: 3, name: j.title, item: absUrl },
+            ],
+          }),
+        },
+        ...(j.faq.length
+          ? [
+              {
+                type: "application/ld+json",
+                children: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: j.faq.map((f) => ({
+                    "@type": "Question",
+                    name: f.q,
+                    acceptedAnswer: { "@type": "Answer", text: f.a },
+                  })),
+                }),
+              },
             ]
           : []),
       ],
+
     };
   },
   notFoundComponent: () => (
