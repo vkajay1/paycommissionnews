@@ -47,18 +47,22 @@ export function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6">
-        <Link to="/" className="flex shrink-0 items-center gap-2.5">
-          <div className="grid h-10 w-10 place-items-center rounded-md bg-primary text-primary-foreground">
-            <Calculator className="h-4.5 w-4.5" />
-          </div>
-          <div className="leading-tight">
-            <div className="text-[15px] font-bold tracking-tight">8th CPC Calculator</div>
-            <div className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-              Pay Commission Intelligence
+      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-3 px-4 sm:px-6">
+        <div className="flex min-w-0 items-center gap-1.5">
+          <MobileMenu />
+          <Link to="/" className="flex min-w-0 shrink items-center gap-2.5">
+            <div className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary text-primary-foreground">
+              <Calculator className="h-4.5 w-4.5" />
             </div>
-          </div>
-        </Link>
+            <div className="min-w-0 leading-tight">
+              <div className="truncate text-[15px] font-bold tracking-tight">8th CPC Calculator</div>
+              <div className="truncate text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+                Pay Commission Intelligence
+              </div>
+            </div>
+          </Link>
+        </div>
+
 
         <nav className="hidden items-center gap-0.5 lg:flex">
           {primary.map((l) => (
