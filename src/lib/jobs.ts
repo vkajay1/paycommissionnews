@@ -138,7 +138,9 @@ export const jobs: Job[] = [
     image: "https://paycommissionnews.co.in/images/rrb-je-cen-04-2026.jpg",
     imageAlt:
       "RRB Junior Engineer Recruitment 2026 CEN 04/2026 — 4029 vacancies in Pay Matrix Level 6",
+    ogImage: "https://paycommissionnews.co.in/images/og/rrb-je-cen-04-2026-og.jpg",
     lang: "en",
+
     excerpt:
       "Indian Railways has opened online applications for 4029 Junior Engineer and Depot Material Superintendent posts under CEN 04/2026. Applications close on 13 September 2026, the post carries Pay Matrix Level 6 (Rs. 35,400 basic), and every official PDF is available for download below.",
     body: [
