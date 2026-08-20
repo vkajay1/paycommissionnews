@@ -88,6 +88,25 @@ export const jobs: Job[] = [
     applyStart: "2026-08-14",
     applyEnd: "2026-09-13",
     applyUrl: "https://www.rrbapply.gov.in/",
+    organizationUrl: "https://indianrailways.gov.in/",
+    salaryMin: 35400,
+    salaryMax: 112400,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "CEN 04/2026",
+    industry: "Indian Railways / Government Engineering Services",
+    occupationalCategory: "17-2199.00 Engineers, All Other",
+    experienceRequirements: "No prior work experience required — fresher diploma and degree engineers are eligible",
+    educationRequirements:
+      "Three-year Engineering Diploma or Bachelor's Degree in the relevant engineering stream from a recognised University or Institute",
+    jobBenefits:
+      "Dearness Allowance, House Rent Allowance, Transport Allowance, Night Duty Allowance, railway pass facility, NPS pension, medical cover under RELHS and 8th Pay Commission revision benefit",
+    numberOfPositions: 4029,
+    applicantLocationRequirements: "India",
+    jobStartDate: "2027-04-01",
+    directApply: false,
+
     downloads: [
       {
         label: "Full Notification PDF (CEN 04/2026)",
