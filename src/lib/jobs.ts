@@ -68,6 +68,305 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "rvunl-recruitment-2026-je-junior-accountant-junior-assistant",
+    title:
+      "RVUNL Recruitment 2026: 2005 Junior Engineer, Junior Accountant & Junior Assistant Vacancies — Apply Online Till 25 August",
+    description:
+      "RVUNL Recruitment 2026 (Advt. RVUN/Rectt.-2026-27/03) for 2005 Junior Engineer-I, Junior Accountant and Junior Assistant / Commercial Assistant-II posts in Rajasthan power companies — vacancy, eligibility, age limit, fee, Level-10 and Level-5 salary, exam pattern and PDF downloads.",
+    keyword:
+      "rvunl recruitment 2026, rvunl je vacancy 2026, rajasthan vidyut vibhag bharti 2026, rvunl junior assistant 2026, rvunl junior accountant salary, rvunl 2005 post notification pdf",
+    organization:
+      "Rajasthan Rajya Vidyut Utpadan Nigam Ltd. (RVUN) — for RVUN, RVPN, JVVN, AVVN & JdVVN",
+    postName:
+      "Junior Engineer-I (Electrical / Mechanical / Civil), Junior Accountant & Junior Assistant / Commercial Assistant-II",
+    vacancies: "2005 posts across five Rajasthan state power companies",
+    qualification:
+      "B.E. / B.Tech. / AMIE in Electrical, Mechanical or Civil Engineering for Junior Engineer-I; Commerce / BBA / M.Com / MBA / Inter CA-ICWA plus computer certificate for Junior Accountant; 12th pass plus computer certificate (RSCIT / O-Level / COPA) for Junior Assistant / Commercial Assistant-II",
+    ageLimit:
+      "21 to 40 years for Junior Engineer-I and 18 to 40 years for Junior Accountant and Junior Assistant as on 01.01.2027 (relaxable up to 43 years, plus category relaxation)",
+    payScale:
+      "Pay Matrix Level-10 (basic Rs. 33,800) for Junior Engineer-I and Junior Accountant; Level-5 (basic Rs. 20,800) for Junior Assistant / Commercial Assistant-II",
+    location: "Rajasthan (RVUN, RVPN, JVVN, AVVN and JdVVN units)",
+    applicationFee:
+      "Rs. 1,000 for UR / General and Rs. 500 for SC / ST / BC / MBC / EWS / PwBD / Saharia candidates (inclusive of GST, non-refundable)",
+    applyStart: "2026-08-05",
+    applyEnd: "2026-08-25",
+    applyUrl: "https://energy.rajasthan.gov.in/",
+    organizationUrl: "https://energy.rajasthan.gov.in/",
+    salaryMin: 20800,
+    salaryMax: 33800,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "RVUN/Rectt.-2026-27/03",
+    industry: "Power Generation, Transmission & Distribution / State Government Undertaking",
+    occupationalCategory: "17-2199.00 Engineers, All Other",
+    experienceRequirements:
+      "No prior experience required — fresher engineers, commerce graduates and 12th-pass candidates with a computer certificate are eligible",
+    educationRequirements:
+      "Engineering degree (B.E. / B.Tech. / AMIE) for Junior Engineer-I; graduation in Commerce or Business Administration for Junior Accountant; Senior Secondary (12th) pass for Junior Assistant / Commercial Assistant-II",
+    jobBenefits:
+      "Dearness Allowance, House Rent Allowance, Transport Allowance, medical facilities, pension contribution and future pay revision benefit under the 8th Pay Commission / Rajasthan pay rules",
+    numberOfPositions: 2005,
+    applicantLocationRequirements: "India",
+    jobStartDate: "2026-11-01",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (2005 Posts)",
+        href: "/downloads/rvunl-recruitment-2026/rvunl-recruitment-2026-notification-summary.pdf",
+        note: "Overview, post-wise vacancy, pay level and application fee in one sheet",
+      },
+      {
+        label: "Eligibility, Qualification & Age Limit PDF",
+        href: "/downloads/rvunl-recruitment-2026/rvunl-recruitment-2026-eligibility-and-age-limit.pdf",
+        note: "Post-wise qualification, age relaxation table and document checklist",
+      },
+      {
+        label: "Exam Pattern & Syllabus Guide PDF",
+        href: "/downloads/rvunl-recruitment-2026/rvunl-recruitment-2026-exam-pattern-and-syllabus.pdf",
+        note: "CBT Part-A / Part-B weightage, typing test scheme and qualifying marks",
+      },
+    ],
+    category: "Rajasthan Govt Jobs",
+    date: "2026-08-20",
+    updated: "2026-08-20",
+    readMinutes: 8,
+    hero: "from-amber-500/30 to-orange-500/20",
+    image: "https://paycommissionnews.co.in/images/rvunl-recruitment-2026.jpg",
+    imageAlt:
+      "RVUNL Recruitment 2026 — 2005 Junior Engineer, Junior Accountant and Junior Assistant vacancies in Rajasthan power companies",
+    ogImage: "https://paycommissionnews.co.in/images/og/rvunl-recruitment-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "Rajasthan Rajya Vidyut Utpadan Nigam Ltd. has opened online applications for 2005 Junior Engineer-I, Junior Accountant and Junior Assistant / Commercial Assistant-II posts under a Common Recruitment Exercise for five state power companies. Applications close on 25 August 2026, there is no interview, and every reference PDF is downloadable below.",
+    body: [
+      {
+        type: "p",
+        text: "Rajasthan Rajya Vidyut Utpadan Nigam Ltd. (RVUN) has invited online applications for 2005 vacancies under Advertisement No. RVUN/Rectt.-2026-27/03. This is a Common Recruitment Exercise conducted on behalf of five state power companies — RVUN, RVPN, JVVN, AVVN and JdVVN — covering Junior Engineer-I (Electrical / Mechanical / Civil), Junior Accountant and Junior Assistant / Commercial Assistant-II posts.",
+      },
+      {
+        type: "p",
+        text: "The online application window runs from 5 August 2026 (10:00 AM) to 25 August 2026 (12:00 midnight), and the fee must also be paid by 25 August 2026. Selection is entirely exam-based: a Computer Based Test for every post, with an additional Hindi and English typing test for the Junior Assistant / Commercial Assistant-II cadre. There is no interview at any stage.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Why this recruitment matters for your pay",
+        text: "Junior Engineer-I and Junior Accountant sit in Pay Matrix Level-10 with a minimum basic of Rs. 33,800, while Junior Assistant sits in Level-5 at Rs. 20,800. If Rajasthan mirrors the 8th Pay Commission with a fitment factor of about 2.0 to 2.28, a Level-10 basic of Rs. 33,800 could be re-fixed to roughly Rs. 67,600 to Rs. 77,100 — model your own figure with our salary and fitment tools.",
+      },
+      { type: "h2", text: "RVUNL Recruitment 2026 — key highlights" },
+      {
+        type: "table",
+        headers: ["Particular", "Details"],
+        rows: [
+          ["Recruiting body", "Rajasthan Rajya Vidyut Utpadan Nigam Ltd. (RVUN)"],
+          ["Participating companies", "RVUN, RVPN, JVVN, AVVN and JdVVN"],
+          ["Advertisement number", "RVUN/Rectt.-2026-27/03"],
+          [
+            "Posts",
+            "Junior Engineer-I (Electrical / Mechanical / Civil), Junior Accountant, Junior Assistant / Commercial Assistant-II",
+          ],
+          ["Total vacancies", "2005"],
+          ["Application mode", "Online only"],
+          ["Application dates", "5 August 2026 (10:00 AM) to 25 August 2026 (12:00 midnight)"],
+          ["Selection", "Computer Based Test; typing test additionally for Junior Assistant / Commercial Assistant-II"],
+          ["Interview", "Not applicable — no interview for any post"],
+          ["Job location", "Across Rajasthan"],
+        ],
+        caption: "Snapshot of the Common Recruitment Exercise 2026 as per the official advertisement.",
+      },
+      { type: "h2", text: "Post-wise vacancy details (2005 posts)" },
+      {
+        type: "table",
+        headers: ["Post", "Vacancies", "Required qualification"],
+        rows: [
+          ["Junior Engineer-I (Electrical)", "727", "B.E. / B.Tech. / AMIE in Electrical Engineering"],
+          ["Junior Engineer-I (Mechanical)", "110", "B.E. / B.Tech. / AMIE in Mechanical Engineering"],
+          ["Junior Engineer-I (Civil)", "32", "B.E. / B.Tech. / AMIE in Civil Engineering"],
+          [
+            "Junior Accountant",
+            "371",
+            "Graduation in Commerce / BBA, or Inter CA / ICWA, or MBA, or 2-year M.Com plus computer certificate",
+          ],
+          [
+            "Junior Assistant / Commercial Assistant-II",
+            "765",
+            "Senior Secondary (12th) pass plus RSCIT / O-Level / COPA computer certificate",
+          ],
+          ["Total", "2005", "—"],
+        ],
+        caption:
+          "A candidate may apply for two or more different posts, but only one application per post is permitted.",
+      },
+      {
+        type: "p",
+        text: "Company preference (RVUN / RVPN / JVVN / AVVN / JdVVN) has to be recorded inside the application itself and is treated as final and irrevocable, so decide your preference order before you reach the final submit step.",
+      },
+      { type: "h2", text: "Important dates" },
+      {
+        type: "ul",
+        items: [
+          "Online application starts: 5 August 2026 at 10:00 AM",
+          "Last date to submit the online application: 25 August 2026 up to 12:00 midnight",
+          "Last date for online fee payment: 25 August 2026",
+          "Computer Based Test date: to be announced on the Nigam portals",
+          "Typing test for Junior Assistant / Commercial Assistant-II: to be announced after the main exam",
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee payable (including GST)"],
+        rows: [
+          ["UR / General", "Rs. 1,000"],
+          ["SC / ST / BC / MBC / EWS / PwBD / Saharia area candidates", "Rs. 500"],
+          ["Reserved-category candidates of states other than Rajasthan", "Rs. 1,000 (treated as General)"],
+        ],
+        caption:
+          "The fee is non-refundable and cannot be carried forward; bank transaction charges are borne by the candidate.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Junior Engineer-I: full-time four-year B.E. / B.Tech. / AMIE degree in the respective engineering discipline from a recognised university.",
+          "Junior Accountant: graduation in Commerce or Business Administration, or Inter CA / ICWA, or MBA, or a minimum two-year M.Com, along with a recognised computer qualification.",
+          "Junior Assistant / Commercial Assistant-II: Senior Secondary (12th) pass with a recognised computer qualification such as RSCIT, O-Level or COPA.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 1 January 2027" },
+      {
+        type: "table",
+        headers: ["Post", "Age limit"],
+        rows: [
+          [
+            "Junior Engineer-I (Electrical / Mechanical / Civil)",
+            "21 to 40 years (up to 43 years in RVPN for Electrical and Civil disciplines)",
+          ],
+          [
+            "Junior Accountant",
+            "18 to 40 years, relaxed up to 43 years since direct recruitment was not held in the previous three years",
+          ],
+          [
+            "Junior Assistant / Commercial Assistant-II",
+            "18 to 40 years, relaxed up to 43 years since direct recruitment was not held in the previous three years",
+          ],
+        ],
+      },
+      { type: "h3", text: "Age relaxation" },
+      {
+        type: "ul",
+        items: [
+          "5 years for male candidates of SC / ST / BC / MBC / EWS and for women candidates of the Unreserved category",
+          "10 years for women candidates of SC / ST / BC / MBC / EWS categories",
+          "Additional 5 years for Persons with Benchmark Disabilities, over and above the category relaxation",
+          "No upper age limit for widows, divorced women and in-service candidates applying within the same Nigam",
+        ],
+      },
+      { type: "h2", text: "RVUNL salary 2026 — pay matrix level and probation pay" },
+      {
+        type: "p",
+        text: "Selected candidates are first engaged as Probationer Trainees for two years on a fixed monthly remuneration. After successful completion of probation, pay is fixed at the minimum of the applicable pay matrix level, and all allowances of the respective Vidyut Nigam become payable.",
+      },
+      {
+        type: "table",
+        headers: ["Post", "Pay matrix level", "Minimum basic pay", "Fixed pay during probation"],
+        rows: [
+          ["Junior Engineer-I (Electrical / Mechanical / Civil)", "Level-10", "Rs. 33,800", "Rs. 23,700"],
+          ["Junior Accountant", "Level-10", "Rs. 33,800", "Rs. 23,700"],
+          ["Junior Assistant / Commercial Assistant-II", "Level-5", "Rs. 20,800", "Rs. 14,600"],
+        ],
+        caption: "Allowances such as DA, HRA and Transport Allowance are paid as per Nigam rules after probation.",
+      },
+      {
+        type: "p",
+        text: "In practice, a Level-10 employee with current DA and HRA draws a gross salary in the region of Rs. 50,000 to Rs. 58,000 per month depending on the posting city, while Level-5 works out to roughly Rs. 32,000 to Rs. 38,000. Use our salary calculator and pay matrix tools to see the exact figure for your level and city class.",
+      },
+      { type: "h2", text: "Selection process and exam pattern" },
+      { type: "h3", text: "Junior Engineer-I and Junior Accountant" },
+      {
+        type: "ul",
+        items: [
+          "One Computer Based Test of two hours with objective (MCQ) questions only.",
+          "Part-A carries 60% weightage — degree-level subject questions of the engineering discipline for JE, and Corporate Accounting, Income Tax, Cost Accounting, Auditing and Management Accounting for Junior Accountant.",
+          "Part-B carries 40% weightage — Reasoning & Mental Ability, Mathematics, General Knowledge & Everyday Science, Hindi General and English General.",
+          "Negative marking applies for every wrong answer.",
+        ],
+      },
+      { type: "h3", text: "Junior Assistant / Commercial Assistant-II" },
+      {
+        type: "ol",
+        items: [
+          "Phase-I Pre-Examination — screening only, with no weightage in the final merit and no negative marking.",
+          "Phase-I Main Examination — objective CBT with negative marking, contributing 40% weightage to the final merit.",
+          "Phase-II Typing Test — Hindi and English typing on computer (speed test and efficiency test), contributing 60% weightage.",
+        ],
+      },
+      {
+        type: "p",
+        text: "For all posts the minimum qualifying marks are 30% for Unreserved candidates and 20% for SC / ST / BC / MBC / EWS / Ex-servicemen / PwBD candidates. Except the Hindi General and English General sections, the question papers are bilingual.",
+      },
+      { type: "h2", text: "How to apply online" },
+      {
+        type: "ol",
+        items: [
+          "Open the Rajasthan Energy Department portal or the respective Nigam portal (RVUN, RVPN, JVVN, AVVN, JdVVN).",
+          "Click the Apply Online link for Advertisement No. RVUN/Rectt.-2026-27/03 and choose your post.",
+          "Register with your name, mobile number and email ID to generate a provisional registration number and password.",
+          "Log in and fill in personal, educational and category details exactly as printed on your certificates.",
+          "Upload the photograph, signature, left thumb impression and handwritten declaration in the prescribed format.",
+          "Record your company preference carefully — it cannot be changed after final submission.",
+          "Preview the form, submit it, pay the applicable fee online and download the e-receipt with the filled application.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Before you submit",
+        text: "Verify every vacancy figure, date and eligibility condition against the official advertisement on the Rajasthan Energy Department portal. Vacancies and dates can be revised through corrigendum notices.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many vacancies are there in RVUNL Recruitment 2026?",
+        a: "A total of 2005 vacancies are notified — 727 Junior Engineer-I (Electrical), 110 Junior Engineer-I (Mechanical), 32 Junior Engineer-I (Civil), 371 Junior Accountant and 765 Junior Assistant / Commercial Assistant-II posts.",
+      },
+      {
+        q: "What is the last date to apply for RVUNL Recruitment 2026?",
+        a: "The online application closes on 25 August 2026 at 12:00 midnight, and the application fee must also be paid by 25 August 2026.",
+      },
+      {
+        q: "What is the salary of RVUNL Junior Engineer and Junior Assistant?",
+        a: "Junior Engineer-I and Junior Accountant are Pay Matrix Level-10 posts with a minimum basic pay of Rs. 33,800 per month, while Junior Assistant / Commercial Assistant-II is a Level-5 post with Rs. 20,800 basic. During the two-year probation the fixed remuneration is Rs. 23,700 and Rs. 14,600 per month respectively.",
+      },
+      {
+        q: "What is the age limit for RVUNL Recruitment 2026?",
+        a: "As on 1 January 2027, Junior Engineer-I applicants must be 21 to 40 years old (up to 43 years in RVPN for Electrical and Civil), while Junior Accountant and Junior Assistant applicants must be 18 to 40 years old, relaxable up to 43 years, with further category relaxation of 5 to 10 years.",
+      },
+      {
+        q: "Is there an interview in RVUNL Recruitment 2026?",
+        a: "No. Selection is based only on the Computer Based Test, with an additional Hindi and English typing test for the Junior Assistant / Commercial Assistant-II post.",
+      },
+      {
+        q: "What is the application fee for RVUNL Recruitment 2026?",
+        a: "Rs. 1,000 including GST for UR / General candidates and Rs. 500 for SC / ST / BC / MBC / EWS / PwBD and Saharia area candidates. Reserved-category candidates from outside Rajasthan pay the General fee.",
+      },
+      {
+        q: "Can I apply for more than one post in this RVUNL recruitment?",
+        a: "Yes, you may apply for two or more different posts, but you cannot submit more than one application for the same post. Your company preference given in the form is final and cannot be changed later.",
+      },
+      {
+        q: "Where can I download the RVUNL Recruitment 2026 notification and syllabus PDF?",
+        a: "The notification summary, eligibility and age limit sheet, and the exam pattern and syllabus guide are all available in the download section of this page.",
+      },
+    ],
+  },
+  {
+
     slug: "rrb-junior-engineer-recruitment-2026-cen-04-2026",
     title:
       "RRB Junior Engineer Recruitment 2026 (CEN 04/2026): 4029 JE & DMS Vacancies, Apply Online Till 13 September",
