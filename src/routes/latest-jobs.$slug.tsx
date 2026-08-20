@@ -66,7 +66,6 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             ...(j.applyEnd ? { validThrough: `${j.applyEnd}T23:59:59+05:30` } : {}),
             employmentType: j.employmentType ?? "FULL_TIME",
             ...(j.jobStartDate ? { jobStartDate: j.jobStartDate } : {}),
-            jobLocationType: "TELECOMMUTE" === "" ? undefined : undefined,
             hiringOrganization: {
               "@type": "Organization",
               name: j.organization,
@@ -105,7 +104,7 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
                   },
                 }
               : {}),
-            ...(j.payScale ? { estimatedSalary: undefined, salaryCurrency: j.salaryCurrency ?? "INR" } : {}),
+            ...(j.salaryMin ? { salaryCurrency: j.salaryCurrency ?? "INR" } : {}),
             ...(j.qualification ? { qualifications: j.qualification } : {}),
             ...(j.educationRequirements
               ? {
@@ -142,7 +141,7 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
                 }
               : {}),
             ...(j.applyUrl
-              ? { directApply: j.directApply ?? false, applicationContact: undefined }
+              ? { directApply: j.directApply ?? false }
               : {}),
             ...(share ? { image: abs(share) } : {}),
             url: absUrl,
