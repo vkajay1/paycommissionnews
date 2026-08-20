@@ -22,7 +22,33 @@ export type Job = {
   applyEnd?: string;
   /** Official notification / apply link. */
   applyUrl?: string;
-  /** Self-hosted PDF documents for this notification. */
+  /** Recruiter website used for hiringOrganization.sameAs in JobPosting schema. */
+  organizationUrl?: string;
+  /** Self-hosted logo/emblem of the recruiter (absolute or root-relative). */
+  organizationLogo?: string;
+  /** Structured monthly pay for JobPosting baseSalary. */
+  salaryMin?: number;
+  salaryMax?: number;
+  /** Defaults to "MONTH". */
+  salaryUnit?: "HOUR" | "DAY" | "WEEK" | "MONTH" | "YEAR";
+  salaryCurrency?: string;
+  /** e.g. "FULL_TIME" (default) or "CONTRACTOR". */
+  employmentType?: string | string[];
+  /** Government job code / notice number, used as JobPosting identifier. */
+  noticeNumber?: string;
+  industry?: string;
+  occupationalCategory?: string;
+  experienceRequirements?: string;
+  educationRequirements?: string;
+  jobBenefits?: string;
+  /** Numeric vacancy count for schema (`vacancies` stays human-readable). */
+  numberOfPositions?: number;
+  /** Where applicants must be located, e.g. "India". */
+  applicantLocationRequirements?: string;
+  /** ISO date the selected candidate is expected to join. */
+  jobStartDate?: string;
+  /** True when candidates apply directly on the linked official portal. */
+  directApply?: boolean;
   downloads?: { label: string; href: string; note?: string }[];
   category: string;
   date: string; // ISO published
@@ -31,7 +57,10 @@ export type Job = {
   hero: string; // gradient classes
   image?: string;
   imageAlt?: string;
+  /** 1200x630 social share image; falls back to `image`. */
+  ogImage?: string;
   lang?: "en" | "hi";
+
   excerpt: string;
   body: Block[];
   faq: { q: string; a: string }[];
@@ -59,6 +88,25 @@ export const jobs: Job[] = [
     applyStart: "2026-08-14",
     applyEnd: "2026-09-13",
     applyUrl: "https://www.rrbapply.gov.in/",
+    organizationUrl: "https://indianrailways.gov.in/",
+    salaryMin: 35400,
+    salaryMax: 112400,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "CEN 04/2026",
+    industry: "Indian Railways / Government Engineering Services",
+    occupationalCategory: "17-2199.00 Engineers, All Other",
+    experienceRequirements: "No prior work experience required — fresher diploma and degree engineers are eligible",
+    educationRequirements:
+      "Three-year Engineering Diploma or Bachelor's Degree in the relevant engineering stream from a recognised University or Institute",
+    jobBenefits:
+      "Dearness Allowance, House Rent Allowance, Transport Allowance, Night Duty Allowance, railway pass facility, NPS pension, medical cover under RELHS and 8th Pay Commission revision benefit",
+    numberOfPositions: 4029,
+    applicantLocationRequirements: "India",
+    jobStartDate: "2027-04-01",
+    directApply: false,
+
     downloads: [
       {
         label: "Full Notification PDF (CEN 04/2026)",
@@ -90,7 +138,9 @@ export const jobs: Job[] = [
     image: "https://paycommissionnews.co.in/images/rrb-je-cen-04-2026.jpg",
     imageAlt:
       "RRB Junior Engineer Recruitment 2026 CEN 04/2026 — 4029 vacancies in Pay Matrix Level 6",
+    ogImage: "https://paycommissionnews.co.in/images/og/rrb-je-cen-04-2026-og.jpg",
     lang: "en",
+
     excerpt:
       "Indian Railways has opened online applications for 4029 Junior Engineer and Depot Material Superintendent posts under CEN 04/2026. Applications close on 13 September 2026, the post carries Pay Matrix Level 6 (Rs. 35,400 basic), and every official PDF is available for download below.",
     body: [

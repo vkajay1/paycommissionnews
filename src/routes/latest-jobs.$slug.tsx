@@ -15,6 +15,8 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
     if (!j) return {};
     const url = `/latest-jobs/${j.slug}`;
     const absUrl = `${SITE}${url}`;
+    const share = j.ogImage ?? j.image;
+    const abs = (u?: string) => (!u ? undefined : u.startsWith("http") ? u : `${SITE}${u}`);
 
     return {
       meta: [
@@ -36,13 +38,16 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: j.title },
         { name: "twitter:description", content: j.description },
-        ...(j.image
+        ...(share
           ? [
-              { property: "og:image", content: j.image },
+              { property: "og:image", content: abs(share)! },
+              { property: "og:image:secure_url", content: abs(share)! },
+              { property: "og:image:type", content: share.endsWith(".png") ? "image/png" : "image/jpeg" },
               { property: "og:image:width", content: "1200" },
-              { property: "og:image:height", content: "675" },
+              { property: "og:image:height", content: "630" },
               { property: "og:image:alt", content: j.imageAlt ?? j.title },
-              { name: "twitter:image", content: j.image },
+              { name: "twitter:image", content: abs(share)! },
+              { name: "twitter:image:alt", content: j.imageAlt ?? j.title },
             ]
           : []),
       ],
@@ -54,13 +59,20 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             "@context": "https://schema.org",
             "@type": "JobPosting",
             title: j.postName,
+            name: j.title,
             description: j.description,
             datePosted: j.date,
-            ...(j.applyEnd ? { validThrough: j.applyEnd } : {}),
-            employmentType: "FULL_TIME",
+            dateModified: j.updated,
+            ...(j.applyEnd ? { validThrough: `${j.applyEnd}T23:59:59+05:30` } : {}),
+            employmentType: j.employmentType ?? "FULL_TIME",
+            ...(j.jobStartDate ? { jobStartDate: j.jobStartDate } : {}),
             hiringOrganization: {
               "@type": "Organization",
               name: j.organization,
+              ...(j.organizationUrl ? { sameAs: j.organizationUrl, url: j.organizationUrl } : {}),
+              ...(j.organizationLogo
+                ? { logo: { "@type": "ImageObject", url: abs(j.organizationLogo) } }
+                : {}),
             },
             jobLocation: {
               "@type": "Place",
@@ -70,9 +82,70 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
                 ...(j.location ? { addressRegion: j.location } : {}),
               },
             },
+            ...(j.applicantLocationRequirements
+              ? {
+                  applicantLocationRequirements: {
+                    "@type": "Country",
+                    name: j.applicantLocationRequirements,
+                  },
+                }
+              : {}),
+            ...(j.salaryMin
+              ? {
+                  baseSalary: {
+                    "@type": "MonetaryAmount",
+                    currency: j.salaryCurrency ?? "INR",
+                    value: {
+                      "@type": "QuantitativeValue",
+                      minValue: j.salaryMin,
+                      ...(j.salaryMax ? { maxValue: j.salaryMax } : {}),
+                      unitText: j.salaryUnit ?? "MONTH",
+                    },
+                  },
+                }
+              : {}),
+            ...(j.salaryMin ? { salaryCurrency: j.salaryCurrency ?? "INR" } : {}),
             ...(j.qualification ? { qualifications: j.qualification } : {}),
-            ...(j.vacancies ? { totalJobOpenings: j.vacancies } : {}),
+            ...(j.educationRequirements
+              ? {
+                  educationRequirements: {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: j.educationRequirements,
+                  },
+                }
+              : {}),
+            ...(j.experienceRequirements
+              ? {
+                  experienceRequirements: {
+                    "@type": "OccupationalExperienceRequirements",
+                    description: j.experienceRequirements,
+                  },
+                  experienceInPlaceOfEducation: false,
+                }
+              : {}),
+            ...(j.jobBenefits ? { jobBenefits: j.jobBenefits } : {}),
+            ...(j.industry ? { industry: j.industry } : {}),
+            ...(j.occupationalCategory ? { occupationalCategory: j.occupationalCategory } : {}),
+            ...(j.numberOfPositions
+              ? { totalJobOpenings: j.numberOfPositions }
+              : j.vacancies
+                ? { totalJobOpenings: j.vacancies }
+                : {}),
+            ...(j.noticeNumber
+              ? {
+                  identifier: {
+                    "@type": "PropertyValue",
+                    name: j.organization,
+                    value: j.noticeNumber,
+                  },
+                }
+              : {}),
+            ...(j.applyUrl
+              ? { directApply: j.directApply ?? false }
+              : {}),
+            ...(share ? { image: abs(share) } : {}),
             url: absUrl,
+            ...(j.applyUrl ? { sameAs: j.applyUrl } : {}),
           }),
         },
         {
@@ -104,6 +177,7 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             ]
           : []),
       ],
+
     };
   },
   notFoundComponent: () => (
