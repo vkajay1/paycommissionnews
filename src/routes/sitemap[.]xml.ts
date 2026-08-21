@@ -134,6 +134,11 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
+/** Sitemaps require fully-qualified URLs, so relative asset paths get the site origin. */
+function absoluteUrl(url: string): string {
+  return /^https?:\/\//i.test(url) ? url : `${BASE_URL}${url.startsWith("/") ? "" : "/"}${url}`;
+}
+
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
@@ -150,7 +155,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           if (e.priority) lines.push(`    <priority>${e.priority}</priority>`);
           if (e.image) {
             lines.push(`    <image:image>`);
-            lines.push(`      <image:loc>${escapeXml(e.image)}</image:loc>`);
+            lines.push(`      <image:loc>${escapeXml(absoluteUrl(e.image))}</image:loc>`);
             if (e.imageTitle)
               lines.push(`      <image:title>${escapeXml(e.imageTitle)}</image:title>`);
             lines.push(`    </image:image>`);
