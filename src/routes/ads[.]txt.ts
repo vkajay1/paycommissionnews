@@ -10,7 +10,7 @@ export const Route = createFileRoute("/ads.txt")({
         return new Response(ADS_TXT, {
           headers: {
             "Content-Type": "text/plain; charset=utf-8",
-            "Cache-Control": "public, max-age=86400",
+            "Cache-Control": "public, max-age=3600, must-revalidate",
             "X-Content-Type-Options": "nosniff",
           },
         });
