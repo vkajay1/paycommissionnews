@@ -27,6 +27,11 @@ function pubDate(date: string): string {
   return /^\d{4}-\d{2}-\d{2}$/.test(date) ? `${date}T06:00:00+05:30` : date;
 }
 
+/** Sitemaps require fully-qualified URLs, so relative asset paths get the site origin. */
+function absoluteUrl(url: string): string {
+  return /^https?:\/\//i.test(url) ? url : `${BASE_URL}${url.startsWith("/") ? "" : "/"}${url}`;
+}
+
 function newsArticles() {
   const sorted = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1));
   const cutoff = Date.now() - NEWS_WINDOW_DAYS * 24 * 60 * 60 * 1000;
