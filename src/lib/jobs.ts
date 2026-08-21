@@ -68,6 +68,260 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "ntpc-ngel-recruitment-2026-engineer-executive-147-posts",
+    title:
+      "NTPC NGEL Recruitment 2026: 147 Engineer & Executive Posts — Online Apply 18 August to 7 September, Salary Rs. 50,000–1,60,000",
+    description:
+      "NTPC Green Energy Limited (NGEL) Recruitment 2026 (Advt. No. 04/26) for 147 Engineer and Executive posts — post-wise vacancy, qualification, 35-year age limit, Rs. 500 fee, E2 grade salary Rs. 50,000–1,60,000, selection process, important dates and PDF downloads.",
+    keyword:
+      "ntpc ngel recruitment 2026, ntpc green energy limited vacancy 2026, ngel engineer recruitment 2026, ntpc ngel executive post 2026, ngel advt 04/26, ntpc green energy salary e2 grade, ntpc ngel online form 2026",
+    organization: "NTPC Green Energy Limited (NGEL), a subsidiary of NTPC Limited",
+    postName:
+      "Engineer (RE-Civil / RE-Electrical / RE-Mechanical / RE-Safety) & Executive (RE-HR / RE-Finance / RE-CSR / RE-Rajbhasha)",
+    vacancies: "147 posts (Engineer 128 + Executive 19)",
+    qualification:
+      "BE / B.Tech / B.Sc. (Engg.) in the relevant engineering discipline with 65% marks (55% for SC/ST/PwBD) for Engineer posts; MBA / PG Diploma in HR, CA or CMA, PG in social development or MSW, and Master degree in Hindi/English for the respective Executive posts — with 1 to 3 years of post-qualification experience",
+    ageLimit: "Maximum 35 years, with age relaxation for reserved categories as per NGEL rules",
+    payScale:
+      "E2 grade IDA pay scale Rs. 50,000 – Rs. 1,60,000 per month plus DA, HRA, perks under the cafeteria approach and NPS",
+    location: "Across India at NTPC Green Energy renewable projects and offices",
+    applicationFee:
+      "Rs. 500 for General / OBC / EWS; no fee for SC / ST / PwBD and for all female candidates",
+    applyStart: "2026-08-18",
+    applyEnd: "2026-09-07",
+    applyUrl: "https://www.ngel.in/ngel-home",
+    organizationUrl: "https://www.ngel.in/ngel-home",
+    salaryMin: 50000,
+    salaryMax: 160000,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "Advt. No. 04/26",
+    industry: "Renewable Energy / Power Generation (Central Public Sector Enterprise)",
+    occupationalCategory: "17-2199.00 Engineers, All Other",
+    experienceRequirements:
+      "Minimum 3 years of post-qualification executive experience in the relevant discipline; 1 year post-qualification experience for Executive (RE-Finance) with CA or CMA",
+    educationRequirements:
+      "Full-time engineering degree (BE / B.Tech / B.Sc. Engg.) with 65% marks for Engineer posts; relevant post-graduate degree, diploma or professional qualification (CA / CMA) for Executive posts",
+    jobBenefits:
+      "Industrial Dearness Allowance, HRA or company accommodation, cafeteria perks and allowances, performance related pay, medical facilities, gratuity, NPS pension contribution and career growth in India's largest green energy portfolio",
+    numberOfPositions: 147,
+    applicantLocationRequirements: "India",
+    jobStartDate: "2026-11-01",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (147 Engineer & Executive Posts)",
+        href: "/downloads/ntpc-ngel-recruitment-2026/ntpc-ngel-recruitment-2026-notification-summary.pdf",
+        note: "Post-wise vacancy, important dates, application fee and E2 grade pay in one sheet",
+      },
+      {
+        label: "Eligibility, Selection Process & Preparation Guide PDF",
+        href: "/downloads/ntpc-ngel-recruitment-2026/ntpc-ngel-recruitment-2026-eligibility-and-selection.pdf",
+        note: "Age and marks criteria, stage-wise selection flow and a discipline-wise preparation checklist",
+      },
+    ],
+    category: "PSU Jobs",
+    date: "2026-08-21",
+    updated: "2026-08-21",
+    readMinutes: 9,
+    hero: "from-emerald-600 to-sky-700",
+    image: "/images/ntpc-ngel-recruitment-2026.jpg",
+    imageAlt:
+      "NTPC NGEL Recruitment 2026 for 147 Engineer and Executive posts with online application from 18 August to 7 September 2026",
+    ogImage: "/images/og/ntpc-ngel-recruitment-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "NTPC Green Energy Limited has opened online applications for 147 Engineer and Executive posts under Advt. No. 04/26. Applications run from 18 August to 7 September 2026, the maximum age is 35 years and selected candidates join the E2 grade pay scale of Rs. 50,000 – Rs. 1,60,000 per month.",
+
+    body: [
+      {
+        type: "p",
+        text: "NTPC Green Energy Limited (NGEL), the renewable energy arm of NTPC Limited, has released a fresh recruitment notification for 147 Engineer and Executive posts under advertisement number 04/26. The online application window opens on 18 August 2026 and closes on 7 September 2026 at 6:00 PM, and the recruitment covers four engineering disciplines along with HR, Finance, CSR and Rajbhasha functions.",
+      },
+      {
+        type: "p",
+        text: "This is an experienced-level intake: candidates need one to three years of post-qualification executive experience depending on the post, and the appointment is made in the E2 executive grade with an IDA pay scale of Rs. 50,000 to Rs. 1,60,000 per month. For engineers already working in solar, wind or transmission projects, it is one of the strongest central PSU openings of 2026.",
+      },
+      { type: "h2", text: "NTPC NGEL Recruitment 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "12 August 2026"],
+          ["Online application begins", "18 August 2026"],
+          ["Last date to apply online", "7 September 2026 (up to 6:00 PM)"],
+          ["Last date to pay application fee", "7 September 2026"],
+          ["Written test / assessment", "As per schedule announced by NGEL"],
+          ["Admit card", "Released before the examination date"],
+        ],
+        caption: "Dates as per NGEL Advt. No. 04/26.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Apply early — the portal closes at 6 PM",
+        text: "The last date of 7 September 2026 has a hard 6:00 PM cut-off and the fee must also be paid the same day. Complete your registration, document upload and payment at least two days in advance to avoid last-minute portal load.",
+      },
+      { type: "h2", text: "Post-wise vacancy details (147 posts)" },
+      {
+        type: "table",
+        headers: ["Post", "Vacancies"],
+        rows: [
+          ["Engineer (RE-Civil)", "43"],
+          ["Engineer (RE-Electrical)", "69"],
+          ["Engineer (RE-Mechanical)", "09"],
+          ["Engineer (RE-Safety)", "07"],
+          ["Executive (RE-HR)", "04"],
+          ["Executive (RE-Finance)", "09"],
+          ["Executive (RE-CSR)", "05"],
+          ["Executive (RE-Rajbhasha)", "01"],
+          ["Total", "147"],
+        ],
+        caption:
+          "Engineering disciplines account for 128 of the 147 posts, with RE-Electrical the largest single stream.",
+      },
+      {
+        type: "p",
+        text: "Because NGEL is building large utility-scale solar parks, wind hybrid capacity and green hydrogen projects, the vacancy mix is heavily tilted towards electrical and civil engineers who can handle project execution, grid interconnection, substation works and civil foundations at site.",
+      },
+      { type: "h2", text: "Eligibility criteria — qualification for each post" },
+      { type: "h3", text: "Engineer posts" },
+      {
+        type: "ul",
+        items: [
+          "Engineer (RE-Civil): BE / B.Tech / B.Sc. (Engg.) degree in Civil Engineering with 65% marks (55% for SC / ST / PwBD) plus 3 years of experience.",
+          "Engineer (RE-Electrical): BE / B.Tech / B.Sc. (Engg.) in Electrical, Electrical & Electronics, Electrical Instrumentation & Control, Power Systems & High Voltage, Power Electronics or Power Engineering with 65% marks (55% for SC / ST / PwBD) plus 3 years of experience.",
+          "Engineer (RE-Mechanical): BE / B.Tech / B.Sc. (Engg.) in Mechanical, Production, Industrial, Production & Industrial or Power Engineering with 65% marks (55% for SC / ST / PwBD) plus 3 years of experience.",
+          "Engineer (RE-Safety): Engineering degree in Mechanical, Production, Electrical, Civil or Power Engineering with 65% marks along with a full-time Diploma in Industrial Safety, or a full-time engineering degree in Industrial Safety / Fire & Safety with 65% marks, plus 3 years of experience.",
+        ],
+      },
+      { type: "h3", text: "Executive posts" },
+      {
+        type: "ul",
+        items: [
+          "Executive (RE-HR): Bachelor degree with a Master degree, PG Diploma or PG Programme in Management specialising in Human Resources, Industrial Relations or Personnel Management, or MHROD or MBA (HR), with 65% marks plus 3 years of experience.",
+          "Executive (RE-Finance): CA or CMA with a minimum of 1 year post-qualification executive experience in Finance or Accounts, excluding the articleship period.",
+          "Executive (RE-CSR): PG Degree, PG Diploma or PG Programme in rural or social development streams, MSW, MBA, or an engineering graduate with 65% marks plus 3 years of experience.",
+          "Executive (RE-Rajbhasha): Master degree in Hindi or English with the prescribed subject combination given in the notification, plus 3 years of experience.",
+        ],
+      },
+      { type: "h3", text: "Age limit" },
+      {
+        type: "p",
+        text: "The maximum age limit is 35 years as per Advt. No. 04/26. Upper age relaxation is available to SC, ST, OBC (non-creamy layer), PwBD and ex-servicemen candidates as per the Government of India norms adopted by NGEL. Candidates should confirm the exact cut-off date for age calculation from the official notification.",
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS", "Rs. 500"],
+          ["SC / ST / PwBD", "Nil"],
+          ["All female candidates (all categories)", "Nil"],
+          ["Payment mode", "Online — debit card, credit card, net banking or UPI"],
+        ],
+      },
+      { type: "h2", text: "NTPC NGEL Engineer & Executive salary in 2026" },
+      {
+        type: "p",
+        text: "Engineer and Executive posts are E2 grade appointments carrying an IDA pay scale of Rs. 50,000 to Rs. 1,60,000 per month. On top of basic pay, NGEL pays Industrial Dearness Allowance revised quarterly, HRA or company accommodation, perks and allowances under the cafeteria approach (up to a percentage of basic pay), performance related pay, and employer contribution to NPS.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative amount at entry"],
+        rows: [
+          ["Basic pay (E2 grade)", "Rs. 50,000 per month"],
+          ["Industrial DA", "As per the quarterly IDA rate notified by DPE"],
+          ["Perks & allowances (cafeteria)", "A defined percentage of basic pay, chosen by the employee"],
+          ["HRA / company accommodation", "As per posting location and NGEL rules"],
+          ["Performance related pay", "Linked to company and individual performance rating"],
+          ["Retirement benefits", "NPS employer contribution, gratuity and post-retirement medical scheme"],
+        ],
+        caption:
+          "Indicative structure only — actual CTC depends on posting location, IDA rate and company circulars.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "How the 8th Pay Commission affects PSU pay",
+        text: "Central PSU employees such as NGEL executives are paid on the IDA pattern, so the 8th Pay Commission does not revise their scales directly. PSU pay revision happens through a separate DPE pay revision committee, but a higher central fitment factor usually influences the benchmark used for the next PSU revision cycle.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Online registration and submission of the application form with scanned photograph, signature and supporting documents.",
+          "Shortlisting on the basis of qualification, percentage of marks, relevant experience and age criteria.",
+          "Computer based written test or technical assessment, if conducted for the discipline.",
+          "Personal interview to assess technical depth, project experience and role fit.",
+          "Document verification and pre-employment medical examination.",
+          "Final merit list and issue of appointment letters for posting at NGEL projects.",
+        ],
+      },
+      { type: "h2", text: "How to apply online for NTPC NGEL Recruitment 2026" },
+      {
+        type: "ol",
+        items: [
+          "Keep your degree certificates, mark sheets, experience letters, category certificate, photo ID, photograph and signature scanned and ready before you start.",
+          "Open the NGEL careers section on the official website and select the Engineer and Executive recruitment advertisement 04/26.",
+          "Register with a valid email ID and mobile number, then complete the detailed application form with academic, experience and personal details.",
+          "Upload the scanned photograph, signature and required documents in the prescribed size and format.",
+          "Pay Rs. 500 online if you belong to General, OBC or EWS category; SC, ST, PwBD and all female candidates are exempt.",
+          "Verify the preview page carefully, submit the form and save or print the final confirmation page and fee receipt.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "success",
+        title: "Documents to keep handy",
+        text: "Experience certificates with exact joining and relieving dates, a consolidated percentage calculation from your degree mark sheets, and a valid category certificate in the government format are the three items that most often delay a PSU application.",
+      },
+      { type: "h2", text: "Why NGEL is a strong career move" },
+      {
+        type: "p",
+        text: "NTPC Green Energy Limited is the dedicated renewable energy subsidiary of NTPC and is scaling a multi-gigawatt pipeline of solar, wind, hybrid and green hydrogen projects. An E2 entry here places you on the executive career ladder of a Maharatna group company, with structured promotions to E3 and above, project exposure across states, and the stability of central PSU service conditions.",
+      },
+    ],
+
+    faq: [
+      {
+        q: "How many posts are there in NTPC NGEL Recruitment 2026?",
+        a: "There are 147 posts in total under Advt. No. 04/26 — 43 Engineer (RE-Civil), 69 Engineer (RE-Electrical), 9 Engineer (RE-Mechanical), 7 Engineer (RE-Safety), 4 Executive (RE-HR), 9 Executive (RE-Finance), 5 Executive (RE-CSR) and 1 Executive (RE-Rajbhasha).",
+      },
+      {
+        q: "What are the NTPC NGEL 2026 online application dates?",
+        a: "The online application begins on 18 August 2026 and the last date to apply is 7 September 2026 up to 6:00 PM. The application fee must also be paid by 7 September 2026.",
+      },
+      {
+        q: "What is the salary of an NGEL Engineer or Executive?",
+        a: "Selected candidates are appointed in the E2 grade with an IDA pay scale of Rs. 50,000 to Rs. 1,60,000 per month, plus Industrial Dearness Allowance, HRA or company accommodation, cafeteria perks and allowances, performance related pay and NPS contribution.",
+      },
+      {
+        q: "What is the age limit for NTPC NGEL Recruitment 2026?",
+        a: "The maximum age is 35 years, with relaxation for SC, ST, OBC (NCL), PwBD and ex-servicemen candidates as per the rules followed by NGEL. Check the official notification for the exact cut-off date.",
+      },
+      {
+        q: "How much experience is required to apply?",
+        a: "Most Engineer and Executive posts require a minimum of 3 years of post-qualification executive experience in the relevant discipline. Executive (RE-Finance) requires only 1 year of post-qualification experience after CA or CMA, excluding articleship.",
+      },
+      {
+        q: "What is the application fee and who is exempt?",
+        a: "General, OBC and EWS candidates pay Rs. 500. SC, ST and PwBD candidates and all female candidates of every category are fully exempt from the fee.",
+      },
+      {
+        q: "How are candidates selected for NGEL Engineer and Executive posts?",
+        a: "Applications are shortlisted on qualification, marks, experience and age, followed by a written test or technical assessment where applicable, a personal interview, document verification and a pre-employment medical examination before the final merit list is issued.",
+      },
+      {
+        q: "Will the 8th Pay Commission increase NGEL salaries?",
+        a: "No, not directly. NGEL executives are on the IDA pay pattern, which is revised through a DPE pay revision committee for central PSUs rather than by the Central Pay Commission. However, a higher central fitment factor typically shapes the benchmark for the next PSU pay revision.",
+      },
+    ],
+  },
+  {
     slug: "rvunl-recruitment-2026-je-junior-accountant-junior-assistant",
     title:
       "RVUNL Recruitment 2026: 2005 Junior Engineer, Junior Accountant & Junior Assistant Vacancies — Apply Online Till 25 August",
