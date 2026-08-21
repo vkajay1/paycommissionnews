@@ -60,7 +60,7 @@ export const Route = createFileRoute("/news-sitemap.xml")({
           if (a.image) {
             lines.push(
               `    <image:image>`,
-              `      <image:loc>${escapeXml(a.image)}</image:loc>`,
+              `      <image:loc>${escapeXml(absoluteUrl(a.image))}</image:loc>`,
               `      <image:title>${escapeXml(a.title)}</image:title>`,
               `    </image:image>`,
             );
