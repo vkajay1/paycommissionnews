@@ -68,6 +68,308 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "sbi-clerk-recruitment-2026-junior-associate-9124-posts",
+    title:
+      "SBI Clerk Recruitment 2026: 9124 Junior Associate Posts — Apply Online Till 31 August, Salary Rs. 26,730 Basic",
+    description:
+      "SBI Junior Associate (Clerk) Recruitment 2026 for 9124 posts under Advt. CRPD/CR/2026-27/17 — state-wise and category-wise vacancy, graduation eligibility, 20–28 years age limit, Rs. 750 fee, pay scale Rs. 24,050–64,480, Prelims and Mains exam pattern, important dates and PDF downloads.",
+    keyword:
+      "sbi clerk recruitment 2026, sbi junior associate 2026, sbi clerk vacancy 2026, sbi clerk online form 2026, sbi clerk salary 2026, sbi clerk 9124 post, sbi junior associate notification pdf, sbi clerk exam date 2026",
+    organization: "State Bank of India (SBI)",
+    postName: "Junior Associate (Customer Support & Sales) — Clerical Cadre",
+    vacancies: "9,124 posts (Regular 7,680 + Backlog 1,444)",
+    qualification:
+      "Bachelor's degree in any discipline from a recognised university; candidates in the final year of graduation may also apply subject to producing proof of passing",
+    ageLimit:
+      "20 to 28 years as on 01/04/2026, with age relaxation for SC / ST / OBC / PwBD / ex-servicemen as per SBI rules",
+    payScale:
+      "Rs. 24,050 – 64,480 clerical cadre scale; starting basic pay Rs. 26,730 with two graduate increments, total starting emoluments around Rs. 46,000 per month in a metro city",
+    location: "Across India — state-wise and circle-wise posting",
+    applicationFee: "Rs. 750 for General / EWS / OBC; nil for SC / ST / PwBD",
+    applyStart: "2026-08-11",
+    applyEnd: "2026-08-31",
+    applyUrl: "https://sbi.bank.in/",
+    organizationUrl: "https://sbi.bank.in/",
+    salaryMin: 26730,
+    salaryMax: 64480,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "Advt. No. CRPD/CR/2026-27/17",
+    industry: "Banking & Financial Services (Public Sector Bank)",
+    occupationalCategory: "43-3071.00 Tellers",
+    educationRequirements:
+      "Graduation in any stream from a recognised university; final-year students may apply provisionally",
+    experienceRequirements:
+      "No prior work experience required; SBI apprentices with one year of completed branch experience receive bonus marks in the Main examination",
+    jobBenefits:
+      "Dearness Allowance, HRA or bank accommodation, special allowance, medical and leave-fare facilities, provident fund, National Pension System, staff loan concessions and confirmed promotion channels within the clerical and officer cadre",
+    numberOfPositions: 9124,
+    applicantLocationRequirements: "India",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Official Detailed Notification PDF (Advt. CRPD/CR/2026-27/17)",
+        href: "/downloads/sbi-clerk-recruitment-2026/sbi-clerk-recruitment-2026-official-notification.pdf",
+        note: "Complete 11-page advertisement with vacancy tables, eligibility, reservation and exam details",
+      },
+      {
+        label: "Notification Summary PDF (9124 Posts, State-wise Vacancy)",
+        href: "/downloads/sbi-clerk-recruitment-2026/sbi-clerk-recruitment-2026-notification-summary.pdf",
+        note: "At-a-glance dates, fee, pay scale, category-wise and state-wise vacancy in one sheet",
+      },
+      {
+        label: "Exam Pattern, Syllabus & Preparation Guide PDF",
+        href: "/downloads/sbi-clerk-recruitment-2026/sbi-clerk-recruitment-2026-exam-pattern-and-syllabus.pdf",
+        note: "Prelims and Mains structure, local language test, topic checklist and an 8-week study plan",
+      },
+    ],
+    category: "Bank Jobs",
+    date: "2026-08-21",
+    updated: "2026-08-21",
+    readMinutes: 10,
+    hero: "from-sky-700 to-indigo-800",
+    image: "https://paycommissionnews.co.in/images/sbi-clerk-recruitment-2026.jpg",
+    imageAlt:
+      "SBI Clerk Recruitment 2026 for 9124 Junior Associate posts with online application open till 31 August 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/sbi-clerk-recruitment-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "State Bank of India has opened online applications for 9,124 Junior Associate (Clerk) posts under advertisement CRPD/CR/2026-27/17. Any graduate aged 20 to 28 years can apply between 11 August and 31 August 2026, and selected candidates start on a basic pay of Rs. 26,730 with total emoluments of roughly Rs. 46,000 a month in metro cities.",
+
+    body: [
+      {
+        type: "p",
+        text: "State Bank of India has released one of the biggest clerical recruitment notifications of the year: 9,124 vacancies for Junior Associate (Customer Support & Sales) in the clerical cadre under advertisement number CRPD/CR/2026-27/17. The online application window is open from 11 August 2026 to 31 August 2026, and any graduate between 20 and 28 years of age can apply for the state or circle of their choice.",
+      },
+      {
+        type: "p",
+        text: "The intake is split into 7,680 regular vacancies and 1,444 backlog vacancies. Selection runs through an online Preliminary examination tentatively in September 2026, an online Main examination tentatively in November 2026 and a test of the specified local language before joining. Starting basic pay is Rs. 26,730 including two advance increments for graduates, and total starting emoluments come to about Rs. 46,000 per month at a metro posting.",
+      },
+      { type: "h2", text: "SBI Clerk Recruitment 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "11 August 2026"],
+          ["Online application begins", "11 August 2026"],
+          ["Last date to apply online", "31 August 2026"],
+          ["Last date to pay the exam fee", "31 August 2026"],
+          ["Prelims admit card", "Released before the exam"],
+          ["Phase I — Preliminary examination", "Tentatively September 2026"],
+          ["Phase II — Main examination", "Tentatively November 2026"],
+          ["Local language proficiency test", "After the Main exam, before joining"],
+        ],
+        caption: "Dates as per the official SBI advertisement CRPD/CR/2026-27/17.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Apply before the portal load spikes",
+        text: "Both the application and the fee payment close on 31 August 2026. With more than nine thousand posts on offer, the registration portal is heaviest in the final 48 hours — complete your form, document upload and payment a few days early.",
+      },
+      { type: "h2", text: "Vacancy details — 9,124 posts" },
+      {
+        type: "table",
+        headers: ["Post", "Vacancies"],
+        rows: [
+          ["Junior Associate (Clerk) — Regular", "7,680"],
+          ["Junior Associate (Clerk) — Backlog", "1,444"],
+          ["Total", "9,124"],
+        ],
+      },
+      { type: "h3", text: "Category-wise regular vacancies" },
+      {
+        type: "table",
+        headers: ["UR", "EWS", "OBC", "SC", "ST", "Total"],
+        rows: [["3,253", "760", "1,716", "1,114", "837", "7,680"]],
+        caption: "Backlog vacancies of 1,444 posts are notified separately for reserved categories.",
+      },
+      { type: "h3", text: "State-wise vacancy and local language" },
+      {
+        type: "table",
+        headers: ["State / UT", "Local language", "Total posts"],
+        rows: [
+          ["Maharashtra", "Marathi", "1,718"],
+          ["Tamil Nadu", "Tamil", "1,410"],
+          ["Odisha", "Odia", "1,100"],
+          ["Karnataka", "Kannada", "760"],
+          ["West Bengal", "Bengali / Nepali", "555"],
+          ["Rajasthan", "Hindi", "350"],
+          ["Gujarat", "Gujarati", "330"],
+          ["Chhattisgarh", "Hindi", "287"],
+          ["Telangana", "Telugu / Urdu", "260"],
+          ["Uttar Pradesh", "Hindi / Urdu", "250"],
+          ["Madhya Pradesh", "Hindi", "113"],
+          ["Assam", "Assamese / Bengali / Bodo", "110"],
+          ["Goa", "Konkani", "62"],
+          ["Sikkim", "Nepali / English", "60"],
+          ["Arunachal Pradesh", "English", "55"],
+          ["Tripura", "Bengali / Kokborok", "48"],
+          ["Mizoram", "Mizo", "32"],
+          ["Meghalaya", "English / Garo / Khasi", "24"],
+          ["A & N Islands", "Hindi / English", "15"],
+          ["Manipur", "Manipuri / English", "14"],
+          ["Jammu & Kashmir UT", "Urdu / Ladakhi / Bhoti", "07"],
+        ],
+        caption:
+          "Candidates can apply for only one state and must be proficient in the specified local language of that state.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "A Bachelor's degree in any discipline from a recognised university, or an equivalent qualification recognised by the Central Government.",
+          "Candidates in the final year or semester of graduation may apply provisionally, subject to producing proof of passing on or before the date specified in the notification.",
+          "Matriculate ex-servicemen who have completed at least 15 years of defence service are eligible as per the relaxation given in the advertisement.",
+          "Knowledge of computer operations is essential, and proficiency in the specified local language of the applied state is required.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 April 2026" },
+      {
+        type: "table",
+        headers: ["Criterion", "Detail"],
+        rows: [
+          ["Minimum age", "20 years"],
+          ["Maximum age", "28 years"],
+          ["SC / ST", "5 years relaxation"],
+          ["OBC (non-creamy layer)", "3 years relaxation"],
+          ["PwBD (General / OBC / SC / ST)", "10 to 15 years relaxation as per category"],
+          ["Ex-servicemen", "As per Government of India rules adopted by the bank"],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / EWS / OBC", "Rs. 750"],
+          ["SC / ST / PwBD", "Nil"],
+          ["Payment mode", "Online only — debit card, credit card, net banking or UPI"],
+        ],
+      },
+      { type: "h2", text: "SBI Clerk salary 2026 — pay scale and in-hand pay" },
+      {
+        type: "p",
+        text: "The Junior Associate post carries the clerical cadre pay scale of Rs. 24,050 – 1340/3 – 28,070 – 1650/3 – 33,020 – 2000/4 – 41,020 – 2340/7 – 57,400 – 4400/1 – 61,800 – 2680/1 – 64,480. A graduate recruit starts at a basic pay of Rs. 26,730 because two advance increments are granted, and the bank puts total starting emoluments at roughly Rs. 46,000 per month at a metro city like Mumbai.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative amount at entry"],
+        rows: [
+          ["Basic pay (with 2 graduate increments)", "Rs. 26,730 per month"],
+          ["Dearness Allowance", "As per the quarterly bank DA rate"],
+          ["Special allowance", "A percentage of basic pay as per the bipartite settlement"],
+          ["HRA / bank accommodation", "Depends on the posting city classification"],
+          ["Total starting emoluments (metro)", "Around Rs. 46,000 per month"],
+          ["Retirement benefits", "Provident fund, National Pension System, gratuity"],
+        ],
+        caption:
+          "Allowances vary by place of posting; the figures above are indicative of a metro posting at the current DA rate.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Does the 8th Pay Commission change bank clerk pay?",
+        text: "No. Public sector bank employees are paid under the bipartite settlement negotiated between the Indian Banks' Association and the employee unions, not under the Central Pay Commission. The 8th Pay Commission revises central government pay matrix levels; bank scales are revised separately every five years, though a higher central fitment factor usually strengthens the union's bargaining benchmark.",
+      },
+      { type: "h2", text: "Selection process and exam pattern" },
+      { type: "h3", text: "Phase I — Preliminary examination (100 marks, 1 hour)" },
+      {
+        type: "table",
+        headers: ["Section", "Questions", "Marks", "Duration"],
+        rows: [
+          ["English Language", "30", "30", "20 minutes"],
+          ["Numerical Ability", "35", "35", "20 minutes"],
+          ["Reasoning Ability", "35", "35", "20 minutes"],
+          ["Total", "100", "100", "60 minutes"],
+        ],
+        caption:
+          "Each section is separately timed and 1/4th mark is deducted for every wrong answer. Roughly 10 times the vacancies per category are shortlisted for the Main exam.",
+      },
+      { type: "h3", text: "Phase II — Main examination (200 marks, 2 hours 40 minutes)" },
+      {
+        type: "table",
+        headers: ["Section", "Questions", "Marks", "Duration"],
+        rows: [
+          ["General / Financial Awareness", "50", "50", "35 minutes"],
+          ["General English", "40", "40", "35 minutes"],
+          ["Quantitative Aptitude", "50", "50", "45 minutes"],
+          ["Reasoning Ability & Computer Aptitude", "50", "60", "45 minutes"],
+          ["Total", "190", "200", "160 minutes"],
+        ],
+        caption:
+          "Only the aggregate Main examination score counts for the final merit list; Prelims marks are used only for shortlisting.",
+      },
+      { type: "h3", text: "Phase III — Test of specified local language" },
+      {
+        type: "p",
+        text: "Candidates who clear the Main examination must pass a local language proficiency test before joining. The objective part carries 15 questions of 15 marks based on three non-verbal comprehension passages, along with a writing or translation component. Candidates who produce a Class 10 or Class 12 mark sheet showing that they studied the opted local language are exempt from this test.",
+      },
+      {
+        type: "callout",
+        tone: "success",
+        title: "Apprentice bonus marks",
+        text: "Trained SBI apprentices who have successfully completed one year of specified branch experience receive bonus marks of 2.5 per cent of the maximum marks — that is 5 marks out of 200 — added to the aggregate Main examination score.",
+      },
+      { type: "h2", text: "How to apply online for SBI Clerk 2026" },
+      {
+        type: "ol",
+        items: [
+          "Keep your graduation mark sheets, category certificate, PwBD certificate if applicable, photo ID, and scanned photograph, signature, handwritten declaration and left thumb impression ready in the prescribed size and format.",
+          "Open the careers section of the official State Bank of India website and select the Junior Associate (Customer Support & Sales) recruitment advertisement.",
+          "Complete the new registration with a valid email ID and mobile number, then fill in personal, academic and state or circle preference details.",
+          "Upload all four scanned documents and re-check the state applied for, because the local language test is tied to that choice.",
+          "Pay Rs. 750 online if you are in the General, EWS or OBC category; SC, ST and PwBD candidates are exempt.",
+          "Verify the preview page line by line, submit the form, and save or print the final registration slip and fee receipt for the admit card download later.",
+        ],
+      },
+      { type: "h2", text: "Probation, posting and career growth" },
+      {
+        type: "p",
+        text: "Newly appointed Junior Associates serve a minimum probation of six months and must complete the prescribed e-lessons during that period for confirmation. Posting is within the state or circle applied for, and the clerical cadre offers a structured career path — promotion to Trainee Officer and then Scale I officer through internal written tests and interviews, along with staff loan concessions, medical facilities and leave-fare benefits from the first year.",
+      },
+    ],
+
+    faq: [
+      {
+        q: "How many vacancies are there in SBI Clerk Recruitment 2026?",
+        a: "There are 9,124 Junior Associate (Customer Support & Sales) vacancies in total under advertisement CRPD/CR/2026-27/17 — 7,680 regular posts and 1,444 backlog posts.",
+      },
+      {
+        q: "What are the SBI Clerk 2026 application dates?",
+        a: "Online applications are open from 11 August 2026 to 31 August 2026. The application fee must also be paid on or before 31 August 2026.",
+      },
+      {
+        q: "What is the SBI Clerk 2026 salary and starting basic pay?",
+        a: "The pay scale is Rs. 24,050 to Rs. 64,480. A graduate recruit starts at a basic pay of Rs. 26,730 after two advance increments, and total starting emoluments are around Rs. 46,000 per month at a metro posting including DA and other allowances.",
+      },
+      {
+        q: "What is the age limit for SBI Junior Associate 2026?",
+        a: "Candidates must be between 20 and 28 years of age as on 01 April 2026. SC and ST candidates get 5 years relaxation, OBC (non-creamy layer) candidates get 3 years, and PwBD and ex-servicemen candidates get relaxation as per government rules.",
+      },
+      {
+        q: "What qualification is required for the SBI Clerk post?",
+        a: "A Bachelor's degree in any discipline from a recognised university is required. Final-year graduation students may apply provisionally, and proficiency in the specified local language of the applied state is essential.",
+      },
+      {
+        q: "What is the SBI Clerk 2026 exam pattern?",
+        a: "Selection has three stages: an online Preliminary exam of 100 marks in 1 hour, an online Main exam of 200 marks in 2 hours 40 minutes, and a test of the specified local language. Only the Main exam score decides the final merit, and 1/4th mark is deducted for each wrong answer.",
+      },
+      {
+        q: "When will the SBI Clerk 2026 Prelims and Mains exam be held?",
+        a: "As per the notification, the Preliminary examination is tentatively scheduled for September 2026 and the Main examination for November 2026. Admit cards are released before each exam.",
+      },
+      {
+        q: "Will the 8th Pay Commission increase SBI Clerk salary?",
+        a: "No. Public sector bank staff pay is revised through the bipartite settlement between the Indian Banks' Association and employee unions, not by the Central Pay Commission. The 8th Pay Commission applies to central government employees, although a higher central fitment factor often influences the benchmark for the next bank wage revision.",
+      },
+    ],
+  },
+  {
     slug: "ntpc-ngel-recruitment-2026-engineer-executive-147-posts",
     title:
       "NTPC NGEL Recruitment 2026: 147 Engineer & Executive Posts — Online Apply 18 August to 7 September, Salary Rs. 50,000–1,60,000",
