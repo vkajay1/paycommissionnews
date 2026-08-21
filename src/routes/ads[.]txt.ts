@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const ADS_TXT = `google.com, pub-3146184997876133, DIRECT, f08c47fec0942fa0`;
+const ADS_TXT = `google.com, pub-3146184997876133, DIRECT, f08c47fec0942fa0\n`;
 
 export const Route = createFileRoute("/ads.txt")({
   server: {
