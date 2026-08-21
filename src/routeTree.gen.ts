@@ -42,6 +42,7 @@ import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as AdsDottxtRouteImport } from './routes/ads[.]txt'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
 import { Route as R8thPayCommissionUttarPradeshRouteImport } from './routes/8th-pay-commission-uttar-pradesh'
@@ -239,6 +240,11 @@ const ArrearRoute = ArrearRouteImport.update({
   path: '/arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdsDottxtRoute = AdsDottxtRouteImport.update({
+  id: '/ads.txt',
+  path: '/ads.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -417,6 +423,7 @@ export interface FileRoutesByFullPath {
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
+  '/ads.txt': typeof AdsDottxtRoute
   '/arrear': typeof ArrearRoute
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
@@ -481,6 +488,7 @@ export interface FileRoutesByTo {
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
+  '/ads.txt': typeof AdsDottxtRoute
   '/arrear': typeof ArrearRoute
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
@@ -543,6 +551,7 @@ export interface FileRoutesById {
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
+  '/ads.txt': typeof AdsDottxtRoute
   '/arrear': typeof ArrearRoute
   '/contact': typeof ContactRoute
   '/da-calculator': typeof DaCalculatorRoute
@@ -609,6 +618,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
+    | '/ads.txt'
     | '/arrear'
     | '/contact'
     | '/da-calculator'
@@ -673,6 +683,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
+    | '/ads.txt'
     | '/arrear'
     | '/contact'
     | '/da-calculator'
@@ -734,6 +745,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
+    | '/ads.txt'
     | '/arrear'
     | '/contact'
     | '/da-calculator'
@@ -799,6 +811,7 @@ export interface RootRouteChildren {
   R8thPayCommissionUttarPradeshRoute: typeof R8thPayCommissionUttarPradeshRoute
   R8thPayCommissionWestBengalRoute: typeof R8thPayCommissionWestBengalRoute
   AboutRoute: typeof AboutRoute
+  AdsDottxtRoute: typeof AdsDottxtRoute
   ArrearRoute: typeof ArrearRoute
   ContactRoute: typeof ContactRoute
   DaCalculatorRoute: typeof DaCalculatorRoute
@@ -1074,6 +1087,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArrearRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ads.txt': {
+      id: '/ads.txt'
+      path: '/ads.txt'
+      fullPath: '/ads.txt'
+      preLoaderRoute: typeof AdsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -1340,6 +1360,7 @@ const rootRouteChildren: RootRouteChildren = {
   R8thPayCommissionUttarPradeshRoute: R8thPayCommissionUttarPradeshRoute,
   R8thPayCommissionWestBengalRoute: R8thPayCommissionWestBengalRoute,
   AboutRoute: AboutRoute,
+  AdsDottxtRoute: AdsDottxtRoute,
   ArrearRoute: ArrearRoute,
   ContactRoute: ContactRoute,
   DaCalculatorRoute: DaCalculatorRoute,
