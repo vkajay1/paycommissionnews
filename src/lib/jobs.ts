@@ -127,10 +127,10 @@ export const jobs: Job[] = [
     updated: "2026-08-21",
     readMinutes: 9,
     hero: "from-emerald-600 to-sky-700",
-    image: "/images/ntpc-ngel-recruitment-2026.jpg",
+    image: "https://paycommissionnews.co.in/images/ntpc-ngel-recruitment-2026.jpg",
     imageAlt:
       "NTPC NGEL Recruitment 2026 for 147 Engineer and Executive posts with online application from 18 August to 7 September 2026",
-    ogImage: "/images/og/ntpc-ngel-recruitment-2026-og.jpg",
+    ogImage: "https://paycommissionnews.co.in/images/og/ntpc-ngel-recruitment-2026-og.jpg",
     lang: "en",
 
     excerpt:
