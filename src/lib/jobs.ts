@@ -68,6 +68,306 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "upsc-epfo-apfc-recruitment-2026-80-posts",
+    title:
+      "UPSC EPFO APFC Recruitment 2026: 80 Assistant Provident Fund Commissioner Posts — Apply 22 August to 11 September, Level 10 Pay Rs. 56,100",
+    description:
+      "UPSC EPFO Assistant Provident Fund Commissioner (APFC) Recruitment 2026 under Special Advt. No. 52/2026 — 80 vacancies, category-wise breakup, any-degree eligibility, 35/38/40 year age limit, Rs. 25 fee, Level 10 salary Rs. 56,100 to Rs. 1,77,500, 20 December 2026 Recruitment Test pattern, syllabus and PDF downloads.",
+    keyword:
+      "upsc epfo apfc recruitment 2026, upsc apfc vacancy 2026, epfo apfc online form 2026, upsc epfo apfc salary, apfc exam date 2026, upsc advt 52/2026, epfo assistant provident fund commissioner notification pdf, apfc syllabus 2026",
+    organization: "Union Public Service Commission (UPSC)",
+    postName:
+      "Assistant Provident Fund Commissioner (APFC), Employees' Provident Fund Organisation",
+    vacancies: "80 posts (UR 29, OBC 18, EWS 08, SC 15, ST 10)",
+    qualification:
+      "Degree of a recognised university or equivalent in any stream; a diploma in Company Law, Labour Laws or Public Administration is desirable",
+    ageLimit:
+      "Maximum 35 years for UR / EWS, 38 years for OBC and 40 years for SC / ST, with up to 10 years extra relaxation for PwBD subject to a ceiling of 56 years",
+    payScale:
+      "Level 10 of the 7th CPC pay matrix — Rs. 56,100 to Rs. 1,77,500, plus Dearness Allowance, HRA and Transport Allowance",
+    location: "All India — headquarters New Delhi with all-India service liability",
+    applicationFee:
+      "Rs. 25 for General / OBC / EWS male candidates; nil for SC / ST / PwBD and all women candidates",
+    applyStart: "2026-08-22",
+    applyEnd: "2026-09-11",
+    applyUrl: "https://upsconline.nic.in/",
+    organizationUrl: "https://www.upsc.gov.in/",
+    salaryMin: 56100,
+    salaryMax: 177500,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "UPSC Special Advt. No. 52/2026",
+    industry: "Government Administration — Social Security & Provident Fund",
+    occupationalCategory: "11-9199.00 Managers, All Other",
+    educationRequirements:
+      "Bachelor's degree in any discipline from a recognised university or an equivalent qualification",
+    experienceRequirements:
+      "No prior work experience required; the post is filled through a Recruitment Test followed by an interview",
+    jobBenefits:
+      "Group 'A' permanent post, Dearness Allowance, House Rent Allowance, Transport Allowance, CGHS medical cover, National Pension System, gratuity, leave travel concession and structured promotion to Regional Provident Fund Commissioner grades",
+    numberOfPositions: 80,
+    applicantLocationRequirements: "India",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Official Notification PDF (Special Advt. No. 52/2026)",
+        href: "/downloads/upsc-epfo-apfc-2026/upsc-epfo-apfc-2026-official-notification.pdf",
+        note: "Complete 29-page UPSC advertisement with eligibility, reservation, exam centres and instructions",
+      },
+      {
+        label: "Notification Summary PDF (80 Posts, Dates, Fee, Pay)",
+        href: "/downloads/upsc-epfo-apfc-2026/upsc-epfo-apfc-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, category-wise vacancy, eligibility, fee and Level 10 pay",
+      },
+      {
+        label: "Exam Pattern & Syllabus Guide PDF",
+        href: "/downloads/upsc-epfo-apfc-2026/upsc-epfo-apfc-2026-exam-pattern-and-syllabus.pdf",
+        note: "Recruitment Test scheme, 300-mark structure, all nine syllabus topics and a 16-week study plan",
+      },
+    ],
+    category: "UPSC Jobs",
+    date: "2026-08-22",
+    updated: "2026-08-22",
+    readMinutes: 9,
+    hero: "from-blue-900 to-amber-700",
+    image: "https://paycommissionnews.co.in/images/upsc-epfo-apfc-2026.jpg",
+    imageAlt:
+      "UPSC EPFO APFC Recruitment 2026 for 80 Assistant Provident Fund Commissioner posts with Level 10 pay of Rs. 56,100",
+    ogImage: "https://paycommissionnews.co.in/images/og/upsc-epfo-apfc-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Union Public Service Commission has opened online applications for 80 Assistant Provident Fund Commissioner (APFC) posts in EPFO under Special Advertisement No. 52/2026. Any graduate up to 35 years of age can apply from 22 August to 11 September 2026, the Recruitment Test is scheduled for 20 December 2026, and selected candidates join at Level 10 with a basic pay of Rs. 56,100 per month.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Union Public Service Commission has notified 80 vacancies for the post of Assistant Provident Fund Commissioner (APFC) in the Employees' Provident Fund Organisation under Special Advertisement No. 52/2026. Online applications open on 22 August 2026 and close at 6:00 PM on 11 September 2026, and the pen-and-paper Recruitment Test is fixed for 20 December 2026.",
+      },
+      {
+        type: "p",
+        text: "APFC is one of the most sought-after Group 'A' non-ministerial posts available to a plain graduate — there is no engineering, law or management degree requirement. The post sits in Level 10 of the 7th CPC pay matrix with an entry basic pay of Rs. 56,100 per month, a one-year probation, headquarters at New Delhi and all-India service liability. With the 8th Pay Commission expected to revise the matrix during the service of this batch, Level 10 is also one of the levels that gains the most in absolute terms from a higher fitment factor.",
+      },
+      { type: "h2", text: "UPSC EPFO APFC Recruitment 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "21 August 2026"],
+          ["Online application begins", "22 August 2026"],
+          ["Last date to apply online", "11 September 2026 (up to 6:00 PM)"],
+          ["Last date to pay the exam fee", "11 September 2026"],
+          ["Recruitment Test (RT) date", "20 December 2026"],
+          ["e-Admit card", "Released on the UPSC website before the exam"],
+          ["Interview / Personality Test", "To be announced after the RT result"],
+        ],
+        caption: "Dates as per UPSC Special Advertisement No. 52/2026.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "The 6:00 PM cut-off is strict",
+        text: "The UPSC Online Recruitment Application portal stops accepting forms at 6:00 PM on 11 September 2026, and fee payment closes the same day. Complete your One Time Registration profile, document upload and payment at least three days early — the portal slows sharply in the final 48 hours.",
+      },
+      { type: "h2", text: "Vacancy details — 80 APFC posts" },
+      {
+        type: "table",
+        headers: ["Post name", "Total posts", "Eligibility"],
+        rows: [
+          [
+            "Assistant Provident Fund Commissioner (APFC)",
+            "80",
+            "Bachelor's degree in any stream from a recognised university",
+          ],
+        ],
+      },
+      { type: "h3", text: "Category-wise vacancy breakup" },
+      {
+        type: "table",
+        headers: ["UR", "OBC", "EWS", "SC", "ST", "Total"],
+        rows: [["29", "18", "08", "15", "10", "80"]],
+        caption:
+          "Posts reserved for PwBD candidates are identified in the official advertisement; reservation is applied as per Government of India rules.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Essential: a degree of a recognised university or an equivalent qualification — any stream, including BA, BSc, BCom, BTech, BBA, BCA and LLB.",
+          "Desirable: a diploma in Company Law, Labour Laws or Public Administration. This is not mandatory but can help at the interview stage.",
+          "Final-year students should verify the cut-off date for possessing the qualification given in the advertisement before applying.",
+          "No prior work experience is required for the post.",
+        ],
+      },
+      { type: "h3", text: "Age limit" },
+      {
+        type: "table",
+        headers: ["Category", "Maximum age"],
+        rows: [
+          ["UR / EWS", "35 years"],
+          ["OBC", "38 years"],
+          ["SC / ST", "40 years"],
+          ["PwBD", "Up to 10 years further relaxation, subject to a maximum of 56 years"],
+          ["Ex-servicemen and other special categories", "As per UPSC and Government of India rules"],
+        ],
+        caption: "Age is computed with reference to the cut-off date given in Special Advt. No. 52/2026.",
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS (male candidates)", "Rs. 25"],
+          ["SC / ST / PwBD", "Nil"],
+          ["All women candidates", "Nil"],
+          ["Payment mode", "Visa / Master / RuPay debit or credit card, UPI or internet banking"],
+        ],
+      },
+      { type: "h2", text: "UPSC EPFO APFC salary 2026 — Level 10 pay structure" },
+      {
+        type: "p",
+        text: "APFC is appointed in Level 10 of the 7th CPC pay matrix, which runs from Rs. 56,100 to Rs. 1,77,500. On top of the basic pay an officer draws Dearness Allowance at the prevailing central rate, House Rent Allowance based on the city classification, Transport Allowance with DA on TA, and is covered by the CGHS and the National Pension System.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative monthly amount (X-city posting)"],
+        rows: [
+          ["Basic pay (Level 10, index 1)", "Rs. 56,100"],
+          ["Dearness Allowance (at the current central rate)", "Around Rs. 32,000"],
+          ["House Rent Allowance (30% for X-class cities)", "Around Rs. 16,830"],
+          ["Transport Allowance plus DA on TA", "Around Rs. 6,500"],
+          ["Gross monthly salary", "Approximately Rs. 1.11 lakh"],
+          ["Deductions (NPS 10%, CGHS, income tax)", "Varies by declaration"],
+          ["Approximate in-hand pay", "Rs. 90,000 to Rs. 95,000"],
+        ],
+        caption:
+          "Allowances change with the posting city and the quarterly DA revision; treat the figures as indicative rather than final.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "What the 8th Pay Commission means for a 2026 APFC recruit",
+        text: "The 8th Central Pay Commission has been constituted and its recommendations are expected to apply from 01 January 2026 with arrears. At a fitment factor of 2.0 a Level 10 basic pay of Rs. 56,100 would be revised to roughly Rs. 1.12 lakh, and at 2.28 to about Rs. 1.28 lakh, before the new DA cycle restarts from zero. Use our 8th CPC salary calculator to model your own level and city.",
+      },
+      { type: "h2", text: "Selection process — Recruitment Test and interview" },
+      {
+        type: "table",
+        headers: ["Feature", "Detail"],
+        rows: [
+          ["Mode", "Pen and paper based, offline"],
+          ["Question type", "Objective type with multiple choice answers"],
+          ["Duration", "Two hours"],
+          ["Total marks", "300 marks"],
+          ["Medium", "English and Hindi"],
+          ["Negative marking", "One-third of the marks for every wrong answer"],
+          ["Interview / Personality Test", "100 marks"],
+          ["Final weightage", "Recruitment Test and interview in a 75:25 ratio"],
+          ["Exam centres", "84 centres across India"],
+        ],
+      },
+      { type: "h3", text: "Minimum suitability marks at the interview" },
+      {
+        type: "table",
+        headers: ["Category", "Minimum interview marks (out of 100)"],
+        rows: [
+          ["General / EWS", "50 and above"],
+          ["OBC", "45 and above"],
+          ["SC / ST / PwBD", "40 and above"],
+        ],
+        caption:
+          "A candidate must clear the minimum standard of suitability at both the Recruitment Test and the interview stage.",
+      },
+      { type: "h2", text: "UPSC EPFO APFC syllabus 2026" },
+      {
+        type: "ol",
+        items: [
+          "General English — comprehension and workman-like use of words.",
+          "Indian Culture, Heritage and Freedom Movement.",
+          "Developmental issues and present trends in the Indian economy.",
+          "Governance and the Constitution of India.",
+          "General Science and basic knowledge of computer applications.",
+          "Elementary Mathematics, Statistics and general mental ability.",
+          "Industrial Relations, Labour Codes and social security in India.",
+          "Principles of Accountancy, Auditing and Insurance.",
+          "Current events of national and international importance.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The social security section is the highest-yield part of the paper and the one most candidates neglect. Build a solid base in the EPF & MP Act 1952, the Employees' Pension Scheme 1995, EDLI, the ESI Act, the four Labour Codes including the Code on Social Security 2020, and recent EPFO reforms such as the centralised pension payment system and faster online claim settlement.",
+      },
+      { type: "h2", text: "Duties of an Assistant Provident Fund Commissioner" },
+      {
+        type: "ul",
+        items: [
+          "Enforcement and compliance work with establishments covered under the EPF & MP Act.",
+          "Assessment and recovery of provident fund dues, including quasi-judicial inquiries.",
+          "Settlement of provident fund, pension and insurance claims of members.",
+          "Accounts, cash book maintenance and reconciliation of bank statements.",
+          "Legal, administrative, pension and computerisation work at the regional office level.",
+        ],
+      },
+      { type: "h2", text: "How to apply for UPSC EPFO APFC Online Form 2026" },
+      {
+        type: "ol",
+        items: [
+          "Complete the One Time Registration (OTR) profile on the UPSC Online Recruitment Application portal at upsconline.nic.in.",
+          "Open the APFC 2026 vacancy under Special Advt. No. 52/2026 and fill the detailed application carefully.",
+          "Keep scanned copies of your photograph, signature, degree certificate, category certificate and identity proof ready in the prescribed size and format.",
+          "Pay the Rs. 25 fee if applicable through card, UPI or internet banking; exempted candidates proceed directly.",
+          "Preview every field, submit the form before 6:00 PM on 11 September 2026 and save a printout for the interview stage.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Plan your finances before the result",
+        text: "Once you have an idea of your likely posting city, use the take-home salary, HRA and NPS calculators on this site to project your monthly in-hand pay and long-term corpus at Level 10.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many APFC posts are there in UPSC EPFO Recruitment 2026?",
+        a: "There are 80 Assistant Provident Fund Commissioner posts — 29 UR, 18 OBC, 8 EWS, 15 SC and 10 ST — notified under UPSC Special Advertisement No. 52/2026.",
+      },
+      {
+        q: "What is the last date to apply for UPSC EPFO APFC 2026?",
+        a: "The online application opens on 22 August 2026 and closes on 11 September 2026 at 6:00 PM. The exam fee must also be paid by 11 September 2026.",
+      },
+      {
+        q: "What is the UPSC EPFO APFC exam date 2026?",
+        a: "The pen-and-paper Recruitment Test is scheduled for 20 December 2026 at 84 centres across India. e-Admit cards are released on the UPSC website before the exam.",
+      },
+      {
+        q: "What qualification is required for the APFC post?",
+        a: "A bachelor's degree in any stream from a recognised university is the essential qualification. A diploma in Company Law, Labour Laws or Public Administration is desirable but not mandatory.",
+      },
+      {
+        q: "What is the APFC salary in 2026?",
+        a: "APFC is a Level 10 post in the 7th CPC pay matrix with a basic pay range of Rs. 56,100 to Rs. 1,77,500. With DA, HRA and Transport Allowance, gross monthly pay at an X-class city posting works out to roughly Rs. 1.11 lakh, and in-hand pay to about Rs. 90,000 to Rs. 95,000.",
+      },
+      {
+        q: "What is the age limit for UPSC EPFO APFC 2026?",
+        a: "The maximum age is 35 years for UR and EWS, 38 years for OBC and 40 years for SC and ST candidates. PwBD candidates get up to 10 years further relaxation, subject to a maximum of 56 years.",
+      },
+      {
+        q: "What is the exam pattern and marking scheme for the APFC Recruitment Test?",
+        a: "The test is objective type, two hours long, carries 300 marks and is set in both English and Hindi. One-third of the marks are deducted for each wrong answer. The interview carries 100 marks and the final merit is prepared with a 75:25 weightage between the test and the interview.",
+      },
+      {
+        q: "Will the 8th Pay Commission increase APFC pay?",
+        a: "Yes. Once the 8th Central Pay Commission recommendations are implemented, Level 10 basic pay will be revised by the approved fitment factor — around Rs. 1.12 lakh at a factor of 2.0 and about Rs. 1.28 lakh at 2.28 — after which the DA cycle restarts from zero.",
+      },
+      {
+        q: "How can I download the APFC 2026 notification and syllabus PDF?",
+        a: "The official 29-page notification, a one-page notification summary and a detailed exam pattern and syllabus guide are all available in the download section of this page, hosted directly on PayCommissionNews.co.in.",
+      },
+    ],
+  },
+  {
     slug: "sbi-clerk-recruitment-2026-junior-associate-9124-posts",
     title:
       "SBI Clerk Recruitment 2026: 9124 Junior Associate Posts — Apply Online Till 31 August, Salary Rs. 26,730 Basic",
