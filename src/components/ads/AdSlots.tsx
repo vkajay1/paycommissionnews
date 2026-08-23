@@ -142,11 +142,12 @@ export function RectAd300x250({ sticky }: { sticky?: boolean }) {
   );
 }
 
-/** Two 300x250 units shown at the very top of every page. */
+/** Three 300x250 units shown at the very top of every page. */
 export function TopRectAds() {
   if (ADS_PAUSED) return null;
   return (
     <div className="my-4 flex flex-wrap items-start justify-center gap-4">
+      <RectAd300x250 />
       <RectAd300x250 />
       <RectAd300x250 />
     </div>
