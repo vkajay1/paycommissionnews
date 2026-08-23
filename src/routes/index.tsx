@@ -7,7 +7,7 @@ import { Features } from "@/components/landing/Features";
 import { SalaryGuide } from "@/components/landing/SalaryGuide";
 import { FAQ, homeFaqs } from "@/components/landing/FAQ";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
-import { ContainerAd, BannerAd728x90 } from "@/components/ads/AdSlots";
+import { ContainerAd } from "@/components/ads/AdSlots";
 
 
 
