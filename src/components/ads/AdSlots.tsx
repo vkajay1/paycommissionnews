@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
  * AdSense review (third-party ad networks and empty placeholders hurt
  * approval). Flip this back to false to re-enable them.
  */
-const ADS_PAUSED = true;
+const ADS_PAUSED = false;
 
 function useInView<T extends HTMLElement>(rootMargin = "300px") {
   const ref = useRef<T>(null);
@@ -110,22 +110,30 @@ export function InArticleAd() {
 }
 
 
-const SIDEBAR_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}</style></head><body><div id="container-d5a20eba278ba406e416778624f0684b"></div><script async data-cfasync="false" src="https://pl30192468.effectivecpmnetwork.com/d5a20eba278ba406e416778624f0684b/invoke.js"><\/script></body></html>`;
+/** 300x250 rectangle unit (highrevenueformat). */
+const RECT_AD_HTML = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden;display:flex;justify-content:center}</style></head><body><script type="text/javascript">atOptions = { 'key' : '2008075e9d397db975c58a84ddc43f5c', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };<\/script><script type="text/javascript" src="https://www.highrevenueformat.com/2008075e9d397db975c58a84ddc43f5c/invoke.js"><\/script></body></html>`;
 
-function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
+/**
+ * Lazily loaded 300x250 rectangle. Each unit gets its own iframe document
+ * because the network's script uses a single global `atOptions` object, so
+ * several units can coexist on one page.
+ */
+export function RectAd300x250({ sticky }: { sticky?: boolean }) {
   const { ref, inView } = useInView<HTMLDivElement>();
+
+  if (ADS_PAUSED) return null;
 
   return (
     <div
       ref={ref}
-      className={
-        (sticky ? "sticky top-24 " : "") + "h-[600px] w-[160px]"
-      }
+      className={(sticky ? "sticky top-24 " : "") + "h-[250px] w-[300px] overflow-hidden"}
+      data-ad-slot="rect"
+      aria-label="advertisement"
     >
       {inView ? (
         <iframe
           title="advertisement"
-          srcDoc={SIDEBAR_AD_HTML}
+          srcDoc={RECT_AD_HTML}
           scrolling="no"
           className="h-full w-full border-0"
         />
@@ -134,23 +142,32 @@ function SidebarAdUnit({ sticky }: { sticky?: boolean }) {
   );
 }
 
+/** Two 300x250 units shown at the very top of every page. */
+export function TopRectAds() {
+  if (ADS_PAUSED) return null;
+  return (
+    <div className="my-4 flex flex-wrap items-start justify-center gap-4">
+      <RectAd300x250 />
+      <RectAd300x250 />
+    </div>
+  );
+}
+
 /**
- * Sidebar vertical ad rail: a stack of units that scrolls with the page, with
- * the last one pinned so an ad stays in view after the stack is passed.
- * The ad network's container id is fixed, so each unit gets its own iframe
- * document — otherwise only the first would ever fill.
+ * Sidebar ad rail: a stack of 300x250 rectangles that scrolls with the page,
+ * with the last one pinned so an ad stays in view after the stack is passed.
  */
-export function SidebarAdSlot({ count = 3 }: { label?: string; count?: number }) {
+export function SidebarAdSlot({ count = 5 }: { label?: string; count?: number }) {
   if (ADS_PAUSED) return null;
   return (
     <aside
-      className="hidden shrink-0 self-stretch lg:block"
+      className="hidden shrink-0 self-stretch xl:block"
       data-ad-slot="sidebar"
       aria-label="advertisement"
     >
-      <div className="flex flex-col gap-6">
+      <div className="flex w-[300px] flex-col gap-6">
         {Array.from({ length: count }).map((_, i) => (
-          <SidebarAdUnit key={i} sticky={i === count - 1} />
+          <RectAd300x250 key={i} sticky={i === count - 1} />
         ))}
       </div>
     </aside>
