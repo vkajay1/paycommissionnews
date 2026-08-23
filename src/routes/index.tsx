@@ -106,9 +106,6 @@ function Index() {
     <>
       <Hero />
       <QuickCalc />
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-        <BannerAd728x90 />
-      </div>
       <div className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
         <DisclaimerBanner />
       </div>
