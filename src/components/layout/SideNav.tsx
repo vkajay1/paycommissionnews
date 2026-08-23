@@ -71,7 +71,7 @@ const active =
 
 export function SideNav() {
   return (
-    <aside className="hidden w-60 shrink-0 lg:block">
+    <aside className="hidden w-60 shrink-0 md:block">
       <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-lg border border-border bg-card p-4">
         <div className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
           Tool directory
