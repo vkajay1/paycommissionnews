@@ -99,6 +99,8 @@ function SalaryPage() {
           />
         </div>
       </div>
+
+      <DiscussionBox />
     </div>
   );
 }

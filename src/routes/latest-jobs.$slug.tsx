@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, ExternalLink, FileDown, User } 
 import { jobs, getJob } from "@/lib/jobs";
 import { RenderBlock } from "@/components/content/RenderBlock";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 
 const SITE = "https://paycommissionnews.co.in";
 
