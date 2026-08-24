@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { Grid3x3 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -181,6 +182,8 @@ function Page() {
           2.57x, and 2.57x to 2.86x — produces such a visible jump in the projected figures.
         </p>
       </article>
+
+      <DiscussionBox />
     </div>
   );
 }

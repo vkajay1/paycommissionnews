@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import {
   Accordion,
   AccordionContent,
@@ -161,6 +162,8 @@ export function CalcContent({
           </div>
         </section>
       )}
+
+      <DiscussionBox />
     </div>
   );
 }

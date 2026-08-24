@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { Calculator, TrendingUp, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -333,6 +334,8 @@ function DaCalculatorPage() {
           effect with the <Link to="/fitment-factor">fitment factor calculator</Link>.
         </p>
       </article>
+
+      <DiscussionBox />
     </div>
   );
 }

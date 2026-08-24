@@ -1,0 +1,69 @@
+# 8th CPC Calculator
+
+> Free 8th Pay Commission salary, pension, arrears and pay-matrix calculators plus latest government job news for Indian central and state government employees.
+
+8th CPC Calculator is an independent, ad-supported web platform that helps Indian Central and State Government employees, pensioners, defence personnel and PSU staff estimate the impact of the upcoming 8th Central Pay Commission. The site offers interactive calculators for salary, pension, arrears, fitment factor, Dearness Allowance, HRA, income tax, NPS, gratuity, EPF, leave encashment and MACP pay fixation, along with state-wise implementation guides, pay matrix levels (1–18), role-based salary profiles, Hindi-language pages and a regularly updated listing of latest government recruitment notifications.
+
+## Calculators
+
+- [Salary Calculator](/salary): Project revised 8th CPC basic pay with DA, HRA and transport allowance.
+- [DA Calculator](/da-calculator): Dearness Allowance on basic salary plus DA arrears between any two instalments.
+- [Pension Calculator](/pension): Revised pension and Dearness Relief for central government pensioners.
+- [Arrears Calculator](/arrear): Month-wise 8th CPC salary arrears with TDS estimate.
+- [Pension Arrears Calculator](/pension-arrear): Back-dated pension arrears with Dearness Relief adjustments.
+- [Fitment Simulator](/fitment-simulator): Compare fitment factors and see revised basic pay.
+- [Fitment Factor Calculator](/fitment-factor): Compare 1.92x to 3.83x fitment factors on your present basic pay.
+- [Pay Fixation Calculator](/pay-fixation): Pay fixation on promotion and MACP.
+- [MACP Calculator](/macp-calculator): Assured career progression pay fixation.
+- [Take-Home Salary](/take-home-salary): Net in-hand salary after deductions.
+- [HRA Calculator](/hra-calculator): House Rent Allowance by city class.
+- [Income Tax Calculator](/income-tax-calculator): FY 2025-26 income tax for salaried employees.
+- [NPS Calculator](/nps-calculator): National Pension System corpus and annuity projection.
+- [Gratuity Calculator](/gratuity-calculator): Retirement gratuity estimate.
+- [EPF Calculator](/epf-calculator): Employees' Provident Fund maturity projection.
+- [Leave Encashment Calculator](/leave-encashment-calculator): Leave encashment value at retirement.
+- [LTC Planner](/ltc-planner): Leave Travel Concession block-year planner.
+- [7th Pay Commission Calculator](/7th-pay-commission-calculator): 7th CPC salary breakdown.
+- [7th vs 8th Pay Commission](/7th-vs-8th-pay-commission): Side-by-side comparison table and tool.
+- [6th Pay Commission Calculator](/6th-pay-commission-calculator): 6th CPC pay fixation.
+- [8th CPC Arrears Calculator](/8th-pay-commission-arrears-calculator): Arrears hub with month-wise formula and Form 10E guidance.
+- [8th CPC Pension Calculator](/8th-pay-commission-pension-calculator): Pension revision hub.
+- [Rajasthan Government Salary Calculator](/rajasthan-government-salary-calculator): Rajasthan state employee salary breakdown.
+- [8th CPC Rajasthan](/8th-pay-commission-rajasthan): 8th Pay Commission implementation for Rajasthan.
+
+## State & Role Guides
+
+- [All States](/state): State-wise 8th Pay Commission adoption guides.
+- [Rajasthan](/8th-pay-commission-rajasthan): 8th CPC for Rajasthan state employees.
+- [Odisha](/8th-pay-commission-odisha): 8th CPC for Odisha state employees.
+- [Tamil Nadu](/8th-pay-commission-tamil-nadu): 8th CPC for Tamil Nadu state employees.
+- [West Bengal](/8th-pay-commission-west-bengal): 8th CPC for West Bengal state employees.
+- [Uttar Pradesh](/8th-pay-commission-uttar-pradesh): 8th CPC for Uttar Pradesh state employees.
+- [Maharashtra](/8th-pay-commission-maharashtra): 8th CPC for Maharashtra state employees.
+- [Pay Matrix Levels](/pay-level): 7th CPC pay matrix Levels 1 to 18.
+- [Roles](/role): Role-based salary profiles (Assistant Loco Pilot, Talathi and more).
+
+## Hindi Pages
+
+- [8th CPC Salary Calculator (Hindi)](/8th-pay-commission-salary-calculator-in-hindi)
+- [8th CPC Pension Calculator (Hindi)](/8th-pay-commission-pension-calculator-in-hindi)
+- [8th CPC Arrears Calculator (Hindi)](/8th-pay-commission-arrears-calculator-in-hindi)
+- [DA Calculator (Hindi)](/da-calculator-in-hindi)
+- [Fitment Factor (Hindi)](/fitment-factor-in-hindi)
+
+## News & Jobs
+
+- [Blog](/blog): 8th Pay Commission news explainers and analysis.
+- [Latest Jobs](/latest-jobs): Latest government recruitment notifications with salary, eligibility and exam pattern.
+
+## Company
+
+- [About](/about): What the platform is and who it serves.
+- [Contact](/contact): Send feedback or corrections.
+- [Pay Commission History](/pay-commission-history): History of Central Pay Commissions.
+- [Disclaimer](/disclaimer): Estimation and accuracy disclaimer.
+- [Privacy Policy](/privacy-policy): Privacy practices.
+
+## Optional
+
+- [Sitemap](/sitemap.xml): XML sitemap of all pages.

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { History } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -85,6 +86,8 @@ function Page() {
           <Row label={`Gross arrears (${months} months)`} value={inr(r.gross)} highlight />
         </Card>
       </div>
+
+      <DiscussionBox />
     </div>
   );
 }

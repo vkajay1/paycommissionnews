@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { Sliders } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -120,6 +121,8 @@ function Page() {
           </div>
         </Card>
       </div>
+
+      <DiscussionBox />
     </div>
   );
 }

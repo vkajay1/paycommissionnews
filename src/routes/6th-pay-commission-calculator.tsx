@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { History } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -169,6 +170,8 @@ function Page() {
           8th CPC factor gives a realistic picture of where the same post lands in 2026.
         </p>
       </article>
+
+      <DiscussionBox />
     </div>
   );
 }

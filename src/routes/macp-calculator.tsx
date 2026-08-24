@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { ClipboardList } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -173,6 +174,8 @@ function Page() {
           higher long-run basic pay, so compare both figures before submitting the option form.
         </p>
       </article>
+
+      <DiscussionBox />
     </div>
   );
 }

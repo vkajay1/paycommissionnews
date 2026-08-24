@@ -14,6 +14,44 @@ export type Database = {
   }
   public: {
     Tables: {
+      page_comments: {
+        Row: {
+          author_name: string
+          created_at: string
+          hidden_flag: boolean
+          id: string
+          message: string
+          page_path: string
+          reply_to: string | null
+        }
+        Insert: {
+          author_name: string
+          created_at?: string
+          hidden_flag?: boolean
+          id?: string
+          message: string
+          page_path: string
+          reply_to?: string | null
+        }
+        Update: {
+          author_name?: string
+          created_at?: string
+          hidden_flag?: boolean
+          id?: string
+          message?: string
+          page_path?: string
+          reply_to?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "page_comments_reply_to_fkey"
+            columns: ["reply_to"]
+            isOneToOne: false
+            referencedRelation: "page_comments"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       push_subscriptions: {
         Row: {
           active: boolean

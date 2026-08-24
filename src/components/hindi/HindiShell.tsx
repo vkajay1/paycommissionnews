@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import type { LucideIcon } from "lucide-react";
 import { Languages } from "lucide-react";
 import {
@@ -208,6 +209,8 @@ export function HindiContent({
         आंकड़े नमूना पे मैट्रिक्स और सार्वजनिक रूप से चर्चित फिटमेंट फैक्टर पर
         आधारित अनुमान हैं। यह वेबसाइट किसी सरकारी विभाग से संबंधित नहीं है।
       </p>
+
+      <DiscussionBox />
     </div>
   );
 }
