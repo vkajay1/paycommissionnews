@@ -1,5 +1,6 @@
 import { useEffect, useState, useId } from "react";
 import { MessageSquare, Send, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { useLocation } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
