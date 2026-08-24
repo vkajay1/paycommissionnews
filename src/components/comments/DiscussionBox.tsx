@@ -96,7 +96,7 @@ export function DiscussionBox({ pagePath }: { pagePath?: string }) {
     if (!hydrated) return;
     loadComments();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hydrated, pagePath]);
+  }, [hydrated, path]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -106,7 +106,7 @@ export function DiscussionBox({ pagePath }: { pagePath?: string }) {
 
     setStatus("submitting");
     const { error } = await supabase.from("page_comments").insert({
-      page_path: pagePath,
+      page_path: path,
       author_name: trimmedName,
       message: trimmedMessage,
       reply_to: replyTo,
