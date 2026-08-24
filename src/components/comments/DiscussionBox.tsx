@@ -66,10 +66,12 @@ function CommentCard({
   );
 }
 
-export function DiscussionBox({ pagePath }: { pagePath: string }) {
+export function DiscussionBox({ pagePath }: { pagePath?: string }) {
   const hydrated = useHydrated();
   const nameId = useId();
   const messageId = useId();
+  const location = useLocation();
+  const path = pagePath ?? location.pathname;
 
   const [comments, setComments] = useState<Comment[]>([]);
   const [loading, setLoading] = useState(true);
