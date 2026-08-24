@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { z } from "zod";
 import { SalaryForm, type SalaryFormState } from "@/components/salary/SalaryForm";
 import { ResultsDashboard } from "@/components/salary/ResultsDashboard";

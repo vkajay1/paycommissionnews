@@ -128,6 +128,8 @@ export function KeywordHub({
           ))}
         </Accordion>
       </section>
+
+      <DiscussionBox />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Calculator, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { getStatePage, STATE_PAGES, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 
