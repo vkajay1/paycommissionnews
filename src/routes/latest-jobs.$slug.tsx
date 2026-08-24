@@ -398,6 +398,8 @@ function JobPage() {
           </div>
         </section>
       ) : null}
+
+      <DiscussionBox />
     </main>
   );
 }
