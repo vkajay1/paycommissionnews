@@ -132,6 +132,8 @@ function StatePageView() {
           ))}
         </div>
       </section>
+
+      <DiscussionBox />
     </div>
   );
 }
