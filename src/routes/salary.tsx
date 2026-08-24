@@ -17,23 +17,44 @@ const searchSchema = z.object({
 
 export const Route = createFileRoute("/salary")({
   validateSearch: (s) => searchSchema.parse(s),
-  head: () => ({
-    meta: [
-      { title: "Salary Calculator — 8th CPC Projection Dashboard" },
-      {
-        name: "description",
-        content:
-          "Live 8th Pay Commission salary calculator with fitment slider, city-based HRA, DA percentage and full revised breakdown.",
-      },
-      { property: "og:title", content: "8th CPC Salary Calculator" },
-      {
-        property: "og:description",
-        content: "Project your revised salary with live charts and a fitment-factor slider.",
-      },
-      { property: "og:url", content: "/salary" },
-    ],
-    links: [{ rel: "canonical", href: "/salary" }],
-  }),
+  head: () => {
+    const SITE = "https://paycommissionnews.co.in";
+    return {
+      meta: [
+        { title: "Salary Calculator — 8th CPC Projection Dashboard" },
+        {
+          name: "description",
+          content:
+            "Live 8th Pay Commission salary calculator with fitment slider, city-based HRA, DA percentage and full revised breakdown.",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "8th CPC Salary Calculator" },
+        {
+          property: "og:description",
+          content: "Project your revised salary with live charts and a fitment-factor slider.",
+        },
+        { property: "og:url", content: `${SITE}/salary` },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: `${SITE}/salary` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            name: "8th Pay Commission Salary Calculator",
+            url: `${SITE}/salary`,
+            applicationCategory: "FinanceApplication",
+            operatingSystem: "Web",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+            description:
+              "Free online 8th Pay Commission salary calculator with fitment factor slider, DA, HRA, pension and arrears projections for central government employees.",
+          }),
+        },
+      ],
+    };
+  },
   component: SalaryPage,
 });
 
