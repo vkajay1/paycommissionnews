@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import type { LucideIcon } from "lucide-react";
 import { Languages } from "lucide-react";
 import {
