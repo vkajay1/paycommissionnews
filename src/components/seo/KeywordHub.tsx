@@ -11,6 +11,7 @@ import {
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import type { Faq } from "@/components/calc/CalcShell";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { DiscussionBox } from "@/components/comments/DiscussionBox";
 
 export type HubLink = { label: string; to: string; description: string };
 

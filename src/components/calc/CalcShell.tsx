@@ -162,6 +162,8 @@ export function CalcContent({
           </div>
         </section>
       )}
+
+      <DiscussionBox />
     </div>
   );
 }
