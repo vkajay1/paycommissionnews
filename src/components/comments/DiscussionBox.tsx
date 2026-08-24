@@ -85,7 +85,7 @@ export function DiscussionBox({ pagePath }: { pagePath?: string }) {
     const { data, error } = await supabase
       .from("page_comments")
       .select("id, author_name, message, created_at, reply_to")
-      .eq("page_path", pagePath)
+      .eq("page_path", path)
       .eq("hidden_flag", false)
       .order("created_at", { ascending: true });
     if (!error && data) setComments(data as Comment[]);
