@@ -21,6 +21,7 @@ interface SitemapEntry {
 const STATIC: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/salary", changefreq: "weekly", priority: "0.9" },
+  { path: "/8th-pay-commission-salary-list", changefreq: "weekly", priority: "0.9" },
   { path: "/da-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/pension", changefreq: "weekly", priority: "0.9" },
   { path: "/arrear", changefreq: "weekly", priority: "0.9" },
