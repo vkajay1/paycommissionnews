@@ -7,6 +7,7 @@
 ## Calculators
 
 - [Salary Calculator](/salary): Project revised 8th CPC basic pay with DA, HRA and transport allowance.
+- [8th CPC Salary List](/8th-pay-commission-salary-list): Level-wise (1–18) projected salary list, expected 2026 salary increase and printable salary structure.
 - [DA Calculator](/da-calculator): Dearness Allowance on basic salary plus DA arrears between any two instalments.
 - [Pension Calculator](/pension): Revised pension and Dearness Relief for central government pensioners.
 - [Arrears Calculator](/arrear): Month-wise 8th CPC salary arrears with TDS estimate.
