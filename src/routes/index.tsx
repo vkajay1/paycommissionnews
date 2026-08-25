@@ -116,6 +116,7 @@ function Index() {
         <ContainerAd />
       </div>
       <SalaryGuide />
+      <PeopleAlsoSearch />
       <Features />
       <FAQ />
     </>
