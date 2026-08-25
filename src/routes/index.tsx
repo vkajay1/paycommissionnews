@@ -6,6 +6,7 @@ import { CpcSnapshot } from "@/components/landing/CpcSnapshot";
 import { Features } from "@/components/landing/Features";
 import { SalaryGuide } from "@/components/landing/SalaryGuide";
 import { FAQ, homeFaqs } from "@/components/landing/FAQ";
+import { PeopleAlsoSearch } from "@/components/landing/PeopleAlsoSearch";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { ContainerAd } from "@/components/ads/AdSlots";
 
@@ -115,6 +116,7 @@ function Index() {
         <ContainerAd />
       </div>
       <SalaryGuide />
+      <PeopleAlsoSearch />
       <Features />
       <FAQ />
     </>

@@ -47,6 +47,18 @@ export const homeFaqs = [
     a: "Most states adopt central pay commission recommendations with a lag of 6–24 months, subject to state finances. Use the same calculator — the structure of basic + DA + HRA applies to state employees too.",
   },
   {
+    q: "How much salary increase in 8th Pay Commission 2026?",
+    a: "Revised basic pay equals your present basic times the fitment factor — ₹18,000 becomes about ₹46,260 at 2.57x, ₹51,480 at 2.86x and ₹54,000 at 3.0x. Because DA resets to 0% on the new basic, the realistic rise in gross pay is roughly 20%–35%. See our level-wise 8th Pay Commission salary list for Level 1 to Level 18 figures.",
+  },
+  {
+    q: "Is there an official 8th Pay Commission salary list or salary structure PDF?",
+    a: "Not yet — no official 8th CPC pay matrix or salary structure PDF has been gazetted, so every list online is a projection. Our salary list page shows level-wise projected pay at 2.57x, 2.86x and 3.0x, and you can save it as a PDF from your browser's print dialogue.",
+  },
+  {
+    q: "What is the 8th Pay Commission official website and where do I find approval news?",
+    a: "The commission does not run a consumer website. Official approval news comes from the Department of Expenditure, Ministry of Finance (doe.gov.in) and Press Information Bureau (pib.gov.in) releases. We summarise each confirmed development in our 8th Pay Commission news section; this site is an independent estimator, not a government portal.",
+  },
+  {
     q: "क्या 8वें वेतन आयोग कैलकुलेटर हिंदी में उपलब्ध है?",
     a: "हिंदी इंटरफ़ेस और हिंदी PDF डाउनलोड का सपोर्ट हमारे रोडमैप में है। तब तक आप मौजूदा कैलकुलेटर का उपयोग करके अपना अनुमानित 8वें वेतन आयोग वेतन देख सकते हैं।",
   },
