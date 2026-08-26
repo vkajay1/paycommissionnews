@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-maharashtra")({
       {
         name: "keywords",
         content:
-          "8th pay commission maharashtra, maharashtra 8th pay commission state employees latest 2026, 8th pay commission in maharashtra state government employees, maharashtra 8th pay commission implementation state employees 2026, talathi salary after 8th pay maharashtra, 8th pay in maharashtra",
+          "8th pay commission salary list in maharashtra, 8th pay commission maharashtra, maharashtra 8th pay commission state employees latest 2026, 8th pay commission in maharashtra state government employees, maharashtra 8th pay commission implementation state employees 2026, talathi salary after 8th pay maharashtra, 8th pay in maharashtra",
       },
       { property: "og:title", content: "8th Pay Commission Maharashtra — State Employees Salary" },
       {
@@ -125,7 +125,7 @@ function Page() {
         },
       ]}
       table={{
-        caption: "Projected 8th CPC basic pay for key Maharashtra cadres",
+        caption: "8th Pay Commission salary list in Maharashtra — projected basic pay for key cadres",
         head: ["Cadre (level)", "Present basic", "At 2.28x", "At 2.86x"],
         rows: [
           ["Peon / MTS (Level 1)", "₹18,000", "₹41,040", "₹51,480"],

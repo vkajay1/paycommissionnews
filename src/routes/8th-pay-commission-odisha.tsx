@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-odisha")({
       {
         name: "keywords",
         content:
-          "8th pay commission odisha, odisha 8th pay commission, 8 pay commission salary odisha, 8th pay matrix odisha, aso salary in odisha 8th pay commission, peo salary in odisha 8th pay commission, 8th pay commission in odisha government",
+          "8th pay commission salary list in odisha, 8th pay commission odisha, odisha 8th pay commission, 8 pay commission salary odisha, 8th pay matrix odisha, aso salary in odisha 8th pay commission, peo salary in odisha 8th pay commission, 8th pay commission in odisha government",
       },
       { property: "og:title", content: "8th Pay Commission Odisha — Pay Matrix & Salary" },
       {
@@ -124,7 +124,7 @@ function Page() {
         },
       ]}
       table={{
-        caption: "Projected 8th CPC basic pay for key Odisha cadres",
+        caption: "8th Pay Commission salary list in Odisha — projected basic pay for key cadres",
         head: ["Cadre (ORSP level)", "Present basic", "At 2.28x", "At 2.86x"],
         rows: [
           ["Peon / MTS (Level 1)", "₹18,000", "₹41,040", "₹51,480"],

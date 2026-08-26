@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-tamil-nadu")({
       {
         name: "keywords",
         content:
-          "8th pay commission tamil nadu, tamilnadu 8th pay commission, 8th pay commission fitment factor in tamil nadu, tamil nadu 8th pay commission state employees latest 2026, next pay commission in tamil nadu, which pay commission is going on in tamil nadu, tn 8th pay commission, tamil nadu pay commission 2026, 8th pay commission salary in tamilnadu",
+          "8th pay commission salary list in tamil nadu, 8th pay commission tamil nadu, tamilnadu 8th pay commission, 8th pay commission fitment factor in tamil nadu, tamil nadu 8th pay commission state employees latest 2026, next pay commission in tamil nadu, which pay commission is going on in tamil nadu, tn 8th pay commission, tamil nadu pay commission 2026, 8th pay commission salary in tamilnadu",
       },
       { property: "og:title", content: "8th Pay Commission Tamil Nadu — Fitment Factor & Salary" },
       {
@@ -126,7 +126,7 @@ function Page() {
         },
       ]}
       table={{
-        caption: "Projected 8th CPC basic pay for key Tamil Nadu cadres",
+        caption: "8th Pay Commission salary list in Tamil Nadu — projected basic pay for key cadres",
         head: ["Cadre (level)", "Present basic", "At 2.28x", "At 2.86x"],
         rows: [
           ["Office Assistant / MTS (Level 1)", "₹18,000", "₹41,040", "₹51,480"],
