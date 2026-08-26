@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { DiscussionBox } from "@/components/comments/DiscussionBox";
 import { getStatePage, STATE_PAGES, levelProjection } from "@/lib/seo-pages";
+import { PAY_LEVELS } from "@/lib/pay-matrix";
 import { inr } from "@/lib/format";
 
 const SITE = "https://paycommissionnews.co.in";
@@ -17,8 +18,8 @@ export const Route = createFileRoute("/state/$state")({
   head: ({ params }) => {
     const s = getStatePage(params.state);
     if (!s) return {};
-    const title = `${s.name} 8th Pay Commission Salary Calculator 2026`;
-    const desc = `${s.name} state government employees salary — 7th CPC pay matrix, current DA of ${s.daPct}%, cadre-wise breakdown and 8th CPC projections.`;
+    const title = `8th Pay Commission Salary List in ${s.name} 2026 — Level-Wise Table`;
+    const desc = `8th Pay Commission salary list in ${s.name}: level-wise projected basic pay at 2.57x and 2.86x, cadre-wise breakdown, current state DA of ${s.daPct}% and a live salary calculator for ${s.name} government employees.`;
     const url = `${SITE}/state/${s.slug}`;
     return {
       meta: [
@@ -26,16 +27,39 @@ export const Route = createFileRoute("/state/$state")({
         { name: "description", content: desc },
         {
           name: "keywords",
-          content: `${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary`,
+          content: `8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary list ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary`,
         },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: desc },
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+              { "@type": "ListItem", position: 2, name: "States", item: `${SITE}/state` },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: `8th Pay Commission Salary List in ${s.name}`,
+                item: url,
+              },
+            ],
+          }),
+        },
+      ],
     };
   },
+
   notFoundComponent: () => (
     <div className="mx-auto max-w-xl px-4 py-20 text-center">
       <h1 className="text-2xl font-bold">State not found</h1>
@@ -57,19 +81,63 @@ function StatePageView() {
         <MapPin className="h-3 w-3" /> State Government
       </div>
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-        {s.name} 8th Pay Commission Salary 2026
+        8th Pay Commission Salary List in {s.name} (2026)
       </h1>
       <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
-        Covering approximately {s.employees}. Current state DA is <strong>{s.daPct}%</strong>.{" "}
-        {s.adoptionLag}
+        Level-wise and cadre-wise 8th Pay Commission salary list for {s.name} state
+        government employees, covering approximately {s.employees}. Current state DA is{" "}
+        <strong>{s.daPct}%</strong>. {s.adoptionLag}
       </p>
 
       <div className="mt-6">
         <DisclaimerBanner />
       </div>
 
+      <section className="mt-10" aria-labelledby="level-list">
+        <h2 id="level-list" className="mb-2 text-xl font-bold">
+          8th Pay Commission salary list in {s.name} — Level 1 to Level 18
+        </h2>
+        <p className="mb-4 max-w-3xl text-sm text-muted-foreground">
+          Each row applies the two most-discussed fitment factors, 2.57x and 2.86x, to the
+          entry basic pay of the corresponding pay level used in {s.name}. DA restarts at 0%
+          on the revised basic, so treat these as basic-pay projections only.
+        </p>
+        <div className="overflow-x-auto rounded-lg border border-border">
+          <table className="w-full min-w-[560px] text-sm">
+            <caption className="sr-only">
+              8th Pay Commission salary list in {s.name}: projected basic pay by pay level
+            </caption>
+            <thead className="bg-secondary text-left">
+              <tr>
+                <th className="p-3 font-semibold">Level</th>
+                <th className="p-3 font-semibold">Typical post</th>
+                <th className="p-3 font-semibold">Present basic</th>
+                <th className="p-3 font-semibold">At 2.57x</th>
+                <th className="p-3 font-semibold">At 2.86x</th>
+              </tr>
+            </thead>
+            <tbody>
+              {PAY_LEVELS.map((l) => (
+                <tr key={l.level} className="border-t border-border">
+                  <td className="p-3 font-medium">Level {l.level}</td>
+                  <td className="p-3 text-muted-foreground">{l.grade}</td>
+                  <td className="p-3 tabular-nums">{inr(l.entryPay)}</td>
+                  <td className="p-3 tabular-nums">
+                    {inr(levelProjection(l.entryPay, 2.57))}
+                  </td>
+                  <td className="p-3 tabular-nums font-semibold text-primary">
+                    {inr(levelProjection(l.entryPay, 2.86))}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">Cadre-wise salary breakdown ({s.name})</h2>
+
         <div className="overflow-hidden rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-secondary text-left">

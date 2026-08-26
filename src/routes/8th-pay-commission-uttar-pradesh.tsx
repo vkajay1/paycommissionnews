@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-uttar-pradesh")({
       {
         name: "keywords",
         content:
-          "8th pay commission uttar pradesh, uttar pradesh 8th pay commission state employees latest 2026, 8th pay commission in up, which pay commission is going on in up, upsssc junior assistant salary after 8th pay commission, up police 8th pay commission salary, up government 8th pay commission, up salary calculator",
+          "8th pay commission salary list in uttar pradesh, 8th pay commission uttar pradesh, uttar pradesh 8th pay commission state employees latest 2026, 8th pay commission in up, which pay commission is going on in up, upsssc junior assistant salary after 8th pay commission, up police 8th pay commission salary, up government 8th pay commission, up salary calculator",
       },
       { property: "og:title", content: "8th Pay Commission Uttar Pradesh — UP Employees Salary" },
       {
@@ -125,7 +125,7 @@ function Page() {
         },
       ]}
       table={{
-        caption: "Projected 8th CPC basic pay for key Uttar Pradesh cadres",
+        caption: "8th Pay Commission salary list in Uttar Pradesh — projected basic pay for key cadres",
         head: ["Cadre (level)", "Present basic", "At 2.28x", "At 2.86x"],
         rows: [
           ["Chaturth Shreni / MTS (Level 1)", "₹18,000", "₹41,040", "₹51,480"],

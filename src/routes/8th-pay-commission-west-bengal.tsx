@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-west-bengal")({
       {
         name: "keywords",
         content:
-          "8th pay commission west bengal, west bengal 8th pay commission, 8th pay commission in west bengal, west bengal fitment factor, wb ropa 8th pay commission, west bengal state employees salary 2026",
+          "8th pay commission salary list in west bengal, 8th pay commission west bengal, west bengal 8th pay commission, 8th pay commission in west bengal, west bengal fitment factor, wb ropa 8th pay commission, west bengal state employees salary 2026",
       },
       { property: "og:title", content: "8th Pay Commission West Bengal — ROPA & Fitment Factor" },
       {
@@ -126,7 +126,7 @@ function Page() {
         },
       ]}
       table={{
-        caption: "Projected revised basic pay for key West Bengal cadres",
+        caption: "8th Pay Commission salary list in West Bengal — projected revised basic pay for key cadres",
         head: ["Cadre (WB level)", "Present basic", "At 2.28x", "At 2.86x"],
         rows: [
           ["Group D staff (Level 1)", "₹17,000", "₹38,760", "₹48,620"],
