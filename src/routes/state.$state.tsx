@@ -17,8 +17,8 @@ export const Route = createFileRoute("/state/$state")({
   head: ({ params }) => {
     const s = getStatePage(params.state);
     if (!s) return {};
-    const title = `${s.name} 8th Pay Commission Salary Calculator 2026`;
-    const desc = `${s.name} state government employees salary — 7th CPC pay matrix, current DA of ${s.daPct}%, cadre-wise breakdown and 8th CPC projections.`;
+    const title = `8th Pay Commission Salary List in ${s.name} 2026 — Level-Wise Table`;
+    const desc = `8th Pay Commission salary list in ${s.name}: level-wise projected basic pay at 2.57x and 2.86x, cadre-wise breakdown, current state DA of ${s.daPct}% and a live salary calculator for ${s.name} government employees.`;
     const url = `${SITE}/state/${s.slug}`;
     return {
       meta: [
@@ -26,16 +26,39 @@ export const Route = createFileRoute("/state/$state")({
         { name: "description", content: desc },
         {
           name: "keywords",
-          content: `${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary`,
+          content: `8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary list ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary`,
         },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: desc },
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+              { "@type": "ListItem", position: 2, name: "States", item: `${SITE}/state` },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: `8th Pay Commission Salary List in ${s.name}`,
+                item: url,
+              },
+            ],
+          }),
+        },
+      ],
     };
   },
+
   notFoundComponent: () => (
     <div className="mx-auto max-w-xl px-4 py-20 text-center">
       <h1 className="text-2xl font-bold">State not found</h1>
