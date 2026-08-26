@@ -100,7 +100,7 @@ export const Route = createFileRoute("/8th-pay-commission-rajasthan")({
       {
         name: "keywords",
         content:
-          "8th pay commission rajasthan, 8th cpc rajasthan salary calculator, rajasthan 8th pay commission fitment factor, rajasthan revised pay rules, rajasthan government salary after 8th pay commission",
+          "8th pay commission salary list in rajasthan, 8th pay commission rajasthan, 8th cpc rajasthan salary calculator, rajasthan 8th pay commission fitment factor, rajasthan revised pay rules, rajasthan government salary after 8th pay commission",
       },
       { property: "og:title", content: "8th Pay Commission in Rajasthan — Salary Calculator" },
       {
