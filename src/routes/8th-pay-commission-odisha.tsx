@@ -42,15 +42,16 @@ export const Route = createFileRoute("/8th-pay-commission-odisha")({
         content:
           "8th pay commission salary list in odisha, 8th pay commission odisha, odisha 8th pay commission, 8 pay commission salary odisha, 8th pay matrix odisha, aso salary in odisha 8th pay commission, peo salary in odisha 8th pay commission, 8th pay commission in odisha government",
       },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Odisha — Pay Matrix & Salary" },
       {
         property: "og:description",
         content: "ORSP pay matrix projections, ASO/PEO salary and arrears for Odisha employees.",
       },
-      { property: "og:url", content: `${SITE}/8th-pay-commission-odisha` },
+      { property: "og:url", content: `${SITE}/state/odisha` },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/8th-pay-commission-odisha` }],
+    links: [{ rel: "canonical", href: `${SITE}/state/odisha` }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqLd(faq)) }],
   }),
   component: Page,

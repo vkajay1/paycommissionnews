@@ -42,15 +42,16 @@ export const Route = createFileRoute("/8th-pay-commission-maharashtra")({
         content:
           "8th pay commission salary list in maharashtra, 8th pay commission maharashtra, maharashtra 8th pay commission state employees latest 2026, 8th pay commission in maharashtra state government employees, maharashtra 8th pay commission implementation state employees 2026, talathi salary after 8th pay maharashtra, 8th pay in maharashtra",
       },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Maharashtra — State Employees Salary" },
       {
         property: "og:description",
         content: "Maharashtra implementation route, Talathi and Police SI projections, DA and arrears.",
       },
-      { property: "og:url", content: `${SITE}/8th-pay-commission-maharashtra` },
+      { property: "og:url", content: `${SITE}/state/maharashtra` },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/8th-pay-commission-maharashtra` }],
+    links: [{ rel: "canonical", href: `${SITE}/state/maharashtra` }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqLd(faq)) }],
   }),
   component: Page,
