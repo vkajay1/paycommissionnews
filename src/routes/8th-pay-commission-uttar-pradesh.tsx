@@ -42,15 +42,16 @@ export const Route = createFileRoute("/8th-pay-commission-uttar-pradesh")({
         content:
           "8th pay commission salary list in uttar pradesh, 8th pay commission uttar pradesh, uttar pradesh 8th pay commission state employees latest 2026, 8th pay commission in up, which pay commission is going on in up, upsssc junior assistant salary after 8th pay commission, up police 8th pay commission salary, up government 8th pay commission, up salary calculator",
       },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Uttar Pradesh — UP Employees Salary" },
       {
         property: "og:description",
         content: "UP adoption timeline, UPSSSC and UP Police salary projections under the 8th CPC.",
       },
-      { property: "og:url", content: `${SITE}/8th-pay-commission-uttar-pradesh` },
+      { property: "og:url", content: `${SITE}/state/uttar-pradesh` },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/8th-pay-commission-uttar-pradesh` }],
+    links: [{ rel: "canonical", href: `${SITE}/state/uttar-pradesh` }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqLd(faq)) }],
   }),
   component: Page,

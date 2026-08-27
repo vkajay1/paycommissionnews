@@ -61,6 +61,7 @@ export function Footer() {
             title="Company"
             links={[
               { label: "About Us", to: "/about" },
+              { label: "Editorial Policy", to: "/editorial-policy" },
               { label: "Contact Us", to: "/contact" },
               { label: "Privacy Policy", to: "/privacy-policy" },
               { label: "Disclaimer", to: "/disclaimer" },
@@ -93,6 +94,9 @@ export function Footer() {
             </Link>
             <Link to="/contact" className="hover:text-primary">
               Contact
+            </Link>
+            <Link to="/editorial-policy" className="hover:text-primary">
+              Methodology
             </Link>
             <span>Not affiliated with any government body.</span>
           </span>

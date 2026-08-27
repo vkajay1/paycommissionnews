@@ -42,15 +42,16 @@ export const Route = createFileRoute("/8th-pay-commission-west-bengal")({
         content:
           "8th pay commission salary list in west bengal, 8th pay commission west bengal, west bengal 8th pay commission, 8th pay commission in west bengal, west bengal fitment factor, wb ropa 8th pay commission, west bengal state employees salary 2026",
       },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission West Bengal — ROPA & Fitment Factor" },
       {
         property: "og:description",
         content: "ROPA pattern, WB fitment factor, DA gap and salary projections for WB employees.",
       },
-      { property: "og:url", content: `${SITE}/8th-pay-commission-west-bengal` },
+      { property: "og:url", content: `${SITE}/state/west-bengal` },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/8th-pay-commission-west-bengal` }],
+    links: [{ rel: "canonical", href: `${SITE}/state/west-bengal` }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqLd(faq)) }],
   }),
   component: Page,

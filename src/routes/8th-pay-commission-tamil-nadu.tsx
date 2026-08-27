@@ -42,15 +42,16 @@ export const Route = createFileRoute("/8th-pay-commission-tamil-nadu")({
         content:
           "8th pay commission salary list in tamil nadu, 8th pay commission tamil nadu, tamilnadu 8th pay commission, 8th pay commission fitment factor in tamil nadu, tamil nadu 8th pay commission state employees latest 2026, next pay commission in tamil nadu, which pay commission is going on in tamil nadu, tn 8th pay commission, tamil nadu pay commission 2026, 8th pay commission salary in tamilnadu",
       },
+      { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Tamil Nadu — Fitment Factor & Salary" },
       {
         property: "og:description",
         content: "TN state employees: pay committee process, fitment factor and salary projections.",
       },
-      { property: "og:url", content: `${SITE}/8th-pay-commission-tamil-nadu` },
+      { property: "og:url", content: `${SITE}/state/tamil-nadu` },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: `${SITE}/8th-pay-commission-tamil-nadu` }],
+    links: [{ rel: "canonical", href: `${SITE}/state/tamil-nadu` }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqLd(faq)) }],
   }),
   component: Page,

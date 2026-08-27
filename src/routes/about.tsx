@@ -61,6 +61,26 @@ function AboutPage() {
           Pay commission announcements generate a lot of unofficial claims and speculation. We believe employees deserve a clean, ad-supported but non-intrusive place where they can run their own numbers, understand the math and distinguish between confirmed facts and social-media rumours.
         </p>
 
+        <h2>How our work is prepared</h2>
+        <p>
+          Our editorial desk reviews primary government material, including Gazette notifications,
+          Department of Expenditure orders, Press Information Bureau releases and state finance
+          department circulars. Calculator outputs are formula-based scenarios, not insider
+          information or guaranteed forecasts. Our complete source hierarchy, formulas and correction
+          process are published in the{" "}
+          <a href="/editorial-policy" className="text-primary hover:underline">
+            editorial policy and calculation methodology
+          </a>
+          .
+        </p>
+
+        <h2>Corrections and accountability</h2>
+        <p>
+          Readers can report an incorrect rate, outdated order or calculation issue by sharing the
+          affected page and a supporting primary source. Material corrections are reviewed promptly,
+          and time-sensitive articles display their publication and update dates.
+        </p>
+
         <h2>Important disclaimer</h2>
         <p>
           All figures shown on this site are indicative projections. The actual salary, pension, fitment factor, DA rates, HRA and implementation date will be decided by the Government of India and notified officially. Do not treat our calculator outputs as final pay orders.

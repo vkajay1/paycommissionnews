@@ -15,8 +15,6 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { SideNav } from "@/components/layout/SideNav";
-import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot, TopRectAds } from "@/components/ads/AdSlots";
-import { AutoBannerAds } from "@/components/ads/AutoBannerAds";
 import { PushPrompt } from "@/components/push/PushPrompt";
 
 
@@ -104,9 +102,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
       { name: "twitter:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
-      { name: "description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
-      { property: "og:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
-      { name: "twitter:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
+      { property: "og:description", content: "Estimate revised basic pay, pension, DA, HRA and arrears with transparent 8th Pay Commission planning scenarios." },
+      { name: "twitter:description", content: "Estimate revised basic pay, pension, DA, HRA and arrears with transparent 8th Pay Commission planning scenarios." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
     ],
@@ -120,6 +117,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     scripts: [
+      {
+        type: "text/javascript",
+        children: `(function(){try{var t=localStorage.getItem('cpc-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`,
+      },
       {
         async: true,
         src: "https://www.googletagmanager.com/gtag/js?id=G-E7J9MWC6FQ",
@@ -160,7 +161,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           description:
             "Independent coverage, calculators and explainers on the 8th Central Pay Commission for Indian government employees and pensioners.",
-          publishingPrinciples: "https://paycommissionnews.co.in/disclaimer",
+          publishingPrinciples: "https://paycommissionnews.co.in/editorial-policy",
           contactPoint: {
             "@type": "ContactPoint",
             contactType: "editorial",
@@ -182,11 +183,6 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('cpc-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`,
-          }}
-        />
       </head>
       <body>
         {children}
@@ -203,23 +199,14 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <TopRectAds />
-        </div>
         <div className="mx-auto flex w-full max-w-[1400px] flex-1 items-start gap-6 px-0 lg:px-6">
           <SideNav />
           <main className="min-w-0 flex-1 pb-20 md:pb-0">
             <Outlet />
           </main>
-          <SidebarAdSlot />
-        </div>
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <BannerAd728x90 />
         </div>
         <Footer />
         <MobileNav />
-        <GlobalAdScripts />
-        <AutoBannerAds target={5} />
         <PushPrompt />
 
       </div>

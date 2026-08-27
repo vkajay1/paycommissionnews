@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
  * AdSense review (third-party ad networks and empty placeholders hurt
  * approval). Flip this back to false to re-enable them.
  */
-const ADS_PAUSED = false;
+const ADS_PAUSED = true;
 
 function useInView<T extends HTMLElement>(rootMargin = "300px") {
   const ref = useRef<T>(null);
