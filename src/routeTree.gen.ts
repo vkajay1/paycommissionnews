@@ -37,6 +37,7 @@ import { Route as FitmentFactorInHindiRouteImport } from './routes/fitment-facto
 import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
 import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
 import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
+import { Route as EditorialPolicyRouteImport } from './routes/editorial-policy'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-in-hindi'
 import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
@@ -214,6 +215,11 @@ const FitmentCalculatorRoute = FitmentCalculatorRouteImport.update({
 const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
   id: '/epf-calculator',
   path: '/epf-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EditorialPolicyRoute = EditorialPolicyRouteImport.update({
+  id: '/editorial-policy',
+  path: '/editorial-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DisclaimerRoute = DisclaimerRouteImport.update({
@@ -437,6 +443,7 @@ export interface FileRoutesByFullPath {
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -503,6 +510,7 @@ export interface FileRoutesByTo {
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -567,6 +575,7 @@ export interface FileRoutesById {
   '/da-calculator': typeof DaCalculatorRoute
   '/da-calculator-in-hindi': typeof DaCalculatorInHindiRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/epf-calculator': typeof EpfCalculatorRoute
   '/fitment-calculator': typeof FitmentCalculatorRoute
   '/fitment-factor': typeof FitmentFactorRoute
@@ -635,6 +644,7 @@ export interface FileRouteTypes {
     | '/da-calculator'
     | '/da-calculator-in-hindi'
     | '/disclaimer'
+    | '/editorial-policy'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -701,6 +711,7 @@ export interface FileRouteTypes {
     | '/da-calculator'
     | '/da-calculator-in-hindi'
     | '/disclaimer'
+    | '/editorial-policy'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -764,6 +775,7 @@ export interface FileRouteTypes {
     | '/da-calculator'
     | '/da-calculator-in-hindi'
     | '/disclaimer'
+    | '/editorial-policy'
     | '/epf-calculator'
     | '/fitment-calculator'
     | '/fitment-factor'
@@ -831,6 +843,7 @@ export interface RootRouteChildren {
   DaCalculatorRoute: typeof DaCalculatorRoute
   DaCalculatorInHindiRoute: typeof DaCalculatorInHindiRoute
   DisclaimerRoute: typeof DisclaimerRoute
+  EditorialPolicyRoute: typeof EditorialPolicyRoute
   EpfCalculatorRoute: typeof EpfCalculatorRoute
   FitmentCalculatorRoute: typeof FitmentCalculatorRoute
   FitmentFactorRoute: typeof FitmentFactorRoute
@@ -1064,6 +1077,13 @@ declare module '@tanstack/react-router' {
       path: '/epf-calculator'
       fullPath: '/epf-calculator'
       preLoaderRoute: typeof EpfCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/editorial-policy': {
+      id: '/editorial-policy'
+      path: '/editorial-policy'
+      fullPath: '/editorial-policy'
+      preLoaderRoute: typeof EditorialPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/disclaimer': {
@@ -1388,6 +1408,7 @@ const rootRouteChildren: RootRouteChildren = {
   DaCalculatorRoute: DaCalculatorRoute,
   DaCalculatorInHindiRoute: DaCalculatorInHindiRoute,
   DisclaimerRoute: DisclaimerRoute,
+  EditorialPolicyRoute: EditorialPolicyRoute,
   EpfCalculatorRoute: EpfCalculatorRoute,
   FitmentCalculatorRoute: FitmentCalculatorRoute,
   FitmentFactorRoute: FitmentFactorRoute,
