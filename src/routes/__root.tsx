@@ -15,7 +15,6 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { SideNav } from "@/components/layout/SideNav";
-import { GlobalAdScripts } from "@/components/ads/AdSlots";
 import { PushPrompt } from "@/components/push/PushPrompt";
 
 
@@ -103,7 +102,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
       { name: "twitter:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
-      { name: "description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
       { property: "og:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
       { name: "twitter:description", content: "Estimate your 8th Pay Commission salary online. Calculate revised basic pay, pension, DA, HRA, arrears, and fitment factor impact with our free and accurate 8th" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
@@ -210,7 +208,6 @@ function RootComponent() {
         </div>
         <Footer />
         <MobileNav />
-        <GlobalAdScripts />
         <PushPrompt />
 
       </div>

@@ -55,7 +55,7 @@ function PrivacyPage() {
         <ul>
           <li>To operate, maintain and improve the Site and calculators.</li>
           <li>To respond to your inquiries and feedback.</li>
-          <li>To display relevant advertisements through Google AdSense and other ad networks.</li>
+          <li>To display relevant advertisements through Google AdSense after approval.</li>
           <li>To analyse traffic and usage patterns so we can improve content and performance.</li>
         </ul>
 
@@ -67,7 +67,7 @@ function PrivacyPage() {
 
         <h2>4. Third-party services</h2>
         <p>
-          We use analytics and advertising services such as Google AdSense. These services may collect data independently and are governed by their own privacy policies. We are not responsible for the privacy practices of third-party websites linked from our content.
+          We use Google Analytics and may use Google AdSense after approval. These services may collect data independently and are governed by their own privacy policies. We are not responsible for the privacy practices of third-party websites linked from our content.
         </p>
 
         <h2>5. Data security</h2>
