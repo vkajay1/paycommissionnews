@@ -15,8 +15,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { SideNav } from "@/components/layout/SideNav";
-import { GlobalAdScripts, BannerAd728x90, SidebarAdSlot, TopRectAds } from "@/components/ads/AdSlots";
-import { AutoBannerAds } from "@/components/ads/AutoBannerAds";
+import { GlobalAdScripts } from "@/components/ads/AdSlots";
 import { PushPrompt } from "@/components/push/PushPrompt";
 
 
@@ -203,23 +202,15 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <TopRectAds />
-        </div>
         <div className="mx-auto flex w-full max-w-[1400px] flex-1 items-start gap-6 px-0 lg:px-6">
           <SideNav />
           <main className="min-w-0 flex-1 pb-20 md:pb-0">
             <Outlet />
           </main>
-          <SidebarAdSlot />
-        </div>
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <BannerAd728x90 />
         </div>
         <Footer />
         <MobileNav />
         <GlobalAdScripts />
-        <AutoBannerAds target={5} />
         <PushPrompt />
 
       </div>

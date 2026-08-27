@@ -64,6 +64,7 @@ const STATIC: SitemapEntry[] = [
   { path: "/role", changefreq: "weekly", priority: "0.8" },
   { path: "/state", changefreq: "weekly", priority: "0.8" },
   { path: "/about", changefreq: "monthly", priority: "0.7" },
+  { path: "/editorial-policy", changefreq: "monthly", priority: "0.7" },
   { path: "/contact", changefreq: "monthly", priority: "0.7" },
   { path: "/privacy-policy", changefreq: "monthly", priority: "0.6" },
   { path: "/disclaimer", changefreq: "monthly", priority: "0.6" },

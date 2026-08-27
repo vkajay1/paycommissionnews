@@ -18,7 +18,7 @@ export const Route = createFileRoute("/state/$state")({
   head: ({ params }) => {
     const s = getStatePage(params.state);
     if (!s) return {};
-    const title = `8th Pay Commission Salary List in ${s.name} 2026 — Level-Wise Table`;
+    const title = `8th Pay Commission Salary Scenarios in ${s.name} — Level-Wise`;
     const desc = `8th Pay Commission salary list in ${s.name}: level-wise projected basic pay at 2.57x and 2.86x, cadre-wise breakdown, current state DA of ${s.daPct}% and a live salary calculator for ${s.name} government employees.`;
     const url = `${SITE}/state/${s.slug}`;
     return {
@@ -169,10 +169,10 @@ function StatePageView() {
         <p>{s.notes}</p>
         <h2>What to expect on 8th CPC rollout</h2>
         <p>
-          When the 8th Pay Commission is notified centrally,{" "}
-          {s.name} employees can expect a fitment factor between 2.57x and 2.86x on basic
-          pay, with state DA rebased to 0% at implementation. HRA slabs are typically revised
-          in line with the central rules.
+          A Central Pay Commission revision does not automatically change state pay. The {s.name}{" "}
+          government must review the central recommendations and issue its own adoption order. The
+          2.57x and 2.86x columns above are comparison scenarios requested by readers; neither is a
+          notified fitment factor. Effective dates, DA treatment and HRA rules may differ by state.
         </p>
       </article>
 

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/pay-level/$level")({
     const lvl = Number(params.level);
     const data = getLevel(lvl);
     if (!data) return {};
-    const title = `Level ${lvl} Salary 2026 — 7th & 8th Pay Commission In-Hand Salary`;
+    const title = `Pay Level ${lvl} Salary — Current Pay & 8th CPC Scenarios`;
     const desc = `Level ${lvl} pay matrix salary for ${data.grade}. Basic pay ₹${data.entryPay.toLocaleString("en-IN")}, DA, HRA, TA breakdown and 8th Pay Commission projected salary.`;
     const url = `${SITE}/pay-level/${lvl}`;
     return {
@@ -110,7 +110,7 @@ function LevelPage() {
       {/* 8th CPC projections */}
       <section className="mt-10">
         <h2 className="mb-4 text-xl font-bold">
-          8th Pay Commission projected basic (Level {lvl})
+          8th Pay Commission basic-pay scenarios (Level {lvl})
         </h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {LEVEL_FITMENTS.map((fit) => {
@@ -160,12 +160,12 @@ function LevelPage() {
         </p>
         <h2>Expected 8th CPC salary for Level {lvl}</h2>
         <p>
-          Under the widely-projected fitment factor of 2.86x, an entry-cell Level {lvl}{" "}
-          employee's basic pay is expected to rise from{" "}
+          In the user-selected 2.86x scenario, an entry-cell Level {lvl}{" "}
+          employee's modelled basic pay changes from{" "}
           <strong>{inr(basic)}</strong> to approximately{" "}
           <strong>{inr(levelProjection(basic, 2.86))}</strong>. Once DA (rebased to 0%
-          initially), HRA and TA are added on top, the gross salary at implementation is
-          typically 25–35% higher than the pre-revision figure.
+          initially), revised HRA and TA would depend on the eventual government order. This is a
+          mathematical comparison, not an official pay forecast.
         </p>
       </article>
 
