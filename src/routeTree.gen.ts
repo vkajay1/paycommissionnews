@@ -47,6 +47,7 @@ import { Route as AdsDottxtRouteImport } from './routes/ads[.]txt'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
 import { Route as R8thPayCommissionUttarPradeshRouteImport } from './routes/8th-pay-commission-uttar-pradesh'
+import { Route as R8thPayCommissionTermsOfReferenceRouteImport } from './routes/8th-pay-commission-terms-of-reference'
 import { Route as R8thPayCommissionTamilNaduRouteImport } from './routes/8th-pay-commission-tamil-nadu'
 import { Route as R8thPayCommissionSalaryListRouteImport } from './routes/8th-pay-commission-salary-list'
 import { Route as R8thPayCommissionSalaryCalculatorInHindiRouteImport } from './routes/8th-pay-commission-salary-calculator-in-hindi'
@@ -269,6 +270,12 @@ const R8thPayCommissionUttarPradeshRoute =
     path: '/8th-pay-commission-uttar-pradesh',
     getParentRoute: () => rootRouteImport,
   } as any)
+const R8thPayCommissionTermsOfReferenceRoute =
+  R8thPayCommissionTermsOfReferenceRouteImport.update({
+    id: '/8th-pay-commission-terms-of-reference',
+    path: '/8th-pay-commission-terms-of-reference',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const R8thPayCommissionTamilNaduRoute =
   R8thPayCommissionTamilNaduRouteImport.update({
     id: '/8th-pay-commission-tamil-nadu',
@@ -434,6 +441,7 @@ export interface FileRoutesByFullPath {
   '/8th-pay-commission-salary-calculator-in-hindi': typeof R8thPayCommissionSalaryCalculatorInHindiRoute
   '/8th-pay-commission-salary-list': typeof R8thPayCommissionSalaryListRoute
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
+  '/8th-pay-commission-terms-of-reference': typeof R8thPayCommissionTermsOfReferenceRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
@@ -501,6 +509,7 @@ export interface FileRoutesByTo {
   '/8th-pay-commission-salary-calculator-in-hindi': typeof R8thPayCommissionSalaryCalculatorInHindiRoute
   '/8th-pay-commission-salary-list': typeof R8thPayCommissionSalaryListRoute
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
+  '/8th-pay-commission-terms-of-reference': typeof R8thPayCommissionTermsOfReferenceRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
@@ -566,6 +575,7 @@ export interface FileRoutesById {
   '/8th-pay-commission-salary-calculator-in-hindi': typeof R8thPayCommissionSalaryCalculatorInHindiRoute
   '/8th-pay-commission-salary-list': typeof R8thPayCommissionSalaryListRoute
   '/8th-pay-commission-tamil-nadu': typeof R8thPayCommissionTamilNaduRoute
+  '/8th-pay-commission-terms-of-reference': typeof R8thPayCommissionTermsOfReferenceRoute
   '/8th-pay-commission-uttar-pradesh': typeof R8thPayCommissionUttarPradeshRoute
   '/8th-pay-commission-west-bengal': typeof R8thPayCommissionWestBengalRoute
   '/about': typeof AboutRoute
@@ -635,6 +645,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-salary-calculator-in-hindi'
     | '/8th-pay-commission-salary-list'
     | '/8th-pay-commission-tamil-nadu'
+    | '/8th-pay-commission-terms-of-reference'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
@@ -702,6 +713,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-salary-calculator-in-hindi'
     | '/8th-pay-commission-salary-list'
     | '/8th-pay-commission-tamil-nadu'
+    | '/8th-pay-commission-terms-of-reference'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
@@ -766,6 +778,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-salary-calculator-in-hindi'
     | '/8th-pay-commission-salary-list'
     | '/8th-pay-commission-tamil-nadu'
+    | '/8th-pay-commission-terms-of-reference'
     | '/8th-pay-commission-uttar-pradesh'
     | '/8th-pay-commission-west-bengal'
     | '/about'
@@ -834,6 +847,7 @@ export interface RootRouteChildren {
   R8thPayCommissionSalaryCalculatorInHindiRoute: typeof R8thPayCommissionSalaryCalculatorInHindiRoute
   R8thPayCommissionSalaryListRoute: typeof R8thPayCommissionSalaryListRoute
   R8thPayCommissionTamilNaduRoute: typeof R8thPayCommissionTamilNaduRoute
+  R8thPayCommissionTermsOfReferenceRoute: typeof R8thPayCommissionTermsOfReferenceRoute
   R8thPayCommissionUttarPradeshRoute: typeof R8thPayCommissionUttarPradeshRoute
   R8thPayCommissionWestBengalRoute: typeof R8thPayCommissionWestBengalRoute
   AboutRoute: typeof AboutRoute
@@ -1149,6 +1163,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof R8thPayCommissionUttarPradeshRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8th-pay-commission-terms-of-reference': {
+      id: '/8th-pay-commission-terms-of-reference'
+      path: '/8th-pay-commission-terms-of-reference'
+      fullPath: '/8th-pay-commission-terms-of-reference'
+      preLoaderRoute: typeof R8thPayCommissionTermsOfReferenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/8th-pay-commission-tamil-nadu': {
       id: '/8th-pay-commission-tamil-nadu'
       path: '/8th-pay-commission-tamil-nadu'
@@ -1399,6 +1420,8 @@ const rootRouteChildren: RootRouteChildren = {
     R8thPayCommissionSalaryCalculatorInHindiRoute,
   R8thPayCommissionSalaryListRoute: R8thPayCommissionSalaryListRoute,
   R8thPayCommissionTamilNaduRoute: R8thPayCommissionTamilNaduRoute,
+  R8thPayCommissionTermsOfReferenceRoute:
+    R8thPayCommissionTermsOfReferenceRoute,
   R8thPayCommissionUttarPradeshRoute: R8thPayCommissionUttarPradeshRoute,
   R8thPayCommissionWestBengalRoute: R8thPayCommissionWestBengalRoute,
   AboutRoute: AboutRoute,
