@@ -152,7 +152,7 @@ function BankPage() {
             <Link to="/salary">Central govt salary calculator</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link to="/role/bank-po">Bank PO salary structure</Link>
+            <Link to="/role/$role" params={{ role: "bank-po" }}>Bank PO salary structure</Link>
           </Button>
         </div>
       </header>
