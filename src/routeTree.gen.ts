@@ -57,6 +57,7 @@ import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes
 import { Route as R8thPayCommissionPayMatrixRouteImport } from './routes/8th-pay-commission-pay-matrix'
 import { Route as R8thPayCommissionOdishaRouteImport } from './routes/8th-pay-commission-odisha'
 import { Route as R8thPayCommissionMaharashtraRouteImport } from './routes/8th-pay-commission-maharashtra'
+import { Route as R8thPayCommissionKyaHaiRouteImport } from './routes/8th-pay-commission-kya-hai'
 import { Route as R8thPayCommissionBankEmployeesRouteImport } from './routes/8th-pay-commission-bank-employees'
 import { Route as R8thPayCommissionArrearsCalculatorInHindiRouteImport } from './routes/8th-pay-commission-arrears-calculator-in-hindi'
 import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
@@ -331,6 +332,11 @@ const R8thPayCommissionMaharashtraRoute =
     path: '/8th-pay-commission-maharashtra',
     getParentRoute: () => rootRouteImport,
   } as any)
+const R8thPayCommissionKyaHaiRoute = R8thPayCommissionKyaHaiRouteImport.update({
+  id: '/8th-pay-commission-kya-hai',
+  path: '/8th-pay-commission-kya-hai',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const R8thPayCommissionBankEmployeesRoute =
   R8thPayCommissionBankEmployeesRouteImport.update({
     id: '/8th-pay-commission-bank-employees',
@@ -448,6 +454,7 @@ export interface FileRoutesByFullPath {
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/8th-pay-commission-arrears-calculator-in-hindi': typeof R8thPayCommissionArrearsCalculatorInHindiRoute
   '/8th-pay-commission-bank-employees': typeof R8thPayCommissionBankEmployeesRoute
+  '/8th-pay-commission-kya-hai': typeof R8thPayCommissionKyaHaiRoute
   '/8th-pay-commission-maharashtra': typeof R8thPayCommissionMaharashtraRoute
   '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pay-matrix': typeof R8thPayCommissionPayMatrixRoute
@@ -518,6 +525,7 @@ export interface FileRoutesByTo {
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/8th-pay-commission-arrears-calculator-in-hindi': typeof R8thPayCommissionArrearsCalculatorInHindiRoute
   '/8th-pay-commission-bank-employees': typeof R8thPayCommissionBankEmployeesRoute
+  '/8th-pay-commission-kya-hai': typeof R8thPayCommissionKyaHaiRoute
   '/8th-pay-commission-maharashtra': typeof R8thPayCommissionMaharashtraRoute
   '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pay-matrix': typeof R8thPayCommissionPayMatrixRoute
@@ -586,6 +594,7 @@ export interface FileRoutesById {
   '/8th-pay-commission-arrears-calculator': typeof R8thPayCommissionArrearsCalculatorRoute
   '/8th-pay-commission-arrears-calculator-in-hindi': typeof R8thPayCommissionArrearsCalculatorInHindiRoute
   '/8th-pay-commission-bank-employees': typeof R8thPayCommissionBankEmployeesRoute
+  '/8th-pay-commission-kya-hai': typeof R8thPayCommissionKyaHaiRoute
   '/8th-pay-commission-maharashtra': typeof R8thPayCommissionMaharashtraRoute
   '/8th-pay-commission-odisha': typeof R8thPayCommissionOdishaRoute
   '/8th-pay-commission-pay-matrix': typeof R8thPayCommissionPayMatrixRoute
@@ -658,6 +667,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-arrears-calculator'
     | '/8th-pay-commission-arrears-calculator-in-hindi'
     | '/8th-pay-commission-bank-employees'
+    | '/8th-pay-commission-kya-hai'
     | '/8th-pay-commission-maharashtra'
     | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pay-matrix'
@@ -728,6 +738,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-arrears-calculator'
     | '/8th-pay-commission-arrears-calculator-in-hindi'
     | '/8th-pay-commission-bank-employees'
+    | '/8th-pay-commission-kya-hai'
     | '/8th-pay-commission-maharashtra'
     | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pay-matrix'
@@ -795,6 +806,7 @@ export interface FileRouteTypes {
     | '/8th-pay-commission-arrears-calculator'
     | '/8th-pay-commission-arrears-calculator-in-hindi'
     | '/8th-pay-commission-bank-employees'
+    | '/8th-pay-commission-kya-hai'
     | '/8th-pay-commission-maharashtra'
     | '/8th-pay-commission-odisha'
     | '/8th-pay-commission-pay-matrix'
@@ -866,6 +878,7 @@ export interface RootRouteChildren {
   R8thPayCommissionArrearsCalculatorRoute: typeof R8thPayCommissionArrearsCalculatorRoute
   R8thPayCommissionArrearsCalculatorInHindiRoute: typeof R8thPayCommissionArrearsCalculatorInHindiRoute
   R8thPayCommissionBankEmployeesRoute: typeof R8thPayCommissionBankEmployeesRoute
+  R8thPayCommissionKyaHaiRoute: typeof R8thPayCommissionKyaHaiRoute
   R8thPayCommissionMaharashtraRoute: typeof R8thPayCommissionMaharashtraRoute
   R8thPayCommissionOdishaRoute: typeof R8thPayCommissionOdishaRoute
   R8thPayCommissionPayMatrixRoute: typeof R8thPayCommissionPayMatrixRoute
@@ -1261,6 +1274,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof R8thPayCommissionMaharashtraRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8th-pay-commission-kya-hai': {
+      id: '/8th-pay-commission-kya-hai'
+      path: '/8th-pay-commission-kya-hai'
+      fullPath: '/8th-pay-commission-kya-hai'
+      preLoaderRoute: typeof R8thPayCommissionKyaHaiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/8th-pay-commission-bank-employees': {
       id: '/8th-pay-commission-bank-employees'
       path: '/8th-pay-commission-bank-employees'
@@ -1452,6 +1472,7 @@ const rootRouteChildren: RootRouteChildren = {
   R8thPayCommissionArrearsCalculatorInHindiRoute:
     R8thPayCommissionArrearsCalculatorInHindiRoute,
   R8thPayCommissionBankEmployeesRoute: R8thPayCommissionBankEmployeesRoute,
+  R8thPayCommissionKyaHaiRoute: R8thPayCommissionKyaHaiRoute,
   R8thPayCommissionMaharashtraRoute: R8thPayCommissionMaharashtraRoute,
   R8thPayCommissionOdishaRoute: R8thPayCommissionOdishaRoute,
   R8thPayCommissionPayMatrixRoute: R8thPayCommissionPayMatrixRoute,
