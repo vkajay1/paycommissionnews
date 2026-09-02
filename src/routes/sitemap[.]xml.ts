@@ -22,6 +22,11 @@ const STATIC: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/salary", changefreq: "weekly", priority: "0.9" },
   { path: "/8th-pay-commission-salary-list", changefreq: "weekly", priority: "0.9" },
+  { path: "/8th-pay-commission-pay-matrix", changefreq: "weekly", priority: "0.9" },
+  { path: "/8th-pay-commission-terms-of-reference", changefreq: "weekly", priority: "0.8" },
+  { path: "/8th-pay-commission-bank-employees", changefreq: "weekly", priority: "0.8" },
+  { path: "/8th-pay-commission-kya-hai", changefreq: "weekly", priority: "0.9" },
+
   { path: "/da-calculator", changefreq: "weekly", priority: "0.9" },
   { path: "/pension", changefreq: "weekly", priority: "0.9" },
   { path: "/arrear", changefreq: "weekly", priority: "0.9" },
