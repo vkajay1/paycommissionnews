@@ -54,6 +54,11 @@ export const navGroups: NavGroup[] = [
   {
     title: "Reference",
     items: [
+      { label: "Pay Matrix Table", to: "/8th-pay-commission-pay-matrix", icon: Grid3x3 },
+      { label: "Salary List (L1–L18)", to: "/8th-pay-commission-salary-list" },
+      { label: "Terms of Reference", to: "/8th-pay-commission-terms-of-reference", icon: FileText },
+      { label: "Bank Employees?", to: "/8th-pay-commission-bank-employees" },
+      { label: "हिंदी: क्या है?", to: "/8th-pay-commission-kya-hai" },
       { label: "Pay Matrix Levels", to: "/pay-level", icon: Grid3x3 },
       { label: "Role-wise Salary", to: "/role", icon: Users },
       { label: "State-wise Salary", to: "/state", icon: MapPin },
@@ -62,6 +67,7 @@ export const navGroups: NavGroup[] = [
       { label: "Latest Jobs", to: "/latest-jobs", icon: Briefcase },
     ],
   },
+
 ];
 
 const base =
