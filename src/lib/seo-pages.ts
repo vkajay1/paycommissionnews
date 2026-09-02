@@ -305,7 +305,54 @@ export const ROLE_PAGES: RolePage[] = [
     ],
     promotion: "SI → Inspector → Deputy SP / Assistant Commandant → Additional SP.",
   },
+  {
+    slug: "railway-group-d",
+    name: "Railway Group D (Track Maintainer / Helper)",
+    keyword: "railway group d salary 8th pay commission",
+    level: 1,
+    basic: 18000,
+    city: "Z",
+    department: "Indian Railways",
+    description:
+      "Railway Group D posts — Track Maintainer Grade IV, Assistant (Pointsman), Helper in electrical, mechanical and S&T departments — sit in Level 1 of the pay matrix with an entry basic pay of ₹18,000. Under the 8th Pay Commission, a Group D basic pay works out to roughly ₹46,300 at a 2.57x fitment factor and about ₹51,500 at 2.86x, before DA, HRA and running or hardship allowances.",
+    duties: [
+      "Maintain track, points and crossings, or assist in shed and depot work",
+      "Attend to breakdowns and patrolling duty in all weather conditions",
+      "Support technicians in electrical, mechanical and signalling maintenance",
+    ],
+    perks: [
+      "Night duty allowance, overtime and washing allowance where applicable",
+      "Railway quarters or HRA, medical (RELHS) and privilege pass facility",
+      "Uniform and safety gear, plus risk allowance in specified categories",
+    ],
+    promotion:
+      "Track Maintainer IV → III → II → I → Senior Technician, with MACP upgrades at 10, 20 and 30 years.",
+  },
+  {
+    slug: "railway-tte",
+    name: "Railway TTE (Travelling Ticket Examiner)",
+    keyword: "railway tte salary 8th pay commission",
+    level: 4,
+    basic: 25500,
+    city: "Y",
+    department: "Indian Railways",
+    description:
+      "Travelling Ticket Examiners are recruited through RRB NTPC into Level 3–4 of the pay matrix, with Level 4 carrying an entry basic pay of ₹25,500. Under the 8th Pay Commission, a TTE's basic pay is projected at about ₹65,500 at 2.57x and roughly ₹73,000 at 2.86x, plus DA, HRA, transport allowance and trip allowance for on-board duty.",
+    duties: [
+      "Check tickets and reservations on board and regularise excess fare",
+      "Allot vacant berths, assist passengers and record occupancy charts",
+      "File on-board irregularity reports and coordinate with the guard",
+    ],
+    perks: [
+      "Trip allowance / TA for out-station on-board duty and rest periods",
+      "Uniform allowance, railway quarters or HRA, pass and medical facility",
+      "Night duty allowance for scheduled overnight runs",
+    ],
+    promotion:
+      "TTE → Senior TTE → Head TTE → Travelling Ticket Inspector → Chief Ticket Inspector.",
+  },
 ];
+
 
 export function getRolePage(slug: string): RolePage | undefined {
   return ROLE_PAGES.find((r) => r.slug === slug);
