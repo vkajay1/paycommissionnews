@@ -4,6 +4,7 @@ import { jobs, getJob } from "@/lib/jobs";
 import { RenderBlock } from "@/components/content/RenderBlock";
 import { InArticleAd } from "@/components/ads/AdSlots";
 import { DiscussionBox } from "@/components/comments/DiscussionBox";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 
 const SITE = "https://paycommissionnews.co.in";
 
@@ -376,6 +377,11 @@ function JobPage() {
         dates and vacancy details with the official notification before applying. We are an
         independent information portal, not a recruiting authority.
       </div>
+
+      <RelatedTools
+        title="Salary tools for this post"
+        exclude={["/latest-jobs"]}
+      />
 
       {related.length ? (
         <section className="mt-14">

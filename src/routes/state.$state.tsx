@@ -3,6 +3,7 @@ import { Calculator, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { DiscussionBox } from "@/components/comments/DiscussionBox";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 import { getStatePage, STATE_PAGES, levelProjection } from "@/lib/seo-pages";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 import { inr } from "@/lib/format";
@@ -183,6 +184,11 @@ function StatePageView() {
           </Link>
         </Button>
       </div>
+
+      <RelatedTools
+        title={`Popular calculators for ${s.name} employees`}
+        exclude={["/salary", "/state"]}
+      />
 
       <section className="mt-12">
         <h2 className="mb-4 text-xl font-bold">Other state calculators</h2>

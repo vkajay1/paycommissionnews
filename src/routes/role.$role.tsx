@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Calculator, Briefcase, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 import { getRolePage, ROLE_PAGES, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
 import { transportAllowance } from "@/lib/pay-matrix";
@@ -128,6 +129,11 @@ function RolePageView() {
           </Link>
         </Button>
       </div>
+
+      <RelatedTools
+        title="Related salary tools"
+        exclude={["/salary", "/da-calculator", "/role"]}
+      />
 
       {/* Related */}
       <section className="mt-12">

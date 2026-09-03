@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { articles, getArticle, type Block } from "@/lib/articles";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 
 export const Route = createFileRoute("/blog/$slug")({
   beforeLoad: ({ params }) => {
@@ -304,6 +305,8 @@ function ArticlePage() {
         notification of the 8th Central Pay Commission's recommendations by the
         Government of India.
       </div>
+
+      <RelatedTools title="Try our 8th CPC calculators" exclude={["/blog"]} />
 
       <section className="mt-14">
         <h2 className="text-xl font-bold">Continue reading</h2>
