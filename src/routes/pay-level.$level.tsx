@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Calculator, TrendingUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
 import { getLevel, LEVEL_FITMENTS, levelProjection } from "@/lib/seo-pages";
 import { inr } from "@/lib/format";
@@ -168,6 +169,11 @@ function LevelPage() {
           mathematical comparison, not an official pay forecast.
         </p>
       </article>
+
+      <RelatedTools
+        title={`Tools for Level ${lvl} employees`}
+        exclude={["/salary", "/da-calculator", "/pay-level"]}
+      />
 
       {/* Sibling nav */}
       <section className="mt-12">

@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { articles, getArticle, type Block } from "@/lib/articles";
 import { InArticleAd } from "@/components/ads/AdSlots";
+import { RelatedTools } from "@/components/seo/RelatedTools";
 
 export const Route = createFileRoute("/blog/$slug")({
   beforeLoad: ({ params }) => {
@@ -179,7 +180,13 @@ export const Route = createFileRoute("/blog/$slug")({
 function ArticlePage() {
   const { slug } = Route.useParams();
   const article = getArticle(slug)!;
-  const related = articles.filter((a) => a.slug !== slug).slice(0, 3);
+  // Prefer same-language, same-category pieces so internal links stay relevant.
+  const pool = articles.filter((a) => a.slug !== slug);
+  const related = [
+    ...pool.filter((a) => a.lang === article.lang && a.category === article.category),
+    ...pool.filter((a) => a.lang === article.lang && a.category !== article.category),
+    ...pool.filter((a) => a.lang !== article.lang),
+  ].slice(0, 3);
 
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 pt-10 sm:px-6">
@@ -298,6 +305,8 @@ function ArticlePage() {
         notification of the 8th Central Pay Commission's recommendations by the
         Government of India.
       </div>
+
+      <RelatedTools title="Try our 8th CPC calculators" exclude={["/blog"]} />
 
       <section className="mt-14">
         <h2 className="text-xl font-bold">Continue reading</h2>
