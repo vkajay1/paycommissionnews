@@ -137,6 +137,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         crossOrigin: "anonymous",
       },
       {
+        async: true,
+        src: "https://quge5.com/88/tag.min.js",
+        "data-zone": "275863",
+        "data-cfasync": "false",
+      },
+      {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
