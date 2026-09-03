@@ -85,6 +85,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "google-site-verification", content: "oStqnZ9sPvwgR5ldfdqT_uXGR8FlSi4znLN03L1XHA4" },
       { name: "google-site-verification", content: "RKWGJNwcCsauhMH2s6doxaynuD0B6QG2XzmCzZ-_Kwc" },
+      { name: "monetag", content: "3517b0b8785638c2b43ace63f2313f77" },
+
       { title: "8th CPC Calculator — 8th Pay Commission salary calculator" },
       {
         name: "description",
