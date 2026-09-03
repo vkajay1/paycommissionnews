@@ -179,7 +179,13 @@ export const Route = createFileRoute("/blog/$slug")({
 function ArticlePage() {
   const { slug } = Route.useParams();
   const article = getArticle(slug)!;
-  const related = articles.filter((a) => a.slug !== slug).slice(0, 3);
+  // Prefer same-language, same-category pieces so internal links stay relevant.
+  const pool = articles.filter((a) => a.slug !== slug);
+  const related = [
+    ...pool.filter((a) => a.lang === article.lang && a.category === article.category),
+    ...pool.filter((a) => a.lang === article.lang && a.category !== article.category),
+    ...pool.filter((a) => a.lang !== article.lang),
+  ].slice(0, 3);
 
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 pt-10 sm:px-6">
