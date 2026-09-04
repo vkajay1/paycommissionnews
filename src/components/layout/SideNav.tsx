@@ -65,6 +65,7 @@ export const navGroups: NavGroup[] = [
       { label: "7th CPC Calculator", to: "/7th-pay-commission-calculator", icon: Building2 },
       { label: "News & Analysis", to: "/blog", icon: Newspaper },
       { label: "Latest Jobs", to: "/latest-jobs", icon: Briefcase },
+      { label: "PDF Tool", to: "/pdf-tools", icon: FileText },
     ],
   },
 

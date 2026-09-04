@@ -15,6 +15,7 @@ const primary = [
   { to: "/state", label: "States" },
   { to: "/blog", label: "News" },
   { to: "/latest-jobs", label: "Latest Jobs" },
+  { to: "/pdf-tools", label: "PDF Tool" },
 ];
 
 const linkClass =

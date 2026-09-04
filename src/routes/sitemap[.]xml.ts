@@ -59,6 +59,7 @@ const STATIC: SitemapEntry[] = [
   { path: "/pay-commission-history", changefreq: "monthly", priority: "0.8" },
   { path: "/blog", changefreq: "weekly", priority: "0.8" },
   { path: "/latest-jobs", changefreq: "daily", priority: "0.8" },
+  { path: "/pdf-tools", changefreq: "monthly", priority: "0.7" },
   { path: "/pay-level", changefreq: "weekly", priority: "0.8" },
   { path: "/role", changefreq: "weekly", priority: "0.8" },
   { path: "/state", changefreq: "weekly", priority: "0.8" },
