@@ -20,6 +20,7 @@ import { Route as PushAdminRouteImport } from './routes/push-admin'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
 import { Route as PensionRouteImport } from './routes/pension'
+import { Route as PdfToolsRouteImport } from './routes/pdf-tools'
 import { Route as PayLevelRouteImport } from './routes/pay-level'
 import { Route as PayFixationRouteImport } from './routes/pay-fixation'
 import { Route as PayCommissionHistoryRouteImport } from './routes/pay-commission-history'
@@ -133,6 +134,11 @@ const PensionArrearRoute = PensionArrearRouteImport.update({
 const PensionRoute = PensionRouteImport.update({
   id: '/pension',
   path: '/pension',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PdfToolsRoute = PdfToolsRouteImport.update({
+  id: '/pdf-tools',
+  path: '/pdf-tools',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PayLevelRoute = PayLevelRouteImport.update({
@@ -492,6 +498,7 @@ export interface FileRoutesByFullPath {
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
+  '/pdf-tools': typeof PdfToolsRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -562,6 +569,7 @@ export interface FileRoutesByTo {
   '/nps-calculator': typeof NpsCalculatorRoute
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
+  '/pdf-tools': typeof PdfToolsRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -632,6 +640,7 @@ export interface FileRoutesById {
   '/pay-commission-history': typeof PayCommissionHistoryRoute
   '/pay-fixation': typeof PayFixationRoute
   '/pay-level': typeof PayLevelRouteWithChildren
+  '/pdf-tools': typeof PdfToolsRoute
   '/pension': typeof PensionRoute
   '/pension-arrear': typeof PensionArrearRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -705,6 +714,7 @@ export interface FileRouteTypes {
     | '/pay-commission-history'
     | '/pay-fixation'
     | '/pay-level'
+    | '/pdf-tools'
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
@@ -775,6 +785,7 @@ export interface FileRouteTypes {
     | '/nps-calculator'
     | '/pay-commission-history'
     | '/pay-fixation'
+    | '/pdf-tools'
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
@@ -844,6 +855,7 @@ export interface FileRouteTypes {
     | '/pay-commission-history'
     | '/pay-fixation'
     | '/pay-level'
+    | '/pdf-tools'
     | '/pension'
     | '/pension-arrear'
     | '/privacy-policy'
@@ -916,6 +928,7 @@ export interface RootRouteChildren {
   PayCommissionHistoryRoute: typeof PayCommissionHistoryRoute
   PayFixationRoute: typeof PayFixationRoute
   PayLevelRoute: typeof PayLevelRouteWithChildren
+  PdfToolsRoute: typeof PdfToolsRoute
   PensionRoute: typeof PensionRoute
   PensionArrearRoute: typeof PensionArrearRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -1013,6 +1026,13 @@ declare module '@tanstack/react-router' {
       path: '/pension'
       fullPath: '/pension'
       preLoaderRoute: typeof PensionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pdf-tools': {
+      id: '/pdf-tools'
+      path: '/pdf-tools'
+      fullPath: '/pdf-tools'
+      preLoaderRoute: typeof PdfToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pay-level': {
@@ -1514,6 +1534,7 @@ const rootRouteChildren: RootRouteChildren = {
   PayCommissionHistoryRoute: PayCommissionHistoryRoute,
   PayFixationRoute: PayFixationRoute,
   PayLevelRoute: PayLevelRouteWithChildren,
+  PdfToolsRoute: PdfToolsRoute,
   PensionRoute: PensionRoute,
   PensionArrearRoute: PensionArrearRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
