@@ -68,6 +68,254 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "upsssc-computer-operator-main-exam-2026-12-posts",
+    title:
+      "UPSSSC Computer Operator Main Examination 2026: 12 Posts — Apply Online 07 to 28 September, Level 5 Pay Rs. 29,200",
+    description:
+      "UPSSSC Computer Operator Main Examination 2026 under Advt. No. 20-Exam/2026 — 12 vacancies for Computer Operator Grade-A and Assistant Computer Operator, PET 2025 plus degree and O Level eligibility, 18 to 40 year age limit, Rs. 25 fee, Level 5 salary of Rs. 29,200 to Rs. 92,300, selection process and free PDF guides.",
+    keyword:
+      "upsssc computer operator 2026, upsssc computer operator online form 2026, upsssc advt 20-exam/2026, upsssc computer operator grade a salary, assistant computer operator vacancy 2026, upsssc pet 2025 mains, upsssc computer operator last date, upsssc computer operator syllabus",
+    organization:
+      "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+    postName: "Computer Operator Grade-A and Assistant Computer Operator",
+    vacancies: "12 posts (Computer Operator Grade-A 11, Assistant Computer Operator 01)",
+    qualification:
+      "UPSSSC PET 2025 score card, a bachelor's degree in any stream from a recognised university and a NIELIT O Level certificate",
+    ageLimit:
+      "18 to 40 years as on 01 July 2026, with age relaxation as per UPSSSC recruitment rules under Advt. No. 20-Exam/2026",
+    payScale:
+      "Computer Operator Grade-A — Level 5, Rs. 29,200 to Rs. 92,300; Assistant Computer Operator — Level 4, Rs. 25,500 to Rs. 81,100, plus DA and HRA",
+    location: "Uttar Pradesh",
+    applicationFee:
+      "Rs. 25 for all categories including General, OBC, EWS, SC, ST and PwBD, payable by UPI, debit card, credit card or net banking",
+    applyStart: "2026-09-07",
+    applyEnd: "2026-09-28",
+    applyUrl: "https://upsssc.gov.in/",
+    organizationUrl: "https://upsssc.gov.in/",
+    salaryMin: 29200,
+    salaryMax: 92300,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "UPSSSC Advt. No. 20-Exam/2026",
+    industry: "State Government Administration — Information Technology",
+    occupationalCategory: "43-9011.00 Computer Operators",
+    educationRequirements:
+      "Bachelor's degree in any discipline from a recognised university along with a NIELIT O Level certificate",
+    experienceRequirements:
+      "No prior work experience required; a valid UPSSSC PET 2025 score card is mandatory to apply",
+    jobBenefits:
+      "Permanent Uttar Pradesh state government post with Dearness Allowance, House Rent Allowance, medical benefits, pension under the applicable scheme, gratuity and regular promotion opportunities",
+    numberOfPositions: 12,
+    applicantLocationRequirements: "India",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (12 Posts, Dates, Fee, Pay)",
+        href: "/downloads/upsssc-computer-operator-2026/upsssc-computer-operator-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, category-wise vacancy, eligibility, fee and pay level",
+      },
+      {
+        label: "Exam Pattern, Syllabus & Salary Guide PDF",
+        href: "/downloads/upsssc-computer-operator-2026/upsssc-computer-operator-2026-exam-pattern-and-syllabus.pdf",
+        note: "Selection stages, main exam structure, subject checklist and Level 5 salary snapshot with 8th CPC projections",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-05",
+    updated: "2026-09-05",
+    readMinutes: 8,
+    hero: "from-blue-900 to-orange-600",
+    image: "https://paycommissionnews.co.in/images/upsssc-computer-operator-2026.jpg",
+    imageAlt:
+      "UPSSSC Computer Operator Main Examination 2026 notification for 12 posts with applications open from 07 to 28 September 2026",
+    ogImage:
+      "https://paycommissionnews.co.in/images/og/upsssc-computer-operator-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttar Pradesh Subordinate Service Selection Commission has released the Computer Operator Main Examination notification under Advt. No. 20-Exam/2026 for 12 posts. Candidates holding a valid PET 2025 score card, a degree in any stream and an O Level certificate can apply online from 07 September to 28 September 2026, with Computer Operator Grade-A appointed at Level 5 with an entry basic pay of Rs. 29,200.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has notified the Computer Operator Main Examination 2026 under Advertisement No. 20-Exam/2026 for a total of 12 posts — 11 for Computer Operator Grade-A and one for Assistant Computer Operator. The online application window runs from 07 September 2026 to 28 September 2026, the fee can be paid up to the same last date, and the form correction window stays open until 05 October 2026.",
+      },
+      {
+        type: "p",
+        text: "This is a mains-stage recruitment, so only candidates who appeared in and hold a valid UPSSSC PET 2025 score card can apply. Along with the PET score, applicants need a bachelor's degree in any stream and a NIELIT O Level certificate. The vacancy count is small, but the post is a stable Uttar Pradesh government IT role with a Level 5 pay scale, regular allowances and a clear promotion ladder.",
+      },
+      { type: "h2", text: "UPSSSC Computer Operator 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "04 September 2026"],
+          ["Online application begins", "07 September 2026"],
+          ["Last date to apply online", "28 September 2026"],
+          ["Last date to pay the exam fee", "28 September 2026"],
+          ["Form correction last date", "05 October 2026"],
+          ["Main examination date", "As per the UPSSSC schedule"],
+          ["Exam city and admit card", "Released before the examination"],
+        ],
+        caption: "Dates as per UPSSSC Advertisement No. 20-Exam/2026.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Do not wait for the last day",
+        text: "The UPSSSC portal sees heavy traffic in the final 48 hours of every recruitment. Keep your PET 2025 registration number, degree details, O Level certificate number, photograph and signature ready, and complete both the form and the Rs. 25 fee payment well before 28 September 2026.",
+      },
+      { type: "h2", text: "Vacancy details — 12 posts" },
+      {
+        type: "table",
+        headers: ["Post name", "Total posts", "Eligibility"],
+        rows: [
+          [
+            "Computer Operator Grade-A",
+            "11",
+            "UPSSSC PET 2025 score card, bachelor's degree in any stream, NIELIT O Level certificate",
+          ],
+          [
+            "Assistant Computer Operator",
+            "01",
+            "UPSSSC PET 2025 score card, bachelor's degree in any stream, NIELIT O Level certificate",
+          ],
+        ],
+      },
+      { type: "h3", text: "Category-wise vacancy breakup" },
+      {
+        type: "table",
+        headers: ["Post name", "UR", "EWS", "OBC", "SC", "ST", "Total"],
+        rows: [
+          ["Computer Operator Grade-A", "05", "01", "02", "03", "00", "11"],
+          ["Assistant Computer Operator", "01", "00", "00", "00", "00", "01"],
+        ],
+        caption:
+          "Reservation is applied as per Uttar Pradesh government rules; horizontal reservation details are given in the official advertisement.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "A valid UPSSSC PET 2025 score card is mandatory — candidates without it cannot apply for this mains recruitment.",
+          "A bachelor's degree in any stream from a recognised university or board.",
+          "A NIELIT O Level certificate (or the qualification treated as equivalent in the advertisement).",
+          "Candidates should verify the cut-off date for possessing each qualification before filling the form.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Item", "Detail"],
+        rows: [
+          ["Minimum age", "18 years"],
+          ["Maximum age", "40 years"],
+          [
+            "Age relaxation",
+            "Extra relaxation for reserved categories as per UPSSSC recruitment rules under Advt. No. 20-Exam/2026",
+          ],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General (UR) / OBC / EWS", "Rs. 25"],
+          ["SC / ST", "Rs. 25"],
+          ["PwBD (Divyang)", "Rs. 25"],
+          ["Payment mode", "UPI, debit card, credit card or net banking only"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "UPSSSC Computer Operator salary 2026 — Level 5 pay structure",
+      },
+      {
+        type: "p",
+        text: "Computer Operator Grade-A in Uttar Pradesh is placed in Level 5 of the state pay matrix with an entry basic pay of Rs. 29,200, running up to Rs. 92,300. Assistant Computer Operator is placed one step lower at Level 4, Rs. 25,500 to Rs. 81,100. On top of the basic pay, the state pays Dearness Allowance at the prevailing rate, House Rent Allowance based on the classification of the posting city, and other admissible allowances.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative monthly amount (Computer Operator Grade-A)"],
+        rows: [
+          ["Basic pay (Level 5, index 1)", "Rs. 29,200"],
+          ["Dearness Allowance (at the prevailing rate)", "Around Rs. 16,000"],
+          ["House Rent Allowance", "Around Rs. 2,300 to Rs. 4,700 depending on the city"],
+          ["Other allowances", "As admissible under Uttar Pradesh government rules"],
+          ["Approximate gross salary", "Rs. 45,000 to Rs. 52,000"],
+          ["Approximate in-hand pay", "Rs. 40,000 to Rs. 46,000"],
+        ],
+        caption:
+          "Allowance rates change with the DA revision cycle and the posting city, so treat these as indicative figures.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "What the 8th Pay Commission could mean at Level 5",
+        text: "If Uttar Pradesh adopts the 8th CPC matrix in line with the centre, a Level 5 basic pay of Rs. 29,200 would become roughly Rs. 58,400 at a fitment factor of 2.0 and about Rs. 66,600 at 2.28, before the DA cycle restarts from zero. Use the salary and pay-level calculators on this site to model your own figure.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Shortlisting on the basis of the UPSSSC PET 2025 score.",
+          "Computer Operator Main Examination covering computer knowledge, general studies, general Hindi and reasoning.",
+          "Qualifying computer typing and practical skill test.",
+          "Document verification, including the PET score card, degree and O Level certificate.",
+          "Medical examination and final appointment as per merit.",
+        ],
+      },
+      { type: "h2", text: "How to apply for the UPSSSC Computer Operator Online Form 2026" },
+      {
+        type: "ol",
+        items: [
+          "Open the UPSSSC one-time registration dashboard and log in with your PET 2025 registration details.",
+          "Select Advertisement No. 20-Exam/2026 for the Computer Operator Main Examination.",
+          "Fill in your personal, educational and category details exactly as they appear on your certificates.",
+          "Upload a scanned photograph and signature in the prescribed size and format.",
+          "Pay the Rs. 25 fee through UPI, card or net banking and confirm that the payment status shows as successful.",
+          "Check the preview carefully, submit the form and save a printout of the final submitted application.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Check what the post really pays",
+        text: "Before you commit to months of preparation, run Level 5 and Level 4 through our pay-level and take-home salary calculators to see the gross and in-hand figures for your likely posting city under both the current matrix and the projected 8th CPC matrix.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many posts are there in UPSSSC Computer Operator Recruitment 2026?",
+        a: "There are 12 posts in total — 11 for Computer Operator Grade-A and one for Assistant Computer Operator — notified under UPSSSC Advertisement No. 20-Exam/2026.",
+      },
+      {
+        q: "What is the last date to apply for UPSSSC Computer Operator 2026?",
+        a: "Online applications open on 07 September 2026 and close on 28 September 2026. The fee must also be paid by 28 September 2026, and the form correction window stays open until 05 October 2026.",
+      },
+      {
+        q: "What qualification is required for UPSSSC Computer Operator 2026?",
+        a: "Candidates need a valid UPSSSC PET 2025 score card, a bachelor's degree in any stream from a recognised university and a NIELIT O Level certificate.",
+      },
+      {
+        q: "What is the age limit for UPSSSC Computer Operator 2026?",
+        a: "The age limit is 18 to 40 years as on 01 July 2026, with additional relaxation for reserved categories as per UPSSSC recruitment rules.",
+      },
+      {
+        q: "What is the UPSSSC Computer Operator Grade-A salary?",
+        a: "Computer Operator Grade-A is placed at Level 5 with a basic pay of Rs. 29,200 to Rs. 92,300, which works out to a gross salary of roughly Rs. 45,000 to Rs. 52,000 per month with Dearness Allowance and HRA. Assistant Computer Operator is at Level 4, Rs. 25,500 to Rs. 81,100.",
+      },
+      {
+        q: "What is the application fee for UPSSSC Computer Operator 2026?",
+        a: "The fee is Rs. 25 for every category, including General, OBC, EWS, SC, ST and PwBD candidates, payable only through UPI, debit card, credit card or net banking.",
+      },
+    ],
+  },
+  {
     slug: "upsc-epfo-apfc-recruitment-2026-80-posts",
     title:
       "UPSC EPFO APFC Recruitment 2026: 80 Assistant Provident Fund Commissioner Posts — Apply 22 August to 11 September, Level 10 Pay Rs. 56,100",
