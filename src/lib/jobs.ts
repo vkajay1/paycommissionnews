@@ -68,6 +68,237 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "uksssc-group-c-recruitment-2026-553-posts",
+    title:
+      "UKSSSC Group C Recruitment 2026: 553 Posts — Junior Assistant, Computer Assistant & Clerk, Apply Online 08 September to 07 October",
+    description:
+      "UKSSSC Group C Various Post Recruitment 2026 under Advt. No. 80/2026 — 553 vacancies for Junior Assistant, Computer Assistant, Registrar Clerk and other posts, 12th pass eligibility, 18/21 to 42 year age limit, Rs. 150 to Rs. 300 fee, exam on 15 November 2026, Level 3 to 5 salary and free PDF guides.",
+    keyword:
+      "uksssc group c recruitment 2026, uksssc group c online form 2026, uksssc advt 80/2026, uksssc junior assistant vacancy 2026, uksssc 553 posts, uttarakhand junior assistant salary, uksssc group c exam date 2026, uksssc group c syllabus",
+    organization:
+      "Uttarakhand Subordinate Service Selection Commission (UKSSSC)",
+    postName: "Junior Assistant, Computer Assistant, Registrar Clerk and other Group C posts",
+    vacancies:
+      "553 posts — Junior Assistant, Computer Assistant, Registrar Clerk and other Group C posts",
+    qualification:
+      "Intermediate (12th) passed from a recognised board; post-wise typing or computer proficiency requirements apply as per the notification",
+    ageLimit:
+      "18/21 to 42 years as on 01 July 2026, with age relaxation as per UKSSSC recruitment rules under Advt. No. 80/2026",
+    payScale:
+      "Level 3 to Level 5 of the Uttarakhand pay matrix — entry basic pay Rs. 21,700 to Rs. 29,200, plus DA and HRA",
+    location: "Uttarakhand",
+    applicationFee:
+      "Rs. 300 for General/OBC and Rs. 150 for SC/ST/EWS candidates, payable by debit card, credit card or net banking",
+    applyStart: "2026-09-08",
+    applyEnd: "2026-10-07",
+    applyUrl: "https://sssc.uk.gov.in/",
+    organizationUrl: "https://sssc.uk.gov.in/",
+    salaryMin: 21700,
+    salaryMax: 29200,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "UKSSSC Advt. No. 80/2026",
+    industry: "State Government Administration",
+    occupationalCategory: "43-9061.00 Office Clerks, General",
+    educationRequirements:
+      "Intermediate (12th) passed from a recognised board in India",
+    experienceRequirements:
+      "No prior work experience required; fresh 12th pass candidates meeting the age criteria can apply",
+    jobBenefits:
+      "Permanent Uttarakhand state government post with Dearness Allowance, House Rent Allowance, medical benefits, pension under the applicable scheme, gratuity and regular promotion opportunities",
+    numberOfPositions: 553,
+    applicantLocationRequirements: "India",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (553 Posts, Dates, Fee, Pay)",
+        href: "/downloads/uksssc-group-c-2026/uksssc-group-c-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, vacancy count, eligibility, fee and pay level",
+      },
+      {
+        label: "Exam Pattern, Syllabus & Salary Guide PDF",
+        href: "/downloads/uksssc-group-c-2026/uksssc-group-c-2026-exam-pattern-and-syllabus.pdf",
+        note: "Selection stages, paper structure, subject checklist and Level 3–5 salary snapshot with 8th CPC projections",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-05",
+    updated: "2026-09-05",
+    readMinutes: 8,
+    hero: "from-blue-900 to-amber-500",
+    image: "https://paycommissionnews.co.in/images/uksssc-group-c-2026.jpg",
+    imageAlt:
+      "UKSSSC Group C Recruitment 2026 notification for 553 posts with applications open from 08 September to 07 October 2026",
+    ogImage:
+      "https://paycommissionnews.co.in/images/og/uksssc-group-c-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttarakhand Subordinate Service Selection Commission has released the Group C Various Post notification under Advt. No. 80/2026 for 553 posts, including Junior Assistant, Computer Assistant and Registrar Clerk. 12th pass candidates aged 18/21 to 42 can apply online from 08 September to 07 October 2026, and the written examination is scheduled for 15 November 2026.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttarakhand Subordinate Service Selection Commission (UKSSSC) has notified the Group C Various Post Recruitment 2026 under Advertisement No. 80/2026 for a total of 553 posts. The notification covers Junior Assistant, Computer Assistant, Registrar Clerk and other clerical and administrative posts across Uttarakhand government departments. Online applications open on 08 September 2026 and close on 07 October 2026, with the written examination fixed for 15 November 2026.",
+      },
+      {
+        type: "p",
+        text: "This is one of the largest state government recruitments in Uttarakhand this year and is open to candidates who have passed the Intermediate (12th) examination from a recognised board. Because the basic qualification is only 12th pass, competition is expected to be intense — every mark in the written paper will matter for the final merit list.",
+      },
+      { type: "h2", text: "UKSSSC Group C 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "31 August 2026"],
+          ["Online application begins", "08 September 2026"],
+          ["Last date to apply online", "07 October 2026"],
+          ["Last date to pay the exam fee", "07 October 2026"],
+          ["Form correction window", "12 to 14 October 2026"],
+          ["Written examination date", "15 November 2026"],
+          ["Result declaration", "As per the UKSSSC schedule"],
+        ],
+        caption: "Dates as per UKSSSC Advertisement No. 80/2026.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Apply well before 07 October",
+        text: "UKSSSC portals slow down badly in the final two days of every recruitment. Keep your Intermediate certificate details, domicile, category certificate, photograph and signature scanned and ready, and complete both the form and the fee payment several days before the 07 October 2026 deadline.",
+      },
+      { type: "h2", text: "Vacancy details — 553 posts" },
+      {
+        type: "table",
+        headers: ["Post group", "Total posts", "Basic eligibility"],
+        rows: [
+          [
+            "Junior Assistant, Computer Assistant, Registrar Clerk and other Group C posts",
+            "553",
+            "Intermediate (12th) passed from a recognised board in India",
+          ],
+        ],
+        caption:
+          "Post-wise and category-wise breakup is given in the official notification; reservation follows Uttarakhand government rules.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Intermediate (12th) passed from any recognised board in India.",
+          "Certain posts such as Computer Assistant require typing speed or computer proficiency — the exact post-wise requirement is specified in the official notification.",
+          "Candidates should verify the cut-off date by which the qualification must have been completed before filling the form.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Item", "Detail"],
+        rows: [
+          ["Minimum age", "18 to 21 years (post-wise, as notified)"],
+          ["Maximum age", "42 years"],
+          [
+            "Age relaxation",
+            "Extra relaxation for SC, ST, OBC, EWS, PwBD and other reserved categories as per UKSSSC recruitment rules",
+          ],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General (UR) / OBC", "Rs. 300"],
+          ["SC / ST / EWS", "Rs. 150"],
+          ["Payment mode", "Debit card, credit card or net banking (online only)"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "UKSSSC Group C salary 2026 — pay level and in-hand",
+      },
+      {
+        type: "p",
+        text: "Group C posts in Uttarakhand are placed from Level 3 to Level 5 of the state pay matrix depending on the post, giving an entry basic pay of Rs. 21,700 to Rs. 29,200. On top of the basic, the state pays Dearness Allowance at the prevailing rate and House Rent Allowance based on the classification of the posting city.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative monthly amount"],
+        rows: [
+          ["Basic pay (Level 3 to Level 5, index 1)", "Rs. 21,700 to Rs. 29,200"],
+          ["Dearness Allowance (at the prevailing rate)", "Around Rs. 12,000 to Rs. 16,000"],
+          ["House Rent Allowance", "Around Rs. 1,700 to Rs. 4,700 depending on the city"],
+          ["Approximate gross salary", "Rs. 33,000 to Rs. 52,000"],
+          ["Approximate in-hand pay", "Rs. 30,000 to Rs. 46,000"],
+        ],
+        caption:
+          "Allowance rates change with the DA revision cycle and the posting city, so treat these as indicative figures.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "What the 8th Pay Commission could mean for Group C posts",
+        text: "If Uttarakhand adopts the 8th CPC matrix in line with the centre, a Level 5 basic of Rs. 29,200 would become roughly Rs. 66,600 at a 2.28 fitment factor, and a Level 3 basic of Rs. 21,700 would become about Rs. 49,476 — before the DA cycle restarts from zero. Use the salary and pay-level calculators on this site to model your own figure.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Written examination on 15 November 2026 — objective multiple-choice questions on general studies, Uttarakhand GK, general Hindi, reasoning and computer knowledge.",
+          "Typing or computer skill test for posts that require it (qualifying in nature).",
+          "Document verification, including the Intermediate certificate, domicile and category documents.",
+          "Final merit list prepared on the written exam score, subject to qualifying the skill test.",
+        ],
+      },
+      { type: "h2", text: "How to apply for UKSSSC Group C Online Form 2026" },
+      {
+        type: "ol",
+        items: [
+          "Open the UKSSSC recruitment portal once the application link activates on 08 September 2026.",
+          "Register with your mobile number and email, then log in and select Advt. No. 80/2026 for Group C Various Posts.",
+          "Fill in your personal, educational and category details exactly as they appear on your certificates.",
+          "Upload a scanned photograph and signature in the prescribed size and format.",
+          "Pay the fee (Rs. 300 for General/OBC, Rs. 150 for SC/ST/EWS) by debit card, credit card or net banking.",
+          "Check the preview carefully, submit the form and save a printout of the final submitted application.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Check what the post really pays",
+        text: "Before you commit to months of preparation, run Level 3 and Level 5 through our pay-level and take-home salary calculators to see the gross and in-hand figures for a posting in Dehradun, Haldwani or a hill district under both the current matrix and the projected 8th CPC matrix.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many posts are there in UKSSSC Group C Recruitment 2026?",
+        a: "There are 553 posts in total under UKSSSC Advertisement No. 80/2026, covering Junior Assistant, Computer Assistant, Registrar Clerk and other Group C posts in Uttarakhand.",
+      },
+      {
+        q: "What is the last date to apply for UKSSSC Group C 2026?",
+        a: "Online applications open on 08 September 2026 and close on 07 October 2026. The fee must also be paid by 07 October, and the form correction window runs from 12 to 14 October 2026.",
+      },
+      {
+        q: "What qualification is required for UKSSSC Group C 2026?",
+        a: "Candidates need to have passed the Intermediate (12th) examination from a recognised board. Some posts, such as Computer Assistant, additionally require typing speed or computer proficiency as specified in the notification.",
+      },
+      {
+        q: "What is the exam date for UKSSSC Group C 2026?",
+        a: "The written examination is scheduled for 15 November 2026.",
+      },
+      {
+        q: "What is the UKSSSC Group C salary?",
+        a: "Group C posts are placed at Level 3 to Level 5 of the Uttarakhand pay matrix, with an entry basic pay of Rs. 21,700 to Rs. 29,200 and an approximate gross salary of Rs. 33,000 to Rs. 52,000 per month including DA and HRA.",
+      },
+      {
+        q: "What is the application fee for UKSSSC Group C 2026?",
+        a: "The fee is Rs. 300 for General and OBC candidates and Rs. 150 for SC, ST and EWS candidates, payable online only by debit card, credit card or net banking.",
+      },
+    ],
+  },
+  {
     slug: "upsssc-computer-operator-main-exam-2026-12-posts",
     title:
       "UPSSSC Computer Operator Main Examination 2026: 12 Posts — Apply Online 07 to 28 September, Level 5 Pay Rs. 29,200",
