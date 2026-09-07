@@ -68,6 +68,245 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "uiic-administrative-officer-recruitment-2026-225-posts",
+    title:
+      "UIIC Administrative Officer Recruitment 2026: 225 AO Scale I Posts — Apply Online 08 to 28 September, Basic Pay Rs. 50,925",
+    description:
+      "United India Insurance UIIC Administrative Officer Scale I Recruitment 2026 — 225 vacancies for Generalist and Hindi Officer posts, graduate with 60% eligibility, 21 to 30 year age limit, Rs. 1,000 fee, Tier I exam on 22 October and Tier II on 30 November 2026, AO Scale I salary of Rs. 50,925 and free PDF guides.",
+    keyword:
+      "uiic ao recruitment 2026, united india insurance ao online form 2026, uiic administrative officer scale 1 salary, uiic ao vacancy 2026, uiic ao exam date 2026, uiic ao eligibility, uiic administrative officer in hand salary, insurance ao recruitment 2026",
+    organization: "United India Insurance Company Limited (UIIC)",
+    postName: "Administrative Officer (Scale I) — Generalists and Hindi Officers",
+    vacancies: "225 posts — 200 Generalists and 25 Hindi Officers",
+    qualification:
+      "Bachelor's or Master's degree in any discipline with minimum 60% marks (55% for SC/ST/PwBD); Hindi Officer posts require a Master's degree in Hindi or English with the other language studied at degree level",
+    ageLimit:
+      "21 to 30 years as on 30 June 2026, with age relaxation as per UIIC recruitment rules",
+    payScale:
+      "Administrative Officer Scale I — basic pay Rs. 50,925 in the scale Rs. 50,925 to Rs. 96,765, plus DA, HRA, city compensatory allowance and other PSU insurance benefits",
+    location: "All India",
+    applicationFee:
+      "Rs. 1,000 + GST for General/OBC/EWS and Rs. 250 + GST for SC/ST/PwBD, payable online by debit card, credit card, net banking or UPI",
+    applyStart: "2026-09-08",
+    applyEnd: "2026-09-28",
+    applyUrl: "https://uiic.co.in/web/recruitment/details/1620",
+    organizationUrl: "https://uiic.co.in/",
+    salaryMin: 50925,
+    salaryMax: 96765,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "UIIC AO Scale I Recruitment 2026",
+    industry: "Public Sector General Insurance",
+    occupationalCategory: "13-1199.00 Business Operations Specialists",
+    educationRequirements:
+      "Bachelor's or Master's degree in any discipline with a minimum of 60% marks (55% for SC/ST/PwBD) from a recognised university",
+    experienceRequirements:
+      "No prior work experience required; fresh graduates meeting the marks and age criteria can apply",
+    jobBenefits:
+      "Public sector insurance officer post with Dearness Allowance, House Rent Allowance, city compensatory allowance, medical benefits, pension contribution, gratuity, leave travel concession and promotion up to senior management grades",
+    numberOfPositions: 225,
+    applicantLocationRequirements: "India",
+    directApply: false,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (225 Posts, Dates, Fee, Pay Scale)",
+        href: "/downloads/uiic-ao-2026/uiic-ao-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, vacancy split, eligibility, fee and AO Scale I pay",
+      },
+      {
+        label: "Exam Pattern, Syllabus & Salary Guide PDF",
+        href: "/downloads/uiic-ao-2026/uiic-ao-2026-exam-pattern-and-syllabus.pdf",
+        note: "Tier I and Tier II structure, subject checklist and AO Scale I salary snapshot",
+      },
+    ],
+    category: "Bank & Insurance Jobs",
+    date: "2026-09-07",
+    updated: "2026-09-07",
+    readMinutes: 8,
+    hero: "from-sky-900 to-emerald-500",
+    image: "https://paycommissionnews.co.in/images/uiic-ao-2026.jpg",
+    imageAlt:
+      "UIIC Administrative Officer Recruitment 2026 notification for 225 Scale I posts with applications open from 08 to 28 September 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/uiic-ao-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "United India Insurance Company Limited has released the Administrative Officer Scale I recruitment for 225 posts — 200 Generalists and 25 Hindi Officers. Graduates with at least 60% marks, aged 21 to 30 years, can apply online from 08 to 28 September 2026. The Tier I exam is on 22 October 2026 and the Tier II main exam on 30 November 2026.",
+
+    body: [
+      {
+        type: "p",
+        text: "United India Insurance Company Limited (UIIC), one of the four public sector general insurance companies in India, has notified the Administrative Officer (Scale I) Recruitment 2026 for a total of 225 posts. The intake covers 200 Generalist posts and 25 Hindi Officer posts, and online applications are open from 08 September 2026 to 28 September 2026.",
+      },
+      {
+        type: "p",
+        text: "An Administrative Officer in Scale I is a Class I officer post in a public sector insurer, with a starting basic pay of Rs. 50,925 and a clear promotion ladder up to senior management grades. For graduates who want an officer-level salary without a technical degree, this is one of the strongest openings of the year.",
+      },
+      { type: "h2", text: "UIIC AO 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "07 September 2026"],
+          ["Online application begins", "08 September 2026"],
+          ["Last date to apply online", "28 September 2026"],
+          ["Last date to pay the exam fee", "28 September 2026"],
+          ["Tier I (preliminary) exam date", "22 October 2026"],
+          ["Tier II (main) exam date", "30 November 2026"],
+          ["Admit card availability", "Shortly before each exam"],
+        ],
+        caption: "Dates as per the official UIIC Administrative Officer notification 2026.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Only a 21-day application window",
+        text: "The form closes on 28 September 2026 and the fee must be paid by the same date. Keep your degree mark sheets, category certificate, photograph and signature scanned and ready, and finish the payment a few days early — insurance recruitment portals get heavily loaded on the final day.",
+      },
+      { type: "h2", text: "Vacancy details — 225 posts" },
+      {
+        type: "table",
+        headers: ["Post name", "Total posts", "Basic eligibility"],
+        rows: [
+          [
+            "Administrative Officer (Generalists)",
+            "200",
+            "Bachelor's or Master's degree in any discipline with minimum 60% marks (55% for SC/ST/PwBD)",
+          ],
+          [
+            "Administrative Officer (Hindi Officers)",
+            "25",
+            "Master's degree in Hindi with English at degree level, or Master's in English with Hindi at degree level, or an equivalent combination, with minimum 60% marks (55% for SC/ST/PwBD)",
+          ],
+        ],
+      },
+      { type: "h2", text: "Category-wise vacancy split" },
+      {
+        type: "table",
+        headers: ["Post name", "UR", "EWS", "OBC", "SC", "ST", "Total"],
+        rows: [
+          ["Administrative Officer (Generalists)", "68", "22", "62", "30", "18", "200"],
+          ["Administrative Officer (Hindi Officers)", "11", "02", "07", "04", "01", "25"],
+        ],
+        caption: "Reservation follows Government of India rules for public sector insurers.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Generalists: Bachelor's or Master's degree in any discipline from a recognised university with at least 60% marks (55% for SC/ST/PwBD).",
+          "Hindi Officers: Master's degree in Hindi with English as a subject at degree level, or a Master's in English with Hindi as a subject at degree level, or a Master's in any subject studied through the Hindi or English medium with the other language at degree level.",
+          "The prescribed percentage must be met in the qualifying degree; read the official notification for the exact computation of marks.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 30 June 2026" },
+      {
+        type: "table",
+        headers: ["Item", "Detail"],
+        rows: [
+          ["Minimum age", "21 years"],
+          ["Maximum age", "30 years"],
+          [
+            "Age relaxation",
+            "Extra relaxation for SC, ST, OBC, PwBD, ex-servicemen and other eligible categories as per UIIC recruitment rules",
+          ],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS", "Rs. 1,000 + GST"],
+          ["SC / ST / PwBD", "Rs. 250 + GST"],
+          ["Payment mode", "Debit card, credit card, net banking or UPI"],
+        ],
+      },
+      { type: "h2", text: "UIIC AO Scale I salary 2026 — pay scale and in-hand" },
+      {
+        type: "p",
+        text: "Administrative Officers in public sector general insurance companies are appointed in the Scale I officer grade, which starts at a basic pay of Rs. 50,925 and rises through annual increments to Rs. 96,765 at the top of the scale. On top of the basic pay, officers receive Dearness Allowance linked to the insurance industry index, House Rent Allowance, city compensatory allowance and other benefits.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative monthly amount"],
+        rows: [
+          ["Basic pay (Scale I, first stage)", "Rs. 50,925"],
+          ["Dearness Allowance (industry linked)", "Around Rs. 12,000 to Rs. 15,000"],
+          ["House Rent Allowance", "Around Rs. 4,000 to Rs. 9,000 depending on the city"],
+          ["City compensatory and other allowances", "Around Rs. 1,500 to Rs. 4,000"],
+          ["Approximate gross salary", "Rs. 70,000 to Rs. 80,000"],
+          ["Approximate in-hand pay", "Rs. 58,000 to Rs. 66,000"],
+        ],
+        caption:
+          "Allowances vary with the posting city and the prevailing DA rate, so treat these as indicative figures.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "How this compares with a central government officer post",
+        text: "A Scale I insurance officer basic of Rs. 50,925 sits close to Level 8 of the central pay matrix. If you also plan to sit for central government exams, use our pay-level and take-home salary calculators to compare the two career paths side by side, including the projected 8th Pay Commission figures.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Tier I preliminary online examination on 22 October 2026 — objective test of reasoning, English language, quantitative aptitude and general awareness (qualifying in nature).",
+          "Tier II main online examination on 30 November 2026 — a deeper objective paper along with a descriptive English or Hindi paper, depending on the post applied for.",
+          "Interview for candidates shortlisted from the main examination.",
+          "Pre-employment medical examination and document verification before the final appointment.",
+        ],
+      },
+      { type: "h2", text: "How to apply for the UIIC AO Online Form 2026" },
+      {
+        type: "ol",
+        items: [
+          "Open the UIIC recruitment page once the application link activates on 08 September 2026.",
+          "Register with your mobile number and email, then log in and select the Administrative Officer (Scale I) 2026 recruitment.",
+          "Choose your stream — Generalists or Hindi Officers — and fill in personal, educational and category details exactly as on your certificates.",
+          "Upload the scanned photograph, signature, handwriting declaration and other documents in the prescribed size and format.",
+          "Pay the fee (Rs. 1,000 + GST for General/OBC/EWS, Rs. 250 + GST for SC/ST/PwBD) online.",
+          "Verify the preview carefully, submit the form and save a printout of the final application.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Check what the post really pays",
+        text: "Before you begin preparation, run the Scale I basic pay of Rs. 50,925 through our take-home salary and income tax calculators to see the monthly in-hand figure for a metro posting after DA, HRA, provident fund and tax deductions.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many posts are there in UIIC Administrative Officer Recruitment 2026?",
+        a: "There are 225 Administrative Officer (Scale I) posts — 200 for Generalists and 25 for Hindi Officers.",
+      },
+      {
+        q: "What is the last date to apply for UIIC AO Recruitment 2026?",
+        a: "Online applications open on 08 September 2026 and close on 28 September 2026. The application fee must also be paid by 28 September 2026.",
+      },
+      {
+        q: "What is the exam date for UIIC AO 2026?",
+        a: "The Tier I preliminary examination is scheduled for 22 October 2026 and the Tier II main examination for 30 November 2026.",
+      },
+      {
+        q: "What qualification is required for UIIC AO 2026?",
+        a: "Generalist candidates need a bachelor's or master's degree in any discipline with at least 60% marks (55% for SC/ST/PwBD). Hindi Officer candidates need a master's degree in Hindi or English with the other language studied at degree level.",
+      },
+      {
+        q: "What is the UIIC Administrative Officer Scale I salary?",
+        a: "The Scale I pay scale starts at a basic pay of Rs. 50,925 and rises to Rs. 96,765. With DA, HRA and other allowances, the gross salary is roughly Rs. 70,000 to Rs. 80,000 a month and the in-hand pay about Rs. 58,000 to Rs. 66,000 depending on the posting city.",
+      },
+      {
+        q: "What is the age limit for UIIC AO Recruitment 2026?",
+        a: "Candidates must be between 21 and 30 years of age as on 30 June 2026, with relaxation for reserved categories as per UIIC recruitment rules.",
+      },
+    ],
+  },
+  {
     slug: "uksssc-group-c-recruitment-2026-553-posts",
     title:
       "UKSSSC Group C Recruitment 2026: 553 Posts — Junior Assistant, Computer Assistant & Clerk, Apply Online 08 September to 07 October",
