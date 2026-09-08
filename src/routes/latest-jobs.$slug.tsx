@@ -71,7 +71,8 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             hiringOrganization: {
               "@type": "Organization",
               name: j.organization,
-              ...(j.organizationUrl ? { sameAs: j.organizationUrl, url: j.organizationUrl } : {}),
+              sameAs: j.organizationUrl || "NA",
+              url: j.organizationUrl || "NA",
               ...(j.organizationLogo
                 ? { logo: { "@type": "ImageObject", url: abs(j.organizationLogo) } }
                 : {}),
@@ -81,17 +82,13 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "IN",
-                ...(j.location ? { addressRegion: j.location } : {}),
+                addressRegion: j.location || "NA",
               },
             },
-            ...(j.applicantLocationRequirements
-              ? {
-                  applicantLocationRequirements: {
-                    "@type": "Country",
-                    name: j.applicantLocationRequirements,
-                  },
-                }
-              : {}),
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: j.applicantLocationRequirements || "NA",
+            },
             ...(j.salaryMin
               ? {
                   baseSalary: {
@@ -107,47 +104,29 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
                 }
               : {}),
             ...(j.salaryMin ? { salaryCurrency: j.salaryCurrency ?? "INR" } : {}),
-            ...(j.qualification ? { qualifications: j.qualification } : {}),
-            ...(j.educationRequirements
-              ? {
-                  educationRequirements: {
-                    "@type": "EducationalOccupationalCredential",
-                    credentialCategory: j.educationRequirements,
-                  },
-                }
-              : {}),
-            ...(j.experienceRequirements
-              ? {
-                  experienceRequirements: {
-                    "@type": "OccupationalExperienceRequirements",
-                    description: j.experienceRequirements,
-                  },
-                  experienceInPlaceOfEducation: false,
-                }
-              : {}),
-            ...(j.jobBenefits ? { jobBenefits: j.jobBenefits } : {}),
-            ...(j.industry ? { industry: j.industry } : {}),
-            ...(j.occupationalCategory ? { occupationalCategory: j.occupationalCategory } : {}),
-            ...(j.numberOfPositions
-              ? { totalJobOpenings: j.numberOfPositions }
-              : j.vacancies
-                ? { totalJobOpenings: j.vacancies }
-                : {}),
-            ...(j.noticeNumber
-              ? {
-                  identifier: {
-                    "@type": "PropertyValue",
-                    name: j.organization,
-                    value: j.noticeNumber,
-                  },
-                }
-              : {}),
-            ...(j.applyUrl
-              ? { directApply: j.directApply ?? false }
-              : {}),
+            qualifications: j.qualification || "NA",
+            educationRequirements: {
+              "@type": "EducationalOccupationalCredential",
+              credentialCategory: j.educationRequirements || "NA",
+            },
+            experienceRequirements: {
+              "@type": "OccupationalExperienceRequirements",
+              description: j.experienceRequirements || "NA",
+            },
+            experienceInPlaceOfEducation: false,
+            jobBenefits: j.jobBenefits || "NA",
+            industry: j.industry || "NA",
+            occupationalCategory: j.occupationalCategory || "NA",
+            totalJobOpenings: j.numberOfPositions ?? j.vacancies ?? "NA",
+            identifier: {
+              "@type": "PropertyValue",
+              name: j.organization,
+              value: j.noticeNumber || "NA",
+            },
+            directApply: j.applyUrl ? (j.directApply ?? false) : false,
             ...(share ? { image: abs(share) } : {}),
             url: absUrl,
-            ...(j.applyUrl ? { sameAs: j.applyUrl } : {}),
+            sameAs: j.applyUrl || "NA",
           }),
         },
         {
