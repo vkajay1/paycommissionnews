@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { SideNav } from "@/components/layout/SideNav";
+import { JobsSideNav } from "@/components/layout/JobsSideNav";
 import { PushPrompt } from "@/components/push/PushPrompt";
 
 
@@ -212,7 +212,7 @@ function RootComponent() {
       <div className="flex min-h-screen flex-col">
         <Header />
         <div className="mx-auto flex w-full max-w-[1400px] flex-1 items-start gap-6 px-0 lg:px-6">
-          <SideNav />
+          <JobsSideNav />
           <main className="min-w-0 flex-1 pb-20 md:pb-0">
             <Outlet />
           </main>
