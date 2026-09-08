@@ -3,13 +3,13 @@ import { Briefcase } from "lucide-react";
 import { jobs } from "@/lib/jobs";
 
 export function JobsSideNav() {
-  const sorted = [...jobs].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
+  const sorted = [...jobs]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 20);
 
   return (
     <aside className="hidden w-60 shrink-0 md:block">
-      <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-lg border border-border bg-card p-4">
+      <div className="rounded-lg border border-border bg-card p-4">
         <div className="mb-3 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
           <Briefcase className="h-3 w-3 text-primary" />
           Latest jobs
