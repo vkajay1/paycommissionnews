@@ -68,6 +68,290 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "mpesb-si-subedar-recruitment-2026-504-posts",
+    title:
+      "MPESB SI & Subedar Recruitment 2026: 504 MP Police Sub Inspector Posts — Apply Online 09 to 23 September, Pay Level 9 Salary Rs. 36,200",
+    description:
+      "MPESB SI and Subedar Recruitment 2026 notification — 504 MP Police Subedar and Sub Inspector (SAF, DEF, Arms, Photo, Q.D., Finger Print) posts, graduation eligibility, maximum age 33 years, fee Rs. 500, online application 09–23 September 2026, prelims on 28 October 2026 and Pay Level 9 salary Rs. 36,200–1,14,800.",
+    keyword:
+      "mpesb si recruitment 2026, mp police si vacancy 2026, mpesb subedar recruitment 2026, mp police sub inspector 504 posts, mpesb si apply online 2026, mp police si salary, mpesb si exam date 2026, mp police si eligibility, esb.mp.gov.in si recruitment",
+    organization: "Madhya Pradesh Employees Selection Board (MPESB)",
+    postName:
+      "Subedar and Sub Inspector (SAF / DEF / Arms / Photo / Questioned Document / Finger Print)",
+    vacancies: "504 posts — Subedar 81, SI (DEF) 312, SI (SAF) 69 and 45 technical SI posts",
+    qualification:
+      "Graduation in any discipline for Subedar, SI (SAF) and SI (DEF); Diploma in Mechanical Engineering for SI (Arms); graduation with Mathematics, Physics and Chemistry for SI (Photo / Questioned Document / Finger Print)",
+    ageLimit:
+      "Maximum 33 years as on 23 September 2026 for UR/EWS male and other-state candidates; up to 38 years for MP domicile female candidates, MP domicile SC/ST/OBC male candidates and eligible government employees, with further relaxation in specified cases as per MP Government rules",
+    payScale:
+      "Pay Level 9 — basic pay Rs. 36,200 to Rs. 1,14,800, plus Dearness Allowance, House Rent Allowance, uniform allowance and other admissible benefits",
+    location: "Madhya Pradesh — Home (Police) Department postings across the state",
+    applicationFee:
+      "Direct recruitment: Rs. 500 for UR and Rs. 250 for SC/ST/OBC/EWS. Departmental recruitment: Rs. 200 for UR and Rs. 100 for SC/ST/OBC/EWS. Kiosk charge Rs. 60 extra and registered citizen user ID Rs. 20 extra; payment online only",
+    applyStart: "2026-09-09",
+    applyEnd: "2026-09-23",
+    applyUrl: "https://esb.mp.gov.in/",
+    organizationUrl: "https://esb.mp.gov.in/",
+    salaryMin: 36200,
+    salaryMax: 114800,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "MPESB Subedar / Sub Inspector Recruitment Test 2026",
+    industry: "State Government — Police and Law Enforcement",
+    occupationalCategory: "33-3021.00 Detectives and Criminal Investigators",
+    educationRequirements:
+      "Bachelor's degree from a recognised university for Subedar and SI (SAF/DEF); Diploma in Mechanical Engineering for SI (Arms); graduation with Mathematics, Physics and Chemistry for SI (Photo / Questioned Document / Finger Print)",
+    experienceRequirements:
+      "No prior work experience required; fresh graduates meeting the physical standards can apply",
+    jobBenefits:
+      "Madhya Pradesh Police gazetted-cadre career with Pay Level 9 salary, Dearness Allowance, House Rent Allowance, uniform allowance, medical facilities, National Pension System coverage, leave benefits and promotion avenues to Inspector and higher ranks",
+    numberOfPositions: 504,
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (504 Posts, Dates, Fee)",
+        href: "/downloads/mpesb-si-subedar-2026/mpesb-si-subedar-2026-notification-summary.pdf",
+        note: "Important dates, post-wise vacancy breakup, application fee and how to apply",
+      },
+      {
+        label: "Eligibility, Exam Pattern & Salary Guide PDF",
+        href: "/downloads/mpesb-si-subedar-2026/mpesb-si-subedar-2026-exam-pattern-and-salary.pdf",
+        note: "Qualification, age limit, prelims and mains pattern, PET standards and Pay Level 9 salary breakdown",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-09",
+    updated: "2026-09-09",
+    readMinutes: 8,
+    hero: "from-slate-900 to-teal-600",
+    image: "https://paycommissionnews.co.in/images/mpesb-si-subedar-2026.jpg",
+    imageAlt:
+      "MPESB SI and Subedar Recruitment 2026 notification for 504 MP Police posts with online applications open from 09 to 23 September 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/mpesb-si-subedar-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Madhya Pradesh Employees Selection Board (MPESB) has released the Subedar and Sub Inspector Recruitment Test 2026 notification for 504 posts in the Home (Police) Department. Graduates aged up to 33 years can apply online at esb.mp.gov.in from 09 September to 23 September 2026, with the preliminary examination scheduled for 28 October 2026 and a Pay Level 9 salary of Rs. 36,200–1,14,800.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Madhya Pradesh Employees Selection Board (MPESB) has notified the Subedar and Sub Inspector Recruitment Test 2026 for 504 posts in the Home (Police) Department, Government of Madhya Pradesh. The advertisement covers Subedar posts as well as Sub Inspector vacancies in the Special Armed Force (SAF), District Executive Force (DEF) and four technical streams — Arms, Photo, Questioned Document and Finger Print.",
+      },
+      {
+        type: "p",
+        text: "This is one of the biggest MP Police officer-level openings of the year. Selected candidates enter Pay Level 9 with a basic pay of Rs. 36,200 rising to Rs. 1,14,800, along with Dearness Allowance, House Rent Allowance and uniform allowance. Online applications run from 09 September 2026 to 23 September 2026, and the preliminary examination is scheduled for 28 October 2026.",
+      },
+      { type: "h2", text: "MPESB SI & Subedar 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "01 September 2026"],
+          ["Online application begins", "09 September 2026"],
+          ["Last date to apply online", "23 September 2026 (11:59 PM)"],
+          ["Form correction window", "Up to 28 September 2026"],
+          ["Preliminary exam date", "28 October 2026 (two shifts)"],
+          ["Admit card", "Released before the exam"],
+        ],
+        caption:
+          "Dates as per the official MPESB Subedar / Sub Inspector Recruitment Test 2026 rulebook.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Only 15 days to apply",
+        text: "The application window closes at 11:59 PM on 23 September 2026 and corrections are allowed only up to 28 September 2026. Complete your MPESB profile registration and eKYC before you start the form, because eKYC verification can take time and cannot be skipped.",
+      },
+      { type: "h2", text: "Post-wise vacancy details — 504 posts" },
+      {
+        type: "table",
+        headers: ["Post", "Vacancies"],
+        rows: [
+          ["Subedar", "81"],
+          ["Sub Inspector (Special Armed Force — SAF), male only", "69"],
+          ["Sub Inspector (District Executive Force — DEF)", "312"],
+          ["Sub Inspector (Arms) — technical", "10"],
+          ["Sub Inspector (Photo) — technical", "09"],
+          ["Sub Inspector (Questioned Document) — technical", "04"],
+          ["Sub Inspector (Finger Print) — technical", "22"],
+          ["Total", "504"],
+        ],
+        caption:
+          "The number of posts may increase or decrease. SI (SAF) vacancies are reserved for male candidates.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "table",
+        headers: ["Post", "Qualification"],
+        rows: [
+          ["Subedar", "Graduation in any discipline from a recognised university"],
+          ["Sub Inspector (SAF)", "Graduation in any discipline (male candidates only)"],
+          ["Sub Inspector (DEF)", "Graduation in any discipline"],
+          ["Sub Inspector (Arms)", "Diploma in Mechanical Engineering"],
+          [
+            "SI (Photo / Questioned Document / Finger Print)",
+            "Graduation with Mathematics, Physics and Chemistry",
+          ],
+        ],
+      },
+      { type: "h3", text: "Age limit as on 23 September 2026" },
+      {
+        type: "table",
+        headers: ["Category", "Maximum age"],
+        rows: [
+          ["UR / EWS male (MP domicile) and other-state candidates", "33 years"],
+          ["MP domicile female candidates (all categories)", "38 years"],
+          ["MP domicile male SC / ST / OBC candidates", "38 years"],
+          ["Government, corporation or board employees and Nagar Sainik", "38 years"],
+          ["Specified inter-caste marriage and Vikram Award cases", "Up to 43 years as notified"],
+        ],
+        caption:
+          "Reservation and age relaxation benefits are mainly available to Madhya Pradesh domicile candidates; other-state applicants are generally treated as unreserved.",
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["Direct recruitment — UR", "Rs. 500"],
+          ["Direct recruitment — SC / ST / OBC / EWS", "Rs. 250"],
+          ["Departmental recruitment — UR", "Rs. 200"],
+          ["Departmental recruitment — SC / ST / OBC / EWS", "Rs. 100"],
+          ["Applying through a kiosk", "Rs. 60 extra"],
+          ["Applying through registered citizen user ID", "Rs. 20 extra"],
+        ],
+        caption: "Fee is payable online only through the MPESB portal.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Preliminary written examination (screening in nature).",
+          "Mains written examination — Paper I and Paper II, with an additional Paper III for technical posts.",
+          "Physical Efficiency Test (PET) and Physical Measurement Test (PMT).",
+          "Personal interview.",
+          "Medical examination.",
+          "Document verification and final merit as per the official rulebook.",
+        ],
+      },
+      { type: "h2", text: "Exam pattern" },
+      { type: "h3", text: "Preliminary examination" },
+      {
+        type: "table",
+        headers: ["Subject", "Questions", "Marks"],
+        rows: [
+          ["Hindi language comprehension", "10", "10"],
+          ["English language comprehension", "10", "10"],
+          ["Analytical ability", "10", "10"],
+          ["History", "10", "10"],
+          ["Geography", "10", "10"],
+          ["Science", "10", "10"],
+          ["Civics", "10", "10"],
+          ["Basic computer knowledge", "10", "10"],
+          ["Reasoning", "10", "10"],
+          ["Current affairs", "10", "10"],
+          ["Total", "100", "100"],
+        ],
+        caption:
+          "Duration 2 hours, objective type. Candidates are shortlisted for the mains in roughly a 1:10 ratio.",
+      },
+      { type: "h3", text: "Mains examination" },
+      {
+        type: "table",
+        headers: ["Paper", "Questions", "Marks"],
+        rows: [
+          ["Paper I — General Studies", "100", "300"],
+          ["Paper II — General Studies", "100", "300"],
+          ["Total for non-technical posts", "200", "600"],
+          ["Paper III — technical posts only", "As notified", "300"],
+        ],
+        caption:
+          "Each paper runs for 2 hours with negative marking of one-third mark for every wrong answer.",
+      },
+      { type: "h3", text: "Physical test (indicative)" },
+      {
+        type: "ul",
+        items: [
+          "800 metre race, long jump and shot put carrying 100 marks in total.",
+          "Male candidates generally require a minimum height of 167.5 cm and chest of 81–86 cm with 5 cm expansion.",
+          "Complete PET and PMT standards, including standards for female candidates, are given in the official notification.",
+        ],
+      },
+      { type: "h2", text: "MP Police SI & Subedar salary 2026 — Pay Level 9" },
+      {
+        type: "table",
+        headers: ["Component", "Basis", "Indicative monthly amount"],
+        rows: [
+          ["Basic pay (entry)", "Pay Level 9", "Rs. 36,200"],
+          ["Dearness Allowance", "Current rate on basic pay", "Rs. 21,720"],
+          ["House Rent Allowance", "Depends on posting city class", "Rs. 3,000 – 6,000"],
+          ["Gross salary (approximate)", "Entry level", "Rs. 61,000 – 65,000"],
+          ["In-hand salary (approximate)", "After NPS and deductions", "Rs. 54,000 – 58,000"],
+        ],
+        caption:
+          "Indicative estimates for an entry-level recruit; actual figures vary with posting city and admissible allowances.",
+      },
+      {
+        type: "p",
+        text: "Pay Level 9 is a strong entry point for a state police officer, and the scale runs up to Rs. 1,14,800 with annual increments and promotions to Inspector and higher ranks. Use our 8th Pay Commission salary calculator to see how a revised fitment factor could lift this Level 9 basic pay, and our pay matrix page to compare Level 9 with neighbouring levels.",
+      },
+      { type: "h2", text: "How to apply for MPESB SI & Subedar Recruitment 2026" },
+      {
+        type: "ol",
+        items: [
+          "Visit the official MPESB portal at esb.mp.gov.in.",
+          "Complete profile registration and eKYC verification, which is mandatory before applying.",
+          "Open the Subedar / Sub Inspector Recruitment Test 2026 application link.",
+          "Fill personal, educational and post-preference details carefully.",
+          "Upload your photograph, signature and other documents in the prescribed format.",
+          "Pay the application fee online and submit the form.",
+          "Download the confirmation page and use the correction window up to 28 September 2026 if any change is needed.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Note on the two-child condition",
+        text: "As per the notification, candidates having more than two children where any one child is born on or after 26 January 2001 are generally not eligible. Read the official rulebook for the exact wording and exceptions.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many posts are there in MPESB SI & Subedar Recruitment 2026?",
+        a: "A total of 504 posts have been advertised — 81 Subedar, 312 Sub Inspector (DEF), 69 Sub Inspector (SAF) and 45 technical Sub Inspector posts in Arms, Photo, Questioned Document and Finger Print streams.",
+      },
+      {
+        q: "What are the MPESB SI 2026 application dates?",
+        a: "Online applications open on 09 September 2026 and close on 23 September 2026 at 11:59 PM. The form correction window remains open up to 28 September 2026.",
+      },
+      {
+        q: "What is the age limit for MP Police SI and Subedar 2026?",
+        a: "The maximum age is 33 years as on 23 September 2026 for UR/EWS male and other-state candidates. MP domicile female candidates, MP domicile SC/ST/OBC male candidates and eligible government employees can apply up to 38 years, with further relaxation in specified cases.",
+      },
+      {
+        q: "What qualification is required for MPESB Sub Inspector 2026?",
+        a: "Graduation in any discipline is required for Subedar, SI (SAF) and SI (DEF). SI (Arms) requires a Diploma in Mechanical Engineering, while SI (Photo), SI (Questioned Document) and SI (Finger Print) require graduation with Mathematics, Physics and Chemistry.",
+      },
+      {
+        q: "What is the salary of MP Police Sub Inspector and Subedar?",
+        a: "The posts carry Pay Level 9 with basic pay of Rs. 36,200 to Rs. 1,14,800. Including Dearness Allowance, House Rent Allowance and other allowances, the gross entry-level salary works out to roughly Rs. 61,000–65,000 per month, with about Rs. 54,000–58,000 in hand.",
+      },
+      {
+        q: "When is the MPESB SI & Subedar preliminary exam?",
+        a: "The preliminary examination is scheduled for 28 October 2026 in two shifts. Candidates shortlisted in roughly a 1:10 ratio then appear for the mains examination.",
+      },
+      {
+        q: "What is the selection process for MPESB SI 2026?",
+        a: "Selection involves a preliminary examination, mains examination, Physical Efficiency Test and Physical Measurement Test, personal interview, medical examination and document verification.",
+      },
+    ],
+  },
+  {
     slug: "ssc-chsl-recruitment-2026-2536-posts",
     title:
       "SSC CHSL Recruitment 2026: 2536 LDC, JSA and DEO Posts — Apply Online 07 September to 07 October, Pay Level 2 Salary Rs. 19,900",
