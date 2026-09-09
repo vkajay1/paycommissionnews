@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import {
@@ -35,19 +34,18 @@ export function QuickCalc() {
   );
 
   return (
-    <section className="mx-auto -mt-6 max-w-7xl px-4 sm:px-6">
-      <Card className="overflow-hidden rounded-xl border-border/80 bg-card p-0 shadow-card">
-        <div className="grid gap-0 lg:grid-cols-[1.1fr_1fr]">
-          <div className="p-6 sm:p-8">
+    <section className="border-l-4 border-primary bg-foreground text-background">
+        <div className="grid gap-0 xl:grid-cols-[1.1fr_1fr]">
+          <div className="p-5 sm:p-6">
             <div className="mb-5 flex items-center justify-between">
               <div>
-                <h2 className="text-lg font-bold">Quick salary calculator</h2>
-                <p className="text-sm text-muted-foreground">
-                  Instant projection — no page reload.
+                <h2 className="text-lg font-bold">Salary revision estimator</h2>
+                <p className="text-sm text-background/60">
+                  Based on current fitment projections.
                 </p>
               </div>
-              <span className="rounded-full bg-accent/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-accent">
-                Live
+              <span className="border border-primary bg-primary/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary">
+                Live tool
               </span>
             </div>
 
@@ -112,7 +110,7 @@ export function QuickCalc() {
                       className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
                         fit === f
                           ? "bg-primary text-primary-foreground"
-                          : "bg-secondary text-foreground/80 hover:bg-secondary/70"
+                          : "bg-background/10 text-background/80 hover:bg-background/15"
                       }`}
                     >
                       {f.toFixed(2)}x
@@ -123,14 +121,14 @@ export function QuickCalc() {
             </div>
           </div>
 
-          <div className="border-t border-border bg-gradient-to-br from-secondary/60 to-secondary/20 p-6 sm:p-8 lg:border-l lg:border-t-0">
-            <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          <div className="border-t border-background/15 bg-background/5 p-5 sm:p-6 xl:border-l xl:border-t-0">
+            <div className="text-xs font-medium uppercase tracking-wider text-background/60">
               Projected gross salary
             </div>
             <div className="mt-1 text-4xl font-bold tracking-tight">
               {inr(result.projected.gross)}
             </div>
-            <div className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-success/15 px-2.5 py-1 text-xs font-semibold text-success">
+            <div className="mt-1 inline-flex items-center gap-1.5 bg-success/15 px-2.5 py-1 text-xs font-semibold text-success">
               ▲ {inr(result.diff)} · {pct(result.pct)}
             </div>
 
@@ -149,7 +147,6 @@ export function QuickCalc() {
             </Button>
           </div>
         </div>
-      </Card>
     </section>
   );
 }
@@ -157,8 +154,8 @@ export function QuickCalc() {
 function Row({ label, value, muted }: { label: string; value: string; muted?: boolean }) {
   return (
     <div>
-      <dt className="text-xs text-muted-foreground">{label}</dt>
-      <dd className={`font-semibold ${muted ? "text-foreground/70" : "text-foreground"}`}>
+      <dt className="text-xs text-background/55">{label}</dt>
+      <dd className={`font-semibold ${muted ? "text-background/60" : "text-background"}`}>
         {value}
       </dd>
     </div>

@@ -14,7 +14,6 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { JobsSideNav } from "@/components/layout/JobsSideNav";
 import { PushPrompt } from "@/components/push/PushPrompt";
 
 
@@ -115,7 +114,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Urbanist:wght@600;700;800&family=Epilogue:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Baskerville:wght@400;700&display=swap",
       },
     ],
     scripts: [
@@ -211,9 +210,8 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
-        <div className="mx-auto flex w-full max-w-[1400px] flex-1 items-start gap-6 px-0 lg:px-6">
-          <JobsSideNav />
-          <main className="min-w-0 flex-1 pb-20 md:pb-0">
+        <div className="w-full flex-1">
+          <main className="min-w-0 pb-20 md:pb-0">
             <Outlet />
           </main>
         </div>
