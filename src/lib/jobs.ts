@@ -68,6 +68,216 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "ssc-chsl-recruitment-2026-2536-posts",
+    title:
+      "SSC CHSL Recruitment 2026: 2536 LDC, JSA and DEO Posts — Apply Online 07 September to 07 October, Pay Level 2 Salary Rs. 19,900",
+    description:
+      "SSC CHSL 2026 notification — 2536 Lower Division Clerk, Junior Secretariat Assistant and Data Entry Operator vacancies, 10+2 eligibility, age 18–27 years, fee Rs. 100, Tier I and Tier II exams as per schedule, Pay Level 2 salary starting at Rs. 19,900 basic pay.",
+    keyword:
+      "ssc chsl 2026, ssc chsl recruitment 2026, ssc chsl apply online 2026, ssc chsl 2536 posts, ssc chsl vacancy 2026, ssc chsl ldc jsa deo recruitment, ssc chsl salary, ssc chsl exam date 2026, ssc chsl notification 2026",
+    organization: "Staff Selection Commission (SSC)",
+    postName:
+      "Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA) and Data Entry Operator (DEO)",
+    vacancies: "2536 posts — LDC / JSA / DEO combined",
+    qualification:
+      "10+2 (Intermediate) pass from any recognised board in India; post-specific conditions are listed in the official notification",
+    ageLimit:
+      "18 to 27 years as on 01 August 2026, with age relaxation as per SSC CHSL 10+2 Recruitment 2026 rules",
+    payScale:
+      "7th Pay Commission Pay Level 2 (LDC/JSA, basic Rs. 19,900–63,200) and Pay Level 4 (DEO, basic Rs. 25,500–81,100), plus DA, HRA and other allowances admissible to Central Government employees",
+    location: "Ministries, departments and offices of the Government of India across India",
+    applicationFee:
+      "Rs. 100 for General/OBC/EWS; nil for SC/ST, PH (Divyang) and all female candidates; correction fee Rs. 200 (first time) and Rs. 500 (second time), payable via E-Challan, debit card, credit card or net banking",
+    applyStart: "2026-09-07",
+    applyEnd: "2026-10-07",
+    applyUrl: "https://ssc.gov.in/login",
+    organizationUrl: "https://ssc.gov.in/",
+    salaryMin: 19900,
+    salaryMax: 63200,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "SSC CHSL 10+2 Examination 2026 Notice",
+    industry: "Central Government (Ministries, Departments and Subordinate Offices)",
+    occupationalCategory: "43-9061.00 Office Clerks, General",
+    educationRequirements:
+      "Passed 10+2 (Intermediate) or equivalent examination from a recognised board; data-entry-specific conditions apply for certain DEO posts as per the notification",
+    experienceRequirements:
+      "No prior work experience required; fresh 10+2 pass candidates can apply",
+    jobBenefits:
+      "Regular Central Government service with Pay Level 2/4 salary, Dearness Allowance, House Rent Allowance, Transport Allowance, medical benefits, National Pension System coverage, leave travel concession and promotion avenues to Upper Division Clerk and higher grades",
+    numberOfPositions: 2536,
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (2536 Posts, Dates, Fee)",
+        href: "/downloads/ssc-chsl-2026/ssc-chsl-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, vacancy breakup, eligibility and fee",
+      },
+      {
+        label: "Eligibility, Selection & Salary Guide PDF",
+        href: "/downloads/ssc-chsl-2026/ssc-chsl-2026-eligibility-and-salary.pdf",
+        note: "Selection stages, Pay Level 2/4 salary details and application steps",
+      },
+    ],
+    category: "Central Government Jobs",
+    date: "2026-09-09",
+    updated: "2026-09-09",
+    readMinutes: 7,
+    hero: "from-blue-900 to-orange-500",
+    image: "https://paycommissionnews.co.in/images/ssc-chsl-2026.jpg",
+    imageAlt:
+      "SSC CHSL 2026 notification for 2536 LDC, JSA and DEO posts with applications open from 07 September to 07 October 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/ssc-chsl-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Staff Selection Commission (SSC) has released the Combined Higher Secondary (10+2) Level Examination 2026 notification for 2536 Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA) and Data Entry Operator (DEO) posts. Candidates who have passed 10+2 and are aged 18–27 years can apply online from 07 September to 07 October 2026. The exam will be held in two phases — Tier I and Tier II.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Staff Selection Commission (SSC) has notified the Combined Higher Secondary (10+2) Level Examination 2026, inviting online applications for 2536 posts of Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA) and Data Entry Operator (DEO) in various ministries, departments and offices of the Government of India.",
+      },
+      {
+        type: "p",
+        text: "SSC CHSL is one of the most popular Central Government exams for 12th-pass candidates, offering a secure clerical career with Pay Level 2 salary (basic Rs. 19,900 onwards for LDC/JSA) and structured promotions. The online application window is open from 07 September to 07 October 2026, and the examination will be conducted in two phases — Tier I and Tier II.",
+      },
+      { type: "h2", text: "SSC CHSL 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "07 September 2026"],
+          ["Online application begins", "07 September 2026"],
+          ["Last date to apply online", "07 October 2026 (up to 11 PM)"],
+          ["Last date to pay the exam fee", "08 October 2026"],
+          ["Application correction window", "14–16 October 2026"],
+          ["Tier I exam date", "As per schedule"],
+          ["Tier II exam date", "As per schedule"],
+          ["Admit card availability", "Before the exam"],
+        ],
+        caption:
+          "Dates as per the official SSC CHSL 10+2 Examination 2026 notice.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Apply before 11 PM on 07 October",
+        text: "The online form closes at 11 PM on 07 October 2026 and fee payment closes on 08 October 2026. The correction window (14–16 October) is chargeable — Rs. 200 for the first correction and Rs. 500 for the second — so fill the form carefully the first time and keep scanned copies of your photo, signature and ID proof ready.",
+      },
+      { type: "h2", text: "Vacancy details — 2536 posts" },
+      {
+        type: "table",
+        headers: ["Post name", "Total posts", "Eligibility"],
+        rows: [
+          [
+            "LDC / Junior Secretariat Assistant (JSA) / Data Entry Operator (DEO)",
+            "2536",
+            "10+2 (Intermediate) from any recognised board in India",
+          ],
+        ],
+        caption:
+          "Vacancy count as per the official notification; post-wise and category-wise breakup will be updated by SSC.",
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS", "Rs. 100"],
+          ["SC / ST", "Nil"],
+          ["PH (Divyang) / all female candidates", "Nil"],
+          ["Correction fee (first time)", "Rs. 200"],
+          ["Correction fee (second time)", "Rs. 500"],
+        ],
+        caption:
+          "Fee payable through E-Challan, debit card, credit card or net banking.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Passed 10+2 (Intermediate) or an equivalent examination from any recognised board in India.",
+          "Certain DEO posts carry additional conditions — read the notification for post-specific requirements.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 August 2026" },
+      {
+        type: "table",
+        headers: ["Item", "Detail"],
+        rows: [
+          ["Minimum age", "18 years"],
+          ["Maximum age", "27 years"],
+          ["Age relaxation", "As per SSC CHSL 10+2 Recruitment 2026 rules for SC/ST/OBC/PH and other eligible categories"],
+        ],
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ul",
+        items: [
+          "Tier I — Computer Based Examination (objective multiple-choice questions).",
+          "Tier II — Computer Based Examination including skill test / typing test for DEO and LDC/JSA posts.",
+          "Document verification and final merit as per SSC rules.",
+        ],
+      },
+      { type: "h2", text: "Salary — Pay Level 2 and Level 4" },
+      {
+        type: "table",
+        headers: ["Post", "Pay level", "Basic pay range", "Approx. in-hand (indicative)"],
+        rows: [
+          ["LDC / Junior Secretariat Assistant", "Level 2", "Rs. 19,900 – 63,200", "Rs. 30,000 – 33,000 per month"],
+          ["Data Entry Operator", "Level 4", "Rs. 25,500 – 81,100", "Rs. 36,000 – 40,000 per month"],
+        ],
+        caption:
+          "7th Pay Commission pay levels; in-hand figures are indicative for an X-class city including DA and HRA.",
+      },
+      {
+        type: "p",
+        text: "Beyond basic pay, CHSL recruits receive Dearness Allowance (revised twice a year), House Rent Allowance, Transport Allowance, medical benefits, National Pension System coverage and leave travel concession. Use our 8th Pay Commission salary calculator to see how the projected fitment factor could raise these Level 2 and Level 4 salaries.",
+      },
+      { type: "h2", text: "How to apply online" },
+      {
+        type: "ol",
+        items: [
+          "Complete One-Time Registration (OTR) on the SSC portal if you have not registered before.",
+          "Fill the CHSL 2026 application form between 07/09/2026 and 07/10/2026.",
+          "Upload your photograph, signature and required documents, and pay the fee if applicable.",
+          "Check the preview carefully before final submission and take a printout of the submitted form.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "When did the SSC CHSL 2026 online application process start?",
+        a: "The online application process started on 07 September 2026.",
+      },
+      {
+        q: "What is the last date to apply online for SSC CHSL 2026?",
+        a: "The last date to apply online is 07 October 2026, up to 11 PM. The exam fee can be paid until 08 October 2026.",
+      },
+      {
+        q: "What is the exam date for SSC CHSL 2026?",
+        a: "The examination will be conducted in two phases — Tier I and Tier II — with dates as per the SSC schedule. Admit cards will be available before the exam.",
+      },
+      {
+        q: "How many vacancies are there in SSC CHSL 2026?",
+        a: "There are 2536 posts for Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA) and Data Entry Operator (DEO).",
+      },
+      {
+        q: "What is the eligibility for SSC CHSL 2026?",
+        a: "Candidates must have passed 10+2 (Intermediate) from any recognised board in India and must be between 18 and 27 years of age as on 01 August 2026, with relaxation as per rules.",
+      },
+      {
+        q: "What is the salary of SSC CHSL LDC and DEO posts?",
+        a: "LDC/JSA posts carry Pay Level 2 with basic pay of Rs. 19,900–63,200, while DEO posts carry Pay Level 4 with basic pay of Rs. 25,500–81,100, plus DA, HRA and other allowances.",
+      },
+    ],
+  },
+  {
     slug: "upessc-assistant-professor-recruitment-2026-1936-posts",
     title:
       "UPESSC UP Assistant Professor Recruitment 2026: 1936 Posts, Advt 04/2026 — Apply Online 08 September to 07 October, Basic Pay Rs. 57,700",
