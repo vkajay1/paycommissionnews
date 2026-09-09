@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Calculator, Mail, ShieldCheck } from "lucide-react";
+import { Newspaper, Mail, ShieldCheck } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "./MobileMenu";
@@ -19,9 +19,9 @@ const primary = [
 ];
 
 const linkClass =
-  "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground";
+  "border-b-2 border-transparent px-2 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:border-primary hover:text-foreground";
 const linkActive =
-  "rounded-md px-3 py-2 text-sm font-semibold text-primary bg-primary/10";
+  "border-b-2 border-primary px-2 py-2 text-sm font-semibold text-primary";
 
 export function Header() {
   return (
@@ -50,17 +50,17 @@ export function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-3 px-4 sm:px-6">
+      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between gap-3 px-4 sm:px-6">
         <div className="flex min-w-0 items-center gap-1.5">
           <MobileMenu />
           <Link to="/" className="flex min-w-0 shrink items-center gap-2.5">
-            <div className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-primary text-primary-foreground">
-              <Calculator className="h-4.5 w-4.5" />
+            <div className="grid h-10 w-10 shrink-0 place-items-center bg-foreground text-background">
+              <Newspaper className="h-5 w-5" />
             </div>
             <div className="min-w-0 leading-tight">
-              <div className="truncate text-[15px] font-bold tracking-tight">8th CPC Calculator</div>
-              <div className="truncate text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                Pay Commission Intelligence
+              <div className="truncate font-heading text-[17px] font-bold">Pay Commission News</div>
+              <div className="truncate text-[10px] uppercase tracking-[0.16em] text-primary">
+                8th CPC News & Analysis
               </div>
             </div>
           </Link>
