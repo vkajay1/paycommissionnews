@@ -68,6 +68,293 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "upessc-assistant-professor-recruitment-2026-1936-posts",
+    title:
+      "UPESSC UP Assistant Professor Recruitment 2026: 1936 Posts, Advt 04/2026 — Apply Online 08 September to 07 October, Basic Pay Rs. 57,700",
+    description:
+      "UPESSC UP Assistant Professor Recruitment 2026 Advt No 04/2026 — 1936 vacancies in government degree colleges across Uttar Pradesh, master's degree with 55% marks and NET/SET/SLET/PhD eligibility, maximum age 62 years, fee Rs. 2,000, exam on 19 and 20 November 2026, Academic Level 10 salary starting at Rs. 57,700 basic pay.",
+    keyword:
+      "upessc assistant professor recruitment 2026, up assistant professor vacancy 2026, upessc advt 04/2026, up assistant professor online form 2026, up assistant professor salary, up assistant professor exam date 2026, upessc assistant professor eligibility, assistant professor pay level 10 uttar pradesh",
+    organization:
+      "Uttar Pradesh Education Service Selection Commission (UPESSC), Prayagraj",
+    postName: "Assistant Professor (Government Degree Colleges, Uttar Pradesh)",
+    vacancies:
+      "1936 posts — 1564 in co-educational colleges and 372 in female colleges",
+    qualification:
+      "Master's degree in the relevant subject with minimum 55% marks, plus NET / SET / SLET qualification or a PhD degree as per UGC regulations",
+    ageLimit:
+      "Maximum 62 years as on 01 July 2026, with age relaxation as per UPESSC Assistant Professor Examination Rules Advt No 04/2026",
+    payScale:
+      "UGC 7th Pay Commission Academic Level 10 — basic pay Rs. 57,700 in the pay matrix, plus DA, HRA and other allowances admissible to Uttar Pradesh government college teachers",
+    location: "Government degree colleges across Uttar Pradesh",
+    applicationFee:
+      "Rs. 2,000 for General/OBC/EWS, Rs. 1,500 for SC/ST and Rs. 1,000 for PH (Divyang), payable online by debit card, credit card, net banking or UPI",
+    applyStart: "2026-09-08",
+    applyEnd: "2026-10-07",
+    applyUrl: "https://apply.upessc.org/",
+    organizationUrl: "https://upessc.up.gov.in/",
+    salaryMin: 57700,
+    salaryMax: 182400,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "UPESSC Advt No. 04/2026",
+    industry: "Higher Education (Government Degree Colleges)",
+    occupationalCategory: "25-1099.00 Postsecondary Teachers",
+    educationRequirements:
+      "Master's degree in the relevant subject with at least 55% marks (or equivalent grade) from a recognised university, with NET/SET/SLET or PhD as per UGC norms",
+    experienceRequirements:
+      "No prior teaching experience required; candidates meeting the UGC eligibility norms with NET/SET/SLET or PhD can apply",
+    jobBenefits:
+      "Regular Uttar Pradesh government service with Academic Level 10 pay, Dearness Allowance, House Rent Allowance, medical benefits, New Pension Scheme, career advancement to Associate Professor and Professor grades, and full vacation benefits of the academic calendar",
+    numberOfPositions: 1936,
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (1936 Posts, Dates, Fee, Subject-wise Vacancies)",
+        href: "/downloads/upessc-assistant-professor-2026/upessc-assistant-professor-2026-notification-summary.pdf",
+        note: "One-sheet summary of important dates, category and subject-wise vacancy breakup, eligibility and fee",
+      },
+      {
+        label: "Eligibility, Selection & Salary Guide PDF",
+        href: "/downloads/upessc-assistant-professor-2026/upessc-assistant-professor-2026-eligibility-and-salary.pdf",
+        note: "UGC eligibility rules, selection process and Academic Level 10 salary details",
+      },
+    ],
+    category: "Teaching Jobs",
+    date: "2026-09-09",
+    updated: "2026-09-09",
+    readMinutes: 9,
+    hero: "from-indigo-900 to-amber-500",
+    image: "https://paycommissionnews.co.in/images/upessc-assistant-professor-2026.jpg",
+    imageAlt:
+      "UPESSC UP Assistant Professor Recruitment 2026 notification for 1936 posts with applications open from 08 September to 07 October 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/upessc-assistant-professor-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttar Pradesh Education Service Selection Commission (UPESSC), Prayagraj has released the Assistant Professor Recruitment 2026 under Advt No. 04/2026 for 1936 posts in government degree colleges — 1564 in co-educational colleges and 372 in female colleges. Candidates with a master's degree (55% marks) and NET/SET/SLET or PhD can apply online from 08 September to 07 October 2026. The written exam will be held on 19 and 20 November 2026.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttar Pradesh Education Service Selection Commission (UPESSC), Prayagraj has notified the UP Assistant Professor Recruitment 2026 under Advertisement No. 04/2026, inviting online applications for 1936 Assistant Professor posts in government degree colleges across Uttar Pradesh. The intake is split between 1564 posts in co-educational colleges and 372 posts reserved for female colleges, spread across 42 subjects.",
+      },
+      {
+        type: "p",
+        text: "This is one of the largest higher-education recruitment drives in Uttar Pradesh in recent years. The post carries UGC 7th Pay Commission Academic Level 10 with a starting basic pay of Rs. 57,700, and the unusually high maximum age of 62 years means even senior scholars, contract teachers and PhD holders who crossed the age bar for other exams remain eligible.",
+      },
+      { type: "h2", text: "UPESSC Assistant Professor 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "09 September 2026"],
+          ["Online application begins", "08 September 2026"],
+          ["Last date for registration", "07 October 2026"],
+          ["Last date to pay the exam fee", "07 October 2026"],
+          ["Correction window closes", "11 October 2026"],
+          ["Written exam date", "19 and 20 November 2026"],
+          ["Exam city intimation", "Before the exam"],
+          ["Admit card availability", "Before the exam"],
+          ["Answer key", "As per schedule"],
+          ["Result", "As per schedule"],
+        ],
+        caption:
+          "Dates as per the official UPESSC Assistant Professor Advt No. 04/2026 notification.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Registration, fee and correction deadlines differ",
+        text: "Registration and fee payment both close on 07 October 2026, but the correction window stays open until 11 October 2026. Complete the OTR-based application early, and use the correction days only for genuine errors — keep scanned copies of your master's degree marksheet, NET/SET/SLET or PhD certificate, category certificate, photograph and signature ready before you start.",
+      },
+      { type: "h2", text: "Vacancy details — 1936 posts" },
+      {
+        type: "table",
+        headers: ["Post name", "UR", "OBC", "EWS", "SC", "ST", "Total"],
+        rows: [
+          ["Assistant Professor (Co-educational colleges)", "636", "421", "138", "347", "22", "1564"],
+          ["Assistant Professor (Female colleges)", "160", "95", "23", "92", "02", "372"],
+          ["Grand total", "796", "516", "161", "439", "24", "1936"],
+        ],
+        caption:
+          "Category-wise breakup as per the official notification; reservation follows Uttar Pradesh government rules.",
+      },
+      { type: "h2", text: "Subject-wise vacancy details" },
+      {
+        type: "table",
+        headers: ["Subject", "Co-educational colleges", "Female colleges", "Total posts"],
+        rows: [
+          ["Hindi", "141", "56", "197"],
+          ["Chemistry", "167", "12", "179"],
+          ["English", "81", "30", "111"],
+          ["Economics", "79", "25", "104"],
+          ["Botany", "93", "11", "104"],
+          ["Commerce", "102", "0", "102"],
+          ["Sanskrit", "68", "34", "102"],
+          ["Physics", "95", "01", "96"],
+          ["Political Science", "73", "22", "95"],
+          ["Geography", "92", "03", "95"],
+          ["Zoology", "81", "12", "93"],
+          ["Sociology", "57", "25", "82"],
+          ["Psychology", "45", "27", "72"],
+          ["Law", "61", "0", "61"],
+          ["History", "49", "11", "60"],
+          ["Mathematics", "48", "01", "49"],
+          ["Military Science", "41", "0", "41"],
+          ["Physical Education", "28", "07", "35"],
+          ["Education", "14", "20", "34"],
+          ["Home Science", "05", "25", "30"],
+          ["Ancient History", "22", "03", "25"],
+          ["Art", "07", "17", "24"],
+          ["Philosophy", "15", "01", "16"],
+          ["Statistics", "13", "0", "13"],
+          ["Music Gayan", "0", "12", "12"],
+          ["Animal Husbandry and Dairy Science", "12", "0", "12"],
+          ["Agronomy", "11", "0", "11"],
+          ["Urdu", "04", "07", "11"],
+          ["Agriculture Economics", "09", "0", "09"],
+          ["Music Tabla", "0", "09", "09"],
+          ["Agriculture Chemical", "08", "0", "08"],
+          ["Agriculture Zoology", "08", "0", "08"],
+          ["Geology", "06", "0", "06"],
+          ["Agriculture Engineering", "06", "0", "06"],
+          ["Horticulture", "06", "0", "06"],
+          ["Agricultural Genetics and Plant Breeding", "05", "0", "05"],
+          ["Entomology", "04", "0", "04"],
+          ["Agriculture Extension", "04", "0", "04"],
+          ["Agriculture Statistics", "02", "0", "02"],
+          ["Anthropology", "01", "0", "01"],
+          ["Asian Culture", "01", "0", "01"],
+          ["Music Vadan", "0", "01", "01"],
+        ],
+        caption:
+          "Subject-wise distribution of the 1936 posts across co-educational and female government degree colleges.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Choose your subject carefully",
+        text: "Chemistry (179), Hindi (197) and English (111) carry the largest vacancies, while several agriculture and music subjects have fewer than 10 posts. You can apply in the subject of your master's degree only — check the subject-wise eligibility conditions in the official notification before selecting your discipline on the portal.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ul",
+        items: [
+          "Master's degree in the relevant subject with a minimum of 55% marks (or an equivalent grade) from a recognised university.",
+          "Qualified NET, SET or SLET, OR awarded a PhD degree in accordance with UGC regulations.",
+          "Subject-specific conditions and equivalence rules are listed in the official notification — read them for your discipline before applying.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Item", "Detail"],
+        rows: [
+          ["Maximum age", "62 years"],
+          ["Age relaxation", "As per UPESSC Assistant Professor Examination Rules Advt No. 04/2026 for reserved categories and eligible groups"],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS", "Rs. 2,000"],
+          ["SC / ST", "Rs. 1,500"],
+          ["PH (Divyang)", "Rs. 1,000"],
+          ["Payment mode", "Debit card, credit card, net banking or UPI"],
+        ],
+      },
+      { type: "h2", text: "UP Assistant Professor salary 2026 — Academic Level 10 pay and in-hand" },
+      {
+        type: "p",
+        text: "Assistant Professors in Uttar Pradesh government degree colleges are paid under the UGC 7th Pay Commission pay matrix at Academic Level 10, which starts at a basic pay of Rs. 57,700 and rises through annual increments. On top of the basic pay, teachers receive Dearness Allowance at the Uttar Pradesh government rate, House Rent Allowance based on the city class, and other admissible allowances.",
+      },
+      {
+        type: "table",
+        headers: ["Component", "Indicative monthly amount"],
+        rows: [
+          ["Basic pay (Academic Level 10, entry)", "Rs. 57,700"],
+          ["Dearness Allowance (as per prevailing UP rate)", "Around Rs. 30,000 to Rs. 33,000"],
+          ["House Rent Allowance", "Around Rs. 5,200 to Rs. 15,600 depending on city class"],
+          ["Approximate gross salary", "Rs. 95,000 to Rs. 1,05,000"],
+          ["Approximate in-hand pay", "Rs. 82,000 to Rs. 92,000"],
+        ],
+        caption:
+          "Allowances vary with the DA rate in force and the posting city, so treat these as indicative figures.",
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "What will 8th Pay Commission mean for college teachers?",
+        text: "Academic Level 10 corresponds to Pay Level 10 of the central matrix. If the 8th Pay Commission fitment factor lands near the widely discussed 2.86, the entry basic of Rs. 57,700 could project well above Rs. 1.65 lakh. Use our 8th CPC salary calculator and pay-level pages to model the revised figures for Level 10.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Written examination on 19 and 20 November 2026 covering the concerned subject and general studies, as per the scheme in the notification.",
+          "Shortlisting based on written examination merit and the weightage prescribed in Advt No. 04/2026.",
+          "Document verification of educational, NET/SET/SLET/PhD and category certificates.",
+          "Final merit list and college allotment as per UPESSC rules.",
+        ],
+      },
+      { type: "h2", text: "How to apply for the UPESSC Assistant Professor Online Form 2026" },
+      {
+        type: "ol",
+        items: [
+          "Open the UPESSC application portal and complete the One Time Registration (OTR) with your mobile number and email.",
+          "Log in with your OTR credentials and select the Assistant Professor Examination 2026 (Advt No. 04/2026).",
+          "Choose your subject exactly as per your master's degree and fill in personal, educational and category details as on your certificates.",
+          "Upload the scanned photograph, signature and required documents in the prescribed size and format.",
+          "Pay the fee (Rs. 2,000 General/OBC/EWS, Rs. 1,500 SC/ST, Rs. 1,000 PH) online before 07 October 2026.",
+          "Check the preview carefully, submit the form, and use the correction window until 11 October 2026 only if needed. Keep a printout of the final application.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "info",
+        title: "Check what the post really pays",
+        text: "Run the Academic Level 10 basic pay of Rs. 57,700 through our take-home salary and income tax calculators to see the monthly in-hand figure after DA, HRA, NPS contribution and tax, and compare it with other teaching and officer-level posts you may be preparing for.",
+      },
+    ],
+    faq: [
+      {
+        q: "How many posts are there in UPESSC UP Assistant Professor Recruitment 2026?",
+        a: "There are 1936 Assistant Professor posts — 1564 in co-educational government degree colleges and 372 in female colleges — notified under Advt No. 04/2026.",
+      },
+      {
+        q: "What is the last date to apply for UP Assistant Professor 2026?",
+        a: "Online registration and fee payment close on 07 October 2026. The correction window remains open until 11 October 2026.",
+      },
+      {
+        q: "What is the exam date for UPESSC Assistant Professor 2026?",
+        a: "The written examination is scheduled for 19 and 20 November 2026, with exam city details and admit cards released before the exam.",
+      },
+      {
+        q: "What qualification is required for UP Assistant Professor 2026?",
+        a: "You need a master's degree in the relevant subject with at least 55% marks along with NET/SET/SLET qualification or a PhD degree as per UGC regulations.",
+      },
+      {
+        q: "What is the UP Assistant Professor salary?",
+        a: "The post carries UGC 7th Pay Commission Academic Level 10 with a starting basic pay of Rs. 57,700. With DA and HRA, the gross salary is roughly Rs. 95,000 to Rs. 1,05,000 a month and the in-hand pay about Rs. 82,000 to Rs. 92,000 depending on the posting city.",
+      },
+      {
+        q: "What is the age limit for UPESSC Assistant Professor 2026?",
+        a: "The maximum age is 62 years as on 01 July 2026, with relaxation as per UPESSC Assistant Professor Examination Rules Advt No. 04/2026.",
+      },
+      {
+        q: "What is the application fee for UP Assistant Professor 2026?",
+        a: "Rs. 2,000 for General/OBC/EWS, Rs. 1,500 for SC/ST and Rs. 1,000 for PH (Divyang) candidates, payable online.",
+      },
+    ],
+  },
+  {
     slug: "uiic-administrative-officer-recruitment-2026-225-posts",
     title:
       "UIIC Administrative Officer Recruitment 2026: 225 AO Scale I Posts — Apply Online 08 to 28 September, Basic Pay Rs. 50,925",
