@@ -68,6 +68,208 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "upsssc-livestock-extension-officer-2026-1251-posts",
+    title:
+      "UPSSSC Livestock Extension Officer (LEO) Main Exam 2026: 1,251 Posts — Apply Online 09 to 29 September, Fee Rs. 25",
+    description:
+      "UPSSSC Livestock Extension Officer (Pashudhan Prasar Adhikari) Main Examination 2026 (Advt. No. 17-Exam/2026) — 1,251 posts, PET 2025 + 10+2 Biology + Livestock Extension Diploma eligibility, age 21 to 40 years, fee Rs. 25, online application 09–29 September 2026.",
+    keyword:
+      "upsssc leo 2026, upsssc livestock extension officer recruitment 2026, pashudhan prasar adhikari vacancy 2026, upsssc 17-exam/2026, upsssc leo main exam 2026, upsssc leo salary, upsssc leo apply online, upsssc.gov.in leo",
+    organization: "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    postName: "Livestock Extension Officer (LEO) — Pashudhan Prasar Adhikari",
+    vacancies:
+      "1,251 posts — Livestock Extension Officer 1,248 (UR 500, EWS 124, OBC 345, SC 254, ST 25) and LEO Special/Backlog 03 (OBC)",
+    qualification:
+      "UPSSSC PET 2025 qualified; 10+2 Intermediate with Biology; 2-year Diploma in Livestock Extension (Pashudhan Prasar Diploma)",
+    ageLimit:
+      "21 to 40 years as on 01 July 2026; age relaxation as per UPSSSC recruitment rules Advt. No. 17-Exam/2026",
+    payScale:
+      "Pay Level 5 — basic pay Rs. 29,200 to Rs. 92,300, plus Dearness Allowance, House Rent Allowance and other admissible benefits",
+    location: "Uttar Pradesh — Animal Husbandry Department postings across the state",
+    applicationFee:
+      "Rs. 25 for all categories (UR / OBC / EWS / SC / ST / PH); payable via UPI, debit card, credit card or net banking only",
+    applyStart: "2026-09-09",
+    applyEnd: "2026-09-29",
+    applyUrl: "https://upsssc.gov.in/AllNotifications.aspx",
+    organizationUrl: "https://upsssc.gov.in/",
+    salaryMin: 29200,
+    salaryMax: 92300,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "17-Exam/2026",
+    industry: "State Government — Animal Husbandry",
+    occupationalCategory: "45-1011.00 First-Line Supervisors of Farming, Fishing, and Forestry Workers",
+    educationRequirements:
+      "10+2 Intermediate with Biology plus a 2-year Diploma in Livestock Extension, with a valid UPSSSC PET 2025 score",
+    experienceRequirements:
+      "No prior work experience required; eligible diploma holders with PET 2025 qualification can apply",
+    jobBenefits:
+      "Uttar Pradesh Government job with Pay Level 5 salary, Dearness Allowance, House Rent Allowance, medical facilities, National Pension System coverage, leave benefits and promotion avenues in the Animal Husbandry Department",
+    numberOfPositions: 1251,
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (1,251 Posts, Dates, Fee)",
+        href: "/downloads/upsssc-leo-2026/upsssc-leo-2026-notification-summary.pdf",
+        note: "Important dates, category-wise vacancy breakup, application fee and how to apply",
+      },
+      {
+        label: "Eligibility, Exam Pattern & Salary Guide PDF",
+        href: "/downloads/upsssc-leo-2026/upsssc-leo-2026-eligibility-and-salary.pdf",
+        note: "Qualification, age limit, selection process and Pay Level 5 salary breakdown",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-10",
+    updated: "2026-09-10",
+    readMinutes: 7,
+    hero: "from-slate-900 to-teal-600",
+    image: "https://paycommissionnews.co.in/images/upsssc-leo-2026.jpg",
+    imageAlt:
+      "UPSSSC Livestock Extension Officer Main Examination 2026 notification for 1,251 posts with online applications open from 09 to 29 September 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/upsssc-leo-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the Livestock Extension Officer (Pashudhan Prasar Adhikari) Main Examination 2026 notification under Advt. No. 17-Exam/2026 for 1,251 posts. PET 2025 qualified candidates with 10+2 Biology and a Livestock Extension Diploma, aged 21 to 40 years, can apply online from 09 September to 29 September 2026 for a fee of just Rs. 25.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has notified the Livestock Extension Officer (LEO), known in Hindi as Pashudhan Prasar Adhikari, Main Examination 2026 under Advertisement No. 17-Exam/2026, inviting online applications for 1,251 posts in the state's Animal Husbandry Department.",
+      },
+      {
+        type: "p",
+        text: "This main examination is open to candidates who qualified the UPSSSC PET 2025 and hold 10+2 with Biology plus a two-year Livestock Extension Diploma. Online applications run from 09 September 2026 to 29 September 2026, the fee is only Rs. 25 for every category, and the post carries Pay Level 5 with a basic pay of Rs. 29,200 to Rs. 92,300.",
+      },
+      { type: "h2", text: "UPSSSC LEO Main Exam 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "09 September 2026"],
+          ["Online application begins", "09 September 2026"],
+          ["Last date to apply online", "29 September 2026"],
+          ["Last date to pay exam fee", "29 September 2026"],
+          ["Form correction last date", "06 October 2026"],
+          ["Main exam date", "As per schedule"],
+          ["Exam city and admit card", "Before the exam"],
+        ],
+        caption: "Dates as per UPSSSC Advertisement No. 17-Exam/2026.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "PET 2025 score is mandatory",
+        text: "Only candidates who appeared in and qualified the UPSSSC PET 2025 can fill this main examination form. Shortlisting for the written exam is based on your PET 2025 score, so keep your PET registration details ready before applying.",
+      },
+      { type: "h2", text: "Vacancy details — 1,251 posts" },
+      {
+        type: "table",
+        headers: ["Post", "UR", "EWS", "OBC", "SC", "ST", "Total"],
+        rows: [
+          ["Livestock Extension Officer", "500", "124", "345", "254", "25", "1,248"],
+          ["Livestock Extension Officer (Special/Backlog)", "0", "0", "03", "0", "0", "03"],
+          ["Total", "500", "124", "348", "254", "25", "1,251"],
+        ],
+        caption:
+          "Category-wise vacancy details as per the official notification; the number of posts may increase or decrease.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ol",
+        items: [
+          "Qualified the UPSSSC PET 2025 examination.",
+          "Passed 10+2 Intermediate with Biology subject.",
+          "Hold a two-year Diploma in Livestock Extension (Pashudhan Prasar Diploma).",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Criteria", "Detail"],
+        rows: [
+          ["Minimum age", "21 years"],
+          ["Maximum age", "40 years"],
+          ["Age relaxation", "Extra as per UPSSSC LEO Main Recruitment Rules, Advt. No. 17-Exam/2026"],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General (UR) / OBC / EWS", "Rs. 25"],
+          ["SC / ST", "Rs. 25"],
+          ["PH (Divyang)", "Rs. 25"],
+        ],
+        caption:
+          "Fee is payable through UPI, debit card, credit card or net banking only.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Shortlisting on the basis of UPSSSC PET 2025 score.",
+          "Main written examination (date as per schedule).",
+          "Document verification.",
+          "Medical examination and final merit as per the official notification.",
+        ],
+      },
+      { type: "h2", text: "Salary and 8th Pay Commission context" },
+      {
+        type: "p",
+        text: "The Livestock Extension Officer is a Pay Level 5 post with a basic pay of Rs. 29,200 rising to Rs. 92,300, plus Dearness Allowance, House Rent Allowance and other benefits. The estimated gross monthly salary at entry is around Rs. 42,000 to Rs. 48,000 depending on the DA rate and the HRA classification of the posting city.",
+      },
+      {
+        type: "p",
+        text: "If the 8th Central Pay Commission recommendations are adopted by Uttar Pradesh in line with earlier pay commission practice, basic pay could rise by a fitment factor estimated in the 1.86 to 2.86 range, taking the entry basic well above Rs. 55,000. You can model the revision for Level 5 pay with our 8th CPC salary calculator.",
+      },
+      { type: "h2", text: "How to apply online" },
+      {
+        type: "ol",
+        items: [
+          "Visit upsssc.gov.in and open the notifications page.",
+          "Read the official notification Advt. No. 17-Exam/2026 carefully.",
+          "Keep scanned photo, signature, ID proof and PET 2025 details ready.",
+          "Fill the online form between 09 and 29 September 2026.",
+          "Pay the Rs. 25 fee, verify the preview carefully and submit.",
+          "Take a printout of the final submitted application form.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "When did the UPSSSC LEO Main Exam 2026 online form start?",
+        a: "The online application process started on 09 September 2026.",
+      },
+      {
+        q: "What is the last date to apply for UPSSSC Livestock Extension Officer 2026?",
+        a: "The last date to apply online and pay the fee is 29 September 2026, and form corrections are allowed up to 06 October 2026.",
+      },
+      {
+        q: "How many posts are there in UPSSSC LEO Recruitment 2026?",
+        a: "There are 1,251 posts in total — 1,248 Livestock Extension Officer posts and 3 Special/Backlog posts under Advt. No. 17-Exam/2026.",
+      },
+      {
+        q: "What is the eligibility for UPSSSC LEO 2026?",
+        a: "You must have qualified UPSSSC PET 2025, passed 10+2 with Biology and hold a two-year Diploma in Livestock Extension.",
+      },
+      {
+        q: "What is the application fee for UPSSSC LEO 2026?",
+        a: "The fee is Rs. 25 for all categories — General, OBC, EWS, SC, ST and PH — payable via UPI, debit card, credit card or net banking.",
+      },
+      {
+        q: "What is the salary of a Livestock Extension Officer in UP?",
+        a: "It is a Pay Level 5 post with basic pay of Rs. 29,200 to Rs. 92,300 plus DA, HRA and other allowances, giving an estimated gross of around Rs. 42,000–48,000 per month at entry.",
+      },
+    ],
+  },
+  {
     slug: "ukpsc-civil-services-exam-2026-67-posts",
     title:
       "UKPSC Civil Services Exam 2026: 67 Upper Subordinate Posts — Apply Online 09 to 29 September, Age 21–42",
