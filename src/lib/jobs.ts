@@ -68,6 +68,205 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "ukpsc-civil-services-exam-2026-67-posts",
+    title:
+      "UKPSC Civil Services Exam 2026: 67 Upper Subordinate Posts — Apply Online 09 to 29 September, Age 21–42",
+    description:
+      "UKPSC Combined State Civil Upper Subordinate Service Exam 2026 (Advt. No. A-1/E-1/2026-27) — 67 posts, graduation eligibility, age 21 to 42 years, fee Rs. 166, online application 09–29 September 2026, correction window 07–16 October 2026.",
+    keyword:
+      "ukpsc pre 2026, ukpsc civil services exam 2026, ukpsc upper subordinate service recruitment 2026, ukpsc 67 posts, ukpsc apply online 2026, ukpsc pre exam date 2026, ukpsc salary, psc.uk.gov.in recruitment",
+    organization: "Uttarakhand Public Service Commission (UKPSC)",
+    postName: "Combined State Civil Upper Subordinate Service Exam 2026",
+    vacancies: "67 posts — post-wise and department-wise breakup in the official notification",
+    qualification:
+      "Bachelor's degree in any stream from a recognised university in India",
+    ageLimit:
+      "21 to 42 years as on 01 July 2026; age relaxation for reserved categories as per UKPSC and Uttarakhand Government rules",
+    payScale:
+      "Pay Level 8 to Level 10 of the 7th CPC pay matrix depending on the post — approximately Rs. 47,600 to Rs. 1,77,500 basic pay, plus DA, HRA and other allowances",
+    location: "Uttarakhand",
+    applicationFee:
+      "General / OBC / EWS: Rs. 166; SC / ST candidates of Uttarakhand: Rs. 76.36; PH candidates: Rs. 16.36 — payable online or offline",
+    applyStart: "2026-09-09",
+    applyEnd: "2026-09-29",
+    applyUrl: "https://pscuk.net.in/",
+    organizationUrl: "https://psc.uk.gov.in/",
+    salaryMin: 47600,
+    salaryMax: 177500,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "A-1/E-1/2026-27",
+    industry: "State Government — Civil Services",
+    occupationalCategory: "13-1041.00 Compliance Officers",
+    educationRequirements:
+      "Bachelor's degree in any stream from a recognised university in India",
+    experienceRequirements:
+      "No prior work experience required; fresh graduates can apply",
+    jobBenefits:
+      "Uttarakhand state civil service career with 7th CPC pay, Dearness Allowance, House Rent Allowance, medical facilities, National Pension System coverage, leave benefits and promotion avenues to higher administrative grades",
+    numberOfPositions: 67,
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (67 Posts, Dates, Fee)",
+        href: "/downloads/ukpsc-state-service-2026/ukpsc-state-service-2026-notification-summary.pdf",
+        note: "Important dates, vacancy details, application fee and how to apply",
+      },
+      {
+        label: "Eligibility, Exam Pattern & Salary Guide PDF",
+        href: "/downloads/ukpsc-state-service-2026/ukpsc-state-service-2026-eligibility-and-salary.pdf",
+        note: "Qualification, age limit, prelims-mains-interview selection process and pay level breakdown",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-10",
+    updated: "2026-09-10",
+    readMinutes: 6,
+    hero: "from-slate-900 to-teal-600",
+    image: "https://paycommissionnews.co.in/images/ukpsc-state-service-2026.jpg",
+    imageAlt:
+      "UKPSC Combined State Civil Upper Subordinate Service Exam 2026 notification for 67 posts with online applications open from 09 to 29 September 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/ukpsc-state-service-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttarakhand Public Service Commission (UKPSC) has released Advertisement No. A-1/E-1/2026-27 for the Combined State Civil Upper Subordinate Service Examination 2026 with 67 posts. Graduates aged 21 to 42 years can apply online from 09 September to 29 September 2026, with a correction window from 07 to 16 October 2026.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttarakhand Public Service Commission (UKPSC) has notified the Combined State Civil Upper Subordinate Service Examination 2026 under Advertisement No. A-1/E-1/2026-27, inviting online applications for 67 posts in the Uttarakhand state civil services.",
+      },
+      {
+        type: "p",
+        text: "Any graduate aged between 21 and 42 years (as on 01 July 2026) can apply. The selection runs through a preliminary examination, a main written examination and an interview. Selected candidates join Uttarakhand Government service on 7th Pay Commission scales with Dearness Allowance, House Rent Allowance and pension coverage under the National Pension System.",
+      },
+      { type: "h2", text: "UKPSC Civil Services Exam 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "09 September 2026"],
+          ["Online application begins", "09 September 2026"],
+          ["Last date to apply online", "29 September 2026"],
+          ["Last date to pay exam fee", "29 September 2026"],
+          ["Form correction window", "07 to 16 October 2026"],
+          ["Preliminary exam date", "As per schedule"],
+          ["Admit card", "Released before the exam"],
+        ],
+        caption:
+          "Dates as per UKPSC Advertisement No. A-1/E-1/2026-27.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Apply before 29 September",
+        text: "The application and fee-payment window both close on 29 September 2026. Corrections are allowed only from 07 to 16 October 2026, so double-check your photo, signature and category details before submitting.",
+      },
+      { type: "h2", text: "Vacancy details — 67 posts" },
+      {
+        type: "table",
+        headers: ["Post", "Vacancies", "Qualification"],
+        rows: [
+          [
+            "Combined State Civil Upper Subordinate Service Exam 2026",
+            "67",
+            "Bachelor's degree in any stream from a recognised university",
+          ],
+        ],
+        caption:
+          "Department-wise and post-wise breakup is given in the official UKPSC notification.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "p",
+        text: "Candidates must hold a bachelor's degree in any stream from a recognised university in India. Post-specific requirements, if any, are listed in the detailed notification.",
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Criteria", "Detail"],
+        rows: [
+          ["Minimum age", "21 years"],
+          ["Maximum age", "42 years"],
+          ["Age relaxation", "As per UKPSC and Uttarakhand Government rules for reserved categories"],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General / OBC / EWS", "Rs. 166"],
+          ["SC / ST candidates of Uttarakhand", "Rs. 76.36"],
+          ["PH candidates", "Rs. 16.36"],
+        ],
+        caption: "Fee can be paid through online or offline mode.",
+      },
+      { type: "h2", text: "Selection process" },
+      {
+        type: "ol",
+        items: [
+          "Preliminary examination (objective screening test).",
+          "Main written examination (descriptive papers).",
+          "Interview / personality test.",
+          "Document verification and final merit as per the official notification.",
+        ],
+      },
+      { type: "h2", text: "Salary and 8th Pay Commission context" },
+      {
+        type: "p",
+        text: "Upper Subordinate Service posts under the Uttarakhand Government generally carry Pay Level 8 to Level 10 of the 7th Pay Commission pay matrix — roughly Rs. 47,600 to Rs. 1,77,500 basic pay depending on the post — plus Dearness Allowance, House Rent Allowance, transport allowance and other admissible benefits.",
+      },
+      {
+        type: "p",
+        text: "If the 8th Central Pay Commission recommendations are adopted by Uttarakhand in line with earlier pay commission practice, basic pay could rise by a fitment factor estimated in the 1.86 to 2.86 range, substantially increasing gross and in-hand salary. You can model the revision with our 8th CPC salary calculator.",
+      },
+      { type: "h2", text: "How to apply online" },
+      {
+        type: "ol",
+        items: [
+          "Visit the UKPSC online application portal at pscuk.net.in.",
+          "Read the official notification carefully before applying.",
+          "Keep scanned photo, signature, ID proof and other documents ready.",
+          "Fill the online form between 09 September and 29 September 2026.",
+          "Pay the exam fee, verify the preview carefully and submit.",
+          "Take a printout of the final submitted application form.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "When did the UKPSC Civil Services Exam 2026 online form start?",
+        a: "The online application process started on 09 September 2026.",
+      },
+      {
+        q: "What is the last date to apply for UKPSC Pre 2026?",
+        a: "The last date to apply online and pay the exam fee is 29 September 2026.",
+      },
+      {
+        q: "How many posts are there in UKPSC Upper Subordinate Service Exam 2026?",
+        a: "There are 67 posts under Advertisement No. A-1/E-1/2026-27. The department-wise breakup is in the official notification.",
+      },
+      {
+        q: "What is the age limit for UKPSC Civil Services Exam 2026?",
+        a: "Candidates must be between 21 and 42 years of age as on 01 July 2026, with relaxation for reserved categories as per rules.",
+      },
+      {
+        q: "What is the application fee for UKPSC Pre 2026?",
+        a: "Rs. 166 for General/OBC/EWS, Rs. 76.36 for SC/ST candidates of Uttarakhand and Rs. 16.36 for PH candidates.",
+      },
+      {
+        q: "What is the selection process for UKPSC Upper Subordinate Service 2026?",
+        a: "Selection is through a preliminary examination, a main written examination and an interview. The detailed syllabus and exam scheme are in the official notification.",
+      },
+    ],
+  },
+  {
     slug: "mpesb-si-subedar-recruitment-2026-504-posts",
     title:
       "MPESB SI & Subedar Recruitment 2026: 504 MP Police Sub Inspector Posts — Apply Online 09 to 23 September, Pay Level 9 Salary Rs. 36,200",
