@@ -53,7 +53,7 @@ export function Hero() {
         </header>
 
         <div className="grid gap-8 lg:grid-cols-12">
-          <aside className="order-2 border-border lg:order-1 lg:col-span-3 lg:border-r lg:pr-7">
+          <aside className="order-2 hidden border-border lg:order-1 lg:col-span-3 lg:border-r lg:pr-7">
             <div className="mb-5 flex items-center justify-between border-b-2 border-foreground pb-2">
               <h2 className="font-sans text-sm font-bold uppercase">Latest developments</h2>
               <Link to="/blog" className="text-xs font-semibold text-primary hover:underline">All news</Link>
@@ -79,7 +79,7 @@ export function Hero() {
             </div>
           </aside>
 
-          <div className="order-1 space-y-7 lg:order-2 lg:col-span-6">
+          <div className="order-1 space-y-7 lg:order-2 lg:col-span-9">
             <article>
               <Link to="/blog/$slug" params={{ slug: lead.slug }} className="group block">
                 <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
