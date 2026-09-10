@@ -68,6 +68,230 @@ export type Job = {
 
 export const jobs: Job[] = [
   {
+    slug: "upsssc-pet-2026-online-form-preliminary-eligibility-test",
+    title:
+      "UPSSSC PET 2026: Preliminary Eligibility Test Form Closed, Exam on 23, 24 & 25 October — 10th Pass Eligibility",
+    description:
+      "UPSSSC PET 2026 (Advt. No. 16-Exam/2026) — Preliminary Eligibility Test for Uttar Pradesh Group C recruitment. Online form 03 August to 07 September 2026, exam on 23, 24 and 25 October 2026, 10th pass eligibility, age 18 to 40 years, PET score valid 3 years.",
+    keyword:
+      "upsssc pet 2026, upsssc pet online form 2026, upsssc pet exam date 2026, upsssc pet notification 2026, upsssc 16-exam/2026, upsssc pet eligibility age limit, upsssc pet score validity, upsssc pet salary group c, upsssc.gov.in pet 2026",
+    organization: "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+    postName: "Preliminary Eligibility Test (PET) 2026 — Group C posts",
+    vacancies:
+      "Eligibility test — no fixed vacancy count; the PET score is used to shortlist candidates for all upcoming UPSSSC Group C main examinations",
+    qualification:
+      "High School (Class 10th) or equivalent from a recognised board; post-specific qualifications apply at the main examination stage",
+    ageLimit:
+      "18 to 40 years as on 01 July 2026; relaxation for SC/ST/OBC, UP state employees, sportspersons, ex-servicemen and PwD as per UP Government rules",
+    payScale:
+      "Group C posts filled through PET generally fall in Pay Level 1 to Level 5 — basic pay Rs. 18,000 to Rs. 92,300, plus Dearness Allowance, House Rent Allowance and other allowances",
+    location: "Uttar Pradesh — exam centres and postings across the state",
+    applicationFee:
+      "General / OBC / EWS: Rs. 185; SC / ST: Rs. 95; PH: Rs. 25 — as per the official notification; One Time Registration (OTR) is mandatory before applying",
+    applyStart: "2026-08-03",
+    applyEnd: "2026-09-07",
+    applyUrl: "https://upsssc.gov.in/AllNotifications.aspx",
+    organizationUrl: "https://upsssc.gov.in/",
+    salaryMin: 18000,
+    salaryMax: 92300,
+    salaryUnit: "MONTH",
+    salaryCurrency: "INR",
+    employmentType: "FULL_TIME",
+    noticeNumber: "16-Exam/2026",
+    industry: "State Government — Uttar Pradesh Group C services",
+    occupationalCategory: "43-9061.00 Office Clerks, General",
+    educationRequirements:
+      "High School (Class 10th) or equivalent examination passed from a recognised board",
+    experienceRequirements:
+      "No prior work experience required; the PET is an entry-level screening test",
+    jobBenefits:
+      "Qualifying the PET makes candidates eligible for Uttar Pradesh Group C main examinations offering 7th CPC pay scales, Dearness Allowance, House Rent Allowance, medical facilities, National Pension System coverage and promotion avenues",
+    applicantLocationRequirements: "India",
+    directApply: true,
+
+    downloads: [
+      {
+        label: "Notification Summary PDF (Dates, Fee, Exam Schedule)",
+        href: "/downloads/upsssc-pet-2026/upsssc-pet-2026-notification-summary.pdf",
+        note: "Important dates, application fee, OTR requirement and 23–25 October exam schedule",
+      },
+      {
+        label: "Eligibility, Exam Pattern & Salary Guide PDF",
+        href: "/downloads/upsssc-pet-2026/upsssc-pet-2026-exam-pattern-and-salary.pdf",
+        note: "Class 10th eligibility, age limit, 100-mark exam pattern and Group C pay levels",
+      },
+    ],
+    category: "State Government Jobs",
+    date: "2026-09-10",
+    updated: "2026-09-10",
+    readMinutes: 7,
+    hero: "from-slate-900 to-teal-600",
+    image: "https://paycommissionnews.co.in/images/upsssc-pet-2026.jpg",
+    imageAlt:
+      "UPSSSC PET 2026 Preliminary Eligibility Test notification with exam scheduled on 23, 24 and 25 October 2026",
+    ogImage: "https://paycommissionnews.co.in/images/og/upsssc-pet-2026-og.jpg",
+    lang: "en",
+
+    excerpt:
+      "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) conducted the online application process for the Preliminary Eligibility Test (PET) 2026 under Advt. No. 16-Exam/2026 from 03 August to 07 September 2026. The commission has now confirmed the exam on 23, 24 and 25 October 2026 in two shifts daily. Class 10th pass candidates aged 18 to 40 years were eligible, and the PET score stays valid for three years for all UPSSSC Group C main examinations.",
+
+    body: [
+      {
+        type: "p",
+        text: "The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has confirmed the examination schedule for the Preliminary Eligibility Test (PET) 2026, notified under Advertisement No. 16-Exam/2026. The PET will be held on 23, 24 and 25 October 2026 in two shifts every day — the first shift from 10:00 AM to 12:00 noon and the second shift from 3:00 PM to 5:00 PM.",
+      },
+      {
+        type: "p",
+        text: "PET is the single screening gateway for almost every Uttar Pradesh Group C recruitment. The online application window ran from 03 August 2026 and, after an extension prompted by OTP and portal issues, closed on 07 September 2026. Only Class 10th pass candidates aged 18 to 40 years as on 01 July 2026 were eligible, and the score obtained remains valid for three years.",
+      },
+      { type: "h2", text: "UPSSSC PET 2026 — important dates" },
+      {
+        type: "table",
+        headers: ["Event", "Date"],
+        rows: [
+          ["Notification released", "01 August 2026"],
+          ["Online application begins", "03 August 2026"],
+          ["Last date to apply online (extended)", "07 September 2026"],
+          ["Last date to pay exam fee", "08 September 2026"],
+          ["Form correction / edit window last date", "08 September 2026"],
+          ["PET exam dates", "23, 24 and 25 October 2026"],
+          ["Exam shifts", "10:00 AM – 12:00 noon and 3:00 PM – 5:00 PM"],
+          ["Admit card", "Released before the exam on upsssc.gov.in"],
+        ],
+        caption: "Dates as per UPSSSC Advertisement No. 16-Exam/2026 and the commission's exam-date notice.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        title: "Applications have closed",
+        text: "The PET 2026 application window closed on 07 September 2026 and the correction window ended on 08 September 2026. Registered candidates should now focus on the exam scheduled for 23, 24 and 25 October 2026 and download the admit card from upsssc.gov.in when it is released.",
+      },
+      { type: "h2", text: "What PET 2026 is used for" },
+      {
+        type: "p",
+        text: "PET does not fill any post by itself. It shortlists candidates for the main examinations of Uttar Pradesh Group C posts such as Lekhpal, Village Development Officer, Junior Assistant, Computer Operator, Forest Guard, Livestock Extension Officer and several technical cadres. Each of those recruitments is notified separately, and only PET-qualified candidates can apply.",
+      },
+      { type: "h2", text: "Eligibility criteria" },
+      { type: "h3", text: "Educational qualification" },
+      {
+        type: "ol",
+        items: [
+          "High School (Class 10th) or an equivalent examination passed from a recognised board.",
+          "Additional post-specific qualifications, such as a degree, diploma or typing certificate, apply only when you fill the main examination form for a particular post.",
+        ],
+      },
+      { type: "h3", text: "Age limit as on 01 July 2026" },
+      {
+        type: "table",
+        headers: ["Category", "Age / relaxation"],
+        rows: [
+          ["General / Unreserved", "18 to 40 years"],
+          ["SC / ST / OBC", "Up to 5 years relaxation as per UP Government rules"],
+          ["UP state employees", "5 years relaxation"],
+          ["Skilled sportspersons", "5 years relaxation"],
+          ["Ex-servicemen", "3 years relaxation after deducting service period"],
+          ["Persons with Disabilities (PwD)", "15 years relaxation"],
+        ],
+      },
+      { type: "h2", text: "Application fee" },
+      {
+        type: "table",
+        headers: ["Category", "Fee"],
+        rows: [
+          ["General (UR) / OBC / EWS", "Rs. 185"],
+          ["SC / ST", "Rs. 95"],
+          ["PH (Divyang)", "Rs. 25"],
+        ],
+        caption: "Fee as per the official notification, payable online. Verify the exact amount in the PDF before payment.",
+      },
+      { type: "h2", text: "UPSSSC PET 2026 exam pattern" },
+      {
+        type: "table",
+        headers: ["Detail", "Description"],
+        rows: [
+          ["Mode", "Offline (OMR based)"],
+          ["Questions", "100 multiple-choice questions"],
+          ["Marks", "100 marks"],
+          ["Duration", "2 hours"],
+          ["Language", "Hindi and English"],
+          [
+            "Subjects",
+            "General Knowledge, Current Affairs, General Science, History, Geography, Indian Economy, Constitution & Public Administration, Hindi, English, Reasoning, Arithmetic and Analysis",
+          ],
+          ["Negative marking", "As specified in the official notification"],
+        ],
+      },
+      { type: "h2", text: "Selection process after PET" },
+      {
+        type: "ol",
+        items: [
+          "PET 2026 (Tier 1) — 100-mark screening test; score valid for three years.",
+          "Main examination or skill / physical test (Tier 2) for the specific Group C post.",
+          "Document verification and final merit list as per the post-wise notification.",
+        ],
+      },
+      { type: "h2", text: "Salary of UPSSSC Group C posts filled through PET" },
+      {
+        type: "table",
+        headers: ["Pay Level", "Basic pay (7th CPC)", "Typical posts"],
+        rows: [
+          ["Level 1", "Rs. 18,000 – Rs. 56,900", "Group C support staff, peon-grade posts"],
+          ["Level 2", "Rs. 19,900 – Rs. 63,200", "Junior Assistant and clerical posts"],
+          ["Level 3", "Rs. 21,700 – Rs. 69,100", "Forest Guard and similar field posts"],
+          ["Level 4", "Rs. 25,500 – Rs. 81,100", "Computer Operator, Stenographer grade posts"],
+          ["Level 5", "Rs. 29,200 – Rs. 92,300", "Lekhpal-linked cadres, Livestock Extension Officer"],
+        ],
+        caption:
+          "Indicative pay levels of common Uttar Pradesh Group C posts recruited via PET; the exact level is given in each main examination notification.",
+      },
+      {
+        type: "p",
+        text: "With Dearness Allowance and House Rent Allowance added, entry-level gross pay for these posts currently works out to roughly Rs. 26,000 to Rs. 48,000 per month depending on the level and city class. You can check a precise figure for any level using our salary calculator.",
+      },
+      {
+        type: "p",
+        text: "If Uttar Pradesh adopts the 8th Central Pay Commission recommendations in line with earlier practice, basic pay could be revised upward by a fitment factor estimated in the 1.86 to 2.86 range, pushing Level 1 entry basic well above Rs. 33,000 and Level 5 above Rs. 55,000. Our 8th CPC salary calculator lets you model each scenario.",
+      },
+      { type: "h2", text: "How to download the PET 2026 admit card" },
+      {
+        type: "ol",
+        items: [
+          "Visit upsssc.gov.in and open the admit card / e-admit card section.",
+          "Select Preliminary Eligibility Test 2026 (Advt. No. 16-Exam/2026).",
+          "Log in with your registration number and date of birth.",
+          "Check your exam date, shift and centre carefully.",
+          "Download and print the admit card and carry a valid photo ID to the centre.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is the UPSSSC PET 2026 exam date?",
+        a: "The Preliminary Eligibility Test 2026 will be held on 23, 24 and 25 October 2026 in two shifts daily — 10:00 AM to 12:00 noon and 3:00 PM to 5:00 PM.",
+      },
+      {
+        q: "What was the last date to apply for UPSSSC PET 2026?",
+        a: "The application window opened on 03 August 2026 and closed on 07 September 2026 after an extension; the fee payment and correction window ended on 08 September 2026.",
+      },
+      {
+        q: "What is the eligibility for UPSSSC PET 2026?",
+        a: "Candidates must have passed High School (Class 10th) or an equivalent examination and be aged 18 to 40 years as on 01 July 2026, with One Time Registration (OTR) completed.",
+      },
+      {
+        q: "How long is the UPSSSC PET score valid?",
+        a: "The PET 2026 score remains valid for three years and can be used to apply for UPSSSC Group C main examinations during that period.",
+      },
+      {
+        q: "What is the UPSSSC PET 2026 exam pattern?",
+        a: "It is an offline objective test with 100 questions for 100 marks in 2 hours, covering general knowledge, current affairs, science, history, geography, economy, constitution, Hindi, English, reasoning and arithmetic.",
+      },
+      {
+        q: "What salary do posts filled through UPSSSC PET offer?",
+        a: "Group C posts recruited via PET usually fall in Pay Level 1 to Level 5, with basic pay between Rs. 18,000 and Rs. 92,300 plus DA, HRA and other allowances.",
+      },
+    ],
+  },
+  {
     slug: "upsssc-livestock-extension-officer-2026-1251-posts",
     title:
       "UPSSSC Livestock Extension Officer (LEO) Main Exam 2026: 1,251 Posts — Apply Online 09 to 29 September, Fee Rs. 25",
