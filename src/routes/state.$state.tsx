@@ -36,14 +36,6 @@ export const Route = createFileRoute("/state/$state")({
     const postKeywords = s.cadres
       .map((post) => postSalaryKeyword(post.name, s.name).toLowerCase())
       .join(", ");
-    const postFaq = s.cadres.map((post) => ({
-      "@type": "Question",
-      name: `What will be the ${postSalaryKeyword(post.name, s.name)}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: postSalaryAnswer(post, s.name),
-      },
-    }));
     return {
       meta: [
         { title },
@@ -77,14 +69,6 @@ export const Route = createFileRoute("/state/$state")({
                 item: url,
               },
             ],
-          }),
-        },
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: postFaq,
           }),
         },
       ],
