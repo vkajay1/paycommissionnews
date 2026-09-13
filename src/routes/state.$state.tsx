@@ -10,6 +10,17 @@ import { inr } from "@/lib/format";
 
 const SITE = "https://paycommissionnews.co.in";
 
+function postSalaryKeyword(postName: string, stateName: string) {
+  return `${postName} salary after 8th Pay Commission in ${stateName}`;
+}
+
+function postSalaryAnswer(
+  post: { name: string; level: number; basic: number },
+  stateName: string,
+) {
+  return `${post.name} in ${stateName} is shown at Level ${post.level} with a current entry basic pay of ${inr(post.basic)}. The estimated basic salary after the 8th Pay Commission is ${inr(levelProjection(post.basic, 2.57))} at a 2.57x fitment factor or ${inr(levelProjection(post.basic, 2.86))} at 2.86x. These are planning estimates; the final amount depends on the notified fitment factor and ${stateName}'s adoption order.`;
+}
+
 export const Route = createFileRoute("/state/$state")({
   beforeLoad: ({ params }) => {
     const data = getStatePage(params.state);
@@ -22,13 +33,24 @@ export const Route = createFileRoute("/state/$state")({
     const title = `8th Pay Commission Salary Scenarios in ${s.name} — Level-Wise`;
     const desc = `8th Pay Commission salary list in ${s.name}: level-wise projected basic pay at 2.57x and 2.86x, cadre-wise breakdown, current state DA of ${s.daPct}% and a live salary calculator for ${s.name} government employees.`;
     const url = `${SITE}/state/${s.slug}`;
+    const postKeywords = s.cadres
+      .map((post) => postSalaryKeyword(post.name, s.name).toLowerCase())
+      .join(", ");
+    const postFaq = s.cadres.map((post) => ({
+      "@type": "Question",
+      name: `What will be the ${postSalaryKeyword(post.name, s.name)}?`,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: postSalaryAnswer(post, s.name),
+      },
+    }));
     return {
       meta: [
         { title },
         { name: "description", content: desc },
         {
           name: "keywords",
-          content: `8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary list ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary`,
+          content: `8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary list ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary, ${postKeywords}`,
         },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
@@ -57,6 +79,14 @@ export const Route = createFileRoute("/state/$state")({
             ],
           }),
         },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: postFaq,
+          }),
+        },
       ],
     };
   },
@@ -74,7 +104,9 @@ export const Route = createFileRoute("/state/$state")({
 
 function StatePageView() {
   const { state } = Route.useParams();
-  const s = getStatePage(state)!;
+  const s = getStatePage(state);
+
+  if (!s) return null;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
@@ -162,6 +194,36 @@ function StatePageView() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section className="mt-10" aria-labelledby="post-salary-questions">
+        <h2 id="post-salary-questions" className="text-xl font-bold">
+          Post salary after 8th Pay Commission in {s.name}
+        </h2>
+        <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
+          Select the post you are searching for to compare its current entry basic pay with
+          two estimated 8th CPC fitment scenarios. Allowances are not included in these basic-pay
+          figures.
+        </p>
+        <div className="mt-5 divide-y divide-border border-y border-border">
+          {s.cadres.map((post) => (
+            <article key={post.name} className="py-5 first:pt-4 last:pb-4">
+              <h3 className="text-base font-semibold">
+                {postSalaryKeyword(post.name, s.name)}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                {postSalaryAnswer(post, s.name)}
+              </p>
+              <Link
+                to="/salary"
+                search={{ level: post.level, basic: post.basic }}
+                className="mt-2 inline-flex text-sm font-semibold text-primary hover:underline"
+              >
+                Calculate {post.name} salary
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
 
