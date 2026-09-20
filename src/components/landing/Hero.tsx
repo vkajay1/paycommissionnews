@@ -40,7 +40,7 @@ export function Hero() {
                 Financial edition · Live updates
               </p>
               <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                8th Pay Commission <span className="text-primary">News Desk</span>
+                Pay Commission <span className="text-primary">News</span>
               </h1>
             </div>
             <div className="hidden border-l border-border pl-6 text-right md:block">
