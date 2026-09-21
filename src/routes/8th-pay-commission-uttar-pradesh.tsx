@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-uttar-pradesh")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in uttar pradesh, 8th pay commission uttar pradesh, uttar pradesh 8th pay commission state employees latest 2026, 8th pay commission in up, which pay commission is going on in up, upsssc junior assistant salary after 8th pay commission, up police 8th pay commission salary, up government 8th pay commission, up salary calculator",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in uttar pradesh, 8th pay commission salary increase 2026 in uttar pradesh, 8th pay commission uttar pradesh, uttar pradesh 8th pay commission state employees latest 2026, 8th pay commission in up, which pay commission is going on in up, upsssc junior assistant salary after 8th pay commission, up police 8th pay commission salary, up government 8th pay commission, up salary calculator",
       },
       { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Uttar Pradesh — UP Employees Salary" },
@@ -62,7 +62,7 @@ function Page() {
     <KeywordHub
       eyebrow="Uttar Pradesh"
       title="8th Pay Commission Uttar Pradesh — UP State Employees Salary & Adoption 2026"
-      lede="How the 8th Central Pay Commission will apply to Uttar Pradesh state government employees: adoption route and timeline, cadre-wise projections for UPSSSC Junior Assistant, Lekhpal, UP Police and PCS, DA, arrears and pension."
+      lede="Uttar Pradesh's 8th Pay Commission salary list and salary increase 2026 guide: adoption timeline, projections for UPSSSC Junior Assistant, Lekhpal, UP Police and PCS, DA, arrears and pension."
       primary={{ label: "Open the Uttar Pradesh salary page", to: "/state/uttar-pradesh" }}
       tools={[
         {

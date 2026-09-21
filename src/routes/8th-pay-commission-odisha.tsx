@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-odisha")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in odisha, 8th pay commission odisha, odisha 8th pay commission, 8 pay commission salary odisha, 8th pay matrix odisha, aso salary in odisha 8th pay commission, peo salary in odisha 8th pay commission, 8th pay commission in odisha government",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in odisha, 8th pay commission salary increase 2026 in odisha, 8th pay commission odisha, odisha 8th pay commission, 8 pay commission salary odisha, 8th pay matrix odisha, aso salary in odisha 8th pay commission, peo salary in odisha 8th pay commission, 8th pay commission in odisha government",
       },
       { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Odisha — Pay Matrix & Salary" },
@@ -62,7 +62,7 @@ function Page() {
     <KeywordHub
       eyebrow="Odisha"
       title="8th Pay Commission Odisha — Pay Matrix, Salary & Arrears"
-      lede="How the 8th Central Pay Commission will flow through to Odisha government employees via the ORSP Rules: projected pay matrix, cadre-wise salary for ASO and PEO, current DA, arrears and pension revision."
+      lede="Odisha's 8th Pay Commission salary list and salary increase 2026 guide: projected ORSP pay matrix, cadre-wise salary for ASO and PEO, current DA, arrears and pension revision."
       primary={{ label: "Open the Odisha salary page", to: "/state/odisha" }}
       tools={[
         {
