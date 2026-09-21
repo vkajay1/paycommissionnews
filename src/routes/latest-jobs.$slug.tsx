@@ -24,7 +24,10 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
       meta: [
         { title: `${j.title} | Latest Government Jobs` },
         { name: "description", content: j.description },
-        { name: "keywords", content: j.keyword },
+        {
+          name: "keywords",
+          content: `${j.keyword}, 8th pay commission salary list, 8th pay commission salary increase 2026`,
+        },
         {
           name: "robots",
           content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -350,6 +353,23 @@ function JobPage() {
           </>
         ) : null}
       </article>
+
+      <section className="mt-10 border-y border-border py-6" aria-labelledby="job-salary-guide">
+        <h2 id="job-salary-guide" className="text-xl font-bold">
+          8th Pay Commission salary list and salary increase 2026
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">
+          Compare this post&apos;s notified pay level with the{" "}
+          <Link to="/8th-pay-commission-salary-list" className="font-semibold text-primary hover:underline">
+            8th Pay Commission salary list
+          </Link>
+          , then enter the advertised basic pay in the{" "}
+          <Link to="/salary" className="font-semibold text-primary hover:underline">
+            8th Pay Commission salary increase 2026 calculator
+          </Link>
+          . Projected figures are estimates until the final fitment factor and revised pay matrix are notified.
+        </p>
+      </section>
 
       <div className="mt-10 rounded-lg border border-border bg-secondary/40 p-6 text-sm text-muted-foreground">
         <strong className="text-foreground">Disclaimer:</strong> Always verify eligibility,

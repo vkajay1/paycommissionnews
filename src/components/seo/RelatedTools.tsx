@@ -44,8 +44,8 @@ const CORE_LINKS: { to: string; label: string; blurb: string }[] = [
   },
   {
     to: "/8th-pay-commission-salary-list",
-    label: "8th CPC Salary List (Level 1–18)",
-    blurb: "Projected basic pay for every pay level at a glance.",
+    label: "8th Pay Commission Salary List",
+    blurb: "Projected salary increase 2026 for every pay level.",
   },
   {
     to: "/8th-pay-commission-pay-matrix",

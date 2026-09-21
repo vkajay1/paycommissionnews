@@ -24,7 +24,10 @@ export const Route = createFileRoute("/blog/$slug")({
       meta: [
         { title: `${a.title} | 8th CPC Calculator` },
         { name: "description", content: a.description },
-        { name: "keywords", content: a.keyword },
+        {
+          name: "keywords",
+          content: `${a.keyword}, 8th pay commission salary list, 8th pay commission salary increase 2026`,
+        },
         // Google Discover requires large image previews to be allowed.
         {
           name: "robots",
@@ -297,6 +300,41 @@ function ArticlePage() {
           ))}
         </div>
       </article>
+
+      <section className="mt-10 border-y border-border py-6" aria-labelledby="salary-guide-links">
+        <h2 id="salary-guide-links" className="text-xl font-bold">
+          {article.lang === "hi"
+            ? "8th Pay Commission salary list और salary increase 2026"
+            : "8th Pay Commission salary list and salary increase 2026"}
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">
+          {article.lang === "hi" ? (
+            <>
+              सभी पे लेवल के अनुमानित मूल वेतन के लिए हमारी{" "}
+              <Link to="/8th-pay-commission-salary-list" className="font-semibold text-primary hover:underline">
+                8th Pay Commission salary list
+              </Link>{" "}
+              देखें। अपने मौजूदा मूल वेतन पर संभावित{" "}
+              <Link to="/salary" className="font-semibold text-primary hover:underline">
+                8th Pay Commission salary increase 2026
+              </Link>{" "}
+              का अनुमान कैलकुलेटर से लगाएं। अंतिम बढ़ोतरी आधिकारिक फिटमेंट फैक्टर पर निर्भर करेगी।
+            </>
+          ) : (
+            <>
+              Check the level-wise{" "}
+              <Link to="/8th-pay-commission-salary-list" className="font-semibold text-primary hover:underline">
+                8th Pay Commission salary list
+              </Link>{" "}
+              for projected basic pay, then use the{" "}
+              <Link to="/salary" className="font-semibold text-primary hover:underline">
+                8th Pay Commission salary increase 2026 calculator
+              </Link>{" "}
+              with your current basic pay. These are estimates until the government notifies the final fitment factor.
+            </>
+          )}
+        </p>
+      </section>
 
       <div className="mt-10 rounded-lg border border-border bg-secondary/40 p-6 text-sm text-muted-foreground">
         <strong className="text-foreground">Disclaimer:</strong> Figures shown are

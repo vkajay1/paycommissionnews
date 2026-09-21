@@ -42,7 +42,7 @@ export const Route = createFileRoute("/state/$state")({
         { name: "description", content: desc },
         {
           name: "keywords",
-          content: `8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary list ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary, ${postKeywords}`,
+          content: `8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in ${s.name.toLowerCase()}, 8th pay commission salary increase 2026 in ${s.name.toLowerCase()}, ${s.keyword}, ${s.name.toLowerCase()} salary calculator, ${s.name.toLowerCase()} 7th pay matrix, ${s.name.toLowerCase()} government employee salary, ${postKeywords}`,
         },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
@@ -103,7 +103,8 @@ function StatePageView() {
       <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
         Level-wise and cadre-wise 8th Pay Commission salary list for {s.name} state
         government employees, covering approximately {s.employees}. Current state DA is{" "}
-        <strong>{s.daPct}%</strong>. {s.adoptionLag}
+         <strong>{s.daPct}%</strong>. Use this page to compare the likely 8th Pay Commission
+         salary increase 2026 by level and post. {s.adoptionLag}
       </p>
 
       <div className="mt-6">
@@ -210,6 +211,22 @@ function StatePageView() {
           ))}
         </div>
       </section>
+
+       <section className="mt-10 border-y border-border py-6" aria-labelledby="state-salary-guide">
+         <h2 id="state-salary-guide" className="text-xl font-bold">
+           8th Pay Commission salary increase 2026 in {s.name}
+         </h2>
+         <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
+           This {s.name} 8th Pay Commission salary list compares current entry basic pay with
+           2.57x and 2.86x planning scenarios. For a personal estimate based on your actual
+           basic pay and level, use the{" "}
+           <Link to="/salary" className="font-semibold text-primary hover:underline">
+             8th Pay Commission salary increase 2026 calculator
+           </Link>
+           . Final state pay will depend on the central recommendations and {s.name}&apos;s own
+           adoption order.
+         </p>
+       </section>
 
       <article className="prose-article mt-10">
         <h2>How {s.name} implements pay commission revisions</h2>

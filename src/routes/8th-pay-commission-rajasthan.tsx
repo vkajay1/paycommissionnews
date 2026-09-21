@@ -100,7 +100,7 @@ export const Route = createFileRoute("/8th-pay-commission-rajasthan")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in rajasthan, 8th pay commission rajasthan, 8th cpc rajasthan salary calculator, rajasthan 8th pay commission fitment factor, rajasthan revised pay rules, rajasthan government salary after 8th pay commission",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in rajasthan, 8th pay commission salary increase 2026 in rajasthan, 8th pay commission rajasthan, 8th cpc rajasthan salary calculator, rajasthan 8th pay commission fitment factor, rajasthan revised pay rules, rajasthan government salary after 8th pay commission",
       },
       { property: "og:title", content: "8th Pay Commission in Rajasthan — Salary Calculator" },
       {
@@ -195,7 +195,7 @@ function Page() {
         icon={MapPin}
         kicker="Rajasthan · 8th CPC"
         title="8th Pay Commission in Rajasthan"
-        sub="Project your revised Rajasthan government salary under the 8th Central Pay Commission. Choose your level, matrix cell and city category, move the fitment slider, and see the revised basic pay, gross salary, hike percentage and indicative arrears."
+         sub="Use the Rajasthan 8th Pay Commission salary list and salary increase 2026 calculator to project revised pay. Choose your level, matrix cell and city category, move the fitment slider, and see the revised basic pay, gross salary, hike percentage and indicative arrears."
       />
       <DisclaimerBanner />
 
@@ -351,7 +351,7 @@ function Page() {
       </div>
 
       <section className="mt-12">
-        <h2 className="mb-4 text-xl font-bold">Level-wise 8th CPC projection for Rajasthan</h2>
+         <h2 className="mb-4 text-xl font-bold">8th Pay Commission salary list and salary increase 2026 in Rajasthan</h2>
         <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[720px] text-sm">
             <thead className="bg-secondary text-left">
