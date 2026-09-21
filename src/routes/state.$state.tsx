@@ -31,7 +31,7 @@ export const Route = createFileRoute("/state/$state")({
     const s = getStatePage(params.state);
     if (!s) return {};
     const title = `8th Pay Commission Salary Scenarios in ${s.name} — Level-Wise`;
-    const desc = `8th Pay Commission salary list in ${s.name}: level-wise projected basic pay at 2.57x and 2.86x, cadre-wise breakdown, current state DA of ${s.daPct}% and a live salary calculator for ${s.name} government employees.`;
+    const desc = `8th Pay Commission salary list in ${s.name} with level-wise projections, cadre pay and a calculator for the estimated 8th Pay Commission salary increase 2026.`;
     const url = `${SITE}/state/${s.slug}`;
     const postKeywords = s.cadres
       .map((post) => postSalaryKeyword(post.name, s.name).toLowerCase())

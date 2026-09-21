@@ -120,6 +120,7 @@ export const Route = createFileRoute("/latest-jobs/$slug")({
             jobBenefits: j.jobBenefits || "NA",
             industry: j.industry || "NA",
             occupationalCategory: j.occupationalCategory || "NA",
+            keywords: `${j.keyword}, 8th Pay Commission salary list, 8th Pay Commission salary increase 2026`,
             totalJobOpenings: j.numberOfPositions ?? j.vacancies ?? "NA",
             identifier: {
               "@type": "PropertyValue",

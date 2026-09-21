@@ -81,7 +81,7 @@ export const Route = createFileRoute("/blog/$slug")({
             name: a.title,
             description: a.description,
             articleSection: a.category,
-            keywords: a.keyword,
+            keywords: `${a.keyword}, 8th Pay Commission salary list, 8th Pay Commission salary increase 2026`,
             inLanguage: a.lang === "hi" ? "hi-IN" : "en-IN",
             datePublished: a.date,
             dateModified: a.updated,
