@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-west-bengal")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in west bengal, 8th pay commission west bengal, west bengal 8th pay commission, 8th pay commission in west bengal, west bengal fitment factor, wb ropa 8th pay commission, west bengal state employees salary 2026",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in west bengal, 8th pay commission salary increase 2026 in west bengal, 8th pay commission west bengal, west bengal 8th pay commission, 8th pay commission in west bengal, west bengal fitment factor, wb ropa 8th pay commission, west bengal state employees salary 2026",
       },
       { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission West Bengal — ROPA & Fitment Factor" },
@@ -62,7 +62,7 @@ function Page() {
     <KeywordHub
       eyebrow="West Bengal"
       title="8th Pay Commission West Bengal — ROPA, Fitment Factor & Salary"
-      lede="What the 8th Central Pay Commission means for West Bengal state government employees: the ROPA route, the West Bengal fitment factor, the state DA gap, cadre-wise projections, arrears and pension revision."
+      lede="West Bengal's 8th Pay Commission salary list and salary increase 2026 guide: the ROPA route, the state fitment factor, the DA gap, cadre-wise projections, arrears and pension revision."
       primary={{ label: "Open the West Bengal salary page", to: "/state/west-bengal" }}
       tools={[
         {

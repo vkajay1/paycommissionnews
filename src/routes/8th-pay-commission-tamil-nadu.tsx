@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-tamil-nadu")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in tamil nadu, 8th pay commission tamil nadu, tamilnadu 8th pay commission, 8th pay commission fitment factor in tamil nadu, tamil nadu 8th pay commission state employees latest 2026, next pay commission in tamil nadu, which pay commission is going on in tamil nadu, tn 8th pay commission, tamil nadu pay commission 2026, 8th pay commission salary in tamilnadu",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in tamil nadu, 8th pay commission salary increase 2026 in tamil nadu, 8th pay commission tamil nadu, tamilnadu 8th pay commission, 8th pay commission fitment factor in tamil nadu, tamil nadu 8th pay commission state employees latest 2026, next pay commission in tamil nadu, which pay commission is going on in tamil nadu, tn 8th pay commission, tamil nadu pay commission 2026, 8th pay commission salary in tamilnadu",
       },
       { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Tamil Nadu — Fitment Factor & Salary" },
@@ -62,7 +62,7 @@ function Page() {
     <KeywordHub
       eyebrow="Tamil Nadu"
       title="8th Pay Commission Tamil Nadu — Fitment Factor, Salary & 2026 Update"
-      lede="How the 8th Central Pay Commission will reach Tamil Nadu state government employees: the state Official Committee route, the fitment factor Tamil Nadu is likely to adopt, cadre-wise projections, DA position, arrears and pension revision."
+      lede="Tamil Nadu's 8th Pay Commission salary list and salary increase 2026 guide: the state Official Committee route, likely fitment factor, cadre-wise projections, DA, arrears and pension revision."
       primary={{ label: "Open the Tamil Nadu salary page", to: "/state/tamil-nadu" }}
       tools={[
         {

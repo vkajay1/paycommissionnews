@@ -40,7 +40,7 @@ export const Route = createFileRoute("/8th-pay-commission-maharashtra")({
       {
         name: "keywords",
         content:
-          "8th pay commission salary list in maharashtra, 8th pay commission maharashtra, maharashtra 8th pay commission state employees latest 2026, 8th pay commission in maharashtra state government employees, maharashtra 8th pay commission implementation state employees 2026, talathi salary after 8th pay maharashtra, 8th pay in maharashtra",
+          "8th pay commission salary list, 8th pay commission salary increase 2026, 8th pay commission salary list in maharashtra, 8th pay commission salary increase 2026 in maharashtra, 8th pay commission maharashtra, maharashtra 8th pay commission state employees latest 2026, 8th pay commission in maharashtra state government employees, maharashtra 8th pay commission implementation state employees 2026, talathi salary after 8th pay maharashtra, 8th pay in maharashtra",
       },
       { name: "robots", content: "noindex, follow" },
       { property: "og:title", content: "8th Pay Commission Maharashtra — State Employees Salary" },
@@ -62,7 +62,7 @@ function Page() {
     <KeywordHub
       eyebrow="Maharashtra"
       title="8th Pay Commission Maharashtra — State Employees, Talathi Salary & Implementation"
-      lede="How the 8th Central Pay Commission will apply to Maharashtra state government employees: the state committee route, expected implementation timing, cadre-wise projections for Talathi, Clerk-Typist and Police SI, DA, arrears and pension."
+      lede="Maharashtra's 8th Pay Commission salary list and salary increase 2026 guide: the state committee route, expected implementation timing, cadre-wise projections for Talathi, Clerk-Typist and Police SI, DA, arrears and pension."
       primary={{ label: "Open the Maharashtra salary page", to: "/state/maharashtra" }}
       tools={[
         {
