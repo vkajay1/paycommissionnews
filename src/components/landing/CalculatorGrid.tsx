@@ -164,14 +164,14 @@ const tools = [
 
 export function CalculatorGrid() {
   return (
-    <section id="tools" className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
-      <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+    <section id="tools" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6">
+      <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-            Toolkit
+             CALCULATOR LIBRARY
           </span>
           <h2 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-            Every calculator you need.
+             Explore all calculators
           </h2>
         </div>
         <p className="max-w-md text-sm text-muted-foreground">
@@ -179,21 +179,21 @@ export function CalculatorGrid() {
         </p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {tools.map((t) => {
           const Icon = t.icon;
           return (
             <Link
               key={t.title}
               to={t.href}
-              className="group relative flex flex-col rounded-lg border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg"
+              className="group relative flex flex-col rounded-lg border border-border bg-card p-5 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-card"
             >
               <div className="mb-4 flex items-center justify-between">
-                <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary/10 text-primary">
+                 <div className="grid h-11 w-11 place-items-center rounded-md bg-secondary text-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Icon className="h-5 w-5" />
                 </div>
-                <span className="rounded-full bg-success/15 px-2 py-0.5 text-[10px] font-semibold text-success">
-                  LIVE
+                 <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                   FREE
                 </span>
               </div>
               <div className="text-base font-semibold">{t.title}</div>
@@ -206,8 +206,8 @@ export function CalculatorGrid() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                Open <ArrowRight className="h-3 w-3" />
+               <div className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+                 Open tool <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
           );
