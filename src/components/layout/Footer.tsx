@@ -2,18 +2,17 @@ import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t-2 border-primary/70 bg-secondary/50">
+    <footer className="mt-20 border-t border-border bg-secondary/70">
       <div className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <div className="text-base font-bold">8th CPC Calculator</div>
             <p className="mt-2 text-sm text-muted-foreground">
-              An independent research desk publishing salary, pension and arrear projections for
-              Central and State Government employees.
+               Free salary, pension and arrear tools for Central and State Government employees.
             </p>
             <div className="mt-4 space-y-1 text-xs text-muted-foreground">
               <div className="font-semibold uppercase tracking-wider text-foreground/70">
-                Editorial policy
+                 Calculation policy
               </div>
               <p>
                 Every figure is model-based and clearly labelled. Official notifications always

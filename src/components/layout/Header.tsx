@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Newspaper, Mail, ShieldCheck } from "lucide-react";
+import { Calculator, Search } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "./MobileMenu";
@@ -19,48 +19,24 @@ const primary = [
 ];
 
 const linkClass =
-  "border-b-2 border-transparent px-2 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:border-primary hover:text-foreground";
+  "rounded-md px-2.5 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground";
 const linkActive =
-  "border-b-2 border-primary px-2 py-2 text-sm font-semibold text-primary";
+  "rounded-md bg-secondary px-2.5 py-2 text-sm font-semibold text-foreground";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
-      {/* Corporate utility bar */}
-      <div className="hidden border-b border-border/60 bg-secondary/60 md:block">
-        <div className="mx-auto flex h-9 max-w-[1400px] items-center justify-between px-4 text-[11px] text-muted-foreground sm:px-6">
-          <div className="flex items-center gap-4">
-            <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-3 w-3 text-primary" />
-              Independent research desk · not a government body
-            </span>
-            <span className="hidden lg:inline">Updated for FY 2026-27 projections</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link to="/about" className="hover:text-foreground">
-              About
-            </Link>
-            <Link to="/disclaimer" className="hover:text-foreground">
-              Disclaimer
-            </Link>
-            <Link to="/contact" className="inline-flex items-center gap-1 hover:text-foreground">
-              <Mail className="h-3 w-3" /> Contact
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between gap-3 px-4 sm:px-6">
+    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-3 px-4 sm:px-6">
         <div className="flex min-w-0 items-center gap-1.5">
           <MobileMenu />
           <Link to="/" className="flex min-w-0 shrink items-center gap-2.5">
-            <div className="grid h-10 w-10 shrink-0 place-items-center bg-foreground text-background">
-              <Newspaper className="h-5 w-5" />
+            <div className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-primary text-primary-foreground">
+              <Calculator className="h-5 w-5" />
             </div>
             <div className="min-w-0 leading-tight">
-              <div className="truncate font-heading text-[17px] font-bold">Pay Commission News</div>
-              <div className="truncate text-[10px] uppercase tracking-[0.16em] text-primary">
-                8th CPC News & Analysis
+              <div className="truncate text-[17px] font-extrabold">8th CPC Calculator</div>
+              <div className="truncate text-[10px] font-medium text-muted-foreground">
+                Salary, pension & arrear tools
               </div>
             </div>
           </Link>
@@ -89,8 +65,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Button asChild variant="ghost" size="icon" className="hidden md:inline-flex" aria-label="Browse tools">
+            <Link to="/" hash="tools"><Search className="h-4 w-4" /></Link>
+          </Button>
           <ThemeToggle />
-          <Button asChild size="sm" className="hidden rounded-md sm:inline-flex">
+          <Button asChild size="sm" className="hidden sm:inline-flex">
             <Link to="/salary">Calculate salary</Link>
           </Button>
         </div>

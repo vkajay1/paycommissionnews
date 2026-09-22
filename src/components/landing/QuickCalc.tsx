@@ -34,17 +34,17 @@ export function QuickCalc() {
   );
 
   return (
-    <section className="border-l-4 border-primary bg-foreground text-background">
+    <section className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
         <div className="grid gap-0 xl:grid-cols-[1.1fr_1fr]">
           <div className="p-5 sm:p-6">
             <div className="mb-5 flex items-center justify-between">
               <div>
                 <h2 className="text-lg font-bold">Salary revision estimator</h2>
-                <p className="text-sm text-background/60">
+                 <p className="text-sm text-muted-foreground">
                   Based on current fitment projections.
                 </p>
               </div>
-              <span className="border border-primary bg-primary/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary">
+               <span className="rounded-full bg-primary/10 px-2.5 py-1 text-[10px] font-semibold text-primary">
                 Live tool
               </span>
             </div>
@@ -110,7 +110,7 @@ export function QuickCalc() {
                       className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
                         fit === f
                           ? "bg-primary text-primary-foreground"
-                          : "bg-background/10 text-background/80 hover:bg-background/15"
+                           : "bg-secondary text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {f.toFixed(2)}x
@@ -121,11 +121,11 @@ export function QuickCalc() {
             </div>
           </div>
 
-          <div className="border-t border-background/15 bg-background/5 p-5 sm:p-6 xl:border-l xl:border-t-0">
-            <div className="text-xs font-medium uppercase tracking-wider text-background/60">
+           <div className="border-t border-border bg-secondary/70 p-5 sm:p-6 xl:border-l xl:border-t-0">
+             <div className="text-xs font-medium text-muted-foreground">
               Projected gross salary
             </div>
-            <div className="mt-1 text-4xl font-bold tracking-tight">
+             <div className="mt-1 text-4xl font-extrabold">
               {inr(result.projected.gross)}
             </div>
             <div className="mt-1 inline-flex items-center gap-1.5 bg-success/15 px-2.5 py-1 text-xs font-semibold text-success">
@@ -154,8 +154,8 @@ export function QuickCalc() {
 function Row({ label, value, muted }: { label: string; value: string; muted?: boolean }) {
   return (
     <div>
-      <dt className="text-xs text-background/55">{label}</dt>
-      <dd className={`font-semibold ${muted ? "text-background/60" : "text-background"}`}>
+       <dt className="text-xs text-muted-foreground">{label}</dt>
+       <dd className={`font-semibold ${muted ? "text-muted-foreground" : "text-foreground"}`}>
         {value}
       </dd>
     </div>

@@ -1,133 +1,62 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Clock3 } from "lucide-react";
+import { ArrowRight, Calculator, Landmark, Search, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { articles } from "@/lib/articles";
 import { jobs } from "@/lib/jobs";
-import { CURRENT_DA } from "@/lib/da-rates";
 import { QuickCalc } from "./QuickCalc";
 
-const leadSlug = "8th-pay-commission-salary-kab-badhegi-fitment-factor-report-date-hindi";
-const featuredSlugs = [
-  "8th-pay-commission-jaipur-chennai-chandigarh-meetings-hindi",
-  "8th-pay-commission-arrears-full-payment-explained",
-  "8th-pay-commission-consultation-phase-timeline-arrears-guide",
-];
-
-function formatDate(date: string) {
-  return new Date(date).toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
+const categories = [
+  { to: "/salary", label: "Salary", icon: Wallet },
+  { to: "/pension", label: "Pension", icon: Landmark },
+  { to: "/arrear", label: "Arrears", icon: Calculator },
+  { to: "/income-tax-calculator", label: "Income tax", icon: Calculator },
+] as const;
 
 export function Hero() {
-  const lead = articles.find((article) => article.slug === leadSlug) ?? articles[0];
-  const latest = featuredSlugs
-    .map((slug) => articles.find((article) => article.slug === slug))
-    .filter((article) => article !== undefined);
-  const latestJobs = jobs.slice(0, 4);
-
-  if (!lead) return null;
+  const latestJobs = jobs.slice(0, 3);
 
   return (
-    <section className="bg-background">
-      <div className="mx-auto max-w-[1400px] px-4 pb-12 pt-7 sm:px-6 lg:pt-9">
-        <header className="mb-7 border-b-4 border-foreground pb-5">
-          <div className="flex items-end justify-between gap-6">
-            <div>
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
-                Financial edition · Live updates
-              </p>
-              <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-                Pay Commission <span className="text-primary">News</span>
-              </h1>
-            </div>
-            <div className="hidden border-l border-border pl-6 text-right md:block">
-              <p className="text-sm font-semibold">Wednesday, 9 September 2026</p>
-              <p className="mt-1 text-xs uppercase text-muted-foreground">
-                Independent reporting · calculators · jobs
-              </p>
-            </div>
+    <section className="bg-secondary/60">
+      <div className="mx-auto max-w-7xl px-4 pb-14 pt-14 sm:px-6 lg:pt-20">
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="inline-flex items-center rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-muted-foreground">
+            Updated for FY 2026–27
+          </span>
+          <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            Find the right <span className="text-primary">pay calculator</span> in seconds
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Salary, pension, arrear, DA and tax tools for Indian government employees and pensioners.
+          </p>
+          <form action="#tools" className="mx-auto mt-8 flex max-w-3xl items-center rounded-lg border border-border bg-background p-2 shadow-card">
+            <Search className="ml-3 h-5 w-5 shrink-0 text-muted-foreground" />
+            <input aria-label="Search calculators" placeholder="Search salary, pension, DA, tax..." className="min-w-0 flex-1 bg-transparent px-3 py-3 text-sm outline-none sm:text-base" />
+            <Button type="submit" size="lg">Browse tools</Button>
+          </form>
+          <div className="mt-5 flex flex-wrap justify-center gap-2">
+            {categories.map(({ to, label, icon: Icon }) => (
+              <Button key={to} asChild variant="outline" size="sm" className="rounded-full bg-background">
+                <Link to={to}><Icon className="h-3.5 w-3.5" />{label}</Link>
+              </Button>
+            ))}
           </div>
-        </header>
+        </div>
 
-        <div className="grid gap-8 lg:grid-cols-12">
-          <aside className="order-2 hidden border-border lg:order-1 lg:col-span-3 lg:border-r lg:pr-7">
-            <div className="mb-5 flex items-center justify-between border-b-2 border-foreground pb-2">
-              <h2 className="font-sans text-sm font-bold uppercase">Latest developments</h2>
-              <Link to="/blog" className="text-xs font-semibold text-primary hover:underline">All news</Link>
+        <div className="mt-14 grid gap-6 lg:grid-cols-12">
+          <div className="lg:col-span-8"><QuickCalc /></div>
+          <aside className="rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
+            <div className="mb-4 flex items-center justify-between">
+              <div><p className="text-xs font-semibold text-primary">NEW NOTIFICATIONS</p><h2 className="mt-1 text-xl font-bold">Latest government jobs</h2></div>
+              <Button asChild variant="ghost" size="sm"><Link to="/latest-jobs">View all</Link></Button>
             </div>
-            <div className="divide-y divide-border">
-              {latest.map((article, index) => (
-                <article key={article.slug} className="py-5 first:pt-0">
-                  {index === 0 ? (
-                    <span className="mb-2 inline-block bg-primary px-2 py-1 text-[10px] font-bold uppercase text-primary-foreground">
-                      Latest
-                    </span>
-                  ) : null}
-                  <Link to="/blog/$slug" params={{ slug: article.slug }} className="group">
-                    <h3 className="text-base font-bold leading-snug group-hover:text-primary">
-                      {article.title}
-                    </h3>
-                    <p className="mt-2 flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <Clock3 className="h-3 w-3" /> {formatDate(article.updated)} · {article.readMinutes} min read
-                    </p>
-                  </Link>
-                </article>
+            <div className="space-y-2">
+              {latestJobs.map((job) => (
+                <Link key={job.slug} to="/latest-jobs/$slug" params={{ slug: job.slug }} className="group flex items-center gap-3 rounded-md border border-border p-3 transition-all hover:border-primary/50 hover:shadow-sm">
+                  {job.image ? <img src={job.image} alt="" width={112} height={64} className="h-12 w-16 rounded object-cover" /> : <div className="h-12 w-16 rounded bg-secondary" />}
+                  <div className="min-w-0"><p className="truncate text-xs font-medium text-muted-foreground">{job.organization.split(" (")[0]}</p><h3 className="line-clamp-2 text-sm font-semibold group-hover:text-primary">{job.title}</h3></div>
+                </Link>
               ))}
             </div>
-          </aside>
-
-          <div className="order-1 space-y-7 lg:order-2 lg:col-span-9">
-            <article>
-              <Link to="/blog/$slug" params={{ slug: lead.slug }} className="group block">
-                <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
-                  {lead.image ? (
-                    <img src={lead.image} alt={lead.imageAlt ?? lead.title} width={1200} height={675} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
-                  ) : null}
-                  <div className="absolute inset-x-0 bottom-0 bg-foreground/90 p-5 text-background sm:p-7">
-                    <span className="mb-2 block font-sans text-[10px] font-bold uppercase tracking-[0.16em] text-primary">Lead report</span>
-                    <h2 className="text-2xl font-bold leading-tight sm:text-3xl">{lead.title}</h2>
-                  </div>
-                </div>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{lead.excerpt}</p>
-              </Link>
-            </article>
-            <QuickCalc />
-          </div>
-
-          <aside className="order-3 space-y-7 lg:col-span-3">
-            <section className="border border-border bg-card p-5">
-              <div className="mb-4 flex items-center justify-between border-b-2 border-foreground pb-2">
-                <h2 className="font-sans text-sm font-bold uppercase">Government jobs</h2>
-                <Link to="/latest-jobs" className="text-xs font-semibold text-primary hover:underline">View all</Link>
-              </div>
-              <div className="divide-y divide-border">
-                {latestJobs.map((job) => (
-                  <Link key={job.slug} to="/latest-jobs/$slug" params={{ slug: job.slug }} className="group grid grid-cols-[72px_1fr] gap-3 py-3 first:pt-0">
-                    {job.image ? <img src={job.image} alt="" width={144} height={81} className="h-12 w-[72px] object-cover" /> : <div className="h-12 w-[72px] bg-secondary" />}
-                    <div>
-                      <p className="text-[10px] font-bold uppercase text-primary">{job.organization.split(" (")[0]}</p>
-                      <h3 className="line-clamp-3 font-sans text-xs font-semibold leading-snug group-hover:underline">{job.title}</h3>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <Button asChild variant="outline" size="sm" className="mt-4 w-full rounded-none">
-                <Link to="/latest-jobs">All job notifications <ArrowRight className="h-3.5 w-3.5" /></Link>
-              </Button>
-            </section>
-
-            <section className="bg-secondary p-5">
-              <h2 className="border-b-2 border-foreground pb-2 font-sans text-sm font-bold uppercase">Key indicators</h2>
-              <dl className="mt-1 divide-y divide-border">
-                <div className="flex items-center justify-between py-3 text-sm"><dt>Current DA</dt><dd className="font-bold text-primary">{CURRENT_DA}%</dd></div>
-                <div className="flex items-center justify-between py-3 text-sm"><dt>Report deadline</dt><dd className="font-bold">Mid-2027</dd></div>
-                <div className="flex items-center justify-between py-3 text-sm"><dt>Fitment range</dt><dd className="font-bold">1.82x–2.86x</dd></div>
-                <div className="flex items-center justify-between py-3 text-sm"><dt>Status</dt><dd className="font-bold text-primary">Consultations</dd></div>
-              </dl>
-            </section>
+            <Button asChild variant="outline" className="mt-4 w-full"><Link to="/latest-jobs">Browse all jobs <ArrowRight /></Link></Button>
           </aside>
         </div>
       </div>
