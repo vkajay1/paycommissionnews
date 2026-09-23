@@ -35,8 +35,8 @@ export function QuickCalc() {
 
   return (
     <section className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
-        <div className="grid gap-0 xl:grid-cols-[1.1fr_1fr]">
-          <div className="p-5 sm:p-6">
+        <div className="grid min-w-0 gap-0 xl:grid-cols-[1.1fr_1fr]">
+          <div className="min-w-0 p-5 sm:p-6">
             <div className="mb-5 flex items-center justify-between">
               <div>
                 <h2 className="text-lg font-bold">Salary revision estimator</h2>
@@ -121,7 +121,7 @@ export function QuickCalc() {
             </div>
           </div>
 
-           <div className="border-t border-border bg-secondary/70 p-5 sm:p-6 xl:border-l xl:border-t-0">
+          <div className="min-w-0 border-t border-border bg-secondary/70 p-5 sm:p-6 xl:border-l xl:border-t-0">
              <div className="text-xs font-medium text-muted-foreground">
               Projected gross salary
             </div>

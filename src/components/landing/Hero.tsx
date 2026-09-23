@@ -27,10 +27,10 @@ export function Hero() {
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Salary, pension, arrear, DA and tax tools for Indian government employees and pensioners.
           </p>
-          <form action="#tools" className="mx-auto mt-8 flex max-w-3xl items-center rounded-lg border border-border bg-background p-2 shadow-card">
+          <form action="#tools" className="mx-auto mt-8 flex max-w-3xl items-center overflow-hidden rounded-lg border border-border bg-background p-2 shadow-card">
             <Search className="ml-3 h-5 w-5 shrink-0 text-muted-foreground" />
-            <input aria-label="Search calculators" placeholder="Search salary, pension, DA, tax..." className="min-w-0 flex-1 bg-transparent px-3 py-3 text-sm outline-none sm:text-base" />
-            <Button type="submit" size="lg">Browse tools</Button>
+            <input aria-label="Search calculators" placeholder="Search calculators..." className="min-w-0 flex-1 bg-transparent px-3 py-3 text-sm outline-none sm:text-base" />
+            <Button type="submit" size="lg" className="shrink-0 px-4 sm:px-8">Browse tools</Button>
           </form>
           <div className="mt-5 flex flex-wrap justify-center gap-2">
             {categories.map(({ to, label, icon: Icon }) => (
@@ -41,9 +41,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-8"><QuickCalc /></div>
-          <aside className="rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
+        <div className="mt-14 grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-12">
+          <div className="min-w-0 lg:col-span-8"><QuickCalc /></div>
+          <aside className="min-w-0 rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
             <div className="mb-4 flex items-center justify-between">
               <div><p className="text-xs font-semibold text-primary">NEW NOTIFICATIONS</p><h2 className="mt-1 text-xl font-bold">Latest government jobs</h2></div>
               <Button asChild variant="ghost" size="sm"><Link to="/latest-jobs">View all</Link></Button>
