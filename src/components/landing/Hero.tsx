@@ -41,9 +41,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-12">
+        <div className="mt-14 grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-12">
           <div className="min-w-0 lg:col-span-8"><QuickCalc /></div>
-          <aside className="rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
+          <aside className="min-w-0 rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
             <div className="mb-4 flex items-center justify-between">
               <div><p className="text-xs font-semibold text-primary">NEW NOTIFICATIONS</p><h2 className="mt-1 text-xl font-bold">Latest government jobs</h2></div>
               <Button asChild variant="ghost" size="sm"><Link to="/latest-jobs">View all</Link></Button>
