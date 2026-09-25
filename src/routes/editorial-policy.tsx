@@ -37,7 +37,7 @@ function EditorialPolicyPage() {
           Our calculators and explainers are designed to separate confirmed government information
           from planning scenarios. This page explains how we research, calculate and correct our work.
         </p>
-        <p className="mt-3 text-sm text-muted-foreground">Last reviewed: 26 August 2026</p>
+        <p className="mt-3 text-sm text-muted-foreground">Last reviewed: 24 September 2026</p>
       </header>
 
       <article className="prose-article mt-10">
@@ -66,6 +66,15 @@ function EditorialPolicyPage() {
             </a>
           </li>
         </ul>
+
+        <h2>Primary source directory</h2>
+        <p>
+          For Central Pay Commission constitution, terms of reference and implementation orders,
+          consult the Department of Expenditure and the Gazette of India. For Cabinet decisions and
+          official announcements, consult the Press Information Bureau. State salary pages should be
+          checked against the relevant state finance department's revised-pay rules and DA orders.
+          These primary records override summaries, news reports and calculator projections.
+        </p>
 
         <h2>Confirmed facts versus estimates</h2>
         <p>

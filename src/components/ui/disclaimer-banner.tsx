@@ -11,7 +11,7 @@ export function DisclaimerBanner() {
         <a href="/editorial-policy" className="font-semibold text-primary hover:underline">
           methodology
         </a>
-        . <span className="whitespace-nowrap">Assumptions reviewed: 23 September 2026.</span>
+        . <span className="whitespace-nowrap">Assumptions reviewed: 24 September 2026.</span>
       </p>
     </div>
   );
