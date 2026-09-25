@@ -47,37 +47,21 @@ export function SalaryGuide() {
       </header>
 
       <article className="prose-article">
-        <h3>Why everyone is searching for the 8th CPC salary calculator</h3>
+        <h3>How much could salary increase in 2026?</h3>
         <p>
-          The moment a new pay commission is announced, confusion spreads faster
-          than clarity. Employees want one simple answer — how much will my salary
-          increase. That is exactly where the <strong>8th pay commission salary
-          calculator online</strong> becomes essential. Instead of guessing, you
-          input your current salary details and instantly see an estimated
-          revised salary. Modern calculators no longer stop at a single number —
-          they simulate multiple fitment scenarios, include allowances and even
-          estimate pension.
+          No official 8th CPC fitment factor or pay matrix has been notified. The
+          calculator therefore compares user-selected scenarios rather than promising
+          one final increase. Revised basic pay equals current basic pay multiplied by
+          the selected factor; gross and in-hand changes also depend on how DA, HRA,
+          transport allowance and deductions are treated.
         </p>
 
-        <h3>Expected 8th Pay Commission salary hike in 2026</h3>
+        <h3>What the calculator can establish</h3>
         <p>
-          The 7th Pay Commission used a fitment factor of <strong>2.57x</strong>.
-          If the 8th CPC follows the same trajectory, the factor may rise to
-          around <strong>3.0x</strong>. That sounds small, but in salary terms it
-          is significant. A basic pay of ₹30,000 could become ₹90,000 before
-          allowances. Once DA, HRA and TA are added on top, the final in-hand
-          salary becomes much higher — which is exactly why searches like
-          "8th pay commission salary hike 2026 calculator" are exploding.
-        </p>
-
-        <h3>8th Pay Commission salary slab — what changes to expect</h3>
-        <p>
-          Salary increase is not just multiplication, it is restructuring. Lower
-          levels may see more aggressive growth to lift the minimum wage.
-          Mid-level employees should get balanced increments. Higher officials
-          will likely see controlled increases. The 8th CPC pay slab is
-          strategically designed — which is why a <strong>level-based
-          calculator</strong> is far more accurate than a generic one.
+          It can show the mathematical effect of each fitment factor on your present
+          basic pay and allowances. It cannot predict the commission's recommendation,
+          the government's implementation date or an official arrears period. Compare
+          several scenarios and treat every result as a planning estimate.
         </p>
 
         <h3>How to use the 8th Pay Commission salary calculator</h3>
@@ -111,69 +95,13 @@ export function SalaryGuide() {
             current salary.
           </li>
         </ol>
+        <h3>Central, state, pension and defence cases differ</h3>
         <p>
-          Users who actually <em>play</em> with the fitment slider understand
-          their future salary much better than those who rely on a single
-          headline number.
-        </p>
-
-        <h3>Features of a modern 8th CPC calculator</h3>
-        <ul>
-          <li>Real-time salary calculation without page reload</li>
-          <li>Old vs new salary comparison with percentage increase</li>
-          <li>Fitment factor slider for scenario testing</li>
-          <li>Support for central and state government employees</li>
-          <li>Special logic for army and defence personnel</li>
-          <li>Pension calculation for retirees</li>
-          <li>Salary projection for future years</li>
-          <li>Arrears calculation</li>
-          <li>Visual charts for clearer understanding</li>
-          <li>Multi-language support including Hindi</li>
-        </ul>
-
-        <h3>Special use cases — pensioners and army personnel</h3>
-        <p>
-          For <strong>pensioners</strong>, pension is calculated as a percentage
-          of revised basic pay, with DA continuing to apply on top. For{" "}
-          <strong>defence personnel</strong>, the calculator must account for
-          Military Service Pay, field area allowances and risk allowances —
-          ignoring these gives completely inaccurate results.
-        </p>
-
-        <h3>Central vs state government employees — the hidden difference</h3>
-        <p>
-          Central employees usually receive pay commission updates faster. State
-          governments may delay implementation depending on budget conditions,
-          which is why users specifically search for "8th pay commission salary
-          calculator central government" and the state variant separately. A
-          good calculator supports both.
-        </p>
-
-        <h3>What most websites get wrong</h3>
-        <p>
-          Most tools assume a fixed fitment factor with no flexibility, ignore
-          allowances (which make up a huge portion of salary), oversimplify
-          pension and present static results that users can't explore. That
-          creates a false sense of accuracy. A smart calculator should allow
-          experimentation, not just calculation.
-        </p>
-
-        <h3>Why Hindi and PDF demand is growing</h3>
-        <p>
-          A large portion of government employees prefer Hindi interfaces and
-          want downloadable salary breakdowns for reference — which is why
-          searches for "<em>8th pay commission salary calculator in Hindi PDF
-          download free</em>" are climbing. Hindi UI and PDF export are on our
-          roadmap.
-        </p>
-
-        <h3>Final verdict</h3>
-        <p>
-          If you are serious about understanding your future salary, do not rely
-          on guesses. Use an advanced <strong>8th pay commission salary
-          calculator online</strong> that lets you adjust variables, compare
-          results and visualise income growth. A calculator, built properly, is
-          not just a tool — it is a financial planning companion.
+          Central employees follow central implementation orders. Each state decides
+          whether, when and how to adopt a central revision. Pension and defence pay
+          also require separate inputs such as commutation, Military Service Pay and
+          risk or field allowances, so a general salary result should not be treated
+          as a complete entitlement statement.
         </p>
       </article>
 

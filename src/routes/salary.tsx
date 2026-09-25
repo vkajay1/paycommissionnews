@@ -7,6 +7,7 @@ import { ResultsDashboard } from "@/components/salary/ResultsDashboard";
 import { NetInHand } from "@/components/salary/NetInHand";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { compareSalary, type City } from "@/lib/cpc";
+import { breadcrumbLd } from "@/components/calc/CalcShell";
 
 const searchSchema = z.object({
   level: z.coerce.number().int().min(1).max(18).optional(),
@@ -51,6 +52,13 @@ export const Route = createFileRoute("/salary")({
             description:
               "Free online 8th Pay Commission salary calculator with fitment factor slider, DA, HRA, pension and arrears projections for central government employees.",
           }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(breadcrumbLd([
+            { name: "Home", url: SITE },
+            { name: "Salary Calculator", url: `${SITE}/salary` },
+          ])),
         },
       ],
     };
