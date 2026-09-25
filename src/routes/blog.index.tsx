@@ -1,8 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { z } from "zod";
 import { articles } from "@/lib/articles";
 
+const searchSchema = z.object({ q: z.string().trim().max(100).optional() });
+
 export const Route = createFileRoute("/blog/")({
+  validateSearch: (search) => searchSchema.parse(search),
   head: () => {
     const SITE = "https://paycommissionnews.co.in";
     const featured = articles[0];
@@ -62,7 +66,17 @@ export const Route = createFileRoute("/blog/")({
 });
 
 function BlogIndex() {
-  const [featured, ...rest] = articles;
+  const { q } = Route.useSearch();
+  const query = q?.toLocaleLowerCase("en-IN") ?? "";
+  const matchingArticles = query
+    ? articles.filter((article) =>
+        [article.title, article.description, article.keyword, article.category]
+          .join(" ")
+          .toLocaleLowerCase("en-IN")
+          .includes(query),
+      )
+    : articles;
+  const [featured, ...rest] = matchingArticles;
 
   return (
     <main className="mx-auto max-w-7xl px-4 pb-24 pt-10 sm:px-6">
@@ -78,9 +92,22 @@ function BlogIndex() {
           News, salary projections, pay-matrix tables and pensioner guides — written for
           the 1.15 crore central government employees and pensioners awaiting the 8th CPC.
         </p>
+        <form method="get" className="mt-6 flex max-w-xl gap-2">
+          <input
+            name="q"
+            type="search"
+            defaultValue={q ?? ""}
+            aria-label="Search 8th Pay Commission articles"
+            placeholder="Search news and guides"
+            className="min-w-0 flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
+          />
+          <button type="submit" className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
+            Search
+          </button>
+        </form>
       </header>
 
-      <Link
+      {featured ? <Link
         to="/blog/$slug"
         params={{ slug: featured.slug }}
         className="group relative mb-12 block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all hover:-translate-y-0.5 hover:shadow-lg"
@@ -129,9 +156,14 @@ function BlogIndex() {
             </span>
           </div>
         </div>
-      </Link>
+      </Link> : (
+        <section className="rounded-lg border border-border bg-card p-8 text-center">
+          <h2 className="text-xl font-bold">No matching articles</h2>
+          <p className="mt-2 text-sm text-muted-foreground">Try a broader term such as salary, pension, DA or fitment factor.</p>
+        </section>
+      )}
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+      {featured ? <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
         {rest.map((a) => (
           <Link
             key={a.slug}
@@ -172,7 +204,7 @@ function BlogIndex() {
             </div>
           </Link>
         ))}
-      </div>
+      </div> : null}
     </main>
   );
 }
