@@ -105,11 +105,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "8th CPC Calculator — 8th Pay Commission salary calculator" },
       { property: "og:description", content: "Estimate revised basic pay, pension, DA, HRA and arrears with transparent 8th Pay Commission planning scenarios." },
       { name: "twitter:description", content: "Estimate revised basic pay, pension, DA, HRA and arrears with transparent 8th Pay Commission planning scenarios." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5700822e-e15a-4350-8fc7-5e36e78036f1/id-preview-d4e0f839--d0013254-bd4c-414b-bf95-d33c6e5d92b7.lovable.app-1781621556864.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -156,6 +155,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Salary, pension and arrear calculators for the 8th Central Pay Commission.",
           publisher: { "@id": "https://paycommissionnews.co.in/#organization" },
+          potentialAction: {
+            "@type": "SearchAction",
+            target: "https://paycommissionnews.co.in/blog?q={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
         }),
       },
       {

@@ -1,13 +1,7 @@
-import type { LucideIcon } from "lucide-react";
+import { ChevronDown, type LucideIcon } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { InArticleAd } from "@/components/ads/AdSlots";
 import { DiscussionBox } from "@/components/comments/DiscussionBox";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 export type Faq = { q: string; a: string };
 
@@ -33,6 +27,19 @@ export function appLd(name: string, url: string, description: string) {
     applicationCategory: "FinanceApplication",
     operatingSystem: "Web",
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+  };
+}
+
+export function breadcrumbLd(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
   };
 }
 
@@ -136,14 +143,17 @@ export function CalcContent({
 
       <section>
         <h2 className="mb-3 text-xl font-bold">Frequently asked questions</h2>
-        <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
+        <div className="rounded-lg border border-border bg-card px-4">
           {faq.map((f, i) => (
-            <AccordionItem key={f.q} value={`i${i}`}>
-              <AccordionTrigger className="text-left text-sm font-semibold">{f.q}</AccordionTrigger>
-              <AccordionContent className="text-sm text-muted-foreground">{f.a}</AccordionContent>
-            </AccordionItem>
+            <details key={f.q} className="group border-b border-border last:border-b-0">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left text-sm font-semibold">
+                {f.q}
+                <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="pb-4 text-sm leading-6 text-muted-foreground">{f.a}</p>
+            </details>
           ))}
-        </Accordion>
+        </div>
       </section>
 
       {related && related.length > 0 && (

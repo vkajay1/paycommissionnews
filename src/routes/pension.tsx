@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { inr } from "@/lib/format";
+import { appLd, breadcrumbLd } from "@/components/calc/CalcShell";
 
 const SITE = "https://paycommissionnews.co.in";
 
@@ -20,11 +21,25 @@ export const Route = createFileRoute("/pension")({
         content:
           "Free 8th Pay Commission pension calculator. Estimate revised basic pension, Dearness Relief, commuted value and net monthly pension for central government pensioners.",
       },
-      { name: "keywords", content: "8th pay commission pension calculator, pension calculator 2026, revised pension 8th cpc, commuted pension calculator, DR calculator pensioners" },
-      { rel: "canonical", href: `${SITE}/pension` },
+      { property: "og:type", content: "website" },
       { property: "og:title", content: "8th CPC Pension Calculator 2026" },
       { property: "og:description", content: "Estimate revised basic pension, DR, commuted value and net monthly pension under the 8th CPC." },
       { property: "og:url", content: `${SITE}/pension` },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: `${SITE}/pension` }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(appLd("8th CPC Pension Calculator", `${SITE}/pension`, "Estimate revised basic pension, Dearness Relief, commuted value and net monthly pension.")),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Home", url: SITE },
+          { name: "Pension Calculator", url: `${SITE}/pension` },
+        ])),
+      },
     ],
   }),
   component: PensionPage,

@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { inr } from "@/lib/format";
 import { PAY_LEVELS } from "@/lib/pay-matrix";
+import { appLd, breadcrumbLd } from "@/components/calc/CalcShell";
 
 const SITE = "https://paycommissionnews.co.in";
 const FACTORS = [1.92, 2.08, 2.28, 2.57, 2.86, 3.0, 3.68, 3.83];
@@ -39,6 +40,10 @@ export const Route = createFileRoute("/fitment-factor")({
     scripts: [
       {
         type: "application/ld+json",
+        children: JSON.stringify(appLd("Fitment Factor Calculator", `${SITE}/fitment-factor`, "Compare projected fitment factors across all 18 pay levels.")),
+      },
+      {
+        type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -61,6 +66,13 @@ export const Route = createFileRoute("/fitment-factor")({
             },
           ],
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Home", url: SITE },
+          { name: "Fitment Factor Calculator", url: `${SITE}/fitment-factor` },
+        ])),
       },
     ],
   }),
