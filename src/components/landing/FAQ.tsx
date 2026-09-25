@@ -1,9 +1,4 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { ChevronDown } from "lucide-react";
 
 export const homeFaqs = [
   {
@@ -76,16 +71,17 @@ export function FAQ() {
           Answers to the most-searched questions on 8th CPC salary, fitment factor, DA, HRA and pension.
         </p>
       </div>
-      <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
+      <div className="rounded-lg border border-border bg-card px-4">
         {homeFaqs.map((f, i) => (
-          <AccordionItem key={i} value={`i${i}`} className="border-border">
-            <AccordionTrigger className="text-left text-sm font-semibold">
+          <details key={i} className="group border-b border-border last:border-b-0">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left text-sm font-semibold">
               {f.q}
-            </AccordionTrigger>
-            <AccordionContent className="text-sm text-muted-foreground">{f.a}</AccordionContent>
-          </AccordionItem>
+              <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+            </summary>
+            <p className="pb-4 text-sm leading-6 text-muted-foreground">{f.a}</p>
+          </details>
         ))}
-      </Accordion>
+      </div>
     </section>
   );
 }

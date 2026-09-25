@@ -1,13 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import type { Faq } from "@/components/calc/CalcShell";
 import { InArticleAd } from "@/components/ads/AdSlots";
@@ -119,14 +113,17 @@ export function KeywordHub({
 
       <section className="mt-12">
         <h2 className="mb-3 text-xl font-bold">Frequently asked questions</h2>
-        <Accordion type="single" collapsible className="rounded-lg border border-border bg-card px-4">
+        <div className="rounded-lg border border-border bg-card px-4">
           {faq.map((f, i) => (
-            <AccordionItem key={f.q} value={`h${i}`}>
-              <AccordionTrigger className="text-left text-sm font-semibold">{f.q}</AccordionTrigger>
-              <AccordionContent className="text-sm text-muted-foreground">{f.a}</AccordionContent>
-            </AccordionItem>
+            <details key={`${f.q}-${i}`} className="group border-b border-border last:border-b-0">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left text-sm font-semibold">
+                {f.q}
+                <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="pb-4 text-sm leading-6 text-muted-foreground">{f.a}</p>
+            </details>
           ))}
-        </Accordion>
+        </div>
       </section>
 
       <DiscussionBox />

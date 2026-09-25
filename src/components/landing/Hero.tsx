@@ -22,7 +22,7 @@ export function Hero() {
             Updated for FY 2026–27
           </span>
           <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-            Find the right <span className="text-primary">pay calculator</span> in seconds
+            <span className="text-primary">8th Pay Commission</span> Salary Calculator 2026
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Salary, pension, arrear, DA and tax tools for Indian government employees and pensioners.
