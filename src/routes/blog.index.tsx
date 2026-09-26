@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { z } from "zod";
 import { articles } from "@/lib/articles";
+import { Button } from "@/components/ui/button";
 
 const searchSchema = z.object({ q: z.string().trim().max(100).optional() });
 
@@ -101,9 +102,9 @@ function BlogIndex() {
             placeholder="Search news and guides"
             className="min-w-0 flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
           />
-          <button type="submit" className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
+          <Button type="submit">
             Search
-          </button>
+          </Button>
         </form>
       </header>
 
