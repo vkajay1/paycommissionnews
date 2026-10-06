@@ -15,6 +15,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { PushPrompt } from "@/components/push/PushPrompt";
+import { MgidWidget } from "@/components/ads/MgidWidget";
 
 
 function NotFoundComponent() {
@@ -118,6 +119,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
+        async: true,
+        src: "https://jsc.mgid.com/site/1108054.js",
+      },
+      {
         type: "text/javascript",
         children: `(function(){try{var t=localStorage.getItem('cpc-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`,
       },
@@ -218,10 +223,20 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <Header />
+        <section aria-label="Header advertisement" className="mx-auto w-full max-w-[1400px] px-4 sm:px-6">
+          <MgidWidget widgetId="2091789" />
+        </section>
         <div className="w-full flex-1">
-          <main className="min-w-0 pb-20 md:pb-0">
-            <Outlet />
-          </main>
+          <div className="mx-auto flex w-full max-w-[1720px] items-start gap-6 xl:px-6">
+            <main className="min-w-0 flex-1 pb-20 md:pb-0">
+              <MgidWidget widgetId="2091791" className="px-4 sm:px-6" />
+              <Outlet />
+              <MgidWidget widgetId="2091781" className="px-4 sm:px-6" />
+            </main>
+            <aside aria-label="Right sidebar advertisement" className="hidden w-[300px] shrink-0 xl:block">
+              <MgidWidget widgetId="2091792" />
+            </aside>
+          </div>
         </div>
         <Footer />
         <MobileNav />
