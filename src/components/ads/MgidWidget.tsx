@@ -20,7 +20,7 @@ export function MgidWidget({
   }, [pathname, widgetId]);
 
   return (
-    <div className={`min-w-0 max-w-full ${className}`} aria-label="Advertisement">
+    <div className={`min-w-0 max-w-full ${widgetId === "2091789" ? "min-h-[300px]" : ""} ${className}`} aria-label="Advertisement">
       <div key={pathname} data-type="_mgwidget" data-widget-id={widgetId} />
     </div>
   );
