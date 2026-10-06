@@ -168,7 +168,7 @@ export const Route = createFileRoute("/blog/$slug")({
   errorComponent: ({ error, reset }) => (
     <main className="mx-auto max-w-3xl px-4 py-24 text-center">
       <h1 className="text-2xl font-bold">Something went wrong</h1>
-      <p className="mt-3 text-sm text-muted-foreground">{error.message}</p>
+      <p className="mt-3 text-sm text-muted-foreground">{error instanceof Error ? error.message : "This article could not be loaded."}</p>
       <button
         onClick={() => reset()}
         className="mt-6 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
