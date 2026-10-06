@@ -127,6 +127,10 @@
 }
 
 /* Article typography for blog posts */
+div[data-widget-id="2091789"] {
+  min-height: 300px !important;
+}
+
 .prose-article {
   color: var(--color-foreground);
   font-size: 1rem;
