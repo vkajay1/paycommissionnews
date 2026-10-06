@@ -128,7 +128,7 @@
 
 /* Article typography for blog posts */
 div[data-widget-id="2091789"] {
-  min-height: 300px;
+  min-height: 300px !important;
 }
 
 .prose-article {
