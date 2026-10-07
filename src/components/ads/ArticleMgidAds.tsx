@@ -11,11 +11,14 @@ export function ArticleMgidAds() {
   useEffect(() => {
     setHosts([]);
     const created: HTMLElement[] = [];
-    const timer = window.setTimeout(() => {
+    const placed = new WeakSet<Element>();
+    const build = () => {
       const main = document.querySelector("main");
       if (!main) return;
 
       const addHost = (anchor: Element, before = false) => {
+        if (placed.has(anchor)) return;
+        placed.add(anchor);
         const host = document.createElement("div");
         host.dataset.articleMgidAd = "2091957";
         host.className = "not-prose my-6 min-w-0 max-w-full";
@@ -40,10 +43,19 @@ export function ArticleMgidAds() {
             heading.previousElementSibling?.lastElementChild?.hasAttribute("data-article-mgid-ad")) return;
         addHost(heading, true);
       });
-      setHosts(created);
-    }, 300);
+      setHosts((previous) => previous.length === created.length ? previous : [...created]);
+    };
+    let timer = window.setTimeout(build, 300);
+    const observer = new MutationObserver((records) => {
+      if (!records.some((record) => record.target instanceof Element &&
+        !record.target.closest("[data-article-mgid-ad], [aria-label='Advertisement']"))) return;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(build, 100);
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
+      observer.disconnect();
       window.clearTimeout(timer);
       created.forEach((host) => host.remove());
     };
