@@ -9,342 +9,105 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
-import { Route as R7thPayCommissionCalculatorRouteImport } from './routes/7th-pay-commission-calculator'
-import { Route as R7thVs8thPayCommissionRouteImport } from './routes/7th-vs-8th-pay-commission'
-import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
-import { Route as R8thPayCommissionArrearsCalculatorInHindiRouteImport } from './routes/8th-pay-commission-arrears-calculator-in-hindi'
-import { Route as R8thPayCommissionBankEmployeesRouteImport } from './routes/8th-pay-commission-bank-employees'
-import { Route as R8thPayCommissionKyaHaiRouteImport } from './routes/8th-pay-commission-kya-hai'
-import { Route as R8thPayCommissionMaharashtraRouteImport } from './routes/8th-pay-commission-maharashtra'
-import { Route as R8thPayCommissionOdishaRouteImport } from './routes/8th-pay-commission-odisha'
-import { Route as R8thPayCommissionPayMatrixRouteImport } from './routes/8th-pay-commission-pay-matrix'
-import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes/8th-pay-commission-pension-calculator'
-import { Route as R8thPayCommissionPensionCalculatorInHindiRouteImport } from './routes/8th-pay-commission-pension-calculator-in-hindi'
-import { Route as R8thPayCommissionRajasthanRouteImport } from './routes/8th-pay-commission-rajasthan'
-import { Route as R8thPayCommissionSalaryCalculatorInHindiRouteImport } from './routes/8th-pay-commission-salary-calculator-in-hindi'
-import { Route as R8thPayCommissionSalaryListRouteImport } from './routes/8th-pay-commission-salary-list'
-import { Route as R8thPayCommissionTamilNaduRouteImport } from './routes/8th-pay-commission-tamil-nadu'
-import { Route as R8thPayCommissionTermsOfReferenceRouteImport } from './routes/8th-pay-commission-terms-of-reference'
-import { Route as R8thPayCommissionUttarPradeshRouteImport } from './routes/8th-pay-commission-uttar-pradesh'
-import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as AdsDottxtRouteImport } from './routes/ads[.]txt'
-import { Route as ArrearRouteImport } from './routes/arrear'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
-import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-in-hindi'
-import { Route as DisclaimerRouteImport } from './routes/disclaimer'
-import { Route as EditorialPolicyRouteImport } from './routes/editorial-policy'
-import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
-import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
-import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
-import { Route as FitmentFactorInHindiRouteImport } from './routes/fitment-factor-in-hindi'
-import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
-import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
-import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
-import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
-import { Route as LeaveEncashmentCalculatorRouteImport } from './routes/leave-encashment-calculator'
-import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
-import { Route as MacpCalculatorRouteImport } from './routes/macp-calculator'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as NewsSitemapDotxmlRouteImport } from './routes/news-sitemap[.]xml'
-import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
-import { Route as PayCommissionHistoryRouteImport } from './routes/pay-commission-history'
-import { Route as PayFixationRouteImport } from './routes/pay-fixation'
-import { Route as PayLevelRouteImport } from './routes/pay-level'
-import { Route as PdfToolsRouteImport } from './routes/pdf-tools'
-import { Route as PensionRouteImport } from './routes/pension'
-import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as PushAdminRouteImport } from './routes/push-admin'
-import { Route as RajasthanGovernmentSalaryCalculatorRouteImport } from './routes/rajasthan-government-salary-calculator'
-import { Route as RoleRouteImport } from './routes/role'
-import { Route as SalaryRouteImport } from './routes/salary'
-import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as StateRouteImport } from './routes/state'
 import { Route as TakeHomeSalaryRouteImport } from './routes/take-home-salary'
-import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
-import { Route as LatestJobsIndexRouteImport } from './routes/latest-jobs.index'
-import { Route as LatestJobsSlugRouteImport } from './routes/latest-jobs.$slug'
-import { Route as PayLevelIndexRouteImport } from './routes/pay-level.index'
-import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
-import { Route as RoleIndexRouteImport } from './routes/role.index'
-import { Route as RoleRoleRouteImport } from './routes/role.$role'
+import { Route as StateRouteImport } from './routes/state'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SalaryFixationRouteImport } from './routes/salary-fixation'
+import { Route as SalaryRouteImport } from './routes/salary'
+import { Route as RoleRouteImport } from './routes/role'
+import { Route as RajasthanGovernmentSalaryCalculatorRouteImport } from './routes/rajasthan-government-salary-calculator'
+import { Route as PushAdminRouteImport } from './routes/push-admin'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as PensionArrearRouteImport } from './routes/pension-arrear'
+import { Route as PensionRouteImport } from './routes/pension'
+import { Route as PdfToolsRouteImport } from './routes/pdf-tools'
+import { Route as PayLevelRouteImport } from './routes/pay-level'
+import { Route as PayFixationRouteImport } from './routes/pay-fixation'
+import { Route as PayCommissionHistoryRouteImport } from './routes/pay-commission-history'
+import { Route as NpsCalculatorRouteImport } from './routes/nps-calculator'
+import { Route as NewsSitemapDotxmlRouteImport } from './routes/news-sitemap[.]xml'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as MacpCalculatorRouteImport } from './routes/macp-calculator'
+import { Route as LtcPlannerRouteImport } from './routes/ltc-planner'
+import { Route as LeaveEncashmentCalculatorRouteImport } from './routes/leave-encashment-calculator'
+import { Route as IncomeTaxCalculatorRouteImport } from './routes/income-tax-calculator'
+import { Route as HraCalculatorRouteImport } from './routes/hra-calculator'
+import { Route as GratuityCalculatorRouteImport } from './routes/gratuity-calculator'
+import { Route as FitmentSimulatorRouteImport } from './routes/fitment-simulator'
+import { Route as FitmentFactorInHindiRouteImport } from './routes/fitment-factor-in-hindi'
+import { Route as FitmentFactorRouteImport } from './routes/fitment-factor'
+import { Route as FitmentCalculatorRouteImport } from './routes/fitment-calculator'
+import { Route as EpfCalculatorRouteImport } from './routes/epf-calculator'
+import { Route as EditorialPolicyRouteImport } from './routes/editorial-policy'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
+import { Route as DaCalculatorInHindiRouteImport } from './routes/da-calculator-in-hindi'
+import { Route as DaCalculatorRouteImport } from './routes/da-calculator'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ArrearRouteImport } from './routes/arrear'
+import { Route as AdsDottxtRouteImport } from './routes/ads[.]txt'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as R8thPayCommissionWestBengalRouteImport } from './routes/8th-pay-commission-west-bengal'
+import { Route as R8thPayCommissionUttarPradeshRouteImport } from './routes/8th-pay-commission-uttar-pradesh'
+import { Route as R8thPayCommissionTermsOfReferenceRouteImport } from './routes/8th-pay-commission-terms-of-reference'
+import { Route as R8thPayCommissionTamilNaduRouteImport } from './routes/8th-pay-commission-tamil-nadu'
+import { Route as R8thPayCommissionSalaryListRouteImport } from './routes/8th-pay-commission-salary-list'
+import { Route as R8thPayCommissionSalaryCalculatorInHindiRouteImport } from './routes/8th-pay-commission-salary-calculator-in-hindi'
+import { Route as R8thPayCommissionRajasthanRouteImport } from './routes/8th-pay-commission-rajasthan'
+import { Route as R8thPayCommissionPensionCalculatorInHindiRouteImport } from './routes/8th-pay-commission-pension-calculator-in-hindi'
+import { Route as R8thPayCommissionPensionCalculatorRouteImport } from './routes/8th-pay-commission-pension-calculator'
+import { Route as R8thPayCommissionPayMatrixRouteImport } from './routes/8th-pay-commission-pay-matrix'
+import { Route as R8thPayCommissionOdishaRouteImport } from './routes/8th-pay-commission-odisha'
+import { Route as R8thPayCommissionMaharashtraRouteImport } from './routes/8th-pay-commission-maharashtra'
+import { Route as R8thPayCommissionKyaHaiRouteImport } from './routes/8th-pay-commission-kya-hai'
+import { Route as R8thPayCommissionBankEmployeesRouteImport } from './routes/8th-pay-commission-bank-employees'
+import { Route as R8thPayCommissionArrearsCalculatorInHindiRouteImport } from './routes/8th-pay-commission-arrears-calculator-in-hindi'
+import { Route as R8thPayCommissionArrearsCalculatorRouteImport } from './routes/8th-pay-commission-arrears-calculator'
+import { Route as R7thVs8thPayCommissionRouteImport } from './routes/7th-vs-8th-pay-commission'
+import { Route as R7thPayCommissionCalculatorRouteImport } from './routes/7th-pay-commission-calculator'
+import { Route as R6thPayCommissionCalculatorRouteImport } from './routes/6th-pay-commission-calculator'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as StateIndexRouteImport } from './routes/state.index'
+import { Route as RoleIndexRouteImport } from './routes/role.index'
+import { Route as PayLevelIndexRouteImport } from './routes/pay-level.index'
+import { Route as LatestJobsIndexRouteImport } from './routes/latest-jobs.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as StateStateRouteImport } from './routes/state.$state'
+import { Route as RoleRoleRouteImport } from './routes/role.$role'
+import { Route as PayLevelLevelRouteImport } from './routes/pay-level.$level'
+import { Route as LatestJobsSlugRouteImport } from './routes/latest-jobs.$slug'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
+  id: '/take-home-salary',
+  path: '/take-home-salary',
   getParentRoute: () => rootRouteImport,
 } as any)
-const R6thPayCommissionCalculatorRoute =
-  R6thPayCommissionCalculatorRouteImport.update({
-    id: '/6th-pay-commission-calculator',
-    path: '/6th-pay-commission-calculator',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R7thPayCommissionCalculatorRoute =
-  R7thPayCommissionCalculatorRouteImport.update({
-    id: '/7th-pay-commission-calculator',
-    path: '/7th-pay-commission-calculator',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R7thVs8thPayCommissionRoute = R7thVs8thPayCommissionRouteImport.update({
-  id: '/7th-vs-8th-pay-commission',
-  path: '/7th-vs-8th-pay-commission',
+const StateRoute = StateRouteImport.update({
+  id: '/state',
+  path: '/state',
   getParentRoute: () => rootRouteImport,
 } as any)
-const R8thPayCommissionArrearsCalculatorRoute =
-  R8thPayCommissionArrearsCalculatorRouteImport.update({
-    id: '/8th-pay-commission-arrears-calculator',
-    path: '/8th-pay-commission-arrears-calculator',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionArrearsCalculatorInHindiRoute =
-  R8thPayCommissionArrearsCalculatorInHindiRouteImport.update({
-    id: '/8th-pay-commission-arrears-calculator-in-hindi',
-    path: '/8th-pay-commission-arrears-calculator-in-hindi',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionBankEmployeesRoute =
-  R8thPayCommissionBankEmployeesRouteImport.update({
-    id: '/8th-pay-commission-bank-employees',
-    path: '/8th-pay-commission-bank-employees',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionKyaHaiRoute = R8thPayCommissionKyaHaiRouteImport.update({
-  id: '/8th-pay-commission-kya-hai',
-  path: '/8th-pay-commission-kya-hai',
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const R8thPayCommissionMaharashtraRoute =
-  R8thPayCommissionMaharashtraRouteImport.update({
-    id: '/8th-pay-commission-maharashtra',
-    path: '/8th-pay-commission-maharashtra',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionOdishaRoute = R8thPayCommissionOdishaRouteImport.update({
-  id: '/8th-pay-commission-odisha',
-  path: '/8th-pay-commission-odisha',
+const SalaryFixationRoute = SalaryFixationRouteImport.update({
+  id: '/salary-fixation',
+  path: '/salary-fixation',
   getParentRoute: () => rootRouteImport,
 } as any)
-const R8thPayCommissionPayMatrixRoute =
-  R8thPayCommissionPayMatrixRouteImport.update({
-    id: '/8th-pay-commission-pay-matrix',
-    path: '/8th-pay-commission-pay-matrix',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionPensionCalculatorRoute =
-  R8thPayCommissionPensionCalculatorRouteImport.update({
-    id: '/8th-pay-commission-pension-calculator',
-    path: '/8th-pay-commission-pension-calculator',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionPensionCalculatorInHindiRoute =
-  R8thPayCommissionPensionCalculatorInHindiRouteImport.update({
-    id: '/8th-pay-commission-pension-calculator-in-hindi',
-    path: '/8th-pay-commission-pension-calculator-in-hindi',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionRajasthanRoute =
-  R8thPayCommissionRajasthanRouteImport.update({
-    id: '/8th-pay-commission-rajasthan',
-    path: '/8th-pay-commission-rajasthan',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionSalaryCalculatorInHindiRoute =
-  R8thPayCommissionSalaryCalculatorInHindiRouteImport.update({
-    id: '/8th-pay-commission-salary-calculator-in-hindi',
-    path: '/8th-pay-commission-salary-calculator-in-hindi',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionSalaryListRoute =
-  R8thPayCommissionSalaryListRouteImport.update({
-    id: '/8th-pay-commission-salary-list',
-    path: '/8th-pay-commission-salary-list',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionTamilNaduRoute =
-  R8thPayCommissionTamilNaduRouteImport.update({
-    id: '/8th-pay-commission-tamil-nadu',
-    path: '/8th-pay-commission-tamil-nadu',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionTermsOfReferenceRoute =
-  R8thPayCommissionTermsOfReferenceRouteImport.update({
-    id: '/8th-pay-commission-terms-of-reference',
-    path: '/8th-pay-commission-terms-of-reference',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionUttarPradeshRoute =
-  R8thPayCommissionUttarPradeshRouteImport.update({
-    id: '/8th-pay-commission-uttar-pradesh',
-    path: '/8th-pay-commission-uttar-pradesh',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const R8thPayCommissionWestBengalRoute =
-  R8thPayCommissionWestBengalRouteImport.update({
-    id: '/8th-pay-commission-west-bengal',
-    path: '/8th-pay-commission-west-bengal',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+const SalaryRoute = SalaryRouteImport.update({
+  id: '/salary',
+  path: '/salary',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdsDottxtRoute = AdsDottxtRouteImport.update({
-  id: '/ads.txt',
-  path: '/ads.txt',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArrearRoute = ArrearRouteImport.update({
-  id: '/arrear',
-  path: '/arrear',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DaCalculatorRoute = DaCalculatorRouteImport.update({
-  id: '/da-calculator',
-  path: '/da-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DaCalculatorInHindiRoute = DaCalculatorInHindiRouteImport.update({
-  id: '/da-calculator-in-hindi',
-  path: '/da-calculator-in-hindi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DisclaimerRoute = DisclaimerRouteImport.update({
-  id: '/disclaimer',
-  path: '/disclaimer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EditorialPolicyRoute = EditorialPolicyRouteImport.update({
-  id: '/editorial-policy',
-  path: '/editorial-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
-  id: '/epf-calculator',
-  path: '/epf-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FitmentCalculatorRoute = FitmentCalculatorRouteImport.update({
-  id: '/fitment-calculator',
-  path: '/fitment-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FitmentFactorRoute = FitmentFactorRouteImport.update({
-  id: '/fitment-factor',
-  path: '/fitment-factor',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FitmentFactorInHindiRoute = FitmentFactorInHindiRouteImport.update({
-  id: '/fitment-factor-in-hindi',
-  path: '/fitment-factor-in-hindi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
-  id: '/fitment-simulator',
-  path: '/fitment-simulator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
-  id: '/gratuity-calculator',
-  path: '/gratuity-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HraCalculatorRoute = HraCalculatorRouteImport.update({
-  id: '/hra-calculator',
-  path: '/hra-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IncomeTaxCalculatorRoute = IncomeTaxCalculatorRouteImport.update({
-  id: '/income-tax-calculator',
-  path: '/income-tax-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LeaveEncashmentCalculatorRoute =
-  LeaveEncashmentCalculatorRouteImport.update({
-    id: '/leave-encashment-calculator',
-    path: '/leave-encashment-calculator',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LtcPlannerRoute = LtcPlannerRouteImport.update({
-  id: '/ltc-planner',
-  path: '/ltc-planner',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MacpCalculatorRoute = MacpCalculatorRouteImport.update({
-  id: '/macp-calculator',
-  path: '/macp-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NewsSitemapDotxmlRoute = NewsSitemapDotxmlRouteImport.update({
-  id: '/news-sitemap.xml',
-  path: '/news-sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
-  id: '/nps-calculator',
-  path: '/nps-calculator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PayCommissionHistoryRoute = PayCommissionHistoryRouteImport.update({
-  id: '/pay-commission-history',
-  path: '/pay-commission-history',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PayFixationRoute = PayFixationRouteImport.update({
-  id: '/pay-fixation',
-  path: '/pay-fixation',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PayLevelRoute = PayLevelRouteImport.update({
-  id: '/pay-level',
-  path: '/pay-level',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PdfToolsRoute = PdfToolsRouteImport.update({
-  id: '/pdf-tools',
-  path: '/pdf-tools',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PensionRoute = PensionRouteImport.update({
-  id: '/pension',
-  path: '/pension',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PensionArrearRoute = PensionArrearRouteImport.update({
-  id: '/pension-arrear',
-  path: '/pension-arrear',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PushAdminRoute = PushAdminRouteImport.update({
-  id: '/push-admin',
-  path: '/push-admin',
+const RoleRoute = RoleRouteImport.update({
+  id: '/role',
+  path: '/role',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RajasthanGovernmentSalaryCalculatorRoute =
@@ -353,51 +116,316 @@ const RajasthanGovernmentSalaryCalculatorRoute =
     path: '/rajasthan-government-salary-calculator',
     getParentRoute: () => rootRouteImport,
   } as any)
-const RoleRoute = RoleRouteImport.update({
-  id: '/role',
-  path: '/role',
+const PushAdminRoute = PushAdminRouteImport.update({
+  id: '/push-admin',
+  path: '/push-admin',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SalaryRoute = SalaryRouteImport.update({
-  id: '/salary',
-  path: '/salary',
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SalaryFixationRoute = SalaryFixationRouteImport.update({
-  id: '/salary-fixation',
-  path: '/salary-fixation',
+const PensionArrearRoute = PensionArrearRouteImport.update({
+  id: '/pension-arrear',
+  path: '/pension-arrear',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
+const PensionRoute = PensionRouteImport.update({
+  id: '/pension',
+  path: '/pension',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StateRoute = StateRouteImport.update({
-  id: '/state',
-  path: '/state',
+const PdfToolsRoute = PdfToolsRouteImport.update({
+  id: '/pdf-tools',
+  path: '/pdf-tools',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TakeHomeSalaryRoute = TakeHomeSalaryRouteImport.update({
-  id: '/take-home-salary',
-  path: '/take-home-salary',
+const PayLevelRoute = PayLevelRouteImport.update({
+  id: '/pay-level',
+  path: '/pay-level',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Char91DotmcpChar93ListToolsRoute =
-  Char91DotmcpChar93ListToolsRouteImport.update({
-    id: '/.mcp/list-tools',
-    path: '/.mcp/list-tools',
+const PayFixationRoute = PayFixationRouteImport.update({
+  id: '/pay-fixation',
+  path: '/pay-fixation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PayCommissionHistoryRoute = PayCommissionHistoryRouteImport.update({
+  id: '/pay-commission-history',
+  path: '/pay-commission-history',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NpsCalculatorRoute = NpsCalculatorRouteImport.update({
+  id: '/nps-calculator',
+  path: '/nps-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsSitemapDotxmlRoute = NewsSitemapDotxmlRouteImport.update({
+  id: '/news-sitemap.xml',
+  path: '/news-sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MacpCalculatorRoute = MacpCalculatorRouteImport.update({
+  id: '/macp-calculator',
+  path: '/macp-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LtcPlannerRoute = LtcPlannerRouteImport.update({
+  id: '/ltc-planner',
+  path: '/ltc-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeaveEncashmentCalculatorRoute =
+  LeaveEncashmentCalculatorRouteImport.update({
+    id: '/leave-encashment-calculator',
+    path: '/leave-encashment-calculator',
     getParentRoute: () => rootRouteImport,
   } as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
+const IncomeTaxCalculatorRoute = IncomeTaxCalculatorRouteImport.update({
+  id: '/income-tax-calculator',
+  path: '/income-tax-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HraCalculatorRoute = HraCalculatorRouteImport.update({
+  id: '/hra-calculator',
+  path: '/hra-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GratuityCalculatorRoute = GratuityCalculatorRouteImport.update({
+  id: '/gratuity-calculator',
+  path: '/gratuity-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FitmentSimulatorRoute = FitmentSimulatorRouteImport.update({
+  id: '/fitment-simulator',
+  path: '/fitment-simulator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FitmentFactorInHindiRoute = FitmentFactorInHindiRouteImport.update({
+  id: '/fitment-factor-in-hindi',
+  path: '/fitment-factor-in-hindi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FitmentFactorRoute = FitmentFactorRouteImport.update({
+  id: '/fitment-factor',
+  path: '/fitment-factor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FitmentCalculatorRoute = FitmentCalculatorRouteImport.update({
+  id: '/fitment-calculator',
+  path: '/fitment-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EpfCalculatorRoute = EpfCalculatorRouteImport.update({
+  id: '/epf-calculator',
+  path: '/epf-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EditorialPolicyRoute = EditorialPolicyRouteImport.update({
+  id: '/editorial-policy',
+  path: '/editorial-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DaCalculatorInHindiRoute = DaCalculatorInHindiRouteImport.update({
+  id: '/da-calculator-in-hindi',
+  path: '/da-calculator-in-hindi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DaCalculatorRoute = DaCalculatorRouteImport.update({
+  id: '/da-calculator',
+  path: '/da-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArrearRoute = ArrearRouteImport.update({
+  id: '/arrear',
+  path: '/arrear',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdsDottxtRoute = AdsDottxtRouteImport.update({
+  id: '/ads.txt',
+  path: '/ads.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R8thPayCommissionWestBengalRoute =
+  R8thPayCommissionWestBengalRouteImport.update({
+    id: '/8th-pay-commission-west-bengal',
+    path: '/8th-pay-commission-west-bengal',
     getParentRoute: () => rootRouteImport,
   } as any)
+const R8thPayCommissionUttarPradeshRoute =
+  R8thPayCommissionUttarPradeshRouteImport.update({
+    id: '/8th-pay-commission-uttar-pradesh',
+    path: '/8th-pay-commission-uttar-pradesh',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionTermsOfReferenceRoute =
+  R8thPayCommissionTermsOfReferenceRouteImport.update({
+    id: '/8th-pay-commission-terms-of-reference',
+    path: '/8th-pay-commission-terms-of-reference',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionTamilNaduRoute =
+  R8thPayCommissionTamilNaduRouteImport.update({
+    id: '/8th-pay-commission-tamil-nadu',
+    path: '/8th-pay-commission-tamil-nadu',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionSalaryListRoute =
+  R8thPayCommissionSalaryListRouteImport.update({
+    id: '/8th-pay-commission-salary-list',
+    path: '/8th-pay-commission-salary-list',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionSalaryCalculatorInHindiRoute =
+  R8thPayCommissionSalaryCalculatorInHindiRouteImport.update({
+    id: '/8th-pay-commission-salary-calculator-in-hindi',
+    path: '/8th-pay-commission-salary-calculator-in-hindi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionRajasthanRoute =
+  R8thPayCommissionRajasthanRouteImport.update({
+    id: '/8th-pay-commission-rajasthan',
+    path: '/8th-pay-commission-rajasthan',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionPensionCalculatorInHindiRoute =
+  R8thPayCommissionPensionCalculatorInHindiRouteImport.update({
+    id: '/8th-pay-commission-pension-calculator-in-hindi',
+    path: '/8th-pay-commission-pension-calculator-in-hindi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionPensionCalculatorRoute =
+  R8thPayCommissionPensionCalculatorRouteImport.update({
+    id: '/8th-pay-commission-pension-calculator',
+    path: '/8th-pay-commission-pension-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionPayMatrixRoute =
+  R8thPayCommissionPayMatrixRouteImport.update({
+    id: '/8th-pay-commission-pay-matrix',
+    path: '/8th-pay-commission-pay-matrix',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionOdishaRoute = R8thPayCommissionOdishaRouteImport.update({
+  id: '/8th-pay-commission-odisha',
+  path: '/8th-pay-commission-odisha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R8thPayCommissionMaharashtraRoute =
+  R8thPayCommissionMaharashtraRouteImport.update({
+    id: '/8th-pay-commission-maharashtra',
+    path: '/8th-pay-commission-maharashtra',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionKyaHaiRoute = R8thPayCommissionKyaHaiRouteImport.update({
+  id: '/8th-pay-commission-kya-hai',
+  path: '/8th-pay-commission-kya-hai',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R8thPayCommissionBankEmployeesRoute =
+  R8thPayCommissionBankEmployeesRouteImport.update({
+    id: '/8th-pay-commission-bank-employees',
+    path: '/8th-pay-commission-bank-employees',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionArrearsCalculatorInHindiRoute =
+  R8thPayCommissionArrearsCalculatorInHindiRouteImport.update({
+    id: '/8th-pay-commission-arrears-calculator-in-hindi',
+    path: '/8th-pay-commission-arrears-calculator-in-hindi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R8thPayCommissionArrearsCalculatorRoute =
+  R8thPayCommissionArrearsCalculatorRouteImport.update({
+    id: '/8th-pay-commission-arrears-calculator',
+    path: '/8th-pay-commission-arrears-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R7thVs8thPayCommissionRoute = R7thVs8thPayCommissionRouteImport.update({
+  id: '/7th-vs-8th-pay-commission',
+  path: '/7th-vs-8th-pay-commission',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const R7thPayCommissionCalculatorRoute =
+  R7thPayCommissionCalculatorRouteImport.update({
+    id: '/7th-pay-commission-calculator',
+    path: '/7th-pay-commission-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const R6thPayCommissionCalculatorRoute =
+  R6thPayCommissionCalculatorRouteImport.update({
+    id: '/6th-pay-commission-calculator',
+    path: '/6th-pay-commission-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StateIndexRoute = StateIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => StateRoute,
+} as any)
+const RoleIndexRoute = RoleIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => RoleRoute,
+} as any)
+const PayLevelIndexRoute = PayLevelIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => PayLevelRoute,
+} as any)
+const LatestJobsIndexRoute = LatestJobsIndexRouteImport.update({
+  id: '/latest-jobs/',
+  path: '/latest-jobs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StateStateRoute = StateStateRouteImport.update({
+  id: '/$state',
+  path: '/$state',
+  getParentRoute: () => StateRoute,
+} as any)
+const RoleRoleRoute = RoleRoleRouteImport.update({
+  id: '/$role',
+  path: '/$role',
+  getParentRoute: () => RoleRoute,
+} as any)
+const PayLevelLevelRoute = PayLevelLevelRouteImport.update({
+  id: '/$level',
+  path: '/$level',
+  getParentRoute: () => PayLevelRoute,
+} as any)
+const LatestJobsSlugRoute = LatestJobsSlugRouteImport.update({
+  id: '/latest-jobs/$slug',
+  path: '/latest-jobs/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
@@ -405,46 +433,18 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LatestJobsIndexRoute = LatestJobsIndexRouteImport.update({
-  id: '/latest-jobs/',
-  path: '/latest-jobs/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LatestJobsSlugRoute = LatestJobsSlugRouteImport.update({
-  id: '/latest-jobs/$slug',
-  path: '/latest-jobs/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PayLevelIndexRoute = PayLevelIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => PayLevelRoute,
-} as any)
-const PayLevelLevelRoute = PayLevelLevelRouteImport.update({
-  id: '/$level',
-  path: '/$level',
-  getParentRoute: () => PayLevelRoute,
-} as any)
-const RoleIndexRoute = RoleIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => RoleRoute,
-} as any)
-const RoleRoleRoute = RoleRoleRouteImport.update({
-  id: '/$role',
-  path: '/$role',
-  getParentRoute: () => RoleRoute,
-} as any)
-const StateIndexRoute = StateIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => StateRoute,
-} as any)
-const StateStateRoute = StateStateRouteImport.update({
-  id: '/$state',
-  path: '/$state',
-  getParentRoute: () => StateRoute,
-} as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
   Char91DotmcpChar93InvokeToolToolRouteImport.update({
     id: '/.mcp/invoke-tool/$tool',
@@ -951,389 +951,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/6th-pay-commission-calculator': {
-      id: '/6th-pay-commission-calculator'
-      path: '/6th-pay-commission-calculator'
-      fullPath: '/6th-pay-commission-calculator'
-      preLoaderRoute: typeof R6thPayCommissionCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/7th-pay-commission-calculator': {
-      id: '/7th-pay-commission-calculator'
-      path: '/7th-pay-commission-calculator'
-      fullPath: '/7th-pay-commission-calculator'
-      preLoaderRoute: typeof R7thPayCommissionCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/7th-vs-8th-pay-commission': {
-      id: '/7th-vs-8th-pay-commission'
-      path: '/7th-vs-8th-pay-commission'
-      fullPath: '/7th-vs-8th-pay-commission'
-      preLoaderRoute: typeof R7thVs8thPayCommissionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-arrears-calculator': {
-      id: '/8th-pay-commission-arrears-calculator'
-      path: '/8th-pay-commission-arrears-calculator'
-      fullPath: '/8th-pay-commission-arrears-calculator'
-      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-arrears-calculator-in-hindi': {
-      id: '/8th-pay-commission-arrears-calculator-in-hindi'
-      path: '/8th-pay-commission-arrears-calculator-in-hindi'
-      fullPath: '/8th-pay-commission-arrears-calculator-in-hindi'
-      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorInHindiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-bank-employees': {
-      id: '/8th-pay-commission-bank-employees'
-      path: '/8th-pay-commission-bank-employees'
-      fullPath: '/8th-pay-commission-bank-employees'
-      preLoaderRoute: typeof R8thPayCommissionBankEmployeesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-kya-hai': {
-      id: '/8th-pay-commission-kya-hai'
-      path: '/8th-pay-commission-kya-hai'
-      fullPath: '/8th-pay-commission-kya-hai'
-      preLoaderRoute: typeof R8thPayCommissionKyaHaiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-maharashtra': {
-      id: '/8th-pay-commission-maharashtra'
-      path: '/8th-pay-commission-maharashtra'
-      fullPath: '/8th-pay-commission-maharashtra'
-      preLoaderRoute: typeof R8thPayCommissionMaharashtraRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-odisha': {
-      id: '/8th-pay-commission-odisha'
-      path: '/8th-pay-commission-odisha'
-      fullPath: '/8th-pay-commission-odisha'
-      preLoaderRoute: typeof R8thPayCommissionOdishaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-pay-matrix': {
-      id: '/8th-pay-commission-pay-matrix'
-      path: '/8th-pay-commission-pay-matrix'
-      fullPath: '/8th-pay-commission-pay-matrix'
-      preLoaderRoute: typeof R8thPayCommissionPayMatrixRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-pension-calculator': {
-      id: '/8th-pay-commission-pension-calculator'
-      path: '/8th-pay-commission-pension-calculator'
-      fullPath: '/8th-pay-commission-pension-calculator'
-      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-pension-calculator-in-hindi': {
-      id: '/8th-pay-commission-pension-calculator-in-hindi'
-      path: '/8th-pay-commission-pension-calculator-in-hindi'
-      fullPath: '/8th-pay-commission-pension-calculator-in-hindi'
-      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorInHindiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-rajasthan': {
-      id: '/8th-pay-commission-rajasthan'
-      path: '/8th-pay-commission-rajasthan'
-      fullPath: '/8th-pay-commission-rajasthan'
-      preLoaderRoute: typeof R8thPayCommissionRajasthanRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-salary-calculator-in-hindi': {
-      id: '/8th-pay-commission-salary-calculator-in-hindi'
-      path: '/8th-pay-commission-salary-calculator-in-hindi'
-      fullPath: '/8th-pay-commission-salary-calculator-in-hindi'
-      preLoaderRoute: typeof R8thPayCommissionSalaryCalculatorInHindiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-salary-list': {
-      id: '/8th-pay-commission-salary-list'
-      path: '/8th-pay-commission-salary-list'
-      fullPath: '/8th-pay-commission-salary-list'
-      preLoaderRoute: typeof R8thPayCommissionSalaryListRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-tamil-nadu': {
-      id: '/8th-pay-commission-tamil-nadu'
-      path: '/8th-pay-commission-tamil-nadu'
-      fullPath: '/8th-pay-commission-tamil-nadu'
-      preLoaderRoute: typeof R8thPayCommissionTamilNaduRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-terms-of-reference': {
-      id: '/8th-pay-commission-terms-of-reference'
-      path: '/8th-pay-commission-terms-of-reference'
-      fullPath: '/8th-pay-commission-terms-of-reference'
-      preLoaderRoute: typeof R8thPayCommissionTermsOfReferenceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-uttar-pradesh': {
-      id: '/8th-pay-commission-uttar-pradesh'
-      path: '/8th-pay-commission-uttar-pradesh'
-      fullPath: '/8th-pay-commission-uttar-pradesh'
-      preLoaderRoute: typeof R8thPayCommissionUttarPradeshRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/8th-pay-commission-west-bengal': {
-      id: '/8th-pay-commission-west-bengal'
-      path: '/8th-pay-commission-west-bengal'
-      fullPath: '/8th-pay-commission-west-bengal'
-      preLoaderRoute: typeof R8thPayCommissionWestBengalRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ads.txt': {
-      id: '/ads.txt'
-      path: '/ads.txt'
-      fullPath: '/ads.txt'
-      preLoaderRoute: typeof AdsDottxtRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/arrear': {
-      id: '/arrear'
-      path: '/arrear'
-      fullPath: '/arrear'
-      preLoaderRoute: typeof ArrearRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/da-calculator': {
-      id: '/da-calculator'
-      path: '/da-calculator'
-      fullPath: '/da-calculator'
-      preLoaderRoute: typeof DaCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/da-calculator-in-hindi': {
-      id: '/da-calculator-in-hindi'
-      path: '/da-calculator-in-hindi'
-      fullPath: '/da-calculator-in-hindi'
-      preLoaderRoute: typeof DaCalculatorInHindiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/disclaimer': {
-      id: '/disclaimer'
-      path: '/disclaimer'
-      fullPath: '/disclaimer'
-      preLoaderRoute: typeof DisclaimerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/editorial-policy': {
-      id: '/editorial-policy'
-      path: '/editorial-policy'
-      fullPath: '/editorial-policy'
-      preLoaderRoute: typeof EditorialPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/epf-calculator': {
-      id: '/epf-calculator'
-      path: '/epf-calculator'
-      fullPath: '/epf-calculator'
-      preLoaderRoute: typeof EpfCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fitment-calculator': {
-      id: '/fitment-calculator'
-      path: '/fitment-calculator'
-      fullPath: '/fitment-calculator'
-      preLoaderRoute: typeof FitmentCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fitment-factor': {
-      id: '/fitment-factor'
-      path: '/fitment-factor'
-      fullPath: '/fitment-factor'
-      preLoaderRoute: typeof FitmentFactorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fitment-factor-in-hindi': {
-      id: '/fitment-factor-in-hindi'
-      path: '/fitment-factor-in-hindi'
-      fullPath: '/fitment-factor-in-hindi'
-      preLoaderRoute: typeof FitmentFactorInHindiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fitment-simulator': {
-      id: '/fitment-simulator'
-      path: '/fitment-simulator'
-      fullPath: '/fitment-simulator'
-      preLoaderRoute: typeof FitmentSimulatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gratuity-calculator': {
-      id: '/gratuity-calculator'
-      path: '/gratuity-calculator'
-      fullPath: '/gratuity-calculator'
-      preLoaderRoute: typeof GratuityCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hra-calculator': {
-      id: '/hra-calculator'
-      path: '/hra-calculator'
-      fullPath: '/hra-calculator'
-      preLoaderRoute: typeof HraCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/income-tax-calculator': {
-      id: '/income-tax-calculator'
-      path: '/income-tax-calculator'
-      fullPath: '/income-tax-calculator'
-      preLoaderRoute: typeof IncomeTaxCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/leave-encashment-calculator': {
-      id: '/leave-encashment-calculator'
-      path: '/leave-encashment-calculator'
-      fullPath: '/leave-encashment-calculator'
-      preLoaderRoute: typeof LeaveEncashmentCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ltc-planner': {
-      id: '/ltc-planner'
-      path: '/ltc-planner'
-      fullPath: '/ltc-planner'
-      preLoaderRoute: typeof LtcPlannerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/macp-calculator': {
-      id: '/macp-calculator'
-      path: '/macp-calculator'
-      fullPath: '/macp-calculator'
-      preLoaderRoute: typeof MacpCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/news-sitemap.xml': {
-      id: '/news-sitemap.xml'
-      path: '/news-sitemap.xml'
-      fullPath: '/news-sitemap.xml'
-      preLoaderRoute: typeof NewsSitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/nps-calculator': {
-      id: '/nps-calculator'
-      path: '/nps-calculator'
-      fullPath: '/nps-calculator'
-      preLoaderRoute: typeof NpsCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pay-commission-history': {
-      id: '/pay-commission-history'
-      path: '/pay-commission-history'
-      fullPath: '/pay-commission-history'
-      preLoaderRoute: typeof PayCommissionHistoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pay-fixation': {
-      id: '/pay-fixation'
-      path: '/pay-fixation'
-      fullPath: '/pay-fixation'
-      preLoaderRoute: typeof PayFixationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pay-level': {
-      id: '/pay-level'
-      path: '/pay-level'
-      fullPath: '/pay-level'
-      preLoaderRoute: typeof PayLevelRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pdf-tools': {
-      id: '/pdf-tools'
-      path: '/pdf-tools'
-      fullPath: '/pdf-tools'
-      preLoaderRoute: typeof PdfToolsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pension': {
-      id: '/pension'
-      path: '/pension'
-      fullPath: '/pension'
-      preLoaderRoute: typeof PensionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pension-arrear': {
-      id: '/pension-arrear'
-      path: '/pension-arrear'
-      fullPath: '/pension-arrear'
-      preLoaderRoute: typeof PensionArrearRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/push-admin': {
-      id: '/push-admin'
-      path: '/push-admin'
-      fullPath: '/push-admin'
-      preLoaderRoute: typeof PushAdminRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rajasthan-government-salary-calculator': {
-      id: '/rajasthan-government-salary-calculator'
-      path: '/rajasthan-government-salary-calculator'
-      fullPath: '/rajasthan-government-salary-calculator'
-      preLoaderRoute: typeof RajasthanGovernmentSalaryCalculatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/role': {
-      id: '/role'
-      path: '/role'
-      fullPath: '/role'
-      preLoaderRoute: typeof RoleRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/salary': {
-      id: '/salary'
-      path: '/salary'
-      fullPath: '/salary'
-      preLoaderRoute: typeof SalaryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/salary-fixation': {
-      id: '/salary-fixation'
-      path: '/salary-fixation'
-      fullPath: '/salary-fixation'
-      preLoaderRoute: typeof SalaryFixationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
+    '/take-home-salary': {
+      id: '/take-home-salary'
+      path: '/take-home-salary'
+      fullPath: '/take-home-salary'
+      preLoaderRoute: typeof TakeHomeSalaryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/state': {
@@ -1343,25 +965,417 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StateRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/take-home-salary': {
-      id: '/take-home-salary'
-      path: '/take-home-salary'
-      fullPath: '/take-home-salary'
-      preLoaderRoute: typeof TakeHomeSalaryRouteImport
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.mcp/list-tools': {
-      id: '/.mcp/list-tools'
-      path: '/.mcp/list-tools'
-      fullPath: '/.mcp/list-tools'
-      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+    '/salary-fixation': {
+      id: '/salary-fixation'
+      path: '/salary-fixation'
+      fullPath: '/salary-fixation'
+      preLoaderRoute: typeof SalaryFixationRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/salary': {
+      id: '/salary'
+      path: '/salary'
+      fullPath: '/salary'
+      preLoaderRoute: typeof SalaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/role': {
+      id: '/role'
+      path: '/role'
+      fullPath: '/role'
+      preLoaderRoute: typeof RoleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rajasthan-government-salary-calculator': {
+      id: '/rajasthan-government-salary-calculator'
+      path: '/rajasthan-government-salary-calculator'
+      fullPath: '/rajasthan-government-salary-calculator'
+      preLoaderRoute: typeof RajasthanGovernmentSalaryCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/push-admin': {
+      id: '/push-admin'
+      path: '/push-admin'
+      fullPath: '/push-admin'
+      preLoaderRoute: typeof PushAdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pension-arrear': {
+      id: '/pension-arrear'
+      path: '/pension-arrear'
+      fullPath: '/pension-arrear'
+      preLoaderRoute: typeof PensionArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pension': {
+      id: '/pension'
+      path: '/pension'
+      fullPath: '/pension'
+      preLoaderRoute: typeof PensionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pdf-tools': {
+      id: '/pdf-tools'
+      path: '/pdf-tools'
+      fullPath: '/pdf-tools'
+      preLoaderRoute: typeof PdfToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pay-level': {
+      id: '/pay-level'
+      path: '/pay-level'
+      fullPath: '/pay-level'
+      preLoaderRoute: typeof PayLevelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pay-fixation': {
+      id: '/pay-fixation'
+      path: '/pay-fixation'
+      fullPath: '/pay-fixation'
+      preLoaderRoute: typeof PayFixationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pay-commission-history': {
+      id: '/pay-commission-history'
+      path: '/pay-commission-history'
+      fullPath: '/pay-commission-history'
+      preLoaderRoute: typeof PayCommissionHistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nps-calculator': {
+      id: '/nps-calculator'
+      path: '/nps-calculator'
+      fullPath: '/nps-calculator'
+      preLoaderRoute: typeof NpsCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news-sitemap.xml': {
+      id: '/news-sitemap.xml'
+      path: '/news-sitemap.xml'
+      fullPath: '/news-sitemap.xml'
+      preLoaderRoute: typeof NewsSitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/macp-calculator': {
+      id: '/macp-calculator'
+      path: '/macp-calculator'
+      fullPath: '/macp-calculator'
+      preLoaderRoute: typeof MacpCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ltc-planner': {
+      id: '/ltc-planner'
+      path: '/ltc-planner'
+      fullPath: '/ltc-planner'
+      preLoaderRoute: typeof LtcPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leave-encashment-calculator': {
+      id: '/leave-encashment-calculator'
+      path: '/leave-encashment-calculator'
+      fullPath: '/leave-encashment-calculator'
+      preLoaderRoute: typeof LeaveEncashmentCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/income-tax-calculator': {
+      id: '/income-tax-calculator'
+      path: '/income-tax-calculator'
+      fullPath: '/income-tax-calculator'
+      preLoaderRoute: typeof IncomeTaxCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hra-calculator': {
+      id: '/hra-calculator'
+      path: '/hra-calculator'
+      fullPath: '/hra-calculator'
+      preLoaderRoute: typeof HraCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gratuity-calculator': {
+      id: '/gratuity-calculator'
+      path: '/gratuity-calculator'
+      fullPath: '/gratuity-calculator'
+      preLoaderRoute: typeof GratuityCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-simulator': {
+      id: '/fitment-simulator'
+      path: '/fitment-simulator'
+      fullPath: '/fitment-simulator'
+      preLoaderRoute: typeof FitmentSimulatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-factor-in-hindi': {
+      id: '/fitment-factor-in-hindi'
+      path: '/fitment-factor-in-hindi'
+      fullPath: '/fitment-factor-in-hindi'
+      preLoaderRoute: typeof FitmentFactorInHindiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-factor': {
+      id: '/fitment-factor'
+      path: '/fitment-factor'
+      fullPath: '/fitment-factor'
+      preLoaderRoute: typeof FitmentFactorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fitment-calculator': {
+      id: '/fitment-calculator'
+      path: '/fitment-calculator'
+      fullPath: '/fitment-calculator'
+      preLoaderRoute: typeof FitmentCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/epf-calculator': {
+      id: '/epf-calculator'
+      path: '/epf-calculator'
+      fullPath: '/epf-calculator'
+      preLoaderRoute: typeof EpfCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/editorial-policy': {
+      id: '/editorial-policy'
+      path: '/editorial-policy'
+      fullPath: '/editorial-policy'
+      preLoaderRoute: typeof EditorialPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/da-calculator-in-hindi': {
+      id: '/da-calculator-in-hindi'
+      path: '/da-calculator-in-hindi'
+      fullPath: '/da-calculator-in-hindi'
+      preLoaderRoute: typeof DaCalculatorInHindiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/da-calculator': {
+      id: '/da-calculator'
+      path: '/da-calculator'
+      fullPath: '/da-calculator'
+      preLoaderRoute: typeof DaCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/arrear': {
+      id: '/arrear'
+      path: '/arrear'
+      fullPath: '/arrear'
+      preLoaderRoute: typeof ArrearRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ads.txt': {
+      id: '/ads.txt'
+      path: '/ads.txt'
+      fullPath: '/ads.txt'
+      preLoaderRoute: typeof AdsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-west-bengal': {
+      id: '/8th-pay-commission-west-bengal'
+      path: '/8th-pay-commission-west-bengal'
+      fullPath: '/8th-pay-commission-west-bengal'
+      preLoaderRoute: typeof R8thPayCommissionWestBengalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-uttar-pradesh': {
+      id: '/8th-pay-commission-uttar-pradesh'
+      path: '/8th-pay-commission-uttar-pradesh'
+      fullPath: '/8th-pay-commission-uttar-pradesh'
+      preLoaderRoute: typeof R8thPayCommissionUttarPradeshRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-terms-of-reference': {
+      id: '/8th-pay-commission-terms-of-reference'
+      path: '/8th-pay-commission-terms-of-reference'
+      fullPath: '/8th-pay-commission-terms-of-reference'
+      preLoaderRoute: typeof R8thPayCommissionTermsOfReferenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-tamil-nadu': {
+      id: '/8th-pay-commission-tamil-nadu'
+      path: '/8th-pay-commission-tamil-nadu'
+      fullPath: '/8th-pay-commission-tamil-nadu'
+      preLoaderRoute: typeof R8thPayCommissionTamilNaduRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-salary-list': {
+      id: '/8th-pay-commission-salary-list'
+      path: '/8th-pay-commission-salary-list'
+      fullPath: '/8th-pay-commission-salary-list'
+      preLoaderRoute: typeof R8thPayCommissionSalaryListRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-salary-calculator-in-hindi': {
+      id: '/8th-pay-commission-salary-calculator-in-hindi'
+      path: '/8th-pay-commission-salary-calculator-in-hindi'
+      fullPath: '/8th-pay-commission-salary-calculator-in-hindi'
+      preLoaderRoute: typeof R8thPayCommissionSalaryCalculatorInHindiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-rajasthan': {
+      id: '/8th-pay-commission-rajasthan'
+      path: '/8th-pay-commission-rajasthan'
+      fullPath: '/8th-pay-commission-rajasthan'
+      preLoaderRoute: typeof R8thPayCommissionRajasthanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-pension-calculator-in-hindi': {
+      id: '/8th-pay-commission-pension-calculator-in-hindi'
+      path: '/8th-pay-commission-pension-calculator-in-hindi'
+      fullPath: '/8th-pay-commission-pension-calculator-in-hindi'
+      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorInHindiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-pension-calculator': {
+      id: '/8th-pay-commission-pension-calculator'
+      path: '/8th-pay-commission-pension-calculator'
+      fullPath: '/8th-pay-commission-pension-calculator'
+      preLoaderRoute: typeof R8thPayCommissionPensionCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-pay-matrix': {
+      id: '/8th-pay-commission-pay-matrix'
+      path: '/8th-pay-commission-pay-matrix'
+      fullPath: '/8th-pay-commission-pay-matrix'
+      preLoaderRoute: typeof R8thPayCommissionPayMatrixRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-odisha': {
+      id: '/8th-pay-commission-odisha'
+      path: '/8th-pay-commission-odisha'
+      fullPath: '/8th-pay-commission-odisha'
+      preLoaderRoute: typeof R8thPayCommissionOdishaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-maharashtra': {
+      id: '/8th-pay-commission-maharashtra'
+      path: '/8th-pay-commission-maharashtra'
+      fullPath: '/8th-pay-commission-maharashtra'
+      preLoaderRoute: typeof R8thPayCommissionMaharashtraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-kya-hai': {
+      id: '/8th-pay-commission-kya-hai'
+      path: '/8th-pay-commission-kya-hai'
+      fullPath: '/8th-pay-commission-kya-hai'
+      preLoaderRoute: typeof R8thPayCommissionKyaHaiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-bank-employees': {
+      id: '/8th-pay-commission-bank-employees'
+      path: '/8th-pay-commission-bank-employees'
+      fullPath: '/8th-pay-commission-bank-employees'
+      preLoaderRoute: typeof R8thPayCommissionBankEmployeesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-arrears-calculator-in-hindi': {
+      id: '/8th-pay-commission-arrears-calculator-in-hindi'
+      path: '/8th-pay-commission-arrears-calculator-in-hindi'
+      fullPath: '/8th-pay-commission-arrears-calculator-in-hindi'
+      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorInHindiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/8th-pay-commission-arrears-calculator': {
+      id: '/8th-pay-commission-arrears-calculator'
+      path: '/8th-pay-commission-arrears-calculator'
+      fullPath: '/8th-pay-commission-arrears-calculator'
+      preLoaderRoute: typeof R8thPayCommissionArrearsCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/7th-vs-8th-pay-commission': {
+      id: '/7th-vs-8th-pay-commission'
+      path: '/7th-vs-8th-pay-commission'
+      fullPath: '/7th-vs-8th-pay-commission'
+      preLoaderRoute: typeof R7thVs8thPayCommissionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/7th-pay-commission-calculator': {
+      id: '/7th-pay-commission-calculator'
+      path: '/7th-pay-commission-calculator'
+      fullPath: '/7th-pay-commission-calculator'
+      preLoaderRoute: typeof R7thPayCommissionCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/6th-pay-commission-calculator': {
+      id: '/6th-pay-commission-calculator'
+      path: '/6th-pay-commission-calculator'
+      fullPath: '/6th-pay-commission-calculator'
+      preLoaderRoute: typeof R6thPayCommissionCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/state/': {
+      id: '/state/'
+      path: '/'
+      fullPath: '/state/'
+      preLoaderRoute: typeof StateIndexRouteImport
+      parentRoute: typeof StateRoute
+    }
+    '/role/': {
+      id: '/role/'
+      path: '/'
+      fullPath: '/role/'
+      preLoaderRoute: typeof RoleIndexRouteImport
+      parentRoute: typeof RoleRoute
+    }
+    '/pay-level/': {
+      id: '/pay-level/'
+      path: '/'
+      fullPath: '/pay-level/'
+      preLoaderRoute: typeof PayLevelIndexRouteImport
+      parentRoute: typeof PayLevelRoute
+    }
+    '/latest-jobs/': {
+      id: '/latest-jobs/'
+      path: '/latest-jobs'
+      fullPath: '/latest-jobs/'
+      preLoaderRoute: typeof LatestJobsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -1371,47 +1385,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/latest-jobs/': {
-      id: '/latest-jobs/'
-      path: '/latest-jobs'
-      fullPath: '/latest-jobs/'
-      preLoaderRoute: typeof LatestJobsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/latest-jobs/$slug': {
-      id: '/latest-jobs/$slug'
-      path: '/latest-jobs/$slug'
-      fullPath: '/latest-jobs/$slug'
-      preLoaderRoute: typeof LatestJobsSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pay-level/': {
-      id: '/pay-level/'
-      path: '/'
-      fullPath: '/pay-level/'
-      preLoaderRoute: typeof PayLevelIndexRouteImport
-      parentRoute: typeof PayLevelRoute
-    }
-    '/pay-level/$level': {
-      id: '/pay-level/$level'
-      path: '/$level'
-      fullPath: '/pay-level/$level'
-      preLoaderRoute: typeof PayLevelLevelRouteImport
-      parentRoute: typeof PayLevelRoute
-    }
-    '/role/': {
-      id: '/role/'
-      path: '/'
-      fullPath: '/role/'
-      preLoaderRoute: typeof RoleIndexRouteImport
-      parentRoute: typeof RoleRoute
+    '/state/$state': {
+      id: '/state/$state'
+      path: '/$state'
+      fullPath: '/state/$state'
+      preLoaderRoute: typeof StateStateRouteImport
+      parentRoute: typeof StateRoute
     }
     '/role/$role': {
       id: '/role/$role'
@@ -1420,19 +1399,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RoleRoleRouteImport
       parentRoute: typeof RoleRoute
     }
-    '/state/': {
-      id: '/state/'
-      path: '/'
-      fullPath: '/state/'
-      preLoaderRoute: typeof StateIndexRouteImport
-      parentRoute: typeof StateRoute
+    '/pay-level/$level': {
+      id: '/pay-level/$level'
+      path: '/$level'
+      fullPath: '/pay-level/$level'
+      preLoaderRoute: typeof PayLevelLevelRouteImport
+      parentRoute: typeof PayLevelRoute
     }
-    '/state/$state': {
-      id: '/state/$state'
-      path: '/$state'
-      fullPath: '/state/$state'
-      preLoaderRoute: typeof StateStateRouteImport
-      parentRoute: typeof StateRoute
+    '/latest-jobs/$slug': {
+      id: '/latest-jobs/$slug'
+      path: '/latest-jobs/$slug'
+      fullPath: '/latest-jobs/$slug'
+      preLoaderRoute: typeof LatestJobsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {
       id: '/.mcp/invoke-tool/$tool'
