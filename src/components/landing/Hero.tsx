@@ -3,6 +3,7 @@ import { ArrowRight, Calculator, Landmark, Search, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { jobs } from "@/lib/jobs";
 import { QuickCalc } from "./QuickCalc";
+import { MgidWidget } from "@/components/ads/MgidWidget";
 
 const categories = [
   { to: "/salary", label: "Salary", icon: Wallet },
@@ -44,6 +45,7 @@ export function Hero() {
         <div className="mt-14 grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-12">
           <div className="min-w-0 lg:col-span-8"><QuickCalc /></div>
           <aside className="min-w-0 rounded-lg border border-border bg-card p-5 shadow-card lg:col-span-4">
+            <MgidWidget widgetId="2091957" mobileOnly className="mb-4" />
             <div className="mb-4 flex items-center justify-between">
               <div><p className="text-xs font-semibold text-primary">NEW NOTIFICATIONS</p><h2 className="mt-1 text-xl font-bold">Latest government jobs</h2></div>
               <Button asChild variant="ghost" size="sm"><Link to="/latest-jobs">View all</Link></Button>

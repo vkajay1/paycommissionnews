@@ -16,6 +16,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { PushPrompt } from "@/components/push/PushPrompt";
 import { MgidWidget } from "@/components/ads/MgidWidget";
+import { ArticleMgidAds } from "@/components/ads/ArticleMgidAds";
 
 
 function NotFoundComponent() {
@@ -243,6 +244,7 @@ function RootComponent() {
         <Footer />
         <MobileNav />
         <PushPrompt />
+        <ArticleMgidAds />
 
       </div>
 

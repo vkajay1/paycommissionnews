@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import { Fragment } from "react";
+import { MgidWidget } from "@/components/ads/MgidWidget";
 import {
   Wallet,
   PiggyBank,
@@ -165,6 +167,7 @@ const tools = [
 export function CalculatorGrid() {
   return (
     <section id="tools" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6">
+      <MgidWidget widgetId="2091957" className="mb-8" />
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <span className="text-xs font-semibold uppercase tracking-wider text-primary">
@@ -180,11 +183,11 @@ export function CalculatorGrid() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {tools.map((t) => {
+        {tools.map((t, index) => {
           const Icon = t.icon;
           return (
+            <Fragment key={t.title}>
             <Link
-              key={t.title}
               to={t.href}
               className="group relative flex flex-col rounded-lg border border-border bg-card p-5 transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-card"
             >
@@ -210,6 +213,10 @@ export function CalculatorGrid() {
                  Open tool <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
+            {(index + 1) % 2 === 0 ? (
+              <MgidWidget widgetId="2091957" mobileOnly className="col-span-full my-4" />
+            ) : null}
+            </Fragment>
           );
         })}
       </div>
