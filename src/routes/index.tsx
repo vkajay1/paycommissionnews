@@ -8,6 +8,7 @@ import { FAQ, homeFaqs } from "@/components/landing/FAQ";
 import { PeopleAlsoSearch } from "@/components/landing/PeopleAlsoSearch";
 import { DisclaimerBanner } from "@/components/ui/disclaimer-banner";
 import { ContainerAd } from "@/components/ads/AdSlots";
+import { MgidWidget } from "@/components/ads/MgidWidget";
 
 
 
@@ -115,7 +116,9 @@ function Index() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <ContainerAd />
       </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6"><MgidWidget widgetId="2091957" /></div>
       <SalaryGuide />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6"><MgidWidget widgetId="2091957" /></div>
       <PeopleAlsoSearch />
       <Features />
       <FAQ />
