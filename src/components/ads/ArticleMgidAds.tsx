@@ -45,17 +45,22 @@ export function ArticleMgidAds() {
       });
       setHosts((previous) => previous.length === created.length ? previous : [...created]);
     };
-    let timer = window.setTimeout(build, 300);
+    // Wait for lazy page hydration before inserting external DOM hosts.
+    let timer = 0;
     const observer = new MutationObserver((records) => {
       if (!records.some((record) => record.target instanceof Element &&
         !record.target.closest("[data-article-mgid-ad], [aria-label='Advertisement']"))) return;
       window.clearTimeout(timer);
       timer = window.setTimeout(build, 100);
     });
-    observer.observe(document.body, { childList: true, subtree: true });
+    const start = window.setTimeout(() => {
+      build();
+      observer.observe(document.body, { childList: true, subtree: true });
+    }, 2000);
 
     return () => {
       observer.disconnect();
+      window.clearTimeout(start);
       window.clearTimeout(timer);
       created.forEach((host) => host.remove());
     };
